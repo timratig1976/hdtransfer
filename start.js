@@ -10,10 +10,24 @@
 const { spawn } = require('child_process');
 const path = require('path');
 
-const proc = spawn('node', [path.join(__dirname, 'hd_server.js')], {
-  stdio: 'inherit',
-  cwd: __dirname,
-});
+let intentionalStop = false;
 
-proc.on('exit', code => process.exit(code));
-process.on('SIGINT', () => { proc.kill(); process.exit(0); });
+function start() {
+  if (intentionalStop) return;
+  const proc = spawn('node', [path.join(__dirname, 'hd_server.js')], {
+    stdio: 'inherit',
+    cwd: __dirname,
+  });
+  proc.on('exit', code => {
+    if (intentionalStop) { process.exit(0); return; }
+    if (code !== 0) {
+      console.error(`\n[start.js] Server exited with code ${code} — restarting in 1s…`);
+      setTimeout(start, 1000);
+    } else {
+      process.exit(0);
+    }
+  });
+  process.on('SIGINT', () => { intentionalStop = true; proc.kill(); process.exit(0); });
+}
+
+start();

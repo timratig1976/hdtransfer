@@ -597,6 +597,33 @@
     display: flex; align-items: center; gap: 6px;
   }
 
+  /* ── Import progress bar ── */
+  .progress-area {
+    display: none; padding: 10px 14px 8px;
+    border-bottom: 1px solid var(--border); background: var(--bg);
+  }
+  .progress-area.visible { display: block; }
+  .progress-title {
+    font-size: 11px; font-weight: 700; color: var(--text2);
+    font-family: var(--mono); margin-bottom: 8px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .progress-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; }
+  .step { display: flex; flex-direction: column; gap: 3px; }
+  .step-bar {
+    height: 6px; background: var(--border); border-radius: 99px; overflow: hidden;
+  }
+  .step-fill {
+    height: 100%; width: 0%; background: var(--orange);
+    border-radius: 99px; transition: width 0.3s ease;
+  }
+  .step.done .step-fill { background: var(--green); }
+  .step-lbl {
+    font-size: 9px; font-family: var(--mono); color: var(--muted);
+    display: flex; justify-content: space-between;
+  }
+  .step-lbl .step-count { color: var(--text2); font-weight: 700; }
+
   /* Scraper content: full height cards + bottom bar only */
   #panel-scraper .content {
     display: grid;
@@ -739,6 +766,39 @@
         <button class="btn-secondary" onclick="testHubSpotConnection()" style="width:100%">⚡ Verbindung testen</button>
         <div id="hs-testResult" style="font-size:11px;margin-top:6px;padding:6px;border-radius:3px;display:none"></div>
       </div>
+
+      <div class="divider"></div>
+
+      <div>
+        <div class="section-label">HubSpot Seiten</div>
+        <div class="field">
+          <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+            <input type="checkbox" id="hs-createPages" style="width:16px;height:16px;cursor:pointer" />
+            Seiten automatisch erstellen
+          </label>
+        </div>
+        <div style="height:6px"></div>
+        <div class="field">
+          <label>Template Path</label>
+          <input type="text" id="hs-templatePath" placeholder="custom/listing-detail.html" />
+        </div>
+        <div style="height:4px"></div>
+        <div class="field">
+          <label>Slug Prefix</label>
+          <input type="text" id="hs-pageSlugPrefix" placeholder="bikes" value="bikes" />
+        </div>
+        <div style="height:4px"></div>
+        <div class="filter-row">
+          <div class="field">
+            <label>Modul-ID</label>
+            <input type="text" id="hs-moduleId" placeholder="bike_auswahl" value="bike_auswahl" />
+          </div>
+          <div class="field">
+            <label>Feld-Name</label>
+            <input type="text" id="hs-fieldName" placeholder="bike" value="bike" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="aside-log" id="s-logPanel">
@@ -769,26 +829,6 @@
 <!-- ══════════════════════════ IMPORTER TAB ══════════════════════════ -->
 <div class="tab-panel" id="panel-importer">
   <aside id="importerAside">
-    <div>
-      <div class="section-label">Konfiguration</div>
-      <div class="field">
-        <label>Access Token</label>
-        <input type="password" id="i-apiToken" placeholder="pat-eu1-..." />
-      </div>
-      <div style="height:6px"></div>
-      <div class="field">
-        <label>Object Type ID</label>
-        <input type="text" id="i-objectTypeId" placeholder="0-420" value="0-420" />
-      </div>
-      <div style="height:8px"></div>
-      <div class="field">
-        <label>Input Verzeichnis</label>
-        <input type="text" id="i-inputDir" placeholder="./hd-output" value="./hd-output" />
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
     <div>
       <div class="section-label">Filter</div>
       <div class="filter-row">
@@ -826,19 +866,19 @@
       <div class="progress-steps">
         <div class="step" id="i-stepImages">
           <div class="step-bar"><div class="step-fill" id="i-fillImages"></div></div>
-          <div class="step-lbl">Bilder</div>
+          <div class="step-lbl">🖼 Bilder<span class="step-count" id="i-cntImages"></span></div>
         </div>
         <div class="step" id="i-stepVideos">
           <div class="step-bar"><div class="step-fill" id="i-fillVideos"></div></div>
-          <div class="step-lbl">Videos</div>
+          <div class="step-lbl">🎥 Videos<span class="step-count" id="i-cntVideos"></span></div>
         </div>
         <div class="step" id="i-stepPdf">
           <div class="step-bar"><div class="step-fill" id="i-fillPdf"></div></div>
-          <div class="step-lbl">PDF</div>
+          <div class="step-lbl">📄 PDF<span class="step-count" id="i-cntPdf"></span></div>
         </div>
         <div class="step" id="i-stepHubspot">
           <div class="step-bar"><div class="step-fill" id="i-fillHubspot"></div></div>
-          <div class="step-lbl">HubSpot</div>
+          <div class="step-lbl">🔗 HubSpot<span class="step-count" id="i-cntHubspot"></span></div>
         </div>
       </div>
     </div>
@@ -878,6 +918,7 @@ let importRes     = {};
 // Per-card log buffers and current import key
 let cardLogs         = {};
 let currentImportKey = null;
+let currentPreviewKey = null;
 
 // Importer tab state
 let importerBikes = [];
@@ -949,7 +990,7 @@ function connectSSE() {
 }
 
 function handleSSE(d) {
-  const source = d.source || (d.type.startsWith('scraper_') || d.type === 'scrape_start' || d.type === 'scrape_done' ? 'scraper' : 'importer');
+  const source = d.source || (d.type.startsWith('scraper_') || d.type === 'scrape_start' || d.type === 'scrape_done' || d.type.startsWith('analyze_images') ? 'scraper' : 'importer');
 
   // Route logs to the right tab + buffer per-card
   if (d.type === 'log') {
@@ -1020,6 +1061,11 @@ function handleSSE(d) {
   if (d.type === 'importer_progress') {
     updateProgress('i', d.step, d.done, d.total);
   }
+  if (d.type === 'importer_page_created') {
+    const label = `Seite ${d.action}: /${d.slug}`;
+    const url   = d.pageUrl && d.pageUrl.startsWith('http') ? d.pageUrl : `https://app.hubspot.com/pages/preview/${d.pageId}`;
+    addLogLink('importer', label, url, 'ok');
+  }
   if (d.type === 'importer_bike_done') {
     setImpBikeState(d.folder, d.status === 'success' ? 'success' : 'error');
     importerRes[d.folder] = d;
@@ -1036,6 +1082,64 @@ function handleSSE(d) {
     showSummary('i', d.results);
     addLog('importer', '━━ IMPORT ABGESCHLOSSEN ━━', 'section');
   }
+
+  // ── Image Analyzer events ──
+  if (d.type === 'analyze_images_start') {
+    const btn = document.getElementById(`img-analyze-btn-${d.folder}`);
+    if (btn) { btn.textContent = '⧳ Analyzing…'; btn.disabled = true; }
+  }
+  if (d.type === 'analyze_images_done') {
+    const btn = document.getElementById(`img-analyze-btn-${d.folder}`);
+    if (btn) { btn.textContent = '✓ Re-analyze Images'; btn.disabled = false; }
+    // Re-render the full preview panel from fresh data.json
+    if (currentPreviewKey) {
+      const panel = document.getElementById('preview_' + currentPreviewKey);
+      if (panel && panel.classList.contains('open')) {
+        panel.classList.remove('open'); // force reload by closing first
+        togglePreview(currentPreviewKey);
+      }
+    }
+  }
+  if (d.type === 'analyze_images_error') {
+    const btn = document.getElementById(`img-analyze-btn-${d.folder}`);
+    if (btn) { btn.textContent = '🔴 Retry Images'; btn.disabled = false; }
+  }
+
+  // ── Video Analyzer events ──
+  if (d.type === 'analyze_start') {
+    const el = document.getElementById(`vid-analyze-${d.folder}-${d.videoIndex}`);
+    if (el) { el.textContent = '⧳ Analyzing…'; el.disabled = true; }
+    const res = document.getElementById(`vid-analysis-${d.folder}-${d.videoIndex}`);
+    if (res) { res.innerHTML = '<span style="opacity:.6;font-style:italic">Extracting frames & analyzing with GPT-4o…</span>'; res.style.display = 'block'; }
+  }
+  if (d.type === 'analyze_done') {
+    const el = document.getElementById(`vid-analyze-${d.folder}-${d.videoIndex}`);
+    if (el) { el.textContent = '✓ Re-analyze'; el.disabled = false; }
+    const res = document.getElementById(`vid-analysis-${d.folder}-${d.videoIndex}`);
+    if (res && d.analysis) {
+      const a = d.analysis;
+      const isDetail = a.type === 'detail_view';
+      const color  = a.type === 'detail_view' ? '#5b8dee' : a.type === 'riding_outdoor' ? '#3dba6f' : 'var(--muted)';
+      const label  = a.type === 'detail_view' ? '🔬 Detail View' : a.type === 'riding_outdoor' ? '🏍 Riding / Outdoor' : '';
+      const conf   = a.confidence && a.confidence !== 'high' ? ` <span style="opacity:.6">(${a.confidence})</span>` : '';
+      const badge  = label ? `<span style="font-size:10px;padding:2px 7px;background:${color}22;color:${color};border:1px solid ${color}44;border-radius:3px">${label}${conf}</span> ` : '';
+      const meta   = `<div style="font-size:10px;color:var(--muted);margin-bottom:6px">🤖 GPT-4o · ${a.frameCount} frame(s) · ${new Date(a.analyzedAt).toLocaleTimeString()}</div>`;
+      const desc   = a.description ? `<div style="margin-bottom:3px">${esc(a.description)}</div>` : '';
+      const setting = a.setting   ? `<div style="color:var(--muted)">📍 ${esc(a.setting)}</div>` : '';
+      const rider   = a.riderPresent !== undefined ? `<div style="color:var(--muted)">${a.riderPresent ? '👤 Rider visible' : '🚫 No rider'}</div>` : '';
+      res.innerHTML = meta + badge + desc + setting + rider;
+      res.style.display = 'block';
+      // also update the type badge in the row above if present
+      const typeBadgeEl = document.getElementById(`vid-typebadge-${d.folder}-${d.videoIndex}`);
+      if (typeBadgeEl && label) typeBadgeEl.outerHTML = `<span id="vid-typebadge-${d.folder}-${d.videoIndex}" style="font-size:10px;padding:2px 7px;background:${color}22;color:${color};border:1px solid ${color}44;border-radius:3px;white-space:nowrap">${label}</span>`;
+    }
+  }
+  if (d.type === 'analyze_error') {
+    const el = document.getElementById(`vid-analyze-${d.folder}-${d.videoIndex}`);
+    if (el) { el.textContent = '🔴 Retry'; el.disabled = false; }
+    const res = document.getElementById(`vid-analysis-${d.folder}-${d.videoIndex}`);
+    if (res) { res.innerHTML = `<span style="color:var(--red)">❌ ${esc(d.error)}</span>`; res.style.display = 'block'; }
+  }
 }
 
 // ═══════════════════════════════════════════════════════
@@ -1047,7 +1151,8 @@ function setStatus(state, label) {
 }
 
 function notifyBadge(tab) {
-  document.getElementById('badge-' + tab).classList.add('visible');
+  const el = document.getElementById('badge-' + tab);
+  if (el) el.classList.add('visible');
 }
 
 // ═══════════════════════════════════════════════════════
@@ -1068,9 +1173,13 @@ function updateProgress(prefix, step, done, total) {
   if (!key) return;
   const fill = document.getElementById(`${prefix}-fill${key}`);
   const el   = document.getElementById(`${prefix}-step${key}`);
+  const cnt  = document.getElementById(`${prefix}-cnt${key}`);
   if (!fill || !el) return;
-  fill.style.width = (total > 0 ? (done / total * 100) : 0) + '%';
+  const pct = total > 0 ? (done / total * 100) : 0;
+  fill.style.width = pct + '%';
+  if (cnt) cnt.textContent = total > 0 ? `${done}/${total}` : '';
   if (done >= total && total > 0) el.classList.add('done');
+  else el.classList.remove('done');
 }
 
 // ═══════════════════════════════════════════════════════
@@ -1084,6 +1193,17 @@ function addLog(source, msg, level, ts) {
   const line = document.createElement('div');
   line.className = 'log-line ' + (level || 'info');
   line.innerHTML = `<span class="log-ts">${ts || now()}</span><span class="log-msg">${esc(msg)}</span>`;
+  area.appendChild(line);
+  area.scrollTop = area.scrollHeight;
+}
+
+function addLogLink(source, label, url, level, ts) {
+  const id   = source === 'scraper' ? 's-logArea' : 'i-logArea';
+  const area = document.getElementById(id);
+  if (!area) return;
+  const line = document.createElement('div');
+  line.className = 'log-line ' + (level || 'ok');
+  line.innerHTML = `<span class="log-ts">${ts || now()}</span><span class="log-msg">${esc(label)} <a href="${esc(url)}" target="_blank" style="color:inherit;text-decoration:underline;opacity:.8">🔗 Seite öffnen</a></span>`;
   area.appendChild(line);
   area.scrollTop = area.scrollHeight;
 }
@@ -1298,15 +1418,85 @@ async function scrapeOne(key) {
   });
 }
 
+function renderSpecsHtml(text) {
+  if (!text) return '';
+  return text.split('\n').map(line => {
+    line = line.trim();
+    if (!line) return '<div style="height:5px"></div>';
+    if (line.startsWith('<h3>') || line.startsWith('<H3>')) {
+      const title = line.replace(/<\/?h3>/gi, '');
+      return `<div style="font-weight:700;font-size:9px;letter-spacing:.05em;color:var(--orange);margin:6px 0 2px;border-bottom:1px solid var(--border);padding-bottom:2px">${esc(title)}</div>`;
+    }
+    const colon = line.indexOf(':');
+    if (colon > 0) {
+      const k = line.slice(0, colon).trim();
+      const v = line.slice(colon + 1).trim();
+      return `<div style="display:flex;gap:4px"><span style="color:var(--muted);min-width:120px;flex-shrink:0">${esc(k)}</span><span>${esc(v)}</span></div>`;
+    }
+    return `<div>${esc(line)}</div>`;
+  }).join('');
+}
+
+async function analyzeImages(folder, outputDir) {
+  const openaiKey = document.getElementById('s-openaiKey')?.value.trim();
+  if (!openaiKey) { alert('Please enter your OpenAI API Key in the scraper sidebar first.'); return; }
+  const btn = document.getElementById(`img-analyze-btn-${folder}`);
+  if (btn) { btn.textContent = '⧳ Starting…'; btn.disabled = true; }
+  try {
+    const res  = await fetch('/api/analyze-images', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ outputDir: outputDir || './hd-output', folder, openaiKey })
+    });
+    const data = await res.json();
+    if (!res.ok || data.error) {
+      if (btn) { btn.textContent = '🔴 Retry Images'; btn.disabled = false; }
+      const heroMsg = document.getElementById(`img-hero-msg-${folder}`);
+      if (heroMsg) { heroMsg.innerHTML = `<span style="color:var(--red)">❌ ${esc(data.error || 'Request failed')}</span>`; heroMsg.style.display = 'block'; }
+    }
+  } catch(e) {
+    if (btn) { btn.textContent = '🔴 Retry Images'; btn.disabled = false; }
+  }
+}
+
+async function analyzeVideo(folder, videoIndex, outputDir) {
+  const openaiKey = document.getElementById('s-openaiKey')?.value.trim();
+  if (!openaiKey) {
+    alert('Please enter your OpenAI API Key in the scraper sidebar first (Übersetzung / OpenAI section).');
+    return;
+  }
+  const btn = document.getElementById(`vid-analyze-${folder}-${videoIndex}`);
+  if (btn) { btn.textContent = '⧳ Starting…'; btn.disabled = true; }
+  try {
+    const res = await fetch('/api/analyze-video', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ outputDir: outputDir || './hd-output', folder, videoIndex, openaiKey })
+    });
+    const data = await res.json();
+    if (!res.ok || data.error) {
+      if (btn) { btn.textContent = '🔴 Retry'; btn.disabled = false; }
+      const el = document.getElementById(`vid-analysis-${folder}-${videoIndex}`);
+      if (el) { el.innerHTML = `<span style="color:var(--red)">❌ ${esc(data.error || 'Request failed')}</span>`; el.style.display = 'block'; }
+    }
+    // Success: SSE events (analyze_start/done/error) handle the UI updates
+  } catch(e) {
+    if (btn) { btn.textContent = '🔴 Retry'; btn.disabled = false; }
+    const el = document.getElementById(`vid-analysis-${folder}-${videoIndex}`);
+    if (el) { el.innerHTML = `<span style="color:var(--red)">❌ ${esc(e.message)}</span>`; el.style.display = 'block'; }
+  }
+}
+
 async function togglePreview(key) {
   const panel = document.getElementById('preview_' + key);
   const fbtn  = document.getElementById('fbtn_'   + key);
   if (!panel) return;
-  if (panel.classList.contains('open')) {
+  if (panel.classList.contains('open') && currentPreviewKey === key) {
     panel.classList.remove('open');
     if (fbtn) fbtn.classList.remove('open');
+    currentPreviewKey = null;
     return;
   }
+  currentPreviewKey = key;
   panel.classList.add('open');
   if (fbtn) fbtn.classList.add('open');
   panel.innerHTML = '<div class="preview-loading">⧳ Lade Daten…</div>';
@@ -1319,8 +1509,61 @@ async function togglePreview(key) {
     if (d.error) { panel.innerHTML = `<div class="preview-loading" style="color:var(--red)">${esc(d.error)}</div>`; return; }
     const fmt  = b => b >= 1048576 ? (b/1048576).toFixed(1)+'MB' : (b >= 1024 ? (b/1024).toFixed(0)+'KB' : b+'B');
     const fileUrl = (path) => `/api/file?${new URLSearchParams({ outputDir, folder, file: path })}`;
-    const imgChips = (d.images||[]).map(i => `<a class="preview-chip img" href="${fileUrl('images/'+i.file)}" target="_blank">🖼️ ${esc(i.file)} <span style="opacity:.6">${fmt(i.size)}</span></a>`).join('');
-    const vidChips = (d.videos||[]).map(v => `<a class="preview-chip vid" href="${fileUrl('videos/'+v.file)}" target="_blank">🎥 ${esc(v.file)} <span style="opacity:.6">${fmt(v.size)}</span></a>`).join('');
+    const imgTypeBadgeStatic = (a) => {
+      if (!a || !a.type) return '';
+      const map = { outdoor_rider:'#e67e22', outdoor_static:'#3dba6f', studio_detail:'#5b8dee', feature_closeup:'#9b59b6', color_variant:'#95a5a6', lifestyle:'#1abc9c' };
+      const color = map[a.type] || '#888';
+      return `<span style="font-size:9px;padding:1px 5px;background:${color}22;color:${color};border:1px solid ${color}44;border-radius:2px">${a.type}</span>`;
+    };
+    const hasImgAnalysis = (d.images||[]).some(i => i.analysis);
+    const imgChips = (d.images||[]).map((i, idx) => {
+      const isHero = d.recommendedHero && d.recommendedHero === i.file;
+      const badge  = imgTypeBadgeStatic(i.analysis);
+      const heroStyle = isHero ? 'outline:2px solid #f39c12;outline-offset:1px;' : '';
+      return `<div style="display:inline-flex;align-items:center;gap:4px;margin:0 4px 4px 0;flex-wrap:wrap">
+        <a class="preview-chip img" href="${fileUrl('images/'+i.file)}" target="_blank" title="${esc(i.analysis?.description||'')}" style="${heroStyle}">
+          🖼️ ${esc(i.file)} <span style="opacity:.6">${fmt(i.size)}</span>
+        </a>
+        <span id="img-badge-${esc(folder)}-${idx}">${badge}</span>
+        <span id="img-hero-${esc(folder)}-${idx}" style="font-size:11px;${isHero?'':'display:none'}" title="Recommended hero image">⭐</span>
+      </div>`;
+    }).join('');
+    const vidTypeBadge = (type, confidence) => {
+      if (!type || type === 'unknown') return '';
+      const isDetail  = type === 'detail_view';
+      const color     = isDetail ? '#5b8dee' : '#3dba6f';
+      const label     = isDetail ? '🔬 Detail View' : '🏍 Riding / Outdoor';
+      const conf      = confidence && confidence !== 'high' ? ` <span style="opacity:.6">(${confidence})</span>` : '';
+      return `<span style="font-size:10px;padding:2px 7px;background:${color}22;color:${color};border:1px solid ${color}44;border-radius:3px;white-space:nowrap">${label}${conf}</span>`;
+    };
+    const renderAnalysis = (analysis) => {
+      if (!analysis) return '';
+      const a = typeof analysis === 'object' ? analysis : {};
+      const typeStr = a.type ? vidTypeBadge(a.type, a.confidence) : '';
+      const desc    = a.description ? `<div style="margin-top:4px">${esc(a.description)}</div>` : (a.text ? `<div style="white-space:pre-wrap">${esc(a.text)}</div>` : '');
+      const setting = a.setting ? `<div style="margin-top:3px;color:var(--muted)">📍 ${esc(a.setting)}</div>` : '';
+      const rider   = a.riderPresent !== undefined ? `<div style="margin-top:3px;color:var(--muted)">${a.riderPresent ? '👤 Rider visible' : '🚫 No rider'}</div>` : '';
+      const meta    = a.frameCount ? `<div style="font-size:10px;color:var(--muted);margin-bottom:4px">🤖 GPT-4o · ${a.frameCount} frame(s) · ${a.analyzedAt ? new Date(a.analyzedAt).toLocaleTimeString() : ''}</div>` : '';
+      return meta + typeStr + desc + setting + rider;
+    };
+    const vidBlocks = (d.videos||[]).map(v => {
+      const aiType      = v.analysis && v.analysis.type ? v.analysis.type : null;
+      const aiConf      = v.analysis && v.analysis.confidence ? v.analysis.confidence : null;
+      const shownType   = aiType || v.heuristicType;
+      const shownConf   = aiType ? aiConf : (v.heuristicType ? 'heuristic' : null);
+      const typeBadge   = vidTypeBadge(shownType, shownConf);
+      const hasAnalysis = !!v.analysis;
+      const analysisHtml = renderAnalysis(v.analysis);
+      return `<div style="margin-bottom:10px">
+        <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+          <a class="preview-chip vid" href="${fileUrl('videos/'+v.file)}" target="_blank">🎥 ${esc(v.file)} <span style="opacity:.6">${v.sizeMB ? v.sizeMB+'MB' : fmt(v.size)}</span></a>
+          ${typeBadge}
+          <button id="vid-analyze-${esc(folder)}-${v.videoIndex}" onclick="analyzeVideo('${esc(folder)}',${v.videoIndex},'${esc(outputDir)}')" style="font-size:10px;padding:2px 8px;background:var(--orange);color:#fff;border:none;border-radius:3px;cursor:pointer;white-space:nowrap">${hasAnalysis ? '✓ Re-analyze' : '🔍 Analyze'}</button>
+          ${v.thumbUrl ? `<a href="${esc(v.thumbUrl)}" target="_blank" style="font-size:10px;color:var(--muted);text-decoration:none">🖼 thumb</a>` : ''}
+        </div>
+        <div id="vid-analysis-${esc(folder)}-${v.videoIndex}" style="margin-top:6px;padding:8px;background:var(--surface);border-radius:4px;font-size:11px;line-height:1.6;${hasAnalysis ? '' : 'display:none'}">${analysisHtml}</div>
+      </div>`;
+    }).join('');
     const pdfChip  = d.hasPdf ? `<a class="preview-chip pdf" href="${fileUrl(d.pdfLocal)}" target="_blank">📄 ${esc(d.pdfLocal.split('/').pop() || 'document.pdf')}</a>` : '';
     // Build specs HTML: sectioned view if available, flat fallback
     let specsHtml = '';
@@ -1335,6 +1578,21 @@ async function togglePreview(key) {
     } else if ((d.specs||[]).length > 0) {
       specsHtml = `<table class="preview-spec-table">${(d.specs||[]).map(s => `<tr><td class="preview-spec-key">${esc(s.k)}</td><td class="preview-spec-val">${esc(String(s.v))}</td></tr>`).join('')}</table>`;
     }
+    const p = d.pipeline || {};
+    const pipeRow = (icon, label, value, sub, color) =>
+      `<div style="display:flex;align-items:baseline;gap:6px;padding:3px 0;border-bottom:1px solid var(--border)">
+        <span style="width:16px;text-align:center;font-size:11px">${icon}</span>
+        <span style="flex:1;font-size:11px;color:var(--muted)">${label}</span>
+        <span style="font-size:11px;font-weight:600;color:${color||'var(--text)'}">${value}</span>
+        ${sub ? `<span style="font-size:10px;color:var(--muted)">${sub}</span>` : ''}
+      </div>`;
+    const checkDot = (ok) => ok ? '✅' : '⬜';
+    const typeBreakdownHtml = (breakdown, colorMap) => Object.entries(breakdown||{}).map(([t,n]) => {
+      const c = colorMap[t] || '#888';
+      return `<span style="font-size:9px;padding:1px 5px;background:${c}22;color:${c};border:1px solid ${c}44;border-radius:2px;margin-left:3px">${t} ×${n}</span>`;
+    }).join('');
+    const imgColorMap = { outdoor_rider:'#e67e22', outdoor_static:'#3dba6f', studio_detail:'#5b8dee', feature_closeup:'#9b59b6', color_variant:'#95a5a6', lifestyle:'#1abc9c' };
+    const vidColorMap = { detail_view:'#5b8dee', riding_outdoor:'#3dba6f', unknown:'#888' };
     panel.innerHTML = `
       <div class="preview-stats">
         <div class="preview-stat"><div class="preview-stat-label">Bilder</div><div class="preview-stat-value">${(d.images||[]).length}</div></div>
@@ -1342,9 +1600,88 @@ async function togglePreview(key) {
         <div class="preview-stat"><div class="preview-stat-label">Specs</div><div class="preview-stat-value">${d.specsCount}</div></div>
         <div class="preview-stat"><div class="preview-stat-label">PDF</div><div class="preview-stat-value">${d.hasPdf ? '✓' : '—'}</div></div>
       </div>
-      ${imgChips||vidChips||pdfChip ? `<div><div class="preview-section-title">Dateien</div><div class="preview-chips">${imgChips}${vidChips}${pdfChip}</div></div>` : ''}
-      ${d.description ? `<div><div class="preview-section-title">Beschreibung</div><div class="preview-desc">${esc(d.description.substring(0,300))}${d.description.length>300?'…':''}</div></div>` : ''}
-      ${specsHtml ? `<div><div class="preview-section-title">Technische Daten (${d.specsCount} Felder · ${(d.specsSections||[]).length} Sektionen)</div><div class="preview-specs-wrap">${specsHtml}</div></div>` : ''}
+      <div style="margin-bottom:10px">
+        <div class="preview-section-title">Pipeline Status</div>
+        <div style="background:var(--surface);border-radius:5px;padding:6px 10px">
+          <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.07em;padding-bottom:3px;margin-bottom:2px">EXTRACTION</div>
+          ${pipeRow('📅', 'Modelljahr', p.modelljahr || d.year || '—', '', 'var(--text)')}
+          ${pipeRow(checkDot(p.hasDescription), 'Description', p.hasDescription ? `${(d.description||'').length} chars` : 'missing', '', p.hasDescription?'var(--green)':'var(--red)')}
+          ${pipeRow(checkDot(p.specsRowCount>0), 'Specs (EN)', p.specsRowCount > 0 ? `${p.specsRowCount} fields` : 'missing', p.specsSectionsCount ? `· ${p.specsSectionsCount} sections` : '', p.specsRowCount>0?'var(--green)':'var(--red)')}
+          ${pipeRow(checkDot(p.hasPdf), 'PDF Brochure', p.hasPdf ? 'downloaded' : 'not found', '', p.hasPdf?'var(--green)':'var(--muted)')}
+          ${pipeRow(checkDot(p.imagesTotal>0), 'Images', p.imagesTotal > 0 ? `${p.imagesTotal} files` : 'none', '', p.imagesTotal>0?'var(--green)':'var(--red)')}
+          ${pipeRow(checkDot(p.videosTotal>0), 'Videos', p.videosTotal > 0 ? `${p.videosTotal} files` : 'none', '', p.videosTotal>0?'var(--green)':'var(--muted)')}
+          <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.07em;padding:6px 0 3px;margin-top:2px">PROCESSING</div>
+          ${pipeRow(checkDot(p.hasTranslation), 'DE Translation', p.hasTranslation ? 'done' : 'not run', '(description)', p.hasTranslation?'var(--green)':'var(--muted)')}
+          ${pipeRow(checkDot(p.hasSpecsDE), 'DE Specs', p.hasSpecsDE ? 'done' : 'not run', '', p.hasSpecsDE?'var(--green)':'var(--muted)')}
+          <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.07em;padding:6px 0 3px;margin-top:2px">IDENTIFICATION</div>
+          ${pipeRow(checkDot(p.imagesAnalyzed>0), 'Image AI Analysis',
+            p.imagesAnalyzed > 0 ? `${p.imagesAnalyzed}/${p.imagesTotal} classified` : 'not run',
+            '', p.imagesAnalyzed>0?'var(--green)':'var(--muted)')}
+          ${p.imagesAnalyzed > 0 ? `<div style="padding:3px 0 3px 22px;font-size:10px">${typeBreakdownHtml(p.imageTypeBreakdown, imgColorMap)}</div>` : ''}
+          ${pipeRow(checkDot(p.recommendedHero), 'Hero Image',
+            p.recommendedHero ? esc(p.recommendedHero) : 'not identified',
+            '', p.recommendedHero?'#f39c12':'var(--muted)')}
+          ${pipeRow(checkDot(p.videosAnalyzed>0||p.videosTotal>0), 'Video Classification',
+            p.videosTotal > 0 ? `${p.videosTotal} videos` : 'none',
+            p.videosAnalyzed > 0 ? `(${p.videosAnalyzed} AI-confirmed)` : '(heuristic)',
+            p.videosTotal>0?'var(--green)':'var(--muted)')}
+          ${p.videosTotal > 0 ? `<div style="padding:3px 0 3px 22px;font-size:10px">${typeBreakdownHtml(p.videoTypeBreakdown, vidColorMap)}</div>` : ''}
+        </div>
+      </div>
+      ${imgChips ? `<div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+          <div class="preview-section-title" style="margin:0">Bilder</div>
+          <button id="img-analyze-btn-${esc(folder)}" onclick="analyzeImages('${esc(folder)}','${esc(outputDir)}')" style="font-size:10px;padding:2px 8px;background:var(--orange);color:#fff;border:none;border-radius:3px;cursor:pointer">${hasImgAnalysis ? '✓ Re-analyze Images' : '🔍 Analyze Images'}</button>
+          <span style="font-size:9px;color:var(--muted)">🟠 outdoor_rider · 🟢 outdoor_static · 🔵 studio · 🟣 closeup</span>
+        </div>
+        <div id="img-hero-card-${esc(folder)}" style="${d.recommendedHero ? '' : 'display:none'}">
+          <div style="font-size:10px;font-weight:700;color:#f39c12;margin-bottom:4px;letter-spacing:.05em">⭐ RECOMMENDED HERO IMAGE</div>
+          <div style="display:flex;align-items:flex-start;gap:10px;padding:8px;background:#f39c1211;border:1.5px solid #f39c1266;border-radius:5px;margin-bottom:8px">
+            <a href="${d.recommendedHero ? fileUrl('images/'+d.recommendedHero) : '#'}" target="_blank" id="img-hero-thumb-link-${esc(folder)}">
+              <img id="img-hero-thumb-${esc(folder)}" src="${d.recommendedHero ? fileUrl('images/'+d.recommendedHero) : ''}" style="width:120px;height:72px;object-fit:cover;border-radius:3px;border:1px solid #f39c1244" />
+            </a>
+            <div>
+              <div id="img-hero-name-${esc(folder)}" style="font-size:11px;font-weight:700;color:var(--text)">${esc(d.recommendedHero||'')}</div>
+              <div id="img-hero-desc-${esc(folder)}" style="font-size:10px;color:var(--muted);margin-top:3px;line-height:1.5">${esc((d.images||[]).find(i=>i.file===d.recommendedHero)?.analysis?.description||'')}</div>
+              <div style="margin-top:4px"><span style="font-size:9px;padding:1px 6px;background:#e67e2222;color:#e67e22;border:1px solid #e67e2244;border-radius:2px">outdoor_rider</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-chips" style="flex-wrap:wrap">${imgChips}</div>
+      </div>` : ''}
+      ${vidBlocks ? `<div><div class="preview-section-title">Videos</div><div style="padding:4px 0">${vidBlocks}</div></div>` : ''}
+      ${pdfChip ? `<div><div class="preview-section-title">Dokumente</div><div class="preview-chips">${pdfChip}</div></div>` : ''}
+      ${(d.description || d.beschreibung) ? `<div>
+        <div class="preview-section-title">Beschreibung</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+          <div>
+            <div style="font-size:9px;font-weight:700;letter-spacing:.07em;color:#3dba6f;margin-bottom:4px">🇩🇪 DEUTSCH</div>
+            <div class="preview-desc" style="min-height:40px">${d.beschreibung ? esc(d.beschreibung.substring(0,400))+(d.beschreibung.length>400?'…':'') : '<span style="color:var(--muted);font-style:italic">— nicht übersetzt —</span>'}</div>
+          </div>
+          <div>
+            <div style="font-size:9px;font-weight:700;letter-spacing:.07em;color:#5b8dee;margin-bottom:4px">🇬🇧 ENGLISH</div>
+            <div class="preview-desc" style="min-height:40px">${d.description ? esc(d.description.substring(0,400))+(d.description.length>400?'…':'') : '<span style="color:var(--muted);font-style:italic">— not available —</span>'}</div>
+          </div>
+        </div>
+      </div>` : ''}
+      ${(d.specsTextDE || d.specsTextEN || specsHtml) ? `<div>
+        <div class="preview-section-title">Technische Daten (${d.specsCount} Felder · ${(d.specsSections||[]).length} Sektionen)</div>
+        ${(d.specsTextDE || d.specsTextEN) ? `<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+          <div>
+            <div style="font-size:9px;font-weight:700;letter-spacing:.07em;color:#3dba6f;margin-bottom:4px">🇩🇪 DEUTSCH</div>
+            ${d.specsTextDE
+              ? `<div style="font-size:9px;line-height:1.6;color:var(--text);background:var(--surface);padding:6px 8px;border-radius:4px;overflow-y:auto;max-height:260px">${renderSpecsHtml(d.specsTextDE)}</div>`
+              : `<div style="color:var(--muted);font-style:italic;font-size:10px;padding:6px">— nicht übersetzt —</div>`}
+          </div>
+          <div>
+            <div style="font-size:9px;font-weight:700;letter-spacing:.07em;color:#5b8dee;margin-bottom:4px">🇬🇧 ENGLISH</div>
+            ${d.specsTextEN
+              ? `<div style="font-size:9px;line-height:1.6;color:var(--text);background:var(--surface);padding:6px 8px;border-radius:4px;overflow-y:auto;max-height:260px">${renderSpecsHtml(d.specsTextEN)}</div>`
+              : `<div style="color:var(--muted);font-style:italic;font-size:10px;padding:6px">— not available —</div>`}
+          </div>
+        </div>` : ''}
+        ${specsHtml ? `<div class="preview-specs-wrap">${specsHtml}</div>` : ''}
+      </div>` : ''}
       <div class="preview-folder">📁 ${esc(outputDir)}/bikes/${esc(folder)}</div>`;
   } catch(e) {
     panel.innerHTML = `<div class="preview-loading" style="color:var(--red)">Fehler: ${esc(e.message)}</div>`;
@@ -1403,6 +1740,25 @@ function scraperToggleAll() {
   updateScrBtn();
 }
 
+// ── Auto-fill from .env on startup ──────────────────────────
+(async () => {
+  try {
+    const cfg = await fetch('/api/env-config').then(r => r.json());
+    if (cfg.openaiKey) {
+      const el = document.getElementById('s-openaiKey');
+      if (el && !el.value) el.value = cfg.openaiKey;
+    }
+    if (cfg.hubspotToken) {
+      const el = document.getElementById('hs-apiToken');
+      if (el && !el.value) el.value = cfg.hubspotToken;
+    }
+    if (cfg.objectTypeId) {
+      const el = document.getElementById('hs-objectTypeId');
+      if (el && !el.value) el.value = cfg.objectTypeId;
+    }
+  } catch(e) { /* .env not set, silently ignore */ }
+})();
+
 function updateScrBtn() {
   const btn = document.getElementById('s-btn');
   btn.disabled    = scraperSel.size === 0 || scraperRun;
@@ -1445,7 +1801,7 @@ async function importOne(key) {
   addLog('scraper', `🚀 Import: ${bike.name}`, 'info');
   await fetch('/api/import', {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ apiToken, objectTypeId, inputDir, folders: [folder] }),
+    body: JSON.stringify({ apiToken, objectTypeId, inputDir, folders: [folder], openaiKey: document.getElementById('s-openaiKey')?.value.trim() || '', finanzierungsUrl: 'https://calculator.harley-davidson.com/de/finance/choose-bike', versicherungenUrl: 'https://www.ergo-hdis.de/praemienberechnung/allgemeine-daten', ...getPageConfig() }),
   });
 }
 
@@ -1453,7 +1809,7 @@ async function importOne(key) {
 //  Importer tab
 // ═══════════════════════════════════════════════════════
 async function loadBikes() {
-  const inputDir   = document.getElementById('i-inputDir').value   || './hd-output';
+  const inputDir   = document.getElementById('s-outputDir').value  || './hd-output';
   const filterCode = document.getElementById('i-filterCode').value || '';
   const filterYear = document.getElementById('i-filterYear').value || '';
   const params     = new URLSearchParams({ inputDir });
@@ -1516,13 +1872,48 @@ function updateImpBtn() {
     : 'Import starten';
 }
 
-async function startImport() {
-  const apiToken     = document.getElementById('i-apiToken').value.trim();
-  const objectTypeId = document.getElementById('i-objectTypeId').value.trim();
-  const inputDir     = document.getElementById('i-inputDir').value.trim() || './hd-output';
+async function createListingPage() {
+  const apiToken      = document.getElementById('hs-apiToken').value.trim();
+  const templatePath  = document.getElementById('i-listingTemplate')?.value.trim();
+  const slug          = document.getElementById('i-listingSlug')?.value.trim() || 'motorraeder';
+  const resultEl      = document.getElementById('i-listingPageResult');
+  if (!apiToken)     { alert('Access Token eingeben'); return; }
+  if (!templatePath) { alert('Listing Template Path eingeben'); return; }
+  resultEl.style.display = 'block';
+  resultEl.style.color   = 'var(--muted)';
+  resultEl.textContent   = '⏳ Erstelle Übersichtsseite…';
+  try {
+    const r = await fetch('/api/create-listing-page', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ apiToken, templatePath, slug, title: 'Motorrad Übersicht | Harley-Davidson' }),
+    });
+    const d = await r.json();
+    if (d.error) throw new Error(d.error);
+    resultEl.style.color = 'var(--green)';
+    resultEl.textContent = `✅ Seite ${d.page.action}: /${slug} (ID ${d.page.id})`;
+  } catch(e) {
+    resultEl.style.color = 'var(--red)';
+    resultEl.textContent = `❌ ${e.message}`;
+  }
+}
 
-  if (!apiToken) { alert('Access Token eingeben'); return; }
-  if (!objectTypeId) { alert('Bitte Object Type ID eingeben'); return; }
+function getPageConfig() {
+  const g = id => document.getElementById(id)?.value?.trim() || '';
+  return {
+    createPages:    document.getElementById('hs-createPages')?.checked || false,
+    templatePath:   g('hs-templatePath'),
+    pageSlugPrefix: g('hs-pageSlugPrefix') || 'bikes',
+    moduleId:       g('hs-moduleId')       || 'bike_auswahl',
+    fieldName:      g('hs-fieldName')      || 'bike',
+  };
+}
+
+async function startImport() {
+  const apiToken     = document.getElementById('hs-apiToken').value.trim();
+  const objectTypeId = document.getElementById('hs-objectTypeId').value.trim() || '0-420';
+  const inputDir     = document.getElementById('s-outputDir').value.trim() || './hd-output';
+
+  if (!apiToken) { alert('Access Token im linken Sidebar eintragen'); return; }
 
   importerRun = true;
   importerRes = {};
@@ -1535,9 +1926,12 @@ async function startImport() {
     method:  'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      apiToken, objectTypeId, inputDir, folders: importerBikes.filter(b => importerSel.has(b.folder)).map(b => b.folder),
+      apiToken, objectTypeId, inputDir,
+      folders: importerBikes.filter(b => importerSel.has(b.folder)).map(b => b.folder),
+      openaiKey: document.getElementById('s-openaiKey')?.value.trim() || '',
       finanzierungsUrl: 'https://calculator.harley-davidson.com/de/finance/choose-bike',
       versicherungenUrl: 'https://www.ergo-hdis.de/praemienberechnung/allgemeine-daten',
+      ...getPageConfig(),
     }),
   });
 }
@@ -1705,16 +2099,11 @@ document.getElementById('s-sessionCookie').addEventListener('input', e => {
 // Restore token from localStorage (persistent across browser restarts)
 const savedToken = localStorage.getItem('hd_apiToken');
 if (savedToken) {
-  document.getElementById('i-apiToken').value = savedToken;
-  document.getElementById('hs-apiToken').value = savedToken;
+  const el = document.getElementById('hs-apiToken');
+  if (el) el.value = savedToken;
 }
-document.getElementById('i-apiToken').addEventListener('input', e => {
+document.getElementById('hs-apiToken')?.addEventListener('input', e => {
   localStorage.setItem('hd_apiToken', e.target.value);
-  document.getElementById('hs-apiToken').value = e.target.value;
-});
-document.getElementById('hs-apiToken').addEventListener('input', e => {
-  localStorage.setItem('hd_apiToken', e.target.value);
-  document.getElementById('i-apiToken').value = e.target.value;
 });
 
 // Open to importer tab if hash set

@@ -204,6 +204,7 @@
         "uploaded": "2025_pan-america-1250-special_b-roll.mp4",
         "fileId": "377990237406",
         "url": "https://144766102.fs1.hubspotusercontent-eu1.net/hubfs/144766102/hd-media/2025/adventure-touring/pan-america-1250-special/videos/2025_pan-america-1250-special_b-roll.mp4",
+        "videoType": "riding_outdoor",
         "skipped": true
       },
       {
@@ -211,6 +212,7 @@
         "uploaded": "2025_pan-america-1250-special_b-roll.mp4",
         "fileId": "377990237406",
         "url": "https://144766102.fs1.hubspotusercontent-eu1.net/hubfs/144766102/hd-media/2025/adventure-touring/pan-america-1250-special/videos/2025_pan-america-1250-special_b-roll.mp4",
+        "videoType": "riding_outdoor",
         "skipped": true
       }
     ],
@@ -220,6 +222,8 @@
       "url": "https://144766102.fs1.hubspotusercontent-eu1.net/hubfs/144766102/hd-media/2025/adventure-touring/pan-america-1250-special/docs/2025_pan-america-1250-special_specs.pdf",
       "skipped": true
     },
-    "hubspotId": "1150371440832"
+    "hubspotId": "1150371440832",
+    "pageId": "378070220003",
+    "pageUrl": "https://staalfabrik-gmbh-144766102.hubspotpagebuilder.eu/bikes/2025/pan-america-1250-special"
   }
 ]
