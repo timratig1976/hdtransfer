@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HD Import Suite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #f4f5f7;
+    --surface:   #ffffff;
+    --border:    #dde1e7;
+    --border2:   #c8cdd6;
+    --orange:    #E8621A;
+    --orange2:   #d0541000;
+    --orangebg:  #fff4ee;
+    --green:     #16a34a;
+    --greenbg:   #f0fdf4;
+    --red:       #dc2626;
+    --redbg:     #fef2f2;
+    --yellow:    #d97706;
+    --text:      #111827;
+    --text2:     #374151;
+    --muted:     #9ca3af;
+    --mono:      'Space Mono', monospace;
+    --sans:      'Open Sans', 'Syne', sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    overflow: hidden;
+    font-size: 13px;
+  }
+
+  /* ── Header ── */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--surface);
+    height: 44px;
+    flex-shrink: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .logo {
+    font-size: 10px;
+    font-family: var(--mono);
+    color: var(--orange);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border: 1.5px solid var(--orange);
+    padding: 3px 7px;
+    flex-shrink: 0;
+    font-weight: 700;
+    border-radius: 2px;
+  }
+  header h1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+  .header-status {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .status-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--muted);
+    transition: background 0.3s;
+  }
+  .status-dot.running { background: var(--orange); animation: pulse 1s infinite; }
+  .status-dot.done    { background: var(--green); }
+  .status-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+  }
+
+  /* ── Tabs ── */
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    padding: 0 20px;
+  }
+  .tab-btn {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+  }
+  .tab-btn:hover { color: var(--text2); }
+  .tab-btn.active { color: var(--orange); border-bottom-color: var(--orange); }
+  .tab-badge {
+    background: var(--green);
+    color: #fff;
+    font-size: 8px;
+    font-weight: 700;
+    padding: 1px 4px;
+    border-radius: 8px;
+    display: none;
+  }
+  .tab-badge.visible { display: inline; }
+
+  /* ── Tab Panels ── */
+  .tab-panel {
+    display: none;
+    height: 100%;
+    overflow: hidden;
+  }
+  .tab-panel.active { display: grid; grid-template-columns: var(--sidebar-w, 280px) 5px 1fr; }
+
+  /* ── Sidebar ── */
+  aside {
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .resize-handle {
+    width: 5px;
+    flex-shrink: 0;
+    background: var(--border);
+    cursor: col-resize;
+    position: relative;
+    transition: background 0.15s;
+    z-index: 10;
+  }
+  .resize-handle:hover, .resize-handle.dragging { background: var(--orange); }
+  .aside-config {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .aside-log {
+    border-top: 2px solid var(--border);
+    height: 200px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 0.2s;
+  }
+  .aside-log.collapsed { height: 30px; }
+  .aside-log .log-panel-header {
+    border-bottom: 1px solid var(--border);
+  }
+  .aside-log .log-area {
+    flex: 1; overflow-y: auto; padding: 6px 10px;
+    font-size: 10px; line-height: 1.6;
+  }
+  .section-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+  .field { display: flex; flex-direction: column; gap: 3px; }
+  .field label {
+    font-size: 10px;
+    font-family: var(--mono);
+    color: var(--muted);
+  }
+  .field input {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 6px 8px;
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    width: 100%;
+    border-radius: 3px;
+  }
+  .field input:focus { border-color: var(--orange); box-shadow: 0 0 0 2px rgba(232,98,26,0.12); }
+  .field input::placeholder { color: var(--muted); }
+
+  .divider { height: 1px; background: var(--border); }
+
+  .filter-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+
+  .btn-secondary {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text2);
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: all 0.15s;
+    width: 100%;
+    text-align: left;
+    border-radius: 3px;
+    font-weight: 700;
+  }
+  .btn-secondary:hover { border-color: var(--orange); color: var(--orange); background: var(--orangebg); }
+
+  .list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .select-all {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--orange);
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 0;
+    font-weight: 700;
+  }
+  .select-all:hover { text-decoration: underline; }
+
+  .bike-list { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+  .bike-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.12s;
+    background: var(--bg);
+    border-radius: 3px;
+  }
+  .bike-item:hover    { border-color: var(--orange); background: var(--orangebg); }
+  .bike-item.selected { border-color: var(--orange); background: var(--orangebg); }
+  .bike-item.success  { border-color: var(--green);  background: var(--greenbg); }
+  .bike-item.error    { border-color: var(--red);    background: var(--redbg); }
+  .bike-item.running  { border-color: var(--orange); animation: borderPulse 1s infinite; }
+
+  .bike-check {
+    width: 13px; height: 13px;
+    border: 1.5px solid var(--border2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 8px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    color: transparent;
+  }
+  .bike-item.selected .bike-check { border-color: var(--orange); background: var(--orange); color: #fff; }
+  .bike-item.success  .bike-check { border-color: var(--green);  background: var(--green);  color: #fff; }
+  .bike-item.error    .bike-check { border-color: var(--red);    background: var(--red);    color: #fff; }
+
+  .bike-info { flex: 1; min-width: 0; }
+  .bike-name { font-size: 11px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text); }
+  .bike-meta { font-size: 9px; font-family: var(--mono); color: var(--muted); margin-top: 1px; }
+  .bike-st   { font-size: 10px; }
+  .bike-st.ok  { color: var(--green); }
+  .bike-st.err { color: var(--red); }
+
+  /* ── Content Pane ── */
+  .content {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+    background: var(--bg);
+  }
+
+  .progress-area {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    display: none;
+    background: var(--surface);
+  }
+  .progress-area.visible { display: block; }
+  .progress-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--orange);
+    margin-bottom: 8px;
+    font-family: var(--mono);
+  }
+  .progress-steps { display: flex; gap: 12px; }
+  .step { flex: 1; }
+  .step-bar {
+    background: var(--border);
+    height: 3px;
+    border-radius: 99px;
+    overflow: hidden;
+  }
+  .step-fill {
+    height: 100%;
+    background: var(--orange);
+    width: 0%;
+    transition: width 0.3s;
+    border-radius: 99px;
+  }
+  .step.done .step-fill { background: var(--green); width: 100% !important; }
+  .step-lbl {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--muted);
+    margin-top: 4px;
+    letter-spacing: 0.06em;
+  }
+
+  .log-area {
+    overflow-y: auto;
+    padding: 10px 16px;
+    font-family: var(--mono);
+    font-size: 11px;
+    line-height: 1.7;
+    background: var(--surface);
+  }
+  .log-line { display: flex; gap: 10px; border-bottom: 1px solid var(--border); padding: 2px 0; }
+  .log-line:last-child { border-bottom: none; }
+  .log-ts   { color: var(--muted); flex-shrink: 0; font-size: 10px; padding-top: 1px; }
+  .log-msg  { color: var(--text2); word-break: break-word; }
+  .log-line.ok      .log-msg { color: var(--green); }
+  .log-line.error   .log-msg { color: var(--red); }
+  .log-line.warn    .log-msg { color: var(--yellow); }
+  .log-line.section .log-msg { color: var(--orange); font-weight: 700; }
+  .log-line.skip    .log-msg { color: #6366f1; opacity: .8; }
+
+  .bottom-bar {
+    border-top: 1px solid var(--border);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--surface);
+  }
+  .btn-primary {
+    background: var(--orange);
+    border: none;
+    color: #fff;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 8px 18px;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: background 0.15s;
+    white-space: nowrap;
+    border-radius: 3px;
+  }
+  .btn-primary:hover:not(:disabled) { background: #cf5617; }
+  .btn-primary:disabled { opacity: 0.35; cursor: not-allowed; }
+
+  .summary { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+  .summary .ok  { color: var(--green); }
+  .summary .err { color: var(--red); }
+
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 8px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 11px;
+    text-align: center;
+    padding: 32px;
+    line-height: 1.6;
+  }
+  .empty-icon { font-size: 32px; opacity: 0.3; margin-bottom: 2px; }
+
+  /* ── Bike Cards (Scraper main view) ── */
+  .content { display: flex; flex-direction: column; overflow: hidden; background: var(--bg); }
+
+  .bike-cards {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .bike-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+    flex-shrink: 0;
+  }
+  .bike-card.running { border-color: var(--orange); }
+  .bike-card.success { border-color: var(--green); }
+  .bike-card.error   { border-color: var(--red); }
+
+  .bike-card-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+  }
+  .card-check {
+    width: 18px; height: 18px;
+    border: 1.5px solid var(--border2);
+    border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; color: transparent;
+    flex-shrink: 0; cursor: pointer;
+    transition: all 0.12s;
+  }
+  .bike-card.selected .card-check { border-color: var(--orange); background: var(--orange); color: #fff; }
+  .bike-card.success  .card-check { border-color: var(--green);  background: var(--green);  color: #fff; }
+  .bike-card.error    .card-check { border-color: var(--red);    background: var(--red);    color: #fff; }
+
+  .bike-card-icon { font-size: 22px; flex-shrink: 0; width: 30px; text-align: center; }
+  .bike-card-name {
+    flex: 2; min-width: 0;
+    font-size: 15px; font-weight: 600;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    color: var(--text);
+  }
+  .bike-card-meta {
+    flex: 1.5; min-width: 0;
+    font-size: 12px; font-family: var(--mono); color: var(--muted);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+
+  .status-pill {
+    font-size: 11px; font-family: var(--mono); font-weight: 700;
+    padding: 4px 10px; border-radius: 99px; flex-shrink: 0;
+    letter-spacing: 0.04em; border: 1px solid transparent;
+  }
+  .status-pill.pending { background: var(--bg); color: var(--muted); border-color: var(--border); }
+  .status-pill.running { background: var(--orangebg); color: var(--orange); border-color: var(--orange); animation: pulse 1s infinite; }
+  .status-pill.ok      { background: var(--greenbg); color: var(--green); border-color: var(--green); }
+  .status-pill.err     { background: var(--redbg); color: var(--red); border-color: var(--red); }
+
+  .bike-card-actions { display: flex; gap: 6px; flex-shrink: 0; }
+  .btn-crawl {
+    background: var(--orange); border: none; color: #fff;
+    font-family: var(--mono); font-size: 11px; font-weight: 700;
+    padding: 6px 12px; cursor: pointer; border-radius: 3px;
+    letter-spacing: 0.04em; transition: background 0.15s; white-space: nowrap;
+  }
+  .btn-crawl:hover:not(:disabled) { background: #cf5617; }
+  .btn-crawl:disabled { opacity: 0.35; cursor: not-allowed; }
+  .btn-crawl.retry { background: var(--red); }
+  .btn-crawl.retry:hover:not(:disabled) { background: #b91c1c; }
+
+  .btn-files {
+    background: var(--bg); border: 1px solid var(--border); color: var(--text2);
+    font-family: var(--mono); font-size: 11px; font-weight: 700;
+    padding: 6px 10px; cursor: pointer; border-radius: 3px;
+    transition: all 0.12s; white-space: nowrap;
+  }
+  .btn-files:hover { border-color: var(--orange); color: var(--orange); background: var(--orangebg); }
+  .btn-files.open  { border-color: var(--orange); color: var(--orange); background: var(--orangebg); }
+
+  .btn-link {
+    background: var(--bg); border: 1px solid var(--border); color: var(--muted);
+    font-size: 13px; padding: 5px 8px; cursor: pointer; border-radius: 3px;
+    transition: all 0.12s; white-space: nowrap; text-decoration: none;
+    display: flex; align-items: center;
+  }
+  .btn-link:hover { border-color: var(--orange); color: var(--orange); background: var(--orangebg); }
+
+  /* ── Card section divider ── */
+  .card-sep {
+    width: 1px; height: 28px; background: var(--border2);
+    flex-shrink: 0; margin: 0 4px;
+  }
+  /* ── Import status pill ── */
+  .import-pill {
+    font-size: 10px; font-family: var(--mono); font-weight: 700;
+    padding: 3px 8px; border-radius: 99px; flex-shrink: 0;
+    letter-spacing: 0.04em; border: 1px solid transparent;
+  }
+  .import-pill.pending { background: var(--bg); color: var(--muted);  border-color: var(--border); }
+  .import-pill.running { background: var(--orangebg); color: var(--orange); border-color: var(--orange); animation: pulse 1s infinite; }
+  .import-pill.ok      { background: var(--greenbg); color: var(--green); border-color: var(--green); }
+  .import-pill.err     { background: var(--redbg); color: var(--red);   border-color: var(--red); }
+
+  .btn-import {
+    background: var(--bg); border: 1px solid var(--border); color: var(--text2);
+    font-family: var(--mono); font-size: 11px; font-weight: 700;
+    padding: 5px 10px; cursor: pointer; border-radius: 3px;
+    transition: all 0.12s; white-space: nowrap;
+  }
+  .btn-import:hover:not(:disabled) { border-color: var(--green); color: var(--green); background: var(--greenbg); }
+  .btn-import:disabled { opacity: 0.35; cursor: not-allowed; }
+
+  /* ── Preview panel ── */
+  .bike-preview {
+    border-top: 1px solid var(--border);
+    background: var(--bg);
+    padding: 12px 14px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bike-preview.open { display: flex; }
+  .preview-stats { display: flex; gap: 8px; }
+  .preview-stat { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 6px 14px; text-align: center; flex-shrink: 0; }
+  .preview-stat-label { font-size: 9px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; }
+  .preview-stat-value { font-size: 20px; font-weight: 700; color: var(--text); margin-top: 2px; }
+  .preview-section-title { font-family: var(--mono); font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin-bottom: 4px; }
+  .preview-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+  .preview-chip {
+    font-family: var(--mono); font-size: 10px; color: var(--text2);
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 3px; padding: 2px 7px; white-space: nowrap;
+    text-decoration: none; display: inline-block;
+    transition: all 0.12s; cursor: pointer;
+  }
+  .preview-chip:hover { transform: translateY(-1px); box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+  .preview-chip.img { border-color: #3b82f6; color: #3b82f6; background: #eff6ff; }
+  .preview-chip.img:hover { border-color: #2563eb; background: #dbeafe; }
+  .preview-chip.vid { border-color: #8b5cf6; color: #8b5cf6; background: #f5f3ff; }
+  .preview-chip.vid:hover { border-color: #7c3aed; background: #ede9fe; }
+  .preview-chip.pdf { border-color: var(--red); color: var(--red); background: var(--redbg); }
+  .preview-chip.pdf:hover { border-color: #b91c1c; background: #fecaca; }
+  .preview-specs-wrap { display: flex; flex-direction: column; gap: 10px; }
+  .preview-spec-section { margin-bottom: 2px; }
+  .preview-spec-section-title { font-family: var(--mono); font-size: 10px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 0; border-bottom: 1px solid var(--border); margin-bottom: 4px; }
+  .preview-spec-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+  .preview-spec-table tr:hover td { background: var(--surface); }
+  .preview-spec-table td { padding: 2px 6px 2px 0; vertical-align: top; line-height: 1.5; }
+  .preview-spec-key { font-family: var(--mono); color: var(--muted); font-size: 10px; width: 55%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 220px; }
+  .preview-spec-val { color: var(--text2); }
+  .preview-desc { font-size: 11px; color: var(--text2); line-height: 1.6; }
+  .preview-folder { font-family: var(--mono); font-size: 10px; color: var(--muted); background: var(--surface); border: 1px solid var(--border); padding: 4px 8px; border-radius: 3px; }
+  .preview-loading { padding: 12px; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+
+  /* ── Per-card log ── */
+  .card-log-area {
+    border-top: 1px dashed var(--border);
+    background: #fafafa;
+    max-height: 140px; overflow-y: auto;
+    padding: 6px 14px;
+    font-family: var(--mono); font-size: 10px; line-height: 1.7;
+    display: none;
+  }
+  .card-log-area.open { display: block; }
+  .card-log-line { padding: 0; }
+  .card-log-line.ok    { color: var(--green); }
+  .card-log-line.error { color: var(--red); }
+  .card-log-line.warn  { color: #d97706; }
+  .card-log-line.section { color: var(--orange); font-weight: 700; }
+  .card-log-line.info  { color: var(--muted); }
+  .card-log-line.skip  { color: #6366f1; opacity: .8; }
+  .btn-cardlog {
+    background: var(--bg); border: 1px solid var(--border); color: var(--muted);
+    font-family: var(--mono); font-size: 10px; font-weight: 700;
+    padding: 4px 8px; cursor: pointer; border-radius: 3px;
+    transition: all 0.12s; white-space: nowrap; flex-shrink: 0;
+  }
+  .btn-cardlog:hover { border-color: var(--text2); color: var(--text2); }
+  .btn-cardlog.active { border-color: var(--orange); color: var(--orange); background: var(--orangebg); }
+
+  /* ── Log panel styles (shared) ── */
+  .log-panel-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 12px; height: 30px; flex-shrink: 0;
+    cursor: pointer; user-select: none;
+  }
+  .log-panel-header:hover { background: var(--bg); }
+  .log-panel-title {
+    font-family: var(--mono); font-size: 9px; font-weight: 700;
+    color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase;
+    display: flex; align-items: center; gap: 6px;
+  }
+
+  /* Scraper content: full height cards + bottom bar only */
+  #panel-scraper .content {
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  #panel-scraper .bike-cards {
+    overflow-y: auto;
+  }
+  /* Importer content */
+  #panel-importer .content {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  #panel-importer .log-area { background: var(--surface); }
+
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  @keyframes borderPulse { 0%,100%{border-color:var(--orange)} 50%{border-color:transparent} }
+
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 99px; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">HD</div>
+  <h1>Import Suite</h1>
+  <div class="header-status">
+    <span class="status-label" id="statusLabel">Bereit</span>
+    <div class="status-dot" id="statusDot"></div>
+  </div>
+</header>
+
+<!-- Tabs -->
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab('scraper')" id="tab-scraper">
+    🕷 Scraper
+    <span class="tab-badge" id="badge-scraper"></span>
+  </button>
+  <button class="tab-btn" onclick="switchTab('importer')" id="tab-importer">
+    🚀 HubSpot Import
+    <span class="tab-badge" id="badge-importer"></span>
+  </button>
+</div>
+
+<!-- ═══════════════════════════ SCRAPER TAB ═══════════════════════════ -->
+<div class="tab-panel active" id="panel-scraper">
+  <aside>
+    <div class="aside-config">
+      <div>
+        <div class="section-label">HD Website URL</div>
+        <div class="field">
+          <label>Katalog-Seite</label>
+          <input type="text" id="s-discoverUrl" placeholder="https://h-dmediakit.com/eu/" />
+        </div>
+        <div style="height:6px"></div>
+        <button class="btn-secondary" id="s-discoverBtn" onclick="discoverFromUrl()">🔍 Von URL entdecken →</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <div>
+        <div class="section-label">Lokaler Katalog</div>
+        <div class="filter-row">
+          <div class="field">
+            <label>Jahr</label>
+            <input type="text" id="s-filterYear" placeholder="2026" value="2026" />
+          </div>
+          <div class="field">
+            <label>Kategorie</label>
+            <input type="text" id="s-filterCat" placeholder="alle" />
+          </div>
+        </div>
+        <div style="height:6px"></div>
+        <button class="btn-secondary" onclick="loadCatalog()">📋 Katalog laden →</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <div>
+        <div class="section-label">Output</div>
+        <div class="field">
+          <label>Verzeichnis</label>
+          <input type="text" id="s-outputDir" placeholder="./hd-output" value="./hd-output" />
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div>
+        <div class="section-label">Übersetzung (OpenAI)</div>
+        <div class="field">
+          <label>OpenAI API Key</label>
+          <input type="password" id="s-openaiKey" placeholder="sk-…" autocomplete="off" />
+        </div>
+        <div style="font-size:10px;color:var(--muted);margin-top:4px">Leer lassen → keine Übersetzung (nur Englisch)</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div>
+        <div class="section-label">HD Mediakit – High-Res</div>
+        <div style="font-size:10px;color:var(--muted);margin-bottom:8px;line-height:1.5">
+          Für High-Res Bilder: Chrome → F12 → Application →<br>
+          Cookies → <strong>h-dmediakit.com</strong> → <code style="font-size:10px">PHPSESSID</code> kopieren
+        </div>
+        <div class="field">
+          <label>Session Cookie (PHPSESSID)</label>
+          <input type="text" id="s-sessionCookie" placeholder="abc123def456…" autocomplete="off" />
+        </div>
+        <div style="font-size:10px;color:var(--muted);margin-top:4px">Leer lassen → Preview-Bilder (klein)</div>
+        <div class="field" style="margin-top:10px">
+          <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+            <input type="checkbox" id="s-forceRedownload" style="width:16px;height:16px;cursor:pointer" />
+            Force Re-download (bestehende Bilder löschen &amp; neu laden)
+          </label>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div>
+        <div class="section-label">HubSpot Import</div>
+        <div style="font-size:10px;color:var(--muted);margin-bottom:8px;line-height:1.5">
+          Settings → Integrations → <strong>Private Apps</strong><br>
+          Scopes: files (read+write) + custom objects (write)
+        </div>
+        <div class="field">
+          <label>Access Token</label>
+          <input type="password" id="hs-apiToken" placeholder="pat-eu1-..." />
+        </div>
+        <div style="height:6px"></div>
+        <div class="field">
+          <label>Object Type ID</label>
+          <input type="text" id="hs-objectTypeId" placeholder="0-420" value="0-420" />
+        </div>
+        <div style="height:6px"></div>
+        <button class="btn-secondary" onclick="testHubSpotConnection()" style="width:100%">⚡ Verbindung testen</button>
+        <div id="hs-testResult" style="font-size:11px;margin-top:6px;padding:6px;border-radius:3px;display:none"></div>
+      </div>
+    </div>
+
+    <div class="aside-log" id="s-logPanel">
+      <div class="log-panel-header" onclick="toggleScrapeLog()">
+        <div class="log-panel-title">📋 Log</div>
+        <span id="s-logToggleIcon" style="font-size:10px;color:var(--muted)">▼</span>
+      </div>
+      <div class="log-area" id="s-logArea"></div>
+    </div>
+  </aside>
+  <div class="resize-handle" id="resizeHandle"></div>
+
+  <div class="content">
+    <div class="bike-cards" id="s-bikeCards">
+      <div class="empty-state">
+        <div class="empty-icon">🏍️</div>
+        URL entdecken oder Katalog laden um Bikes anzuzeigen
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <button class="btn-primary" id="s-btn" onclick="startScrape()" disabled>Scraping starten</button>
+      <button class="btn-secondary" style="width:auto;padding:8px 12px" onclick="scraperToggleAll()">Alle ±</button>
+      <div class="summary" id="s-summary"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════ IMPORTER TAB ══════════════════════════ -->
+<div class="tab-panel" id="panel-importer">
+  <aside id="importerAside">
+    <div>
+      <div class="section-label">Konfiguration</div>
+      <div class="field">
+        <label>Access Token</label>
+        <input type="password" id="i-apiToken" placeholder="pat-eu1-..." />
+      </div>
+      <div style="height:6px"></div>
+      <div class="field">
+        <label>Object Type ID</label>
+        <input type="text" id="i-objectTypeId" placeholder="0-420" value="0-420" />
+      </div>
+      <div style="height:8px"></div>
+      <div class="field">
+        <label>Input Verzeichnis</label>
+        <input type="text" id="i-inputDir" placeholder="./hd-output" value="./hd-output" />
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div>
+      <div class="section-label">Filter</div>
+      <div class="filter-row">
+        <div class="field">
+          <label>Model Code</label>
+          <input type="text" id="i-filterCode" placeholder="ra1250s" />
+        </div>
+        <div class="field">
+          <label>Jahr</label>
+          <input type="text" id="i-filterYear" placeholder="2026" />
+        </div>
+      </div>
+      <div style="height:8px"></div>
+      <button class="btn-secondary" onclick="loadBikes()">Bikes laden →</button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="list-header" style="margin-bottom:6px">
+      <div class="section-label" style="margin:0">Bikes</div>
+      <button class="select-all" onclick="importerToggleAll()">alle auswählen</button>
+    </div>
+    <div class="bike-list" id="i-bikeList">
+      <div class="empty-state">
+        <div class="empty-icon">🏍️</div>
+        Zuerst Bikes laden
+      </div>
+    </div>
+  </aside>
+  <div class="resize-handle"></div>
+
+  <div class="content">
+    <div class="progress-area" id="i-progressArea">
+      <div class="progress-title" id="i-progressTitle">—</div>
+      <div class="progress-steps">
+        <div class="step" id="i-stepImages">
+          <div class="step-bar"><div class="step-fill" id="i-fillImages"></div></div>
+          <div class="step-lbl">Bilder</div>
+        </div>
+        <div class="step" id="i-stepVideos">
+          <div class="step-bar"><div class="step-fill" id="i-fillVideos"></div></div>
+          <div class="step-lbl">Videos</div>
+        </div>
+        <div class="step" id="i-stepPdf">
+          <div class="step-bar"><div class="step-fill" id="i-fillPdf"></div></div>
+          <div class="step-lbl">PDF</div>
+        </div>
+        <div class="step" id="i-stepHubspot">
+          <div class="step-bar"><div class="step-fill" id="i-fillHubspot"></div></div>
+          <div class="step-lbl">HubSpot</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="log-area" id="i-logArea">
+      <div class="empty-state">
+        <div class="empty-icon">📋</div>
+        Log erscheint hier während dem Import
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <button class="btn-primary" id="i-btn" onclick="startImport()" disabled>Import starten</button>
+      <button class="btn-secondary" style="width:auto;padding:8px 12px;background:var(--redbg);border-color:var(--red);color:var(--red)" onclick="resetImport()" title="Import-Sperre manuell aufheben">🔓 Reset</button>
+      <div class="summary" id="i-summary"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+//  State
+// ═══════════════════════════════════════════════════════
+let activeTab     = 'scraper';
+
+// Scraper state
+let catalog       = [];
+let scraperBikes  = [];
+let scraperSel    = new Set();
+let scraperRun    = false;
+let scraperRes    = {};
+let sLogEmpty     = true;
+
+// Import state (keyed by bikeKey for card display)
+let importRes     = {};
+
+// Per-card log buffers and current import key
+let cardLogs         = {};
+let currentImportKey = null;
+
+// Importer tab state
+let importerBikes = [];
+let importerSel   = new Set();
+let importerRun   = false;
+let importerRes   = {};
+let iLogEmpty     = true;
+
+// ═══════════════════════════════════════════════════════
+//  Tab switching
+// ═══════════════════════════════════════════════════════
+function switchTab(tab) {
+  activeTab = tab;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('tab-' + tab).classList.add('active');
+  document.getElementById('panel-' + tab).classList.add('active');
+  document.getElementById('badge-' + tab).classList.remove('visible');
+}
+
+// ═══════════════════════════════════════════════════════
+//  Persistent State
+// ═══════════════════════════════════════════════════════
+async function saveStateToServer(patch) {
+  try {
+    await fetch('/api/state', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(patch),
+    });
+  } catch(e) { console.warn('saveState failed:', e.message); }
+}
+
+async function initState() {
+  try {
+    const res  = await fetch('/api/state');
+    const state = await res.json();
+    if (state.bikes && state.bikes.length > 0) {
+      catalog      = state.bikes;
+      scraperBikes = state.bikes;
+      scraperSel   = new Set(scraperBikes.map(bikeKey));
+      // restore crawl results
+      if (state.crawled) {
+        Object.entries(state.crawled).forEach(([key, v]) => {
+          scraperRes[key] = { status: v.status, bike: scraperBikes.find(b => bikeKey(b) === key) || {}, folder: v.folder };
+        });
+      }
+      if (state.imported) {
+        Object.entries(state.imported).forEach(([folderOrKey, v]) => {
+          // support both folder-keyed and bikeKey-keyed entries
+          const byKey = scraperBikes.find(b => bikeKey(b) === folderOrKey || bikeSlug(b) === folderOrKey);
+          if (byKey) importRes[bikeKey(byKey)] = { status: v.status };
+        });
+      }
+      renderScraperCards();
+      updateScrBtn();
+      addLog('scraper', `↺ ${state.bikes.length} Bikes wiederhergestellt`, 'info');
+    }
+  } catch(e) { console.warn('initState failed:', e.message); }
+}
+
+// ═══════════════════════════════════════════════════════
+//  SSE
+// ═══════════════════════════════════════════════════════
+function connectSSE() {
+  const src = new EventSource('/events');
+  src.onmessage = e => handleSSE(JSON.parse(e.data));
+  src.onopen    = () => { setStatus('', 'Bereit'); initState(); };
+  src.onerror   = () => setTimeout(connectSSE, 2000);
+}
+
+function handleSSE(d) {
+  const source = d.source || (d.type.startsWith('scraper_') || d.type === 'scrape_start' || d.type === 'scrape_done' ? 'scraper' : 'importer');
+
+  // Route logs to the right tab + buffer per-card
+  if (d.type === 'log') {
+    addLog(source, d.msg, d.level, d.ts);
+    if (activeTab !== source) notifyBadge(source);
+    const cardKey = source === 'scraper' ? currentScrapeKey : (source === 'importer' ? currentImportKey : null);
+    if (cardKey) {
+      if (!cardLogs[cardKey]) cardLogs[cardKey] = [];
+      cardLogs[cardKey].push({ msg: d.msg, level: d.level, ts: d.ts });
+      appendCardLog(cardKey, d.msg, d.level, d.ts);
+    }
+    return;
+  }
+
+  // ── Scraper events ──
+  if (d.type === 'scrape_start') {
+    sLogEmpty = true;
+    document.getElementById('s-logArea').innerHTML = '';
+    sLogEmpty = false;
+  }
+  if (d.type === 'scraper_bike_start') {
+    const key = bikeKey(d.bike);
+    currentScrapeKey = key;
+    cardLogs[key] = [];
+    setCardState(key, 'running');
+    updateCardProgress(key, 'fetch', 0, 1);
+    setStatus('running', 'Scraping…');
+    if (activeTab !== 'scraper') notifyBadge('scraper');
+  }
+  if (d.type === 'scraper_progress') {
+    if (currentScrapeKey) updateCardProgress(currentScrapeKey, d.step, d.done, d.total);
+  }
+  if (d.type === 'scraper_bike_done') {
+    const key = bikeKey(d.bike);
+    scraperRes[key] = d;
+    setCardState(key, d.status === 'success' ? 'success' : 'error');
+    if (d.status === 'success') refreshCardBtn(key);
+  }
+  if (d.type === 'scrape_done') {
+    scraperRun = false;
+    const btn = document.getElementById('s-btn');
+    btn.disabled    = false;
+    btn.textContent = 'Nochmal scrapen';
+    setStatus('done', 'Fertig');
+    showSummary('s', d.results);
+    addLog('scraper', '━━ SCRAPING ABGESCHLOSSEN ━━', 'section');
+  }
+
+  // ── Importer events ──
+  if (d.type === 'import_start') {
+    iLogEmpty = true;
+    document.getElementById('i-logArea').innerHTML = '';
+    iLogEmpty = false;
+  }
+  if (d.type === 'importer_bike_start') {
+    setImpBikeState(d.folder, 'running');
+    const bk = scraperBikes.find(b => bikeSlug(b) === d.folder);
+    if (bk) {
+      currentImportKey = bikeKey(bk);
+      cardLogs[currentImportKey] = cardLogs[currentImportKey] || [];
+      importRes[currentImportKey] = { status: 'running' }; refreshCardBtn(currentImportKey);
+    }
+    const pa = document.getElementById('i-progressArea');
+    if (pa) { pa.classList.add('visible'); document.getElementById('i-progressTitle').textContent = d.folder; }
+    resetSteps('i');
+    setStatus('running', 'Import läuft…');
+  }
+  if (d.type === 'importer_progress') {
+    updateProgress('i', d.step, d.done, d.total);
+  }
+  if (d.type === 'importer_bike_done') {
+    setImpBikeState(d.folder, d.status === 'success' ? 'success' : 'error');
+    importerRes[d.folder] = d;
+    const bk = scraperBikes.find(b => bikeSlug(b) === d.folder);
+    if (bk) { importRes[bikeKey(bk)] = { status: d.status }; refreshCardBtn(bikeKey(bk)); }
+    currentImportKey = null;
+  }
+  if (d.type === 'import_done') {
+    importerRun = false;
+    const btn = document.getElementById('i-btn');
+    btn.disabled    = false;
+    btn.textContent = 'Nochmal importieren';
+    setStatus('done', 'Fertig');
+    showSummary('i', d.results);
+    addLog('importer', '━━ IMPORT ABGESCHLOSSEN ━━', 'section');
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+//  Status / Header
+// ═══════════════════════════════════════════════════════
+function setStatus(state, label) {
+  document.getElementById('statusDot').className   = 'status-dot ' + (state || '');
+  document.getElementById('statusLabel').textContent = label || 'Bereit';
+}
+
+function notifyBadge(tab) {
+  document.getElementById('badge-' + tab).classList.add('visible');
+}
+
+// ═══════════════════════════════════════════════════════
+//  Progress (importer only)
+// ═══════════════════════════════════════════════════════
+function resetSteps(prefix) {
+  ['Images','Videos','Pdf','Hubspot'].forEach(s => {
+    const step = document.getElementById(`${prefix}-step${s}`);
+    const fill = document.getElementById(`${prefix}-fill${s}`);
+    if (step) step.className = 'step';
+    if (fill) fill.style.width = '0%';
+  });
+}
+
+function updateProgress(prefix, step, done, total) {
+  const map = { images:'Images', videos:'Videos', pdf:'Pdf', hubspot:'Hubspot' };
+  const key = map[step];
+  if (!key) return;
+  const fill = document.getElementById(`${prefix}-fill${key}`);
+  const el   = document.getElementById(`${prefix}-step${key}`);
+  if (!fill || !el) return;
+  fill.style.width = (total > 0 ? (done / total * 100) : 0) + '%';
+  if (done >= total && total > 0) el.classList.add('done');
+}
+
+// ═══════════════════════════════════════════════════════
+//  Logging
+// ═══════════════════════════════════════════════════════
+function addLog(source, msg, level, ts) {
+  const id   = source === 'scraper' ? 's-logArea' : 'i-logArea';
+  const area = document.getElementById(id);
+  if (source === 'scraper' && sLogEmpty)  { area.innerHTML = ''; sLogEmpty = false; }
+  if (source === 'importer' && iLogEmpty) { area.innerHTML = ''; iLogEmpty = false; }
+  const line = document.createElement('div');
+  line.className = 'log-line ' + (level || 'info');
+  line.innerHTML = `<span class="log-ts">${ts || now()}</span><span class="log-msg">${esc(msg)}</span>`;
+  area.appendChild(line);
+  area.scrollTop = area.scrollHeight;
+}
+
+function now() { return new Date().toISOString().substring(11,19); }
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+// ═══════════════════════════════════════════════════════
+//  Summary
+// ═══════════════════════════════════════════════════════
+function showSummary(prefix, results) {
+  const ok  = results.filter(r => r.status === 'success').length;
+  const err = results.filter(r => r.status !== 'success').length;
+  document.getElementById(`${prefix}-summary`).innerHTML =
+    `<span class="ok">✅ ${ok} ok</span>` +
+    (err > 0 ? `  <span class="err">❌ ${err} Fehler</span>` : '');
+}
+
+// ═══════════════════════════════════════════════════════
+//  Scraper
+// ═══════════════════════════════════════════════════════
+async function discoverFromUrl() {
+  const rawUrl = document.getElementById('s-discoverUrl').value.trim();
+  if (!rawUrl) { alert('Bitte eine URL eingeben (z.B. https://h-dmediakit.com/eu/)'); return; }
+  const btn = document.getElementById('s-discoverBtn');
+  btn.disabled = true;
+  btn.textContent = '⏳ Lade Seite…';
+  addLog('scraper', `Entdecke Modelle von: ${rawUrl}`, 'info');
+  try {
+    const res  = await fetch('/api/discover?' + new URLSearchParams({ url: rawUrl }));
+    const data = await res.json();
+    if (data.error) { addLog('scraper', `Fehler: ${data.error}`, 'error'); alert('Fehler: ' + data.error); return; }
+    if (data.bikes.length === 0) {
+      addLog('scraper', 'Keine Bike-Links gefunden. Prüfe die URL oder nutze den lokalen Katalog.', 'warn');
+      alert('Keine Modelle gefunden. Die Seite enthält keine Bike-Links (bdp/?code|year). Versuche eine andere URL.');
+      return;
+    }
+    catalog      = data.bikes;
+    scraperBikes = data.bikes;
+    scraperSel   = new Set(scraperBikes.map(bikeKey));
+    addLog('scraper', `✅ ${data.bikes.length} Modelle gefunden`, 'ok');
+    saveStateToServer({ bikes: data.bikes });
+    renderScraperCards();
+    updateScrBtn();
+  } catch(e) {
+    addLog('scraper', `Fehler: ${e.message}`, 'error');
+    alert('Fehler: ' + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '🔍 Von URL entdecken →';
+  }
+}
+
+async function loadCatalog() {
+  const res = await fetch('/api/catalog');
+  catalog   = await res.json();
+
+  const year = document.getElementById('s-filterYear').value || '';
+  const cat  = document.getElementById('s-filterCat').value.toLowerCase() || '';
+
+  scraperBikes = catalog.filter(b => {
+    if (year && b.year !== year) return false;
+    if (cat  && !b.category.toLowerCase().includes(cat)) return false;
+    return true;
+  });
+  scraperSel = new Set(scraperBikes.map(bikeKey));
+  saveStateToServer({ bikes: scraperBikes });
+  renderScraperCards();
+  updateScrBtn();
+}
+
+function bikeKey(b) { return `${b.year}_${b.code}`; }
+function sanitizeFE(s) { return s.replace(/[^a-z0-9_-]/gi,'_').replace(/__+/g,'_').toLowerCase(); }
+function bikeSlug(b) { return `${b.year}_${sanitizeFE(b.name)}_${b.code}`; }
+
+let currentScrapeKey = null;
+
+function renderScraperCards() {
+  const area = document.getElementById('s-bikeCards');
+  if (scraperBikes.length === 0) {
+    area.innerHTML = '<div class="empty-state"><div class="empty-icon">🔍</div>Keine Bikes gefunden</div>';
+    return;
+  }
+  area.innerHTML = '';
+  scraperBikes.forEach(bike => {
+    const key  = bikeKey(bike);
+    const sel  = scraperSel.has(key);
+    const res  = scraperRes[key];
+    const cls  = res ? (res.status === 'success' ? 'success' : 'error') : (sel ? 'selected' : '');
+    const card = document.createElement('div');
+    card.className = `bike-card ${cls}`;
+    card.id = 'card_' + key;
+    card.innerHTML = cardHTML(bike, key, sel, res);
+    area.appendChild(card);
+  });
+}
+
+function cardHTML(bike, key, sel, res) {
+  const catIcons = { 'Adventure Touring':'🏔️','Cruiser':'🌆','Touring':'🛣️','Sportster':'⚡','CVO':'🏆','Trike':'🔱' };
+  const icon = catIcons[bike.category] || '🏍️';
+  let statusPill, crawlBtn, filesBtn = '';
+  if (!res) {
+    statusPill = '<span class="status-pill pending">○ ausstehend</span>';
+    crawlBtn   = `<button class="btn-crawl" onclick="scrapeOne('${key}')">▶ Crawl</button>`;
+  } else if (res.status === 'success') {
+    statusPill = '<span class="status-pill ok">✓ fertig</span>';
+    crawlBtn   = `<button class="btn-crawl" onclick="scrapeOne('${key}')">↺ Nochmal</button>`;
+    filesBtn   = `<button class="btn-files" id="fbtn_${key}" onclick="togglePreview('${key}')">📁 Daten</button>`;
+  } else {
+    statusPill = '<span class="status-pill err">✕ Fehler</span>';
+    crawlBtn   = `<button class="btn-crawl retry" onclick="scrapeOne('${key}')">↺ Retry</button>`;
+  }
+  const ir = importRes[key];
+  let importPill, importBtn;
+  if (!ir) {
+    importPill = '<span class="import-pill pending">— nicht importiert</span>';
+    importBtn  = `<button class="btn-import" onclick="importOne('${key}')" ${res?.status !== 'success' ? 'disabled title="Zuerst scrapen"' : ''}>🚀 Import</button>`;
+  } else if (ir.status === 'running') {
+    importPill = '<span class="import-pill running">⧳ Import…</span>';
+    importBtn  = `<button class="btn-import" disabled>🚀 Import</button>`;
+  } else if (ir.status === 'success') {
+    importPill = '<span class="import-pill ok">✓ importiert</span>';
+    importBtn  = `<button class="btn-import" onclick="importOne('${key}')">↺ Nochmal</button>`;
+  } else {
+    importPill = `<span class="import-pill err" onclick="showImportError('${key}')" style="cursor:pointer" title="Klicken für Details">✕ Import-Fehler</span>`;
+    importBtn  = `<button class="btn-import" onclick="importOne('${key}')">↺ Retry</button>`;
+  }
+  return `
+    <div class="bike-card-row">
+      <div class="card-check" onclick="scrToggle('${key}')">✓</div>
+      <div class="bike-card-icon">${icon}</div>
+      <div class="bike-card-name">${esc(bike.name)}</div>
+      <div class="bike-card-meta">${bike.year} · ${esc(bike.category || '')} · ${bike.code}</div>
+      <div id="prog_${key}" style="flex:1;max-width:100px;display:none">
+        <div style="background:var(--border);height:3px;border-radius:99px;overflow:hidden">
+          <div id="pbar_${key}" style="height:100%;background:var(--orange);width:0%;transition:width .3s;border-radius:99px"></div>
+        </div>
+        <div id="pstep_${key}" style="font-size:9px;font-family:var(--mono);color:var(--muted);margin-top:3px"></div>
+      </div>
+      ${statusPill}
+      <div class="bike-card-actions">
+        ${bike.url ? `<a class="btn-link" href="${esc(bike.url)}" target="_blank" title="Seite öffnen">↗</a>` : ''}
+        ${crawlBtn}${filesBtn}
+        <button class="btn-cardlog" id="clog_${key}" onclick="toggleCardLog('${key}')">📋</button>
+      </div>
+      <div class="card-sep"></div>
+      ${importPill}
+      <div class="bike-card-actions">${importBtn}</div>
+    </div>
+    <div class="card-log-area" id="clogarea_${key}"></div>
+    <div class="bike-preview" id="preview_${key}"></div>`;
+}
+
+function setCardState(key, state) {
+  const card = document.getElementById('card_' + key);
+  if (!card) return;
+  const bike = scraperBikes.find(b => bikeKey(b) === key);
+  currentScrapeKey = state === 'running' ? key : (currentScrapeKey === key ? null : currentScrapeKey);
+  const prog = document.getElementById('prog_' + key);
+  if (prog) prog.style.display = state === 'running' ? 'block' : 'none';
+  if (state === 'running') {
+    card.className = 'bike-card running';
+    const sel = scraperSel.has(key);
+    card.innerHTML = cardHTML(bike, key, sel, null);
+    card.querySelector('#prog_' + key).style.display = 'block';
+    card.querySelector('.status-pill').className = 'status-pill running';
+    card.querySelector('.status-pill').textContent = '⟳ läuft';
+    card.querySelectorAll('.btn-crawl').forEach(b => b.disabled = true);
+  } else if (state === 'success') {
+    card.className = 'bike-card success';
+    const res = scraperRes[key];
+    card.innerHTML = cardHTML(bike, key, scraperSel.has(key), res);
+  } else if (state === 'error') {
+    card.className = 'bike-card error';
+    const res = scraperRes[key];
+    card.innerHTML = cardHTML(bike, key, scraperSel.has(key), res);
+  }
+}
+
+function refreshCardBtn(key) {
+  const card = document.getElementById('card_' + key);
+  if (!card) return;
+  const bike = scraperBikes.find(b => bikeKey(b) === key);
+  const res  = scraperRes[key];
+  card.innerHTML = cardHTML(bike, key, scraperSel.has(key), res);
+}
+
+function updateCardProgress(key, step, done, total) {
+  const bar  = document.getElementById('pbar_'  + key);
+  const lbl  = document.getElementById('pstep_' + key);
+  const prog = document.getElementById('prog_'  + key);
+  if (prog) prog.style.display = 'block';
+  if (bar)  bar.style.width = (total > 0 ? (done/total*100) : 0) + '%';
+  if (lbl)  lbl.textContent = step + (total > 0 ? ` ${done}/${total}` : '');
+  if (done >= total && total > 0 && bar) bar.style.background = 'var(--green)';
+}
+
+async function scrapeOne(key) {
+  if (scraperRun) return;
+  const bike          = scraperBikes.find(b => bikeKey(b) === key);
+  const outputDir       = document.getElementById('s-outputDir').value.trim() || './hd-output';
+  const sessionCookie   = document.getElementById('s-sessionCookie').value.trim();
+  const forceRedownload = document.getElementById('s-forceRedownload')?.checked || false;
+  const openaiApiKey    = document.getElementById('s-openaiKey')?.value.trim() || '';
+  scraperRun = true;
+  document.getElementById('s-btn').disabled    = true;
+  document.getElementById('s-btn').textContent = 'Scraping läuft…';
+  setStatus('running', 'Scraping…');
+  await fetch('/api/scrape', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ outputDir, sessionCookie, forceRedownload, openaiApiKey, bikes: [bike] }),
+  });
+}
+
+async function togglePreview(key) {
+  const panel = document.getElementById('preview_' + key);
+  const fbtn  = document.getElementById('fbtn_'   + key);
+  if (!panel) return;
+  if (panel.classList.contains('open')) {
+    panel.classList.remove('open');
+    if (fbtn) fbtn.classList.remove('open');
+    return;
+  }
+  panel.classList.add('open');
+  if (fbtn) fbtn.classList.add('open');
+  panel.innerHTML = '<div class="preview-loading">⧳ Lade Daten…</div>';
+  const bike      = scraperBikes.find(b => bikeKey(b) === key);
+  const outputDir = document.getElementById('s-outputDir').value.trim() || './hd-output';
+  const folder    = bikeSlug(bike);
+  try {
+    const res  = await fetch('/api/bike-data?' + new URLSearchParams({ outputDir, folder }));
+    const d    = await res.json();
+    if (d.error) { panel.innerHTML = `<div class="preview-loading" style="color:var(--red)">${esc(d.error)}</div>`; return; }
+    const fmt  = b => b >= 1048576 ? (b/1048576).toFixed(1)+'MB' : (b >= 1024 ? (b/1024).toFixed(0)+'KB' : b+'B');
+    const fileUrl = (path) => `/api/file?${new URLSearchParams({ outputDir, folder, file: path })}`;
+    const imgChips = (d.images||[]).map(i => `<a class="preview-chip img" href="${fileUrl('images/'+i.file)}" target="_blank">🖼️ ${esc(i.file)} <span style="opacity:.6">${fmt(i.size)}</span></a>`).join('');
+    const vidChips = (d.videos||[]).map(v => `<a class="preview-chip vid" href="${fileUrl('videos/'+v.file)}" target="_blank">🎥 ${esc(v.file)} <span style="opacity:.6">${fmt(v.size)}</span></a>`).join('');
+    const pdfChip  = d.hasPdf ? `<a class="preview-chip pdf" href="${fileUrl(d.pdfLocal)}" target="_blank">📄 ${esc(d.pdfLocal.split('/').pop() || 'document.pdf')}</a>` : '';
+    // Build specs HTML: sectioned view if available, flat fallback
+    let specsHtml = '';
+    if ((d.specsSections||[]).length > 0) {
+      specsHtml = d.specsSections.map(sec => `
+        <div class="preview-spec-section">
+          <div class="preview-spec-section-title">${esc(sec.section)}</div>
+          <table class="preview-spec-table">
+            ${sec.rows.map(r => `<tr><td class="preview-spec-key">${esc(r.name)}</td><td class="preview-spec-val">${esc(r.value)}</td></tr>`).join('')}
+          </table>
+        </div>`).join('');
+    } else if ((d.specs||[]).length > 0) {
+      specsHtml = `<table class="preview-spec-table">${(d.specs||[]).map(s => `<tr><td class="preview-spec-key">${esc(s.k)}</td><td class="preview-spec-val">${esc(String(s.v))}</td></tr>`).join('')}</table>`;
+    }
+    panel.innerHTML = `
+      <div class="preview-stats">
+        <div class="preview-stat"><div class="preview-stat-label">Bilder</div><div class="preview-stat-value">${(d.images||[]).length}</div></div>
+        <div class="preview-stat"><div class="preview-stat-label">Videos</div><div class="preview-stat-value">${(d.videos||[]).length}</div></div>
+        <div class="preview-stat"><div class="preview-stat-label">Specs</div><div class="preview-stat-value">${d.specsCount}</div></div>
+        <div class="preview-stat"><div class="preview-stat-label">PDF</div><div class="preview-stat-value">${d.hasPdf ? '✓' : '—'}</div></div>
+      </div>
+      ${imgChips||vidChips||pdfChip ? `<div><div class="preview-section-title">Dateien</div><div class="preview-chips">${imgChips}${vidChips}${pdfChip}</div></div>` : ''}
+      ${d.description ? `<div><div class="preview-section-title">Beschreibung</div><div class="preview-desc">${esc(d.description.substring(0,300))}${d.description.length>300?'…':''}</div></div>` : ''}
+      ${specsHtml ? `<div><div class="preview-section-title">Technische Daten (${d.specsCount} Felder · ${(d.specsSections||[]).length} Sektionen)</div><div class="preview-specs-wrap">${specsHtml}</div></div>` : ''}
+      <div class="preview-folder">📁 ${esc(outputDir)}/bikes/${esc(folder)}</div>`;
+  } catch(e) {
+    panel.innerHTML = `<div class="preview-loading" style="color:var(--red)">Fehler: ${esc(e.message)}</div>`;
+  }
+}
+
+function toggleCardLog(key) {
+  const area = document.getElementById('clogarea_' + key);
+  const btn  = document.getElementById('clog_' + key);
+  if (!area) return;
+  const open = area.classList.toggle('open');
+  if (btn) btn.classList.toggle('active', open);
+  if (open && area.innerHTML === '' && cardLogs[key]?.length) {
+    area.innerHTML = cardLogs[key].map(e =>
+      `<div class="card-log-line ${e.level||'info'}"><span style="opacity:.4;margin-right:6px">${e.ts||''}</span>${esc(e.msg)}</div>`
+    ).join('');
+    area.scrollTop = area.scrollHeight;
+  }
+}
+
+function appendCardLog(key, msg, level, ts) {
+  const area = document.getElementById('clogarea_' + key);
+  if (!area || !area.classList.contains('open')) return;
+  const el = document.createElement('div');
+  el.className = `card-log-line ${level||'info'}`;
+  el.innerHTML = `<span style="opacity:.4;margin-right:6px">${ts||''}</span>${esc(msg)}`;
+  area.appendChild(el);
+  area.scrollTop = area.scrollHeight;
+}
+
+function toggleScrapeLog() {
+  const panel = document.getElementById('s-logPanel');
+  const icon  = document.getElementById('s-logToggleIcon');
+  const collapsed = panel.classList.toggle('collapsed');
+  icon.textContent = collapsed ? '▲' : '▼';
+}
+
+
+function scrToggle(key) {
+  if (scraperRun) return;
+  scraperSel.has(key) ? scraperSel.delete(key) : scraperSel.add(key);
+  const card = document.getElementById('card_' + key);
+  if (card) {
+    const sel = scraperSel.has(key);
+    const res = scraperRes[key];
+    const st  = res ? (res.status === 'success' ? 'success' : 'error') : (sel ? 'selected' : '');
+    card.className = `bike-card ${st}`;
+    const chk = card.querySelector('.card-check');
+    if (chk) { chk.style.background = sel ? 'var(--orange)' : ''; chk.style.borderColor = sel ? 'var(--orange)' : ''; chk.style.color = sel ? '#fff' : 'transparent'; }
+  }
+  updateScrBtn();
+}
+function scraperToggleAll() {
+  scraperSel = scraperSel.size === scraperBikes.length ? new Set() : new Set(scraperBikes.map(bikeKey));
+  renderScraperCards();
+  updateScrBtn();
+}
+
+function updateScrBtn() {
+  const btn = document.getElementById('s-btn');
+  btn.disabled    = scraperSel.size === 0 || scraperRun;
+  btn.textContent = scraperSel.size > 0
+    ? `${scraperSel.size} Bike${scraperSel.size > 1 ? 's' : ''} scrapen`
+    : 'Scraping starten';
+}
+
+async function startScrape() {
+  const outputDir     = document.getElementById('s-outputDir').value.trim() || './hd-output';
+  const sessionCookie = document.getElementById('s-sessionCookie').value.trim();
+  scraperRun = true;
+  scraperRes = {};
+  document.getElementById('s-btn').disabled    = true;
+  document.getElementById('s-btn').textContent = 'Scraping läuft…';
+  document.getElementById('s-summary').innerHTML = '';
+  setStatus('running', 'Scraping…');
+
+  await fetch('/api/scrape', {
+    method:  'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ outputDir, sessionCookie, forceRedownload: document.getElementById('s-forceRedownload')?.checked || false, openaiApiKey: document.getElementById('s-openaiKey')?.value.trim() || '', bikes: scraperBikes.filter(b => scraperSel.has(bikeKey(b))) }),
+  });
+}
+
+// ═══════════════════════════════════════════════════════
+//  Per-card Import
+// ═══════════════════════════════════════════════════════
+async function importOne(key) {
+  const bike      = scraperBikes.find(b => bikeKey(b) === key);
+  if (!bike) return;
+  const apiToken     = document.getElementById('hs-apiToken').value.trim();
+  const objectTypeId = document.getElementById('hs-objectTypeId').value.trim() || '0-420';
+  const inputDir     = document.getElementById('s-outputDir').value.trim() || './hd-output';
+  if (!apiToken) { alert('HubSpot Access Token im Sidebar eintragen'); return; }
+  const folder = bikeSlug(bike);
+  importRes[key] = { status: 'running' };
+  refreshCardBtn(key);
+  setStatus('running', 'Import…');
+  addLog('scraper', `🚀 Import: ${bike.name}`, 'info');
+  await fetch('/api/import', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ apiToken, objectTypeId, inputDir, folders: [folder] }),
+  });
+}
+
+// ═══════════════════════════════════════════════════════
+//  Importer tab
+// ═══════════════════════════════════════════════════════
+async function loadBikes() {
+  const inputDir   = document.getElementById('i-inputDir').value   || './hd-output';
+  const filterCode = document.getElementById('i-filterCode').value || '';
+  const filterYear = document.getElementById('i-filterYear').value || '';
+  const params     = new URLSearchParams({ inputDir });
+  if (filterCode) params.set('code', filterCode);
+  if (filterYear) params.set('year', filterYear);
+
+  const res    = await fetch('/api/bikes?' + params);
+  importerBikes = await res.json();
+  importerSel   = new Set(importerBikes.map(b => b.folder));
+  renderImporter();
+  updateImpBtn();
+}
+
+function renderImporter() {
+  const list = document.getElementById('i-bikeList');
+  if (importerBikes.length === 0) {
+    list.innerHTML = '<div class="empty-state"><div class="empty-icon">🔍</div>Keine Bikes gefunden</div>';
+    return;
+  }
+  list.innerHTML = '';
+  importerBikes.forEach(bike => {
+    const sel = importerSel.has(bike.folder);
+    const res = importerRes[bike.folder];
+    const cls = res ? (res.status==='success'?'success':'error') : (sel?'selected':'');
+    const div = document.createElement('div');
+    div.className = `bike-item ${cls}`;
+    div.id        = 'imp_' + bike.folder;
+    div.onclick   = () => impToggle(bike.folder);
+    div.innerHTML = `
+      <div class="bike-check">${sel || res?.status==='success' ? '✓' : ''}</div>
+      <div class="bike-info">
+        <div class="bike-name">${esc(bike.name || bike.folder)}</div>
+        <div class="bike-meta">${bike.year || ''} · ${bike.code || ''}</div>
+      </div>
+      <div class="bike-st ${res ? (res.status==='success'?'ok':'err') : ''}">
+        ${res ? (res.status==='success'?'✅':'❌') : ''}
+      </div>`;
+    list.appendChild(div);
+  });
+}
+
+function impToggle(folder) {
+  if (importerRun) return;
+  importerSel.has(folder) ? importerSel.delete(folder) : importerSel.add(folder);
+  renderImporter();
+  updateImpBtn();
+}
+function importerToggleAll() {
+  importerSel = importerSel.size === importerBikes.length ? new Set() : new Set(importerBikes.map(b => b.folder));
+  renderImporter();
+  updateImpBtn();
+}
+function setImpBikeState(folder, state) { setBikeState('imp_' + folder, state); }
+
+function updateImpBtn() {
+  const btn = document.getElementById('i-btn');
+  btn.disabled    = importerSel.size === 0 || importerRun;
+  btn.textContent = importerSel.size > 0
+    ? `${importerSel.size} Bike${importerSel.size > 1 ? 's' : ''} importieren`
+    : 'Import starten';
+}
+
+async function startImport() {
+  const apiToken     = document.getElementById('i-apiToken').value.trim();
+  const objectTypeId = document.getElementById('i-objectTypeId').value.trim();
+  const inputDir     = document.getElementById('i-inputDir').value.trim() || './hd-output';
+
+  if (!apiToken) { alert('Access Token eingeben'); return; }
+  if (!objectTypeId) { alert('Bitte Object Type ID eingeben'); return; }
+
+  importerRun = true;
+  importerRes = {};
+  document.getElementById('i-btn').disabled    = true;
+  document.getElementById('i-btn').textContent = 'Import läuft…';
+  document.getElementById('i-summary').innerHTML = '';
+  setStatus('running', 'Import läuft…');
+
+  await fetch('/api/import', {
+    method:  'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      apiToken, objectTypeId, inputDir, folders: importerBikes.filter(b => importerSel.has(b.folder)).map(b => b.folder),
+      finanzierungsUrl: 'https://calculator.harley-davidson.com/de/finance/choose-bike',
+      versicherungenUrl: 'https://www.ergo-hdis.de/praemienberechnung/allgemeine-daten',
+    }),
+  });
+}
+
+async function resetImport() {
+  if (!confirm('Import-Sperre aufheben? Nur verwenden wenn Import hängt.')) return;
+  try {
+    await fetch('/api/reset-import', { method: 'POST' });
+    importerRun = false;
+    document.getElementById('i-btn').disabled = false;
+    document.getElementById('i-btn').textContent = 'Import starten';
+    setStatus('', 'Bereit');
+    addLog('importer', '🔓 Import-Sperre manuell aufgehoben', 'warn');
+    alert('Import wurde zurückgesetzt. Du kannst jetzt erneut importieren.');
+  } catch(e) {
+    alert('Reset fehlgeschlagen: ' + e.message);
+  }
+}
+
+async function testHubSpotConnection() {
+  const apiToken     = document.getElementById('hs-apiToken').value.trim();
+  const objectTypeId = document.getElementById('hs-objectTypeId').value.trim() || '0-420';
+  const resultDiv    = document.getElementById('hs-testResult');
+  
+  if (!apiToken) {
+    resultDiv.style.display = 'block';
+    resultDiv.style.background = 'var(--redbg)';
+    resultDiv.style.color = 'var(--red)';
+    resultDiv.style.border = '1px solid var(--red)';
+    resultDiv.textContent = '❌ Bitte Access Token eingeben';
+    return;
+  }
+  
+  resultDiv.style.display = 'block';
+  resultDiv.style.background = 'var(--orangebg)';
+  resultDiv.style.color = 'var(--orange)';
+  resultDiv.style.border = '1px solid var(--orange)';
+  resultDiv.textContent = '⧳ Teste Verbindung...';
+  
+  try {
+    const res = await fetch('/api/test-hubspot', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ apiToken, objectTypeId }),
+    });
+    const data = await res.json();
+    
+    if (data.ok) {
+      resultDiv.style.background = 'var(--greenbg)';
+      resultDiv.style.color = 'var(--green)';
+      resultDiv.style.border = '1px solid var(--green)';
+      resultDiv.innerHTML = `✓ Verbindung erfolgreich<br><span style="opacity:.7;font-size:10px">Token gültig • API erreichbar</span>`;
+      addLog('scraper', '✓ HubSpot Verbindung erfolgreich getestet', 'ok');
+    } else {
+      resultDiv.style.background = 'var(--redbg)';
+      resultDiv.style.color = 'var(--red)';
+      resultDiv.style.border = '1px solid var(--red)';
+      resultDiv.innerHTML = `❌ Verbindung fehlgeschlagen<br><span style="opacity:.8;font-size:10px">${esc(data.error || 'Unbekannter Fehler')}</span>`;
+      addLog('scraper', `❌ HubSpot Test fehlgeschlagen: ${data.error}`, 'error');
+    }
+  } catch(e) {
+    resultDiv.style.background = 'var(--redbg)';
+    resultDiv.style.color = 'var(--red)';
+    resultDiv.style.border = '1px solid var(--red)';
+    resultDiv.innerHTML = `❌ Netzwerkfehler<br><span style="opacity:.8;font-size:10px">${esc(e.message)}</span>`;
+  }
+}
+
+function showImportError(key) {
+  const ir = importRes[key];
+  if (!ir || !ir.error) return;
+  
+  // Open card log and populate with error details
+  const area = document.getElementById('clogarea_' + key);
+  const btn  = document.getElementById('clog_' + key);
+  if (!area) return;
+  
+  area.classList.add('open');
+  if (btn) btn.classList.add('active');
+  
+  const bike = scraperBikes.find(b => bikeKey(b) === key);
+  const errorLines = [
+    { msg: `━━ IMPORT FEHLER: ${bike?.name || key} ━━`, level: 'section' },
+    { msg: `Status: ${ir.status}`, level: 'error' },
+    { msg: `Fehler: ${ir.error}`, level: 'error' },
+  ];
+  
+  // Add any additional error details from cardLogs
+  if (cardLogs[key] && cardLogs[key].length > 0) {
+    errorLines.push({ msg: '━━ Vollständiges Log ━━', level: 'section' });
+    cardLogs[key].forEach(e => errorLines.push(e));
+  }
+  
+  area.innerHTML = errorLines.map(e =>
+    `<div class="card-log-line ${e.level||'info'}"><span style="opacity:.4;margin-right:6px">${e.ts||''}</span>${esc(e.msg)}</div>`
+  ).join('');
+  area.scrollTop = area.scrollHeight;
+}
+
+// ═══════════════════════════════════════════════════════
+//  Shared helpers
+// ═══════════════════════════════════════════════════════
+function setBikeState(id, state) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.className = `bike-item ${state}`;
+  const check  = el.querySelector('.bike-check');
+  const status = el.querySelector('.bike-st');
+  if (state === 'success') { check.textContent = '✓'; if (status) { status.textContent = '✅'; status.className = 'bike-st ok'; } }
+  if (state === 'error')   { check.textContent = '✗'; if (status) { status.textContent = '❌'; status.className = 'bike-st err'; } }
+  if (state === 'running') { check.textContent = '…'; if (status) status.textContent = ''; el.className = 'bike-item running'; }
+}
+
+// ═══════════════════════════════════════════════════════
+//  Init
+// ═══════════════════════════════════════════════════════
+connectSSE();
+
+// ═══════════════════════════════════════════════════════
+//  Sidebar resize
+// ═══════════════════════════════════════════════════════
+(function() {
+  const MIN_W = 160, MAX_W = 520;
+  const saved = parseInt(localStorage.getItem('sidebarW') || '280', 10);
+  document.documentElement.style.setProperty('--sidebar-w', saved + 'px');
+
+  document.querySelectorAll('.resize-handle').forEach(handle => {
+    handle.addEventListener('mousedown', e => {
+      e.preventDefault();
+      const startX = e.clientX;
+      const startW = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sidebar-w'), 10);
+      handle.classList.add('dragging');
+      document.body.style.cursor = 'col-resize';
+      document.body.style.userSelect = 'none';
+
+      function onMove(e) {
+        const w = Math.min(MAX_W, Math.max(MIN_W, startW + e.clientX - startX));
+        document.documentElement.style.setProperty('--sidebar-w', w + 'px');
+        document.querySelectorAll('.tab-panel.active').forEach(p =>
+          p.style.gridTemplateColumns = w + 'px 5px 1fr'
+        );
+      }
+      function onUp() {
+        handle.classList.remove('dragging');
+        document.body.style.cursor = '';
+        document.body.style.userSelect = '';
+        const w = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sidebar-w'), 10);
+        localStorage.setItem('sidebarW', w);
+        document.removeEventListener('mousemove', onMove);
+        document.removeEventListener('mouseup', onUp);
+      }
+      document.addEventListener('mousemove', onMove);
+      document.addEventListener('mouseup', onUp);
+    });
+  });
+})();
+
+// Restore session cookie from localStorage
+const savedCookie = localStorage.getItem('hd_sessionCookie');
+if (savedCookie) document.getElementById('s-sessionCookie').value = savedCookie;
+document.getElementById('s-sessionCookie').addEventListener('input', e => {
+  localStorage.setItem('hd_sessionCookie', e.target.value);
+});
+
+// Restore token from localStorage (persistent across browser restarts)
+const savedToken = localStorage.getItem('hd_apiToken');
+if (savedToken) {
+  document.getElementById('i-apiToken').value = savedToken;
+  document.getElementById('hs-apiToken').value = savedToken;
+}
+document.getElementById('i-apiToken').addEventListener('input', e => {
+  localStorage.setItem('hd_apiToken', e.target.value);
+  document.getElementById('hs-apiToken').value = e.target.value;
+});
+document.getElementById('hs-apiToken').addEventListener('input', e => {
+  localStorage.setItem('hd_apiToken', e.target.value);
+  document.getElementById('i-apiToken').value = e.target.value;
+});
+
+// Open to importer tab if hash set
+if (location.hash === '#import') switchTab('importer');
+</script>
+</body>
+</html>

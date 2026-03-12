@@ -1,0 +1,6 @@
+node_modules/
+hd-output/
+hd_state.json
+*.tmp
+*.upload_tmp.jpg
+.DS_Store
