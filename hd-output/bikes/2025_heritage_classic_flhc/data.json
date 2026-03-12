@@ -1,0 +1,985 @@
+{
+  "year": "2025",
+  "category": "Cruiser",
+  "name": "Heritage Classic",
+  "code": "flhc",
+  "url": "https://h-dmediakit.com/eu/bdp/?flhc|2025",
+  "description": "Classically modern. Classic cruiser vibes meet hot rod swagger—the Heritage Classic lets you switch things up fast, giving you the versatility to roll out for a weekend trip or strip it down for a laid-back ride around town.",
+  "specs": {
+    "Dimensions": "FLHC Heritage Classic",
+    "Length": "95.1 in. (2,415 mm)",
+    "Overall Width": "36.6 in. (930 mm)",
+    "Overall Height": "53.9 in. (1,370 mm)",
+    "Seat Height, Laden": "26.3 in. (668 mm)",
+    "Seat Height, Unladen": "26.8 in. (680 mm)",
+    "Static Ground Clearance": "4.7 in. (120 mm)",
+    "Rake (steering head)": "30",
+    "Fork Angle": "30",
+    "Trail": "5.5 in. (140 mm)",
+    "Wheelbase": "64.2 in. (1,630 mm)",
+    "Tires, Type": "Dunlop® Harley-Davidson Series, bias blackwall front and rear",
+    "Tires, Front Model": "D401F",
+    "Tires, Front Specification": "130/90B16,73H,BW",
+    "Tires, Rear Model": "D401T",
+    "Tires, Rear Specification": "150/80B16,77H,BW",
+    "Fuel Capacity": "5 gal. (18.9 l)",
+    "Reserve Fuel Capacity, Fuel Injection (warning light)": "1 gal. (3.8 l)",
+    "Oil Capacity (w/filter)": "5 qt. (4.7 l)",
+    "Transmission Capacity": "1 qt. (.95 l )",
+    "Primary Chain Case Capacity": "1.25 qt. (1.18 l )",
+    "Coolant Capacity": "N/A",
+    "Weight, As Shipped": "697 lb. (316 kg)",
+    "Weight, In Running Order": "728 lb. (330 kg)",
+    "Gross Vehicle Weight Rating": "1,160 lb. (526 kg)",
+    "Gross Axle Weight Rating, Front": "450 lb. (204 kg)",
+    "Gross Axle Weight Rating, Rear": "730 lb. (331 kg)",
+    "Luggage Capacity -Volume": "1.6 cu ft (0.045 m3)",
+    "Engine": "Milwaukee-Eight® 117 Classic",
+    "Valves": "Pushrod-operated, overhead valves with hydraulic, self-adjusting lifters; four valves per cylinder",
+    "Bore": "4.075 in. (103.5 mm)",
+    "Stroke": "4.5 in. (114.3 mm)",
+    "Displacement": "117 cu in (1,923 cc)",
+    "Compression Ratio": "10.3:1",
+    "Fuel System": "Electronic Sequential Port Fuel Injection (ESPFI)",
+    "Air Cleaner": "9 in. (229 mm) round, center bolt cover with washable fiberglass filter media",
+    "Exhaust": "2-into-1; catalyst in header",
+    "Lubrication System": "Pressurized, dry-sump with oil cooler",
+    "Drivetrain": "FLHC Heritage Classic",
+    "Primary Drive": "Chain, 34/46 ratio",
+    "Final Drive": "Belt, 32/66 ratio",
+    "Clutch": "Mechanical, 10 plate wet, assist & conventional",
+    "Transmission": "6-Speed Cruise Drive®",
+    "Gear Ratios (overall) 1st": "9.311",
+    "Gear Ratios (overall) 2nd": "6.454",
+    "Gear Ratios (overall) 3rd": "4.793",
+    "Gear Ratios (overall) 4th": "3.882",
+    "Gear Ratios (overall) 5th": "3.307",
+    "Gear Ratios (overall) 6th": "2.79",
+    "Chassis": "FLHC Heritage Classic",
+    "Frame": "Mild steel, tubular frame; rectangular section backbone; stamped, cast, and forged junctions; MIG welded; aluminum forged fender supports",
+    "Swingarm": "Mild steel, tubular sections, stamped x-member, forged axle junctions; MIG welded; removable belt spacer",
+    "Front Fork": "Dual-bending valve 49 mm telescopic with aluminum fork triple clamps; dual rate spring; \"beer can\" covers",
+    "Rear Shocks": "Hidden, free piston, coil-over monoshock; 56mm stroke; hydraulic preload adjustment",
+    "Wheels, Optional Style Type": "Black tubeless laced with 36 bright spokes",
+    "Wheels, Front Type": "Black, 9-Spoke Cast Aluminum",
+    "Wheels, Front Diameter": "16 in. (406 mm)",
+    "Wheels, Front Width": "3 in. (76 mm)",
+    "Wheels, Rear Type": "Black, 9-Spoke Cast Aluminum",
+    "Wheels, Rear Diameter": "16 in. (406 mm)",
+    "Wheels, Rear Width": "3 in. (76 mm)",
+    "Brakes, Caliper Type": "4-piston fixed front and 2-piston floating rear",
+    "Brakes, Rotor Type": "Solid, uniform expansion rotors",
+    "Brakes, Front Diameter": "11.8 in. (300 mm)",
+    "Brakes, Front Thickness": "0.2 in. (5 mm)",
+    "Brakes, Front is dual": "No",
+    "Brakes, Rear Diameter": "11.5 in. (292 mm)",
+    "Brakes, Rear Thickness": "0.23 in. (5.8 mm)",
+    "Brakes, Anti-Lock Braking System (ABS)": "Standard",
+    "Suspension Travel, Front": "5.1 in. (130 mm)",
+    "Suspension Travel, Rear": "4.4 in. (112 mm)",
+    "Performance": "FLHC Heritage Classic",
+    "Engine Torque Testing Method": "J1349",
+    "Engine Torque": "120 ft-lb (163 Nm)",
+    "Engine Torque (rpm)": "2,500",
+    "Power": "98 HP / 73 kW @ 4600 rpm",
+    "Lean Angle Testing Method": "J1168",
+    "Lean Angle, Right (deg.)": "27.4",
+    "Lean Angle, Left (deg.)": "27.4",
+    "Electric": "FLHC Heritage Classic",
+    "Battery": "Sealed, maintenance-free, absorbed glass mat (AGM) battery, 12V, 17.5Ah, 310 CCA at 0°F",
+    "Charging": "Three-phase, 48 Amp system (364 Watts @13 Volts, 900 rpm, 624 Watts max power @ 13 Volts, 2000 rpm)",
+    "Starting": "1.6 kW electric with solenoid shift starter motor engagement",
+    "Lights (as per country regulation), Headlamp": "All LED, low beam, high beam and signature position lamp",
+    "Lights (as per country regulation), Tail/Stop": "LED Buffett tail lamp",
+    "Lights (as per country regulation), Front Signal Lights": "LED Bullet Turn Signals",
+    "Lights, Rear Turn Signals": "LED bullet light bar",
+    "Gauges": "5-inch (127 mm) analog speedometer with digital gear, odometer, fuel level, ride modes, heated gear, traction control, ABS, TPMS, cruise control, clock, trip, range and tachometer indication",
+    "Auxiliary Lamps": "LED fog",
+    "Electric Power Outlet": "USB C-Type , Output 5V at 2.4 Amp",
+    "GPS System": "N/A",
+    "Reverse Gear": "N/A",
+    "Fuel Economy & CO&#8322; Emissions": "FLHC Heritage Classic",
+    "Fuel Economy Testing Method": "Estimated City/Hwy",
+    "Fuel Economy": "47 mpg (5 l/100 km)",
+    "Infotainment": "FLHC Heritage Classic",
+    "Infotainment system": "N/A",
+    "Screen Size": "N/A",
+    "Type": "N/A",
+    "Watts Per Channel": "N/A",
+    "Speakers": "N/A",
+    "Speaker Size": "N/A",
+    "Headset Specifications (if equipped)": "N/A",
+    "AM": "N/A",
+    "FM": "N/A",
+    "MW": "N/A",
+    "LW": "N/A",
+    "Weather Band (WB)": "N/A",
+    "SD Card, Flash Drive and MP3 - via USB Connection": "N/A",
+    "Hands-free Mobile Phone - via Bluetooth": "N/A",
+    "Voice Recognition Languages: Phone functions only": "N/A",
+    "Rider/Passenger Intercom": "N/A",
+    "Vehicle Information Screen (Air temperature, oil pressure and EITMS)": "N/A",
+    "Text-to-Speech (TTS) Languages": "N/A",
+    "USB": "N/A",
+    "Phone Connectivity": "N/A",
+    "Bluetooth": "N/A",
+    "Navigation - via Bluetooth": "N/A",
+    "Rider Safety Enhancements": "FLHC Heritage Classic",
+    "Anti-lock Brake System (ABS)": "Included",
+    "Electronic Linked Braking (ELB)": "N/A",
+    "Traction Control System (TCS)": "Included",
+    "Drag-torque Slip Control System (DSCS)": "Included",
+    "Vehicle Hold Control (VHC)": "N/A",
+    "Tire Pressure Monitoring System (TPMS)": "Included",
+    "Wheel Lift Mitigation": "N/A",
+    "Cornering Rider Safety Enhancements": "FLHC Heritage Classic",
+    "Cornering Enhanced Anti-lock Brake System (C-ABS)": "Included",
+    "Cornering Enhanced Electronic Linked Braking (C-ELB)": "N/A",
+    "Cornering Enhanced Traction Control System (C-TCS)": "Included",
+    "Cornering Drag-Torque Slip Control System (C-DSCS)": "Included",
+    "Enhanced Lift Mitigation": "N/A",
+    "Warranty And Service": "FLHC Heritage Classic",
+    "Warranty": "24 months (unlimited mileage)",
+    "Service Interval": "First 1,000 miles (1,600 km), every 5,000 miles (8,000 km) thereafter",
+    "Footnotes": "FLHC Heritage Classic"
+  },
+  "specsSections": [
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Dimensions",
+          "value": "FLHC Heritage Classic"
+        },
+        {
+          "name": "Length",
+          "value": "95.1 in. (2,415 mm)"
+        },
+        {
+          "name": "Overall Width",
+          "value": "36.6 in. (930 mm)"
+        },
+        {
+          "name": "Overall Height",
+          "value": "53.9 in. (1,370 mm)"
+        },
+        {
+          "name": "Seat Height, Laden",
+          "value": "26.3 in. (668 mm)"
+        },
+        {
+          "name": "Seat Height, Unladen",
+          "value": "26.8 in. (680 mm)"
+        },
+        {
+          "name": "Static Ground Clearance",
+          "value": "4.7 in. (120 mm)"
+        },
+        {
+          "name": "Rake (steering head)",
+          "value": "30"
+        },
+        {
+          "name": "Fork Angle",
+          "value": "30"
+        },
+        {
+          "name": "Trail",
+          "value": "5.5 in. (140 mm)"
+        },
+        {
+          "name": "Wheelbase",
+          "value": "64.2 in. (1,630 mm)"
+        },
+        {
+          "name": "Tires, Type",
+          "value": "Dunlop® Harley-Davidson Series, bias blackwall front and rear"
+        },
+        {
+          "name": "Tires, Front Model",
+          "value": "D401F"
+        },
+        {
+          "name": "Tires, Front Specification",
+          "value": "130/90B16,73H,BW"
+        },
+        {
+          "name": "Tires, Rear Model",
+          "value": "D401T"
+        },
+        {
+          "name": "Tires, Rear Specification",
+          "value": "150/80B16,77H,BW"
+        },
+        {
+          "name": "Fuel Capacity",
+          "value": "5 gal. (18.9 l)"
+        },
+        {
+          "name": "Reserve Fuel Capacity, Fuel Injection (warning light)",
+          "value": "1 gal. (3.8 l)"
+        },
+        {
+          "name": "Oil Capacity (w/filter)",
+          "value": "5 qt. (4.7 l)"
+        },
+        {
+          "name": "Transmission Capacity",
+          "value": "1 qt. (.95 l )"
+        },
+        {
+          "name": "Primary Chain Case Capacity",
+          "value": "1.25 qt. (1.18 l )"
+        },
+        {
+          "name": "Coolant Capacity",
+          "value": "N/A"
+        },
+        {
+          "name": "Weight, As Shipped",
+          "value": "697 lb. (316 kg)"
+        },
+        {
+          "name": "Weight, In Running Order",
+          "value": "728 lb. (330 kg)"
+        },
+        {
+          "name": "Gross Vehicle Weight Rating",
+          "value": "1,160 lb. (526 kg)"
+        },
+        {
+          "name": "Gross Axle Weight Rating, Front",
+          "value": "450 lb. (204 kg)"
+        },
+        {
+          "name": "Gross Axle Weight Rating, Rear",
+          "value": "730 lb. (331 kg)"
+        },
+        {
+          "name": "Luggage Capacity -Volume",
+          "value": "1.6 cu ft (0.045 m3)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Engine",
+          "value": "FLHC Heritage Classic"
+        },
+        {
+          "name": "Engine",
+          "value": "Milwaukee-Eight® 117 Classic"
+        },
+        {
+          "name": "Valves",
+          "value": "Pushrod-operated, overhead valves with hydraulic, self-adjusting lifters; four valves per cylinder"
+        },
+        {
+          "name": "Bore",
+          "value": "4.075 in. (103.5 mm)"
+        },
+        {
+          "name": "Stroke",
+          "value": "4.5 in. (114.3 mm)"
+        },
+        {
+          "name": "Displacement",
+          "value": "117 cu in (1,923 cc)"
+        },
+        {
+          "name": "Compression Ratio",
+          "value": "10.3:1"
+        },
+        {
+          "name": "Fuel System",
+          "value": "Electronic Sequential Port Fuel Injection (ESPFI)"
+        },
+        {
+          "name": "Air Cleaner",
+          "value": "9 in. (229 mm) round, center bolt cover with washable fiberglass filter media"
+        },
+        {
+          "name": "Exhaust",
+          "value": "2-into-1; catalyst in header"
+        },
+        {
+          "name": "Lubrication System",
+          "value": "Pressurized, dry-sump with oil cooler"
+        },
+        {
+          "name": "Drivetrain",
+          "value": "FLHC Heritage Classic"
+        },
+        {
+          "name": "Primary Drive",
+          "value": "Chain, 34/46 ratio"
+        },
+        {
+          "name": "Final Drive",
+          "value": "Belt, 32/66 ratio"
+        },
+        {
+          "name": "Clutch",
+          "value": "Mechanical, 10 plate wet, assist & conventional"
+        },
+        {
+          "name": "Transmission",
+          "value": "6-Speed Cruise Drive®"
+        },
+        {
+          "name": "Gear Ratios (overall) 1st",
+          "value": "9.311"
+        },
+        {
+          "name": "Gear Ratios (overall) 2nd",
+          "value": "6.454"
+        },
+        {
+          "name": "Gear Ratios (overall) 3rd",
+          "value": "4.793"
+        },
+        {
+          "name": "Gear Ratios (overall) 4th",
+          "value": "3.882"
+        },
+        {
+          "name": "Gear Ratios (overall) 5th",
+          "value": "3.307"
+        },
+        {
+          "name": "Gear Ratios (overall) 6th",
+          "value": "2.79"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Chassis",
+          "value": "FLHC Heritage Classic"
+        },
+        {
+          "name": "Frame",
+          "value": "Mild steel, tubular frame; rectangular section backbone; stamped, cast, and forged junctions; MIG welded; aluminum forged fender supports"
+        },
+        {
+          "name": "Swingarm",
+          "value": "Mild steel, tubular sections, stamped x-member, forged axle junctions; MIG welded; removable belt spacer"
+        },
+        {
+          "name": "Front Fork",
+          "value": "Dual-bending valve 49 mm telescopic with aluminum fork triple clamps; dual rate spring; \"beer can\" covers"
+        },
+        {
+          "name": "Rear Shocks",
+          "value": "Hidden, free piston, coil-over monoshock; 56mm stroke; hydraulic preload adjustment"
+        },
+        {
+          "name": "Wheels, Optional Style Type",
+          "value": "Black tubeless laced with 36 bright spokes"
+        },
+        {
+          "name": "Wheels, Front Type",
+          "value": "Black, 9-Spoke Cast Aluminum"
+        },
+        {
+          "name": "Wheels, Front Diameter",
+          "value": "16 in. (406 mm)"
+        },
+        {
+          "name": "Wheels, Front Width",
+          "value": "3 in. (76 mm)"
+        },
+        {
+          "name": "Wheels, Rear Type",
+          "value": "Black, 9-Spoke Cast Aluminum"
+        },
+        {
+          "name": "Wheels, Rear Diameter",
+          "value": "16 in. (406 mm)"
+        },
+        {
+          "name": "Wheels, Rear Width",
+          "value": "3 in. (76 mm)"
+        },
+        {
+          "name": "Brakes, Caliper Type",
+          "value": "4-piston fixed front and 2-piston floating rear"
+        },
+        {
+          "name": "Brakes, Rotor Type",
+          "value": "Solid, uniform expansion rotors"
+        },
+        {
+          "name": "Brakes, Front Diameter",
+          "value": "11.8 in. (300 mm)"
+        },
+        {
+          "name": "Brakes, Front Thickness",
+          "value": "0.2 in. (5 mm)"
+        },
+        {
+          "name": "Brakes, Front is dual",
+          "value": "No"
+        },
+        {
+          "name": "Brakes, Rear Diameter",
+          "value": "11.5 in. (292 mm)"
+        },
+        {
+          "name": "Brakes, Rear Thickness",
+          "value": "0.23 in. (5.8 mm)"
+        },
+        {
+          "name": "Brakes, Anti-Lock Braking System (ABS)",
+          "value": "Standard"
+        },
+        {
+          "name": "Suspension Travel, Front",
+          "value": "5.1 in. (130 mm)"
+        },
+        {
+          "name": "Suspension Travel, Rear",
+          "value": "4.4 in. (112 mm)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Performance",
+          "value": "FLHC Heritage Classic"
+        },
+        {
+          "name": "Engine Torque Testing Method",
+          "value": "J1349"
+        },
+        {
+          "name": "Engine Torque",
+          "value": "120 ft-lb (163 Nm)"
+        },
+        {
+          "name": "Engine Torque (rpm)",
+          "value": "2,500"
+        },
+        {
+          "name": "Power",
+          "value": "98 HP / 73 kW @ 4600 rpm"
+        },
+        {
+          "name": "Lean Angle Testing Method",
+          "value": "J1168"
+        },
+        {
+          "name": "Lean Angle, Right (deg.)",
+          "value": "27.4"
+        },
+        {
+          "name": "Lean Angle, Left (deg.)",
+          "value": "27.4"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Electric",
+          "value": "FLHC Heritage Classic"
+        },
+        {
+          "name": "Battery",
+          "value": "Sealed, maintenance-free, absorbed glass mat (AGM) battery, 12V, 17.5Ah, 310 CCA at 0°F"
+        },
+        {
+          "name": "Charging",
+          "value": "Three-phase, 48 Amp system (364 Watts @13 Volts, 900 rpm, 624 Watts max power @ 13 Volts, 2000 rpm)"
+        },
+        {
+          "name": "Starting",
+          "value": "1.6 kW electric with solenoid shift starter motor engagement"
+        },
+        {
+          "name": "Lights (as per country regulation), Headlamp",
+          "value": "All LED, low beam, high beam and signature position lamp"
+        },
+        {
+          "name": "Lights (as per country regulation), Tail/Stop",
+          "value": "LED Buffett tail lamp"
+        },
+        {
+          "name": "Lights (as per country regulation), Front Signal Lights",
+          "value": "LED Bullet Turn Signals"
+        },
+        {
+          "name": "Lights, Rear Turn Signals",
+          "value": "LED bullet light bar"
+        },
+        {
+          "name": "Gauges",
+          "value": "5-inch (127 mm) analog speedometer with digital gear, odometer, fuel level, ride modes, heated gear, traction control, ABS, TPMS, cruise control, clock, trip, range and tachometer indication"
+        },
+        {
+          "name": "Auxiliary Lamps",
+          "value": "LED fog"
+        },
+        {
+          "name": "Electric Power Outlet",
+          "value": "USB C-Type , Output 5V at 2.4 Amp"
+        },
+        {
+          "name": "GPS System",
+          "value": "N/A"
+        },
+        {
+          "name": "Reverse Gear",
+          "value": "N/A"
+        },
+        {
+          "name": "Fuel Economy & CO&#8322; Emissions",
+          "value": "FLHC Heritage Classic"
+        },
+        {
+          "name": "Fuel Economy Testing Method",
+          "value": "Estimated City/Hwy"
+        },
+        {
+          "name": "Fuel Economy",
+          "value": "47 mpg (5 l/100 km)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Infotainment",
+          "value": "FLHC Heritage Classic"
+        },
+        {
+          "name": "Infotainment system",
+          "value": "N/A"
+        },
+        {
+          "name": "Screen Size",
+          "value": "N/A"
+        },
+        {
+          "name": "Type",
+          "value": "N/A"
+        },
+        {
+          "name": "Watts Per Channel",
+          "value": "N/A"
+        },
+        {
+          "name": "Speakers",
+          "value": "N/A"
+        },
+        {
+          "name": "Speaker Size",
+          "value": "N/A"
+        },
+        {
+          "name": "Headset Specifications (if equipped)",
+          "value": "N/A"
+        },
+        {
+          "name": "AM",
+          "value": "N/A"
+        },
+        {
+          "name": "FM",
+          "value": "N/A"
+        },
+        {
+          "name": "MW",
+          "value": "N/A"
+        },
+        {
+          "name": "LW",
+          "value": "N/A"
+        },
+        {
+          "name": "Weather Band (WB)",
+          "value": "N/A"
+        },
+        {
+          "name": "SD Card, Flash Drive and MP3 - via USB Connection",
+          "value": "N/A"
+        },
+        {
+          "name": "Hands-free Mobile Phone - via Bluetooth",
+          "value": "N/A"
+        },
+        {
+          "name": "Voice Recognition Languages: Phone functions only",
+          "value": "N/A"
+        },
+        {
+          "name": "Rider/Passenger Intercom",
+          "value": "N/A"
+        },
+        {
+          "name": "Vehicle Information Screen (Air temperature, oil pressure and EITMS)",
+          "value": "N/A"
+        },
+        {
+          "name": "Text-to-Speech (TTS) Languages",
+          "value": "N/A"
+        },
+        {
+          "name": "USB",
+          "value": "N/A"
+        },
+        {
+          "name": "Phone Connectivity",
+          "value": "N/A"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "N/A"
+        },
+        {
+          "name": "Navigation - via Bluetooth",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Rider Safety Enhancements",
+          "value": "FLHC Heritage Classic"
+        },
+        {
+          "name": "Anti-lock Brake System (ABS)",
+          "value": "Included"
+        },
+        {
+          "name": "Electronic Linked Braking (ELB)",
+          "value": "N/A"
+        },
+        {
+          "name": "Traction Control System (TCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Drag-torque Slip Control System (DSCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Vehicle Hold Control (VHC)",
+          "value": "N/A"
+        },
+        {
+          "name": "Tire Pressure Monitoring System (TPMS)",
+          "value": "Included"
+        },
+        {
+          "name": "Wheel Lift Mitigation",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Cornering Rider Safety Enhancements",
+          "value": "FLHC Heritage Classic"
+        },
+        {
+          "name": "Cornering Enhanced Anti-lock Brake System (C-ABS)",
+          "value": "Included"
+        },
+        {
+          "name": "Cornering Enhanced Electronic Linked Braking (C-ELB)",
+          "value": "N/A"
+        },
+        {
+          "name": "Cornering Enhanced Traction Control System (C-TCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Cornering Drag-Torque Slip Control System (C-DSCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Enhanced Lift Mitigation",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Warranty And Service",
+          "value": "FLHC Heritage Classic"
+        },
+        {
+          "name": "Warranty",
+          "value": "24 months (unlimited mileage)"
+        },
+        {
+          "name": "Service Interval",
+          "value": "First 1,000 miles (1,600 km), every 5,000 miles (8,000 km) thereafter"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Footnotes",
+          "value": "FLHC Heritage Classic"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/25_flhc_m50b_r.jpg",
+      "epaItemId": "62037",
+      "caption": "Harley-Davidson Heritage Classic, Whiskey Fire/Vivid Black Color",
+      "localFile": "25_flhc_m50b_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/25_flhc_m50lb_r.jpg",
+      "epaItemId": "62038",
+      "caption": "Harley-Davidson Heritage Classic, Whiskey Fire/Vivid Black Color with Optional Black...",
+      "localFile": "25_flhc_m50lb_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/25_flhc_m07b_r.jpg",
+      "epaItemId": "62033",
+      "caption": "Harley-Davidson Heritage Classic, White Onyx Pearl Color",
+      "localFile": "25_flhc_m07b_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/25_flhc_m07lb_r.jpg",
+      "epaItemId": "62034",
+      "caption": "Harley-Davidson Heritage Classic, White Onyx Pearl Color with Optional Black tubeless...",
+      "localFile": "25_flhc_m07lb_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/25_flhc_m46b_r.jpg",
+      "epaItemId": "62035",
+      "caption": "Harley-Davidson Heritage Classic, Iron Horse Metallic Color",
+      "localFile": "25_flhc_m46b_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/25_flhc_m46lb_r.jpg",
+      "epaItemId": "62036",
+      "caption": "Harley-Davidson Heritage Classic, Iron Horse Metallic Color with Optional painted...",
+      "localFile": "25_flhc_m46lb_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/25_flhc_m02b_r.jpg",
+      "epaItemId": "62029",
+      "caption": "Harley-Davidson Heritage Classic, Billiard Gray Color",
+      "localFile": "25_flhc_m02b_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/25_flhc_m02lb_r.jpg",
+      "epaItemId": "62030",
+      "caption": "Harley-Davidson Heritage Classic, Billiard Gray Color with Optional painted aluminum...",
+      "localFile": "25_flhc_m02lb_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/25_flhc_m04b_r.jpg",
+      "epaItemId": "62031",
+      "caption": "Harley-Davidson Heritage Classic, Vivid Black Color",
+      "localFile": "25_flhc_m04b_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/25_flhc_m04lb_r.jpg",
+      "epaItemId": "62032",
+      "caption": "Harley-Davidson Heritage Classic, Vivid Black Color with Optional painted aluminum...",
+      "localFile": "25_flhc_m04lb_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/my25-flhc-beauty-0632-bwjc.jpg",
+      "epaItemId": "62230",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "my25-flhc-beauty-0632-bwjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/my25-flhc-lifestyle-0362-bwjc-2.jpg",
+      "epaItemId": "62231",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "my25-flhc-lifestyle-0362-bwjc-2.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/my25-flhc-lifestyle-0362-bwjc.jpg",
+      "epaItemId": "62232",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "my25-flhc-lifestyle-0362-bwjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/my25-flhc-lifestyle-0517-bwjc.jpg",
+      "epaItemId": "62233",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "my25-flhc-lifestyle-0517-bwjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/my25-flhc-riding-0090-abjc.jpg",
+      "epaItemId": "62234",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "my25-flhc-riding-0090-abjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/my25-flhc-riding-0309-jkjc.jpg",
+      "epaItemId": "62235",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "my25-flhc-riding-0309-jkjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0007_flhc_hd_studio_2024_paint.jpg",
+      "epaItemId": "61635",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0007_flhc_hd_studio_2024_paint.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0012_flhc_hd_studio_2024_screen.jpg",
+      "epaItemId": "61639",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0012_flhc_hd_studio_2024_screen.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0008_flhc_hd_studio_2024_controls.jpg",
+      "epaItemId": "61636",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0008_flhc_hd_studio_2024_controls.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0002_flhc_hd_studio_2024_leaver.jpg",
+      "epaItemId": "61631",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0002_flhc_hd_studio_2024_leaver.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0011_flhc_hd_studio_2024_front.jpg",
+      "epaItemId": "61638",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0011_flhc_hd_studio_2024_front.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0005_flhc_hd_studio_2024_wheel.jpg",
+      "epaItemId": "61634",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0005_flhc_hd_studio_2024_wheel.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0013_flhc_hd_studio_2024_engine.jpg",
+      "epaItemId": "61640",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0013_flhc_hd_studio_2024_engine.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0001_flhc_hd_studio_2024_intake.jpg",
+      "epaItemId": "61630",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0001_flhc_hd_studio_2024_intake.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0000_flhc_hd_studio_2024_usb.jpg",
+      "epaItemId": "61629",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0000_flhc_hd_studio_2024_usb.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0004_flhc_hd_studio_2024_supension.jpg",
+      "epaItemId": "61633",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0004_flhc_hd_studio_2024_supension.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0009_flhc_hd_studio_2024_saddlebags.jpg",
+      "epaItemId": "61637",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0009_flhc_hd_studio_2024_saddlebags.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/6c07319af2d56f29/images/preview/_0003_flhc_hd_studio_2024_exhaust.jpg",
+      "epaItemId": "61632",
+      "caption": "Harley-Davidson Heritage Classic",
+      "localFile": "_0003_flhc_hd_studio_2024_exhaust.jpg",
+      "status": "downloaded",
+      "highRes": false
+    }
+  ],
+  "videos": [
+    {
+      "thumbUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/8d95b39d93313c33/video/preview/24_75051_MY25_HC_114_BROLL_vFC1.jpg",
+      "mp4Url": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/8d95b39d93313c33/video/24_75051_MY25_HC_114_BROLL_vFC1.mp4",
+      "filename": "24_75051_MY25_HC_114_BROLL_vFC1.mp4",
+      "caption": "",
+      "localFile": "24_75051_MY25_HC_114_BROLL_vFC1.mp4",
+      "status": "downloaded",
+      "sizeMB": 196
+    }
+  ],
+  "specsPdf": "https://h-dmediakit.com/epapi-get/pdf/bikepages/specs/2025/flhc/specifications_flhc_eu.pdf",
+  "pdfLocal": "docs/specs_flhc_2025_eu.pdf"
+}

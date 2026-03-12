@@ -1,0 +1,1029 @@
+{
+  "year": "2025",
+  "category": "Collections",
+  "name": "CVO Pan America",
+  "code": "ra1250se",
+  "url": "https://h-dmediakit.com/eu/bdp/?ra1250se|2025",
+  "description": "Leave ordinary behind. The most functional go-anywhere motorcycle in Harley-Davidson’s lineup, with limited-edition paint and all the factory-installed accessories you could ever want, the CVO Pan America is ready to go as far as you want, straight from the showroom floor.",
+  "specs": {
+    "Dimensions": "RA1250SE CVO™ Pan America®",
+    "Length": "92.3 in. (2,345 mm)",
+    "Overall Width": "43.1 in. (1,095 mm)",
+    "Overall Height": "59.4 in. (1,510 mm)",
+    "Seat Height, Laden (Low seat position)": "N/A",
+    "Seat Height, Laden (High seat position": "N/A",
+    "Seat Height, Laden (Low seat position with optional ARH suspension)": "30.4 in. (772 mm)",
+    "Seat Height, Laden (High seat position with optional ARH suspension)": "31.4 in. (797 mm)",
+    "Seat Height, Unladen (Low seat position)": "N/A",
+    "Seat Height, Unladen (High seat position)": "N/A",
+    "Seat Height, Unladen (Low seat position with optional ARH suspension)": "32.7 in. (830 mm)",
+    "Seat Height, Unladen (High seat position with optional ARH suspension)": "33.7 in. (855 mm)",
+    "Static Ground Clearance": "7.1 in. (180 mm)",
+    "Dynamic Ground Clearance (with optional suspension)": "7.1 in. (180 mm)",
+    "Rake (steering head)": "25",
+    "Fork Angle": "25",
+    "Trail": "4.3 in. (108 mm)",
+    "Wheelbase": "62.4 in. (1,585 mm)",
+    "Tires, Type": "Michelin® Scorcher “Adventure”, Radial",
+    "Tires, Front Model": "Scorcher Adventure",
+    "Tires, Front Specification": "120/70R19 60V",
+    "Tires, Rear Model": "Scorcher Adventure",
+    "Tires, Rear Specification": "170/60R17 72V",
+    "Fuel Capacity": "5.6 gal. (21.2 l)",
+    "Reserve Fuel Capacity, Fuel Injection (warning light)": "1 gal. (3.8 l)",
+    "Oil Capacity (w/filter)": "4.75 qt. (4.5 l)",
+    "Transmission Capacity": "N/A",
+    "Primary Chain Case Capacity": "N/A",
+    "Coolant Capacity": "2.32 qt. (2.2 l)",
+    "Weight, As Shipped": "626 lb. (284 kg)",
+    "Weight, In Running Order": "659 lb. (299 kg)",
+    "Gross Vehicle Weight Rating": "1,034 lb. (469 kg)",
+    "Gross Axle Weight Rating, Front": "399 lb. (181 kg)",
+    "Gross Axle Weight Rating, Rear": "665 lb. (302 kg)",
+    "Luggage Capacity -Volume": "4.24 cu ft (0.12 m3)",
+    "Engine": "Revolution® Max 1250",
+    "Valves": "Chain-driven, DOHC, hydraulic self-adjusting lifters, intake & exhaust VVT; four valves per cylinder",
+    "Bore": "4.134 in. (105 mm)",
+    "Stroke": "2.846 in. (72.3 mm)",
+    "Displacement": "76.4 cu in (1,252 cc)",
+    "Compression Ratio": "13.0:1",
+    "Fuel System": "Electronic Sequential Port Fuel Injection (ESPFI)",
+    "Air Cleaner": "Downdraft intake, tuned velocity stacks, washable filter media",
+    "Exhaust": "2-into-1-into-1; catalyst in header",
+    "Lubrication System": "Semi-Dry Sump",
+    "Drivetrain": "RA1250SE CVO™ Pan America®",
+    "Primary Drive": "Gear, 49/89 ratio",
+    "Final Drive": "Chain, 19/48 ratio",
+    "Clutch": "Mechanical, 8 plate wet, assist & slip, 1090N",
+    "Transmission": "6-Speed",
+    "Gear Ratios (overall) 1st": "13.11",
+    "Gear Ratios (overall) 2nd": "9.687",
+    "Gear Ratios (overall) 3rd": "7.509",
+    "Gear Ratios (overall) 4th": "6.057",
+    "Gear Ratios (overall) 5th": "5.08",
+    "Gear Ratios (overall) 6th": "4.436",
+    "Chassis": "RA1250SE CVO™ Pan America®",
+    "Frame": "Stressed-member, high strength low alloy steel trellis frame; stamped, cast, and forged junctions; MIG welded; aluminum forged mid-structure",
+    "Swingarm": "One-piece cast aluminum",
+    "Front Fork": "47mm inverted fork with electronically adjustable semi-active damping control and Adaptive Ride Height (ARH). Aluminum fork triple clamps",
+    "Front Fork, Optional": "N/A",
+    "Rear Shocks": "Linkage-mounted monoshock with automatic electronic preload control and semi-active compression & rebound damping and Adaptive Ride Height (ARH)",
+    "Rear Shocks, Optional": "N/A",
+    "Wheels, Optional Style Type": "N/A",
+    "Wheels, Front Type": "Annodized aluminum tubeless laced",
+    "Wheels, Front Diameter": "19 in. (483 mm)",
+    "Wheels, Front Width": "3 in. (76 mm)",
+    "Wheels, Rear Type": "Annodized aluminum tubeless laced",
+    "Wheels, Rear Diameter": "17 in. (432 mm)",
+    "Wheels, Rear Width": "4.5 in. (114 mm)",
+    "Brakes, Caliper Type": "Front: radially mounted, monoblock, 4-piston caliper; Rear: floating, single piston caliper",
+    "Brakes, Rotor Type": "Front: dual rotor, floating, tower- mounted; Rear: solid uniform expansion rotor",
+    "Brakes, Front Diameter": "12.6 in. (320 mm)",
+    "Brakes, Front Thickness": "0.17 in. (4.5 mm)",
+    "Brakes, Front is dual": "Yes",
+    "Brakes, Rear Diameter": "11 in. (280 mm)",
+    "Brakes, Rear Thickness": "0.2 in. (5 mm)",
+    "Brakes, Anti-Lock Braking System (ABS)": "Standard",
+    "Suspension Travel, Front": "7.5 in. (191 mm)",
+    "Suspension Travel, Rear": "7.5 in. (191 mm)",
+    "Performance": "RA1250SE CVO™ Pan America®",
+    "Engine Torque Testing Method": "J1349",
+    "Engine Torque": "95 ft-lb (129 Nm)",
+    "Engine Torque (rpm)": "6,750",
+    "Power": "150 HP / 112 kW @ 8750 rpm",
+    "Lean Angle Testing Method": "J1168",
+    "Lean Angle, Right (deg.)": "42",
+    "Lean Angle, Left (deg.)": "42",
+    "Electric": "RA1250SE CVO™ Pan America®",
+    "Battery": "Sealed, maintenance-free, absorbed glass mat (AGM) battery, 12V, 17.5Ah, 310 CCA at 0°F",
+    "Charging": "Three-phase, 45 Amp system (390 Watts @13 Volts, 1300 rpm, 585 Watts max power @ 13 Volts, 2500 rpm)",
+    "Starting": "0.9 kW electric with direct drive starter motor engagement",
+    "Lights (as per country regulation), Headlamp": "Daymaker® Adaptive LED Headlamp with 6-segment LED banking lamp",
+    "Lights (as per country regulation), Tail/Stop": "All LED Tail/Stop lamp with signature tail lighting",
+    "Lights (as per country regulation), Front Signal Lights": "LED Bullet Turn Signals",
+    "Lights, Rear Turn Signals": "LED Bullet Turn Signals",
+    "Gauges": "6.8 inch (173 mm) viewable area TFT display with speedometer, gear, odometer, fuel level, clock, trip, ambient temp, low temp alert, side stand down alert, TIP over alert, cruise, range and tachometer indication BT capable - phone pairing to access phone calls, music, navigation (H-D App ONLY)",
+    "Auxiliary Lamps": "Fog lamps & driving beams",
+    "Electric Power Outlet": "USB C-Type , Output 5V at 2.4 Amp",
+    "GPS System": "N/A",
+    "Reverse Gear": "N/A",
+    "Fuel Economy & CO&#8322; Emissions": "RA1250SE CVO™ Pan America®",
+    "Fuel Economy Testing Method": "Estimated City/Hwy",
+    "Fuel Economy": "46 mpg (5.1 l/100 km)",
+    "Infotainment": "RA1250SE CVO™ Pan America®",
+    "Infotainment system": "N/A",
+    "Screen Size": "6.8 in (173 mm)",
+    "Type": "Color TFT w/ Touch",
+    "Watts Per Channel": "N/A",
+    "Speakers": "N/A",
+    "Speaker Size": "N/A",
+    "Headset Specifications (if equipped)": "Bluetooth",
+    "AM": "N/A",
+    "FM": "N/A",
+    "MW": "N/A",
+    "LW": "N/A",
+    "Weather Band (WB)": "N/A",
+    "SD Card, Flash Drive and MP3 - via USB Connection": "N/A",
+    "Hands-free Mobile Phone - via Bluetooth": "Standard",
+    "Voice Recognition Languages: Phone functions only": "Phone dependent",
+    "Rider/Passenger Intercom": "Headset function only",
+    "Vehicle Information Screen (Air temperature, oil pressure and EITMS)": "TPMS, Engine temp, Battery Voltage, Ambient Air Temp",
+    "Text-to-Speech (TTS) Languages": "Phone dependent",
+    "USB": "Charging and Instrument update, USB-C, 5V, 3A",
+    "Bluetooth": "Phone/Media Supported",
+    "Navigation - via Bluetooth": "H-D Mobile App",
+    "Rider Safety Enhancements": "RA1250SE CVO™ Pan America®",
+    "Anti-lock Brake System (ABS)": "Included",
+    "Electronic Linked Braking (ELB)": "Included",
+    "Traction Control System (TCS)": "Included",
+    "Drag-torque Slip Control System (DSCS)": "Included",
+    "Vehicle Hold Control (VHC)": "Included",
+    "Tire Pressure Monitoring System (TPMS)": "Included",
+    "Wheel Lift Mitigation": "Included",
+    "Cornering Rider Safety Enhancements": "RA1250SE CVO™ Pan America®",
+    "Cornering Enhanced Anti-lock Brake System (C-ABS)": "Included",
+    "Cornering Enhanced Electronic Linked Braking (C-ELB)": "Included",
+    "Cornering Enhanced Traction Control System (C-TCS)": "Included",
+    "Cornering Drag-Torque Slip Control System (C-DSCS)": "Included",
+    "Enhanced Lift Mitigation": "Included",
+    "Warranty And Service": "RA1250SE CVO™ Pan America®",
+    "Warranty": "24 months (unlimited mileage)",
+    "Service Interval": "First 1,000 miles (1,600 km), every 5,000 miles (8,000 km) thereafter",
+    "Footnotes": "RA1250SE CVO™ Pan America®"
+  },
+  "specsSections": [
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Dimensions",
+          "value": "RA1250SE CVO™ Pan America®"
+        },
+        {
+          "name": "Length",
+          "value": "92.3 in. (2,345 mm)"
+        },
+        {
+          "name": "Overall Width",
+          "value": "43.1 in. (1,095 mm)"
+        },
+        {
+          "name": "Overall Height",
+          "value": "59.4 in. (1,510 mm)"
+        },
+        {
+          "name": "Seat Height, Laden (Low seat position)",
+          "value": "N/A"
+        },
+        {
+          "name": "Seat Height, Laden (High seat position",
+          "value": "N/A"
+        },
+        {
+          "name": "Seat Height, Laden (Low seat position with optional ARH suspension)",
+          "value": "30.4 in. (772 mm)"
+        },
+        {
+          "name": "Seat Height, Laden (High seat position with optional ARH suspension)",
+          "value": "31.4 in. (797 mm)"
+        },
+        {
+          "name": "Seat Height, Unladen (Low seat position)",
+          "value": "N/A"
+        },
+        {
+          "name": "Seat Height, Unladen (High seat position)",
+          "value": "N/A"
+        },
+        {
+          "name": "Seat Height, Unladen (Low seat position with optional ARH suspension)",
+          "value": "32.7 in. (830 mm)"
+        },
+        {
+          "name": "Seat Height, Unladen (High seat position with optional ARH suspension)",
+          "value": "33.7 in. (855 mm)"
+        },
+        {
+          "name": "Static Ground Clearance",
+          "value": "7.1 in. (180 mm)"
+        },
+        {
+          "name": "Dynamic Ground Clearance (with optional suspension)",
+          "value": "7.1 in. (180 mm)"
+        },
+        {
+          "name": "Rake (steering head)",
+          "value": "25"
+        },
+        {
+          "name": "Fork Angle",
+          "value": "25"
+        },
+        {
+          "name": "Trail",
+          "value": "4.3 in. (108 mm)"
+        },
+        {
+          "name": "Wheelbase",
+          "value": "62.4 in. (1,585 mm)"
+        },
+        {
+          "name": "Tires, Type",
+          "value": "Michelin® Scorcher “Adventure”, Radial"
+        },
+        {
+          "name": "Tires, Front Model",
+          "value": "Scorcher Adventure"
+        },
+        {
+          "name": "Tires, Front Specification",
+          "value": "120/70R19 60V"
+        },
+        {
+          "name": "Tires, Rear Model",
+          "value": "Scorcher Adventure"
+        },
+        {
+          "name": "Tires, Rear Specification",
+          "value": "170/60R17 72V"
+        },
+        {
+          "name": "Fuel Capacity",
+          "value": "5.6 gal. (21.2 l)"
+        },
+        {
+          "name": "Reserve Fuel Capacity, Fuel Injection (warning light)",
+          "value": "1 gal. (3.8 l)"
+        },
+        {
+          "name": "Oil Capacity (w/filter)",
+          "value": "4.75 qt. (4.5 l)"
+        },
+        {
+          "name": "Transmission Capacity",
+          "value": "N/A"
+        },
+        {
+          "name": "Primary Chain Case Capacity",
+          "value": "N/A"
+        },
+        {
+          "name": "Coolant Capacity",
+          "value": "2.32 qt. (2.2 l)"
+        },
+        {
+          "name": "Weight, As Shipped",
+          "value": "626 lb. (284 kg)"
+        },
+        {
+          "name": "Weight, In Running Order",
+          "value": "659 lb. (299 kg)"
+        },
+        {
+          "name": "Gross Vehicle Weight Rating",
+          "value": "1,034 lb. (469 kg)"
+        },
+        {
+          "name": "Gross Axle Weight Rating, Front",
+          "value": "399 lb. (181 kg)"
+        },
+        {
+          "name": "Gross Axle Weight Rating, Rear",
+          "value": "665 lb. (302 kg)"
+        },
+        {
+          "name": "Luggage Capacity -Volume",
+          "value": "4.24 cu ft (0.12 m3)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Engine",
+          "value": "RA1250SE CVO™ Pan America®"
+        },
+        {
+          "name": "Engine",
+          "value": "Revolution® Max 1250"
+        },
+        {
+          "name": "Valves",
+          "value": "Chain-driven, DOHC, hydraulic self-adjusting lifters, intake & exhaust VVT; four valves per cylinder"
+        },
+        {
+          "name": "Bore",
+          "value": "4.134 in. (105 mm)"
+        },
+        {
+          "name": "Stroke",
+          "value": "2.846 in. (72.3 mm)"
+        },
+        {
+          "name": "Displacement",
+          "value": "76.4 cu in (1,252 cc)"
+        },
+        {
+          "name": "Compression Ratio",
+          "value": "13.0:1"
+        },
+        {
+          "name": "Fuel System",
+          "value": "Electronic Sequential Port Fuel Injection (ESPFI)"
+        },
+        {
+          "name": "Air Cleaner",
+          "value": "Downdraft intake, tuned velocity stacks, washable filter media"
+        },
+        {
+          "name": "Exhaust",
+          "value": "2-into-1-into-1; catalyst in header"
+        },
+        {
+          "name": "Lubrication System",
+          "value": "Semi-Dry Sump"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Drivetrain",
+          "value": "RA1250SE CVO™ Pan America®"
+        },
+        {
+          "name": "Primary Drive",
+          "value": "Gear, 49/89 ratio"
+        },
+        {
+          "name": "Final Drive",
+          "value": "Chain, 19/48 ratio"
+        },
+        {
+          "name": "Clutch",
+          "value": "Mechanical, 8 plate wet, assist & slip, 1090N"
+        },
+        {
+          "name": "Transmission",
+          "value": "6-Speed"
+        },
+        {
+          "name": "Gear Ratios (overall) 1st",
+          "value": "13.11"
+        },
+        {
+          "name": "Gear Ratios (overall) 2nd",
+          "value": "9.687"
+        },
+        {
+          "name": "Gear Ratios (overall) 3rd",
+          "value": "7.509"
+        },
+        {
+          "name": "Gear Ratios (overall) 4th",
+          "value": "6.057"
+        },
+        {
+          "name": "Gear Ratios (overall) 5th",
+          "value": "5.08"
+        },
+        {
+          "name": "Gear Ratios (overall) 6th",
+          "value": "4.436"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Chassis",
+          "value": "RA1250SE CVO™ Pan America®"
+        },
+        {
+          "name": "Frame",
+          "value": "Stressed-member, high strength low alloy steel trellis frame; stamped, cast, and forged junctions; MIG welded; aluminum forged mid-structure"
+        },
+        {
+          "name": "Swingarm",
+          "value": "One-piece cast aluminum"
+        },
+        {
+          "name": "Front Fork",
+          "value": "47mm inverted fork with electronically adjustable semi-active damping control and Adaptive Ride Height (ARH). Aluminum fork triple clamps"
+        },
+        {
+          "name": "Front Fork, Optional",
+          "value": "N/A"
+        },
+        {
+          "name": "Rear Shocks",
+          "value": "Linkage-mounted monoshock with automatic electronic preload control and semi-active compression & rebound damping and Adaptive Ride Height (ARH)"
+        },
+        {
+          "name": "Rear Shocks, Optional",
+          "value": "N/A"
+        },
+        {
+          "name": "Wheels, Optional Style Type",
+          "value": "N/A"
+        },
+        {
+          "name": "Wheels, Front Type",
+          "value": "Annodized aluminum tubeless laced"
+        },
+        {
+          "name": "Wheels, Front Diameter",
+          "value": "19 in. (483 mm)"
+        },
+        {
+          "name": "Wheels, Front Width",
+          "value": "3 in. (76 mm)"
+        },
+        {
+          "name": "Wheels, Rear Type",
+          "value": "Annodized aluminum tubeless laced"
+        },
+        {
+          "name": "Wheels, Rear Diameter",
+          "value": "17 in. (432 mm)"
+        },
+        {
+          "name": "Wheels, Rear Width",
+          "value": "4.5 in. (114 mm)"
+        },
+        {
+          "name": "Brakes, Caliper Type",
+          "value": "Front: radially mounted, monoblock, 4-piston caliper; Rear: floating, single piston caliper"
+        },
+        {
+          "name": "Brakes, Rotor Type",
+          "value": "Front: dual rotor, floating, tower- mounted; Rear: solid uniform expansion rotor"
+        },
+        {
+          "name": "Brakes, Front Diameter",
+          "value": "12.6 in. (320 mm)"
+        },
+        {
+          "name": "Brakes, Front Thickness",
+          "value": "0.17 in. (4.5 mm)"
+        },
+        {
+          "name": "Brakes, Front is dual",
+          "value": "Yes"
+        },
+        {
+          "name": "Brakes, Rear Diameter",
+          "value": "11 in. (280 mm)"
+        },
+        {
+          "name": "Brakes, Rear Thickness",
+          "value": "0.2 in. (5 mm)"
+        },
+        {
+          "name": "Brakes, Anti-Lock Braking System (ABS)",
+          "value": "Standard"
+        },
+        {
+          "name": "Suspension Travel, Front",
+          "value": "7.5 in. (191 mm)"
+        },
+        {
+          "name": "Suspension Travel, Rear",
+          "value": "7.5 in. (191 mm)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Performance",
+          "value": "RA1250SE CVO™ Pan America®"
+        },
+        {
+          "name": "Engine Torque Testing Method",
+          "value": "J1349"
+        },
+        {
+          "name": "Engine Torque",
+          "value": "95 ft-lb (129 Nm)"
+        },
+        {
+          "name": "Engine Torque (rpm)",
+          "value": "6,750"
+        },
+        {
+          "name": "Power",
+          "value": "150 HP / 112 kW @ 8750 rpm"
+        },
+        {
+          "name": "Lean Angle Testing Method",
+          "value": "J1168"
+        },
+        {
+          "name": "Lean Angle, Right (deg.)",
+          "value": "42"
+        },
+        {
+          "name": "Lean Angle, Left (deg.)",
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Electric",
+          "value": "RA1250SE CVO™ Pan America®"
+        },
+        {
+          "name": "Battery",
+          "value": "Sealed, maintenance-free, absorbed glass mat (AGM) battery, 12V, 17.5Ah, 310 CCA at 0°F"
+        },
+        {
+          "name": "Charging",
+          "value": "Three-phase, 45 Amp system (390 Watts @13 Volts, 1300 rpm, 585 Watts max power @ 13 Volts, 2500 rpm)"
+        },
+        {
+          "name": "Starting",
+          "value": "0.9 kW electric with direct drive starter motor engagement"
+        },
+        {
+          "name": "Lights (as per country regulation), Headlamp",
+          "value": "Daymaker® Adaptive LED Headlamp with 6-segment LED banking lamp"
+        },
+        {
+          "name": "Lights (as per country regulation), Tail/Stop",
+          "value": "All LED Tail/Stop lamp with signature tail lighting"
+        },
+        {
+          "name": "Lights (as per country regulation), Front Signal Lights",
+          "value": "LED Bullet Turn Signals"
+        },
+        {
+          "name": "Lights, Rear Turn Signals",
+          "value": "LED Bullet Turn Signals"
+        },
+        {
+          "name": "Gauges",
+          "value": "6.8 inch (173 mm) viewable area TFT display with speedometer, gear, odometer, fuel level, clock, trip, ambient temp, low temp alert, side stand down alert, TIP over alert, cruise, range and tachometer indication BT capable - phone pairing to access phone calls, music, navigation (H-D App ONLY)"
+        },
+        {
+          "name": "Auxiliary Lamps",
+          "value": "Fog lamps & driving beams"
+        },
+        {
+          "name": "Electric Power Outlet",
+          "value": "USB C-Type , Output 5V at 2.4 Amp"
+        },
+        {
+          "name": "GPS System",
+          "value": "N/A"
+        },
+        {
+          "name": "Reverse Gear",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Fuel Economy & CO&#8322; Emissions",
+          "value": "RA1250SE CVO™ Pan America®"
+        },
+        {
+          "name": "Fuel Economy Testing Method",
+          "value": "Estimated City/Hwy"
+        },
+        {
+          "name": "Fuel Economy",
+          "value": "46 mpg (5.1 l/100 km)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Infotainment",
+          "value": "RA1250SE CVO™ Pan America®"
+        },
+        {
+          "name": "Infotainment system",
+          "value": "N/A"
+        },
+        {
+          "name": "Screen Size",
+          "value": "6.8 in (173 mm)"
+        },
+        {
+          "name": "Type",
+          "value": "Color TFT w/ Touch"
+        },
+        {
+          "name": "Watts Per Channel",
+          "value": "N/A"
+        },
+        {
+          "name": "Speakers",
+          "value": "N/A"
+        },
+        {
+          "name": "Speaker Size",
+          "value": "N/A"
+        },
+        {
+          "name": "Headset Specifications (if equipped)",
+          "value": "Bluetooth"
+        },
+        {
+          "name": "AM",
+          "value": "N/A"
+        },
+        {
+          "name": "FM",
+          "value": "N/A"
+        },
+        {
+          "name": "MW",
+          "value": "N/A"
+        },
+        {
+          "name": "LW",
+          "value": "N/A"
+        },
+        {
+          "name": "Weather Band (WB)",
+          "value": "N/A"
+        },
+        {
+          "name": "SD Card, Flash Drive and MP3 - via USB Connection",
+          "value": "N/A"
+        },
+        {
+          "name": "Hands-free Mobile Phone - via Bluetooth",
+          "value": "Standard"
+        },
+        {
+          "name": "Voice Recognition Languages: Phone functions only",
+          "value": "Phone dependent"
+        },
+        {
+          "name": "Rider/Passenger Intercom",
+          "value": "Headset function only"
+        },
+        {
+          "name": "Vehicle Information Screen (Air temperature, oil pressure and EITMS)",
+          "value": "TPMS, Engine temp, Battery Voltage, Ambient Air Temp"
+        },
+        {
+          "name": "Text-to-Speech (TTS) Languages",
+          "value": "Phone dependent"
+        },
+        {
+          "name": "USB",
+          "value": "Charging and Instrument update, USB-C, 5V, 3A"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "Phone/Media Supported"
+        },
+        {
+          "name": "Navigation - via Bluetooth",
+          "value": "H-D Mobile App"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Rider Safety Enhancements",
+          "value": "RA1250SE CVO™ Pan America®"
+        },
+        {
+          "name": "Anti-lock Brake System (ABS)",
+          "value": "Included"
+        },
+        {
+          "name": "Electronic Linked Braking (ELB)",
+          "value": "Included"
+        },
+        {
+          "name": "Traction Control System (TCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Drag-torque Slip Control System (DSCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Vehicle Hold Control (VHC)",
+          "value": "Included"
+        },
+        {
+          "name": "Tire Pressure Monitoring System (TPMS)",
+          "value": "Included"
+        },
+        {
+          "name": "Wheel Lift Mitigation",
+          "value": "Included"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Cornering Rider Safety Enhancements",
+          "value": "RA1250SE CVO™ Pan America®"
+        },
+        {
+          "name": "Cornering Enhanced Anti-lock Brake System (C-ABS)",
+          "value": "Included"
+        },
+        {
+          "name": "Cornering Enhanced Electronic Linked Braking (C-ELB)",
+          "value": "Included"
+        },
+        {
+          "name": "Cornering Enhanced Traction Control System (C-TCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Cornering Drag-Torque Slip Control System (C-DSCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Enhanced Lift Mitigation",
+          "value": "Included"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Warranty And Service",
+          "value": "RA1250SE CVO™ Pan America®"
+        },
+        {
+          "name": "Warranty",
+          "value": "24 months (unlimited mileage)"
+        },
+        {
+          "name": "Service Interval",
+          "value": "First 1,000 miles (1,600 km), every 5,000 miles (8,000 km) thereafter"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Footnotes",
+          "value": "RA1250SE CVO™ Pan America®"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/25_ra1250se_m35b_r.jpg",
+      "epaItemId": "61417",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "25_ra1250se_m35b_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/my25-ra1250se-lifestyle-0264-jkjc.jpg",
+      "epaItemId": "61854",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "my25-ra1250se-lifestyle-0264-jkjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/9299-hdm-my25-ra1250se-beauty-0035-bwjc.jpg",
+      "epaItemId": "61881",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "9299-hdm-my25-ra1250se-beauty-0035-bwjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/my25-ra1250se-riding-0087-jkjc.jpg",
+      "epaItemId": "61855",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "my25-ra1250se-riding-0087-jkjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg",
+      "epaItemId": "61849",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/my25-ra1250se-riding-0251-jkjc.jpg",
+      "epaItemId": "61856",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "my25-ra1250se-riding-0251-jkjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/my25-ra1250se-riding-0465-abjc.jpg",
+      "epaItemId": "61857",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "my25-ra1250se-riding-0465-abjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/my25-ra1250se-riding-0655-abjc.jpg",
+      "epaItemId": "61858",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "my25-ra1250se-riding-0655-abjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/my25-ra1250se-riding-0850-jkjc.jpg",
+      "epaItemId": "61859",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "my25-ra1250se-riding-0850-jkjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg",
+      "epaItemId": "61850",
+      "caption": "Harley-Davidson 1250 Pan America Special and CVO Pan America",
+      "localFile": "my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg",
+      "epaItemId": "61851",
+      "caption": "Harley-Davidson 1250 Pan America Special and CVO Pan America",
+      "localFile": "my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg",
+      "epaItemId": "61852",
+      "caption": "Harley-Davidson 1250 Pan America Special and CVO Pan America",
+      "localFile": "my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg",
+      "epaItemId": "61853",
+      "caption": "Harley-Davidson 1250 Pan America Special and CVO Pan America",
+      "localFile": "my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0000_ra1250se_hd_studio_2024_tft_v001.jpg",
+      "epaItemId": "61774",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0000_ra1250se_hd_studio_2024_tft_v001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0001_ra1250se_hd_studio_2024_ride-modes_v001.jpg",
+      "epaItemId": "61775",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0001_ra1250se_hd_studio_2024_ride-modes_v001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0008_ra1250se_hd_studio_2024_headlights_v001.jpg",
+      "epaItemId": "61780",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0008_ra1250se_hd_studio_2024_headlights_v001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0002_ra1250se_hd_studio_2024_cvo_v001.jpg",
+      "epaItemId": "61776",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0002_ra1250se_hd_studio_2024_cvo_v001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0005_ra1250se_hd_studio_2024_wheels_v001.jpg",
+      "epaItemId": "61778",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0005_ra1250se_hd_studio_2024_wheels_v001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0012_ra1250se_hd_studio_2024_graphics_v001.jpg",
+      "epaItemId": "61782",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0012_ra1250se_hd_studio_2024_graphics_v001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0010_ra1250se_hd_studio_2024_guards_v001.jpg",
+      "epaItemId": "61781",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0010_ra1250se_hd_studio_2024_guards_v001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0015_ra1250se_hd_studio_2024_engine_v002.jpg",
+      "epaItemId": "61785",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0015_ra1250se_hd_studio_2024_engine_v002.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0013_ra1250se_hd_studio_2024_rear-shock_v001.jpg",
+      "epaItemId": "61783",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0013_ra1250se_hd_studio_2024_rear-shock_v001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0003_ra1250se_hd_studio_2024_shifter_v001.jpg",
+      "epaItemId": "61777",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0003_ra1250se_hd_studio_2024_shifter_v001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0006_ra1250se_hd_studio_2024_luggage_v001.jpg",
+      "epaItemId": "61779",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0006_ra1250se_hd_studio_2024_luggage_v001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ea57e95e737c632f/images/preview/_0014_ra1250se_hd_studio_2024_rider-height_v001.jpg",
+      "epaItemId": "61784",
+      "caption": "Harley-Davidson CVO Pan America",
+      "localFile": "_0014_ra1250se_hd_studio_2024_rider-height_v001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    }
+  ],
+  "videos": [
+    {
+      "thumbUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/c0dbd3668f8016e3/video/preview/24_75051_MY25_CVO_PA_BROLL_vFC1.jpg",
+      "mp4Url": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/c0dbd3668f8016e3/video/24_75051_MY25_CVO_PA_BROLL_vFC1.mp4",
+      "filename": "24_75051_MY25_CVO_PA_BROLL_vFC1.mp4",
+      "caption": "",
+      "localFile": "24_75051_MY25_CVO_PA_BROLL_vFC1.mp4",
+      "status": "downloaded",
+      "sizeMB": 272
+    },
+    {
+      "thumbUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/c0dbd3668f8016e3/video/preview/24_75051_MY25_PDP_CVO_PA_DES_FC1.jpg",
+      "mp4Url": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/c0dbd3668f8016e3/video/24_75051_MY25_PDP_CVO_PA_DES_FC1.mp4",
+      "filename": "24_75051_MY25_PDP_CVO_PA_DES_FC1.mp4",
+      "caption": "",
+      "localFile": "24_75051_MY25_PDP_CVO_PA_DES_FC1.mp4",
+      "status": "downloaded",
+      "sizeMB": 18
+    },
+    {
+      "thumbUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/c0dbd3668f8016e3/video/preview/24_75051_MY25_PDP_CVO_PA_INN_FC1.jpg",
+      "mp4Url": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/c0dbd3668f8016e3/video/24_75051_MY25_PDP_CVO_PA_INN_FC1.mp4",
+      "filename": "24_75051_MY25_PDP_CVO_PA_INN_FC1.mp4",
+      "caption": "",
+      "localFile": "24_75051_MY25_PDP_CVO_PA_INN_FC1.mp4",
+      "status": "downloaded",
+      "sizeMB": 10
+    }
+  ],
+  "specsPdf": "https://h-dmediakit.com/epapi-get/pdf/bikepages/specs/2025/ra1250se/specifications_ra1250se_eu.pdf",
+  "pdfLocal": "docs/specs_ra1250se_2025_eu.pdf"
+}

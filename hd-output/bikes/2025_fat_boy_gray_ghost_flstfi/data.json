@@ -1,0 +1,951 @@
+{
+  "year": "2025",
+  "category": "Collections",
+  "name": "Fat Boy Gray Ghost",
+  "code": "flstfi",
+  "url": "https://h-dmediakit.com/eu/bdp/?flstfi|2025",
+  "description": "The 2025 Fat Boy ® Gray Ghost pays tribute to a legend that defined an era and captured the hearts of generations. Honoring the unmistakable style of the 1990 original, this Icon ensures the legacy lives on. Reimagined with more power and attitude, it’s back to make history again. In 1988 and 1989, Willie G. Davidson rode early Fat Boy ® prototypes into Daytona, seeking direct feedback from riders and igniting a legacy that would span generations. By 1990, the Fat Boy was born, quickly becoming one of the most legendary models in Harley-Davidson history. Now, 35 years later, the new 2025 Fat Boy ® Gray Ghost charges forward, bringing that legacy full circle.",
+  "specs": {
+    "Dimensions": "FLSTFI Fat Boy® Gray Ghost",
+    "Length": "93.1 in. (2,365 mm)",
+    "Overall Width": "40 in. (965 mm)",
+    "Overall Height": "44.1 in. (1,120 mm)",
+    "Seat Height, Laden": "25.9 in. (658 mm)",
+    "Seat Height, Unladen": "26.6 in. (675 mm)",
+    "Static Ground Clearance": "4.9 in. (125 mm)",
+    "Rake (steering head)": "30",
+    "Fork Angle": "32",
+    "Trail": "4.1 in. (104 mm)",
+    "Wheelbase": "65 in. (1,650 mm)",
+    "Tires, Type": "Michelin® Scorcher 11, front and rear",
+    "Tires, Front Model": "Scorcher 11",
+    "Tires, Front Specification": "160/60R18,70V,BW",
+    "Tires, Rear Model": "Scorcher 11",
+    "Tires, Rear Specification": "240/40R18,79V,BW",
+    "Fuel Capacity": "5 gal. (18.9 l)",
+    "Reserve Fuel Capacity, Fuel Injection (warning light)": "1 gal. (3.8 l)",
+    "Oil Capacity (w/filter)": "5 qt. (4.7 l)",
+    "Transmission Capacity": "1 qt. (.95 l )",
+    "Primary Chain Case Capacity": "1.43 qt. (1.35 l )",
+    "Coolant Capacity": "N/A",
+    "Weight, As Shipped": "668 lb. (303 kg)",
+    "Weight, In Running Order": "694 lb. (315 kg)",
+    "Gross Vehicle Weight Rating": "1,175 lb. (533 kg)",
+    "Gross Axle Weight Rating, Front": "450 lb. (204 kg)",
+    "Gross Axle Weight Rating, Rear": "760 lb. (345 kg)",
+    "Luggage Capacity -Volume": "N/A",
+    "Engine": "Milwaukee-Eight® 117 Custom",
+    "Valves": "Pushrod-operated, overhead valves with hydraulic, self-adjusting lifters; four valves per cylinder",
+    "Bore": "4.075 in. (103.5 mm)",
+    "Stroke": "4.5 in. (114.3 mm)",
+    "Displacement": "117 cu in (1,923 cc)",
+    "Compression Ratio": "10.3:1",
+    "Fuel System": "Electronic Sequential Port Fuel Injection (ESPFI)",
+    "Air Cleaner": "9 in. (229 mm) round, center bolt cover with washable fiberglass filter media",
+    "Exhaust": "2-into-2 staggered; catalyst in muffler",
+    "Lubrication System": "Pressurized, dry-sump with oil cooler",
+    "Drivetrain": "FLSTFI Fat Boy® Gray Ghost",
+    "Primary Drive": "Chain, 34/46 ratio",
+    "Final Drive": "Belt, 32/66 ratio",
+    "Clutch": "Mechanical, 10 plate wet, assist & conventional",
+    "Transmission": "6-Speed Cruise Drive®",
+    "Gear Ratios (overall) 1st": "9.311",
+    "Gear Ratios (overall) 2nd": "6.454",
+    "Gear Ratios (overall) 3rd": "4.793",
+    "Gear Ratios (overall) 4th": "3.882",
+    "Gear Ratios (overall) 5th": "3.307",
+    "Gear Ratios (overall) 6th": "2.79",
+    "Chassis": "FLSTFI Fat Boy® Gray Ghost",
+    "Frame": "Mild steel, tubular frame; rectangular section backbone; stamped, cast, and forged junctions; MIG welded; aluminum forged fender supports",
+    "Swingarm": "Mild steel, tubular sections, stamped x-member, forged axle junctions; MIG welded; removable belt spacer",
+    "Front Fork": "Dual-bending valve 49 mm telescopic with aluminum fork triple clamps; dual rate spring; \"beer can\" covers",
+    "Rear Shocks": "Hidden, free piston, coil-over monoshock; 43mm stroke; hydraulic preload adjustment",
+    "Wheels, Optional Style Type": "N/A",
+    "Wheels, Front Type": "Machined, Lakester cast aluminum",
+    "Wheels, Front Diameter": "18 in. (457 mm)",
+    "Wheels, Front Width": "4.5 in. (114 mm)",
+    "Wheels, Rear Type": "Machined, Lakester cast aluminum",
+    "Wheels, Rear Diameter": "18 in. (457 mm)",
+    "Wheels, Rear Width": "8 in. (203 mm)",
+    "Brakes, Caliper Type": "4-piston fixed front and 2-piston floating rear",
+    "Brakes, Rotor Type": "Front and rear silver, Split 7-spoke floating rotors",
+    "Brakes, Front Diameter": "11.8 in. (300 mm)",
+    "Brakes, Front Thickness": "0.2 in. (5 mm)",
+    "Brakes, Front is dual": "No",
+    "Brakes, Rear Diameter": "11.5 in. (292 mm)",
+    "Brakes, Rear Thickness": "0.23 in. (5.8 mm)",
+    "Brakes, Anti-Lock Braking System (ABS)": "Standard",
+    "Suspension Travel, Front": "5.1 in. (130 mm)",
+    "Suspension Travel, Rear": "3.4 in. (86 mm)",
+    "Performance": "FLSTFI Fat Boy® Gray Ghost",
+    "Engine Torque Testing Method": "J1349",
+    "Engine Torque": "122 ft-lb (166 Nm)",
+    "Engine Torque (rpm)": "3000",
+    "Power": "101 HP / 75 kW @ 4800 rpm",
+    "Lean Angle Testing Method": "J1168",
+    "Lean Angle, Right (deg.)": "25.6",
+    "Lean Angle, Left (deg.)": "25.6",
+    "Electric": "FLSTFI Fat Boy® Gray Ghost",
+    "Battery": "Sealed, maintenance-free, absorbed glass mat (AGM) battery, 12V, 17.5Ah, 310 CCA at 0°F",
+    "Charging": "Three-phase, 48 Amp system (364 Watts @13 Volts, 900 rpm, 624 Watts max power @ 13 Volts, 2000 rpm)",
+    "Starting": "1.6 kW electric with solenoid shift starter motor engagement",
+    "Lights (as per country regulation), Headlamp": "All LED headlamp, low and high beam with signature position lighting",
+    "Lights (as per country regulation), Tail/Stop": "Bullet-style, LED stop/tail/turn signals",
+    "Lights (as per country regulation), Front Signal Lights": "LED Bullet Turn Signals",
+    "Lights, Rear Turn Signals": "LED Bullet Turn Signals",
+    "Gauges": "5-inch analog speedometer with digital gear, odometer, fuel level, ride modes, heated gear, traction control, ABS, TPMS, cruise control, clock, trip, range and tachometer indication",
+    "Auxiliary Lamps": "N/A",
+    "Electric Power Outlet": "USB C-Type , Output 5V at 2.4 Amp",
+    "GPS System": "N/A",
+    "Reverse Gear": "N/A",
+    "Fuel Economy & CO&#8322; Emissions": "FLSTFI Fat Boy® Gray Ghost",
+    "Fuel Economy Testing Method": "Estimated City/Hwy",
+    "Fuel Economy": "49 mpg (4.8 l/100 km)",
+    "Infotainment": "FLSTFI Fat Boy® Gray Ghost",
+    "Infotainment system": "N/A",
+    "Screen Size": "N/A",
+    "Type": "N/A",
+    "Watts Per Channel": "N/A",
+    "Speakers": "N/A",
+    "Speaker Size": "N/A",
+    "Headset Specifications (if equipped)": "N/A",
+    "AM": "N/A",
+    "FM": "N/A",
+    "MW": "N/A",
+    "LW": "N/A",
+    "Weather Band (WB)": "N/A",
+    "SD Card, Flash Drive and MP3 - via USB Connection": "N/A",
+    "Hands-free Mobile Phone - via Bluetooth": "N/A",
+    "Voice Recognition Languages: Phone functions only": "N/A",
+    "Rider/Passenger Intercom": "N/A",
+    "Vehicle Information Screen (Air temperature, oil pressure and EITMS)": "N/A",
+    "Text-to-Speech (TTS) Languages": "N/A",
+    "USB": "N/A",
+    "Phone Connectivity": "N/A",
+    "Bluetooth": "N/A",
+    "Navigation - via Bluetooth": "N/A",
+    "Rider Safety Enhancements": "FLSTFI Fat Boy® Gray Ghost",
+    "Anti-lock Brake System (ABS)": "Included",
+    "Electronic Linked Braking (ELB)": "N/A",
+    "Traction Control System (TCS)": "Included",
+    "Drag-torque Slip Control System (DSCS)": "Included",
+    "Vehicle Hold Control (VHC)": "N/A",
+    "Tire Pressure Monitoring System (TPMS)": "Included",
+    "Wheel Lift Mitigation": "N/A",
+    "Cornering Rider Safety Enhancements": "FLSTFI Fat Boy® Gray Ghost",
+    "Cornering Enhanced Anti-lock Brake System (C-ABS)": "Included",
+    "Cornering Enhanced Electronic Linked Braking (C-ELB)": "N/A",
+    "Cornering Enhanced Traction Control System (C-TCS)": "Included",
+    "Cornering Drag-Torque Slip Control System (C-DSCS)": "Included",
+    "Enhanced Lift Mitigation": "N/A",
+    "Warranty And Service": "FLSTFI Fat Boy® Gray Ghost"
+  },
+  "specsSections": [
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Dimensions",
+          "value": "FLSTFI Fat Boy® Gray Ghost"
+        },
+        {
+          "name": "Length",
+          "value": "93.1 in. (2,365 mm)"
+        },
+        {
+          "name": "Overall Width",
+          "value": "40 in. (965 mm)"
+        },
+        {
+          "name": "Overall Height",
+          "value": "44.1 in. (1,120 mm)"
+        },
+        {
+          "name": "Seat Height, Laden",
+          "value": "25.9 in. (658 mm)"
+        },
+        {
+          "name": "Seat Height, Unladen",
+          "value": "26.6 in. (675 mm)"
+        },
+        {
+          "name": "Static Ground Clearance",
+          "value": "4.9 in. (125 mm)"
+        },
+        {
+          "name": "Rake (steering head)",
+          "value": "30"
+        },
+        {
+          "name": "Fork Angle",
+          "value": "32"
+        },
+        {
+          "name": "Trail",
+          "value": "4.1 in. (104 mm)"
+        },
+        {
+          "name": "Wheelbase",
+          "value": "65 in. (1,650 mm)"
+        },
+        {
+          "name": "Tires, Type",
+          "value": "Michelin® Scorcher 11, front and rear"
+        },
+        {
+          "name": "Tires, Front Model",
+          "value": "Scorcher 11"
+        },
+        {
+          "name": "Tires, Front Specification",
+          "value": "160/60R18,70V,BW"
+        },
+        {
+          "name": "Tires, Rear Model",
+          "value": "Scorcher 11"
+        },
+        {
+          "name": "Tires, Rear Specification",
+          "value": "240/40R18,79V,BW"
+        },
+        {
+          "name": "Fuel Capacity",
+          "value": "5 gal. (18.9 l)"
+        },
+        {
+          "name": "Reserve Fuel Capacity, Fuel Injection (warning light)",
+          "value": "1 gal. (3.8 l)"
+        },
+        {
+          "name": "Oil Capacity (w/filter)",
+          "value": "5 qt. (4.7 l)"
+        },
+        {
+          "name": "Transmission Capacity",
+          "value": "1 qt. (.95 l )"
+        },
+        {
+          "name": "Primary Chain Case Capacity",
+          "value": "1.43 qt. (1.35 l )"
+        },
+        {
+          "name": "Coolant Capacity",
+          "value": "N/A"
+        },
+        {
+          "name": "Weight, As Shipped",
+          "value": "668 lb. (303 kg)"
+        },
+        {
+          "name": "Weight, In Running Order",
+          "value": "694 lb. (315 kg)"
+        },
+        {
+          "name": "Gross Vehicle Weight Rating",
+          "value": "1,175 lb. (533 kg)"
+        },
+        {
+          "name": "Gross Axle Weight Rating, Front",
+          "value": "450 lb. (204 kg)"
+        },
+        {
+          "name": "Gross Axle Weight Rating, Rear",
+          "value": "760 lb. (345 kg)"
+        },
+        {
+          "name": "Luggage Capacity -Volume",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Engine",
+          "value": "FLSTFI Fat Boy® Gray Ghost"
+        },
+        {
+          "name": "Engine",
+          "value": "Milwaukee-Eight® 117 Custom"
+        },
+        {
+          "name": "Valves",
+          "value": "Pushrod-operated, overhead valves with hydraulic, self-adjusting lifters; four valves per cylinder"
+        },
+        {
+          "name": "Bore",
+          "value": "4.075 in. (103.5 mm)"
+        },
+        {
+          "name": "Stroke",
+          "value": "4.5 in. (114.3 mm)"
+        },
+        {
+          "name": "Displacement",
+          "value": "117 cu in (1,923 cc)"
+        },
+        {
+          "name": "Compression Ratio",
+          "value": "10.3:1"
+        },
+        {
+          "name": "Fuel System",
+          "value": "Electronic Sequential Port Fuel Injection (ESPFI)"
+        },
+        {
+          "name": "Air Cleaner",
+          "value": "9 in. (229 mm) round, center bolt cover with washable fiberglass filter media"
+        },
+        {
+          "name": "Exhaust",
+          "value": "2-into-2 staggered; catalyst in muffler"
+        },
+        {
+          "name": "Lubrication System",
+          "value": "Pressurized, dry-sump with oil cooler"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Drivetrain",
+          "value": "FLSTFI Fat Boy® Gray Ghost"
+        },
+        {
+          "name": "Primary Drive",
+          "value": "Chain, 34/46 ratio"
+        },
+        {
+          "name": "Final Drive",
+          "value": "Belt, 32/66 ratio"
+        },
+        {
+          "name": "Clutch",
+          "value": "Mechanical, 10 plate wet, assist & conventional"
+        },
+        {
+          "name": "Transmission",
+          "value": "6-Speed Cruise Drive®"
+        },
+        {
+          "name": "Gear Ratios (overall) 1st",
+          "value": "9.311"
+        },
+        {
+          "name": "Gear Ratios (overall) 2nd",
+          "value": "6.454"
+        },
+        {
+          "name": "Gear Ratios (overall) 3rd",
+          "value": "4.793"
+        },
+        {
+          "name": "Gear Ratios (overall) 4th",
+          "value": "3.882"
+        },
+        {
+          "name": "Gear Ratios (overall) 5th",
+          "value": "3.307"
+        },
+        {
+          "name": "Gear Ratios (overall) 6th",
+          "value": "2.79"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Chassis",
+          "value": "FLSTFI Fat Boy® Gray Ghost"
+        },
+        {
+          "name": "Frame",
+          "value": "Mild steel, tubular frame; rectangular section backbone; stamped, cast, and forged junctions; MIG welded; aluminum forged fender supports"
+        },
+        {
+          "name": "Swingarm",
+          "value": "Mild steel, tubular sections, stamped x-member, forged axle junctions; MIG welded; removable belt spacer"
+        },
+        {
+          "name": "Front Fork",
+          "value": "Dual-bending valve 49 mm telescopic with aluminum fork triple clamps; dual rate spring; \"beer can\" covers"
+        },
+        {
+          "name": "Rear Shocks",
+          "value": "Hidden, free piston, coil-over monoshock; 43mm stroke; hydraulic preload adjustment"
+        },
+        {
+          "name": "Wheels, Optional Style Type",
+          "value": "N/A"
+        },
+        {
+          "name": "Wheels, Front Type",
+          "value": "Machined, Lakester cast aluminum"
+        },
+        {
+          "name": "Wheels, Front Diameter",
+          "value": "18 in. (457 mm)"
+        },
+        {
+          "name": "Wheels, Front Width",
+          "value": "4.5 in. (114 mm)"
+        },
+        {
+          "name": "Wheels, Rear Type",
+          "value": "Machined, Lakester cast aluminum"
+        },
+        {
+          "name": "Wheels, Rear Diameter",
+          "value": "18 in. (457 mm)"
+        },
+        {
+          "name": "Wheels, Rear Width",
+          "value": "8 in. (203 mm)"
+        },
+        {
+          "name": "Brakes, Caliper Type",
+          "value": "4-piston fixed front and 2-piston floating rear"
+        },
+        {
+          "name": "Brakes, Rotor Type",
+          "value": "Front and rear silver, Split 7-spoke floating rotors"
+        },
+        {
+          "name": "Brakes, Front Diameter",
+          "value": "11.8 in. (300 mm)"
+        },
+        {
+          "name": "Brakes, Front Thickness",
+          "value": "0.2 in. (5 mm)"
+        },
+        {
+          "name": "Brakes, Front is dual",
+          "value": "No"
+        },
+        {
+          "name": "Brakes, Rear Diameter",
+          "value": "11.5 in. (292 mm)"
+        },
+        {
+          "name": "Brakes, Rear Thickness",
+          "value": "0.23 in. (5.8 mm)"
+        },
+        {
+          "name": "Brakes, Anti-Lock Braking System (ABS)",
+          "value": "Standard"
+        },
+        {
+          "name": "Suspension Travel, Front",
+          "value": "5.1 in. (130 mm)"
+        },
+        {
+          "name": "Suspension Travel, Rear",
+          "value": "3.4 in. (86 mm)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Performance",
+          "value": "FLSTFI Fat Boy® Gray Ghost"
+        },
+        {
+          "name": "Engine Torque Testing Method",
+          "value": "J1349"
+        },
+        {
+          "name": "Engine Torque",
+          "value": "122 ft-lb (166 Nm)"
+        },
+        {
+          "name": "Engine Torque (rpm)",
+          "value": "3000"
+        },
+        {
+          "name": "Power",
+          "value": "101 HP / 75 kW @ 4800 rpm"
+        },
+        {
+          "name": "Lean Angle Testing Method",
+          "value": "J1168"
+        },
+        {
+          "name": "Lean Angle, Right (deg.)",
+          "value": "25.6"
+        },
+        {
+          "name": "Lean Angle, Left (deg.)",
+          "value": "25.6"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Electric",
+          "value": "FLSTFI Fat Boy® Gray Ghost"
+        },
+        {
+          "name": "Battery",
+          "value": "Sealed, maintenance-free, absorbed glass mat (AGM) battery, 12V, 17.5Ah, 310 CCA at 0°F"
+        },
+        {
+          "name": "Charging",
+          "value": "Three-phase, 48 Amp system (364 Watts @13 Volts, 900 rpm, 624 Watts max power @ 13 Volts, 2000 rpm)"
+        },
+        {
+          "name": "Starting",
+          "value": "1.6 kW electric with solenoid shift starter motor engagement"
+        },
+        {
+          "name": "Lights (as per country regulation), Headlamp",
+          "value": "All LED headlamp, low and high beam with signature position lighting"
+        },
+        {
+          "name": "Lights (as per country regulation), Tail/Stop",
+          "value": "Bullet-style, LED stop/tail/turn signals"
+        },
+        {
+          "name": "Lights (as per country regulation), Front Signal Lights",
+          "value": "LED Bullet Turn Signals"
+        },
+        {
+          "name": "Lights, Rear Turn Signals",
+          "value": "LED Bullet Turn Signals"
+        },
+        {
+          "name": "Gauges",
+          "value": "5-inch analog speedometer with digital gear, odometer, fuel level, ride modes, heated gear, traction control, ABS, TPMS, cruise control, clock, trip, range and tachometer indication"
+        },
+        {
+          "name": "Auxiliary Lamps",
+          "value": "N/A"
+        },
+        {
+          "name": "Electric Power Outlet",
+          "value": "USB C-Type , Output 5V at 2.4 Amp"
+        },
+        {
+          "name": "GPS System",
+          "value": "N/A"
+        },
+        {
+          "name": "Reverse Gear",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Fuel Economy & CO&#8322; Emissions",
+          "value": "FLSTFI Fat Boy® Gray Ghost"
+        },
+        {
+          "name": "Fuel Economy Testing Method",
+          "value": "Estimated City/Hwy"
+        },
+        {
+          "name": "Fuel Economy",
+          "value": "49 mpg (4.8 l/100 km)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Infotainment",
+          "value": "FLSTFI Fat Boy® Gray Ghost"
+        },
+        {
+          "name": "Infotainment system",
+          "value": "N/A"
+        },
+        {
+          "name": "Screen Size",
+          "value": "N/A"
+        },
+        {
+          "name": "Type",
+          "value": "N/A"
+        },
+        {
+          "name": "Watts Per Channel",
+          "value": "N/A"
+        },
+        {
+          "name": "Speakers",
+          "value": "N/A"
+        },
+        {
+          "name": "Speaker Size",
+          "value": "N/A"
+        },
+        {
+          "name": "Headset Specifications (if equipped)",
+          "value": "N/A"
+        },
+        {
+          "name": "AM",
+          "value": "N/A"
+        },
+        {
+          "name": "FM",
+          "value": "N/A"
+        },
+        {
+          "name": "MW",
+          "value": "N/A"
+        },
+        {
+          "name": "LW",
+          "value": "N/A"
+        },
+        {
+          "name": "Weather Band (WB)",
+          "value": "N/A"
+        },
+        {
+          "name": "SD Card, Flash Drive and MP3 - via USB Connection",
+          "value": "N/A"
+        },
+        {
+          "name": "Hands-free Mobile Phone - via Bluetooth",
+          "value": "N/A"
+        },
+        {
+          "name": "Voice Recognition Languages: Phone functions only",
+          "value": "N/A"
+        },
+        {
+          "name": "Rider/Passenger Intercom",
+          "value": "N/A"
+        },
+        {
+          "name": "Vehicle Information Screen (Air temperature, oil pressure and EITMS)",
+          "value": "N/A"
+        },
+        {
+          "name": "Text-to-Speech (TTS) Languages",
+          "value": "N/A"
+        },
+        {
+          "name": "USB",
+          "value": "N/A"
+        },
+        {
+          "name": "Phone Connectivity",
+          "value": "N/A"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "N/A"
+        },
+        {
+          "name": "Navigation - via Bluetooth",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Rider Safety Enhancements",
+          "value": "FLSTFI Fat Boy® Gray Ghost"
+        },
+        {
+          "name": "Anti-lock Brake System (ABS)",
+          "value": "Included"
+        },
+        {
+          "name": "Electronic Linked Braking (ELB)",
+          "value": "N/A"
+        },
+        {
+          "name": "Traction Control System (TCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Drag-torque Slip Control System (DSCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Vehicle Hold Control (VHC)",
+          "value": "N/A"
+        },
+        {
+          "name": "Tire Pressure Monitoring System (TPMS)",
+          "value": "Included"
+        },
+        {
+          "name": "Wheel Lift Mitigation",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Cornering Rider Safety Enhancements",
+          "value": "FLSTFI Fat Boy® Gray Ghost"
+        },
+        {
+          "name": "Cornering Enhanced Anti-lock Brake System (C-ABS)",
+          "value": "Included"
+        },
+        {
+          "name": "Cornering Enhanced Electronic Linked Braking (C-ELB)",
+          "value": "N/A"
+        },
+        {
+          "name": "Cornering Enhanced Traction Control System (C-TCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Cornering Drag-Torque Slip Control System (C-DSCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Enhanced Lift Mitigation",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Warranty And Service",
+          "value": "FLSTFI Fat Boy® Gray Ghost"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/25_flstfi_m53_r.jpg",
+      "epaItemId": "65799",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "25_flstfi_m53_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/2025-fat-boy-gray-ghost-m53-motorcycle-09.jpg",
+      "epaItemId": "65797",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "2025-fat-boy-gray-ghost-m53-motorcycle-09.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/2025-fat-boy-gray-ghost-m53-motorcycle-05.jpg",
+      "epaItemId": "65796",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "2025-fat-boy-gray-ghost-m53-motorcycle-05.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/2025-fat-boy-gray-ghost-m53-motorcycle-13.jpg",
+      "epaItemId": "65798",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "2025-fat-boy-gray-ghost-m53-motorcycle-13.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/my25-flstfi-side-0001.jpg",
+      "epaItemId": "65820",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "my25-flstfi-side-0001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_3x4.jpg",
+      "epaItemId": "65800",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_3x4.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/my25-flstfi-f14-0001.jpg",
+      "epaItemId": "65813",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "my25-flstfi-f14-0001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/my25-flstfi-f34-0001.jpg",
+      "epaItemId": "65814",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "my25-flstfi-f34-0001.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/my25-flstfi-beauty-v2-bw-final.jpg",
+      "epaItemId": "65812",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "my25-flstfi-beauty-v2-bw-final.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/my25-flstfi-hero_location_v01_jc-final.jpg",
+      "epaItemId": "65819",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "my25-flstfi-hero_location_v01_jc-final.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_gauge.jpg",
+      "epaItemId": "65806",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_gauge.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_headlight.jpg",
+      "epaItemId": "65807",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_headlight.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_console.jpg",
+      "epaItemId": "65801",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_console.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_icon.jpg",
+      "epaItemId": "65808",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_icon.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_medallion.jpg",
+      "epaItemId": "65809",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_medallion.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_controls.jpg",
+      "epaItemId": "65802",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_controls.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_seat.jpg",
+      "epaItemId": "65810",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_seat.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_shock.jpg",
+      "epaItemId": "65811",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_shock.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_engine.jpg",
+      "epaItemId": "65804",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_engine.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_cover.jpg",
+      "epaItemId": "65803",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_cover.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/flstfi_hd_studio_2024_exhaust.jpg",
+      "epaItemId": "65805",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "flstfi_hd_studio_2024_exhaust.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/my25-flstfi-hero_location_kf-v01_a01.jpg",
+      "epaItemId": "65815",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "my25-flstfi-hero_location_kf-v01_a01.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/my25-flstfi-hero_location_kf-v01_a03.jpg",
+      "epaItemId": "65817",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "my25-flstfi-hero_location_kf-v01_a03.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/my25-flstfi-hero_location_kf-v01_a02.jpg",
+      "epaItemId": "65816",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "my25-flstfi-hero_location_kf-v01_a02.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ce07e6744032d421/images/preview/my25-flstfi-hero_location_kf-v01_a04.jpg",
+      "epaItemId": "65818",
+      "caption": "Harley-Davidson Fat Boy Gray Ghost",
+      "localFile": "my25-flstfi-hero_location_kf-v01_a04.jpg",
+      "status": "downloaded",
+      "highRes": false
+    }
+  ],
+  "videos": [
+    {
+      "thumbUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/5af0dc55d50e41f9/video/preview/MY25_FLSTFI_FLYAROUND.jpg",
+      "mp4Url": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/5af0dc55d50e41f9/video/MY25_FLSTFI_FLYAROUND.mp4",
+      "filename": "MY25_FLSTFI_FLYAROUND.mp4",
+      "caption": "",
+      "localFile": "MY25_FLSTFI_FLYAROUND.mp4",
+      "status": "downloaded",
+      "sizeMB": 195
+    }
+  ],
+  "specsPdf": "https://h-dmediakit.com/epapi-get/pdf/bikepages/specs/2025/flstfi/specifications_flstfi_eu.pdf",
+  "pdfLocal": "docs/specs_flstfi_2025_eu.pdf"
+}

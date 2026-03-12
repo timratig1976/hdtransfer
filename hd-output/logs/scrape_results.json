@@ -1,0 +1,15 @@
+[
+  {
+    "bike": {
+      "name": "Pan America 1250 Special",
+      "year": "2025",
+      "code": "ra1250s",
+      "category": "Adventure Touring"
+    },
+    "status": "success",
+    "folder": "2025_pan_america_1250_special_ra1250s",
+    "imageCount": 27,
+    "videoCount": 2,
+    "specsCount": 144
+  }
+]

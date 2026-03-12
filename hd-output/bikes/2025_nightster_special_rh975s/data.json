@@ -1,0 +1,917 @@
+{
+  "year": "2025",
+  "category": "Sport",
+  "name": "Nightster Special",
+  "code": "rh975s",
+  "url": "https://h-dmediakit.com/eu/bdp/?rh975s|2025",
+  "description": "Own the night. The Nightster Special marries iconic Sportster ® design with modern, high-revving, liquid-cooled engine performance and rider-focused tech that keeps you connected on the road.",
+  "specs": {
+    "Dimensions": "RH975S Nightster® Special",
+    "Length": "89.2 in. (2,265 mm)",
+    "Overall Width": "33.9 in. (860 mm)",
+    "Overall Height": "46.7 in. (1,185 mm)",
+    "Seat Height, Laden": "27.1 in. (688 mm)",
+    "Seat Height, Unladen": "28.1 in. (715 mm)",
+    "Static Ground Clearance": "4.7 in. (120 mm)",
+    "Rake (steering head)": "30",
+    "Fork Angle": "28",
+    "Trail": "5.4 in. (137 mm)",
+    "Wheelbase": "60.8 in. (1,545 mm)",
+    "Tires, Type": "Dunlop® Harley-Davidson Series Bias Blackwall",
+    "Tires, Front Model": "D401F",
+    "Tires, Front Specification": "100/90-19 57H",
+    "Tires, Rear Model": "D401T",
+    "Tires, Rear Specification": "150/80B16 77H",
+    "Fuel Capacity": "3.1 gal. (11.7 l)",
+    "Reserve Fuel Capacity, Fuel Injection (warning light)": "0.8 gal. (3 l)",
+    "Oil Capacity (w/filter)": "4.75 qt. (4.5 l)",
+    "Transmission Capacity": "N/A",
+    "Primary Chain Case Capacity": "N/A",
+    "Coolant Capacity": "2.22 qt. (2.1 l)",
+    "Weight, As Shipped": "476 lb. (216 kg)",
+    "Weight, In Running Order": "496 lb. (225 kg)",
+    "Gross Vehicle Weight Rating": "922 lb. (418 kg)",
+    "Gross Axle Weight Rating, Front": "353 lb. (160 kg)",
+    "Gross Axle Weight Rating, Rear": "595 lb. (270 kg)",
+    "Luggage Capacity -Volume": "N/A",
+    "Engine": "Revolution® Max 975T",
+    "Valves": "Chain-driven, DOHC, hydraulic self-adjusting lifters, intake VVT; four valves per cylinder",
+    "Bore": "3.82 in. (97 mm)",
+    "Stroke": "2.6 in. (66 mm)",
+    "Displacement": "59.5 cu in (975 cc)",
+    "Compression Ratio": "12:01",
+    "Fuel System": "Electronic Sequential Port Fuel Injection (ESPFI)",
+    "Air Cleaner": "Downdraft intake, tuned velocity stacks, washable filter media",
+    "Exhaust": "2-into-1; catalyst in header",
+    "Lubrication System": "Semi-Dry Sump",
+    "Drivetrain": "RH975S Nightster® Special",
+    "Primary Drive": "Gear, 49/89 ratio",
+    "Final Drive": "Belt, 34/80 ratio",
+    "Clutch": "Mechanical, 8 plate wet, assist & slip, 1090N",
+    "Transmission": "6-speed",
+    "Gear Ratios (overall) 1st": "12.21",
+    "Gear Ratios (overall) 2nd": "9.022",
+    "Gear Ratios (overall) 3rd": "6.994",
+    "Gear Ratios (overall) 4th": "5.641",
+    "Gear Ratios (overall) 5th": "4.731",
+    "Gear Ratios (overall) 6th": "4.131",
+    "Chassis": "RH975S Nightster® Special",
+    "Frame": "Stressed-member, high strength low alloy steel trellis frame; stamped, cast, and forged junctions; MIG welded; aluminum forged mid-structure",
+    "Swingarm": "Mild steel, rectangular tube section, stamped x-member; MIG welded",
+    "Front Fork": "41mm SHOWA® Dual Bending Valve conventional forks. Aluminum fork triple clamps.",
+    "Rear Shocks": "Rear suspension is dual outboard, direct-acting (no linkage) emulsion technology shock absorbers with coil springs and a threaded collar for pre-load adjustment.",
+    "Wheels, Optional Style Type": "N/A",
+    "Wheels, Front Type": "Aluminum cast, silver",
+    "Wheels, Front Diameter": "19 in. (483 mm)",
+    "Wheels, Front Width": "2.5 in. (64 mm)",
+    "Wheels, Rear Type": "Aluminum cast, silver",
+    "Wheels, Rear Diameter": "16 in. (406 mm)",
+    "Wheels, Rear Width": "4.25 in. (108 mm)",
+    "Brakes, Caliper Type": "Front: axially mounted, 4-piston caliper; Rear: floating, single piston caliper",
+    "Brakes, Rotor Type": "Front: single rotor, floating, hub - mounted; Rear: solid uniform expansion rotor",
+    "Brakes, Front Diameter": "12.6 in. (320 mm)",
+    "Brakes, Front Thickness": "0.23 in. (5.8 mm)",
+    "Brakes, Front is dual": "No",
+    "Brakes, Rear Diameter": "10.2 in. (260 mm)",
+    "Brakes, Rear Thickness": "0.2 in. (5 mm)",
+    "Brakes, Anti-Lock Braking System (ABS)": "Standard",
+    "Suspension Travel, Front": "4.5 in. (114 mm)",
+    "Suspension Travel, Rear": "3 in. (76.2 mm)",
+    "Performance": "RH975S Nightster® Special",
+    "Engine Torque Testing Method": "J1349",
+    "Engine Torque": "72 ft-lb (97 Nm)",
+    "Engine Torque (rpm)": "5,750",
+    "Power": "91 HP / 68 kW @ 7500 rpm",
+    "Lean Angle Testing Method": "J1168",
+    "Lean Angle, Right (deg.)": "32",
+    "Lean Angle, Left (deg.)": "32",
+    "Electric": "RH975S Nightster® Special",
+    "Battery": "Sealed, maintenance-free, absorbed glass mat (AGM) battery, 12V, 12Ah, 225 CCA at 0°F",
+    "Charging": "Three-phase, 45 Amp system (300 Watts @13 Volts, 1200 rpm, 585 Watts max power @ 13 Volts, 2250 rpm)",
+    "Starting": "0.9 kW electric with direct drive starter motor engagement",
+    "Lights (as per country regulation), Headlamp": "All LED headlamp, low and high beam with signature position lighting",
+    "Lights (as per country regulation), Tail/Stop": "All LED rear lighting",
+    "Lights (as per country regulation), Front Signal Lights": "LED Bullet Turn Signals",
+    "Lights, Rear Turn Signals": "LED Bullet Turn Signals",
+    "Gauges": "4 inch viewable area TFT display with speedometer, gear, odometer, fuel level, clock, trip, ambient temp, low temp alert, side stand down alert, TIP over alert, cruise, range and tachometer indication BT capable - phone pairing to access phone calls, music, navigation (H-D App ONLY)",
+    "Auxiliary Lamps": "N/A",
+    "Electric Power Outlet": "USB C-Type , Output 5V at 2.4 Amp",
+    "GPS System": "N/A",
+    "Reverse Gear": "N/A",
+    "Fuel Economy & CO&#8322; Emissions": "RH975S Nightster® Special",
+    "Fuel Economy Testing Method": "Estimated City/Hwy",
+    "Fuel Economy": "52 mpg (4.5 l/100 km)",
+    "Infotainment": "RH975S Nightster® Special",
+    "Infotainment system": "N/A",
+    "Screen Size": "4 in (102 mm)",
+    "Type": "Color TFT",
+    "Watts Per Channel": "N/A",
+    "Speakers": "N/A",
+    "Speaker Size": "N/A",
+    "Headset Specifications (if equipped)": "Bluetooth",
+    "AM": "N/A",
+    "FM": "N/A",
+    "MW": "N/A",
+    "LW": "N/A",
+    "Weather Band (WB)": "N/A",
+    "SD Card, Flash Drive and MP3 - via USB Connection": "N/A",
+    "Hands-free Mobile Phone - via Bluetooth": "Standard",
+    "Voice Recognition Languages: Phone functions only": "Phone dependent",
+    "Rider/Passenger Intercom": "Headset function only",
+    "Vehicle Information Screen (Air temperature, oil pressure and EITMS)": "TPMS, Engine temp, Battery Voltage, Ambient Air Temp",
+    "Text-to-Speech (TTS) Languages": "Phone dependent",
+    "USB": "Charging and Instrument update, USB-C, 5V, 3A",
+    "Bluetooth": "Phone/Media Supported",
+    "Rider Safety Enhancements": "RH975S Nightster® Special",
+    "Anti-lock Brake System (ABS)": "Included",
+    "Electronic Linked Braking (ELB)": "N/A",
+    "Traction Control System (TCS)": "Included",
+    "Drag-torque Slip Control System (DSCS)": "Included",
+    "Vehicle Hold Control (VHC)": "N/A",
+    "Tire Pressure Monitoring System (TPMS)": "Included",
+    "Wheel Lift Mitigation": "N/A",
+    "Cornering Rider Safety Enhancements": "RH975S Nightster® Special",
+    "Cornering Enhanced Anti-lock Brake System (C-ABS)": "N/A",
+    "Cornering Enhanced Electronic Linked Braking (C-ELB)": "N/A",
+    "Cornering Enhanced Traction Control System (C-TCS)": "N/A",
+    "Cornering Drag-Torque Slip Control System (C-DSCS)": "N/A",
+    "Enhanced Lift Mitigation": "N/A",
+    "Warranty And Service": "RH975S Nightster® Special",
+    "Warranty": "24 months (unlimited mileage)",
+    "Service Interval": "First 1,000 miles (1,600 km), every 5,000 miles (8,000 km) thereafter",
+    "Footnotes": "RH975S Nightster® Special"
+  },
+  "specsSections": [
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Dimensions",
+          "value": "RH975S Nightster® Special"
+        },
+        {
+          "name": "Length",
+          "value": "89.2 in. (2,265 mm)"
+        },
+        {
+          "name": "Overall Width",
+          "value": "33.9 in. (860 mm)"
+        },
+        {
+          "name": "Overall Height",
+          "value": "46.7 in. (1,185 mm)"
+        },
+        {
+          "name": "Seat Height, Laden",
+          "value": "27.1 in. (688 mm)"
+        },
+        {
+          "name": "Seat Height, Unladen",
+          "value": "28.1 in. (715 mm)"
+        },
+        {
+          "name": "Static Ground Clearance",
+          "value": "4.7 in. (120 mm)"
+        },
+        {
+          "name": "Rake (steering head)",
+          "value": "30"
+        },
+        {
+          "name": "Fork Angle",
+          "value": "28"
+        },
+        {
+          "name": "Trail",
+          "value": "5.4 in. (137 mm)"
+        },
+        {
+          "name": "Wheelbase",
+          "value": "60.8 in. (1,545 mm)"
+        },
+        {
+          "name": "Tires, Type",
+          "value": "Dunlop® Harley-Davidson Series Bias Blackwall"
+        },
+        {
+          "name": "Tires, Front Model",
+          "value": "D401F"
+        },
+        {
+          "name": "Tires, Front Specification",
+          "value": "100/90-19 57H"
+        },
+        {
+          "name": "Tires, Rear Model",
+          "value": "D401T"
+        },
+        {
+          "name": "Tires, Rear Specification",
+          "value": "150/80B16 77H"
+        },
+        {
+          "name": "Fuel Capacity",
+          "value": "3.1 gal. (11.7 l)"
+        },
+        {
+          "name": "Reserve Fuel Capacity, Fuel Injection (warning light)",
+          "value": "0.8 gal. (3 l)"
+        },
+        {
+          "name": "Oil Capacity (w/filter)",
+          "value": "4.75 qt. (4.5 l)"
+        },
+        {
+          "name": "Transmission Capacity",
+          "value": "N/A"
+        },
+        {
+          "name": "Primary Chain Case Capacity",
+          "value": "N/A"
+        },
+        {
+          "name": "Coolant Capacity",
+          "value": "2.22 qt. (2.1 l)"
+        },
+        {
+          "name": "Weight, As Shipped",
+          "value": "476 lb. (216 kg)"
+        },
+        {
+          "name": "Weight, In Running Order",
+          "value": "496 lb. (225 kg)"
+        },
+        {
+          "name": "Gross Vehicle Weight Rating",
+          "value": "922 lb. (418 kg)"
+        },
+        {
+          "name": "Gross Axle Weight Rating, Front",
+          "value": "353 lb. (160 kg)"
+        },
+        {
+          "name": "Gross Axle Weight Rating, Rear",
+          "value": "595 lb. (270 kg)"
+        },
+        {
+          "name": "Luggage Capacity -Volume",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Engine",
+          "value": "RH975S Nightster® Special"
+        },
+        {
+          "name": "Engine",
+          "value": "Revolution® Max 975T"
+        },
+        {
+          "name": "Valves",
+          "value": "Chain-driven, DOHC, hydraulic self-adjusting lifters, intake VVT; four valves per cylinder"
+        },
+        {
+          "name": "Bore",
+          "value": "3.82 in. (97 mm)"
+        },
+        {
+          "name": "Stroke",
+          "value": "2.6 in. (66 mm)"
+        },
+        {
+          "name": "Displacement",
+          "value": "59.5 cu in (975 cc)"
+        },
+        {
+          "name": "Compression Ratio",
+          "value": "12:01"
+        },
+        {
+          "name": "Fuel System",
+          "value": "Electronic Sequential Port Fuel Injection (ESPFI)"
+        },
+        {
+          "name": "Air Cleaner",
+          "value": "Downdraft intake, tuned velocity stacks, washable filter media"
+        },
+        {
+          "name": "Exhaust",
+          "value": "2-into-1; catalyst in header"
+        },
+        {
+          "name": "Lubrication System",
+          "value": "Semi-Dry Sump"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Drivetrain",
+          "value": "RH975S Nightster® Special"
+        },
+        {
+          "name": "Primary Drive",
+          "value": "Gear, 49/89 ratio"
+        },
+        {
+          "name": "Final Drive",
+          "value": "Belt, 34/80 ratio"
+        },
+        {
+          "name": "Clutch",
+          "value": "Mechanical, 8 plate wet, assist & slip, 1090N"
+        },
+        {
+          "name": "Transmission",
+          "value": "6-speed"
+        },
+        {
+          "name": "Gear Ratios (overall) 1st",
+          "value": "12.21"
+        },
+        {
+          "name": "Gear Ratios (overall) 2nd",
+          "value": "9.022"
+        },
+        {
+          "name": "Gear Ratios (overall) 3rd",
+          "value": "6.994"
+        },
+        {
+          "name": "Gear Ratios (overall) 4th",
+          "value": "5.641"
+        },
+        {
+          "name": "Gear Ratios (overall) 5th",
+          "value": "4.731"
+        },
+        {
+          "name": "Gear Ratios (overall) 6th",
+          "value": "4.131"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Chassis",
+          "value": "RH975S Nightster® Special"
+        },
+        {
+          "name": "Frame",
+          "value": "Stressed-member, high strength low alloy steel trellis frame; stamped, cast, and forged junctions; MIG welded; aluminum forged mid-structure"
+        },
+        {
+          "name": "Swingarm",
+          "value": "Mild steel, rectangular tube section, stamped x-member; MIG welded"
+        },
+        {
+          "name": "Front Fork",
+          "value": "41mm SHOWA® Dual Bending Valve conventional forks. Aluminum fork triple clamps."
+        },
+        {
+          "name": "Rear Shocks",
+          "value": "Rear suspension is dual outboard, direct-acting (no linkage) emulsion technology shock absorbers with coil springs and a threaded collar for pre-load adjustment."
+        },
+        {
+          "name": "Wheels, Optional Style Type",
+          "value": "N/A"
+        },
+        {
+          "name": "Wheels, Front Type",
+          "value": "Aluminum cast, silver"
+        },
+        {
+          "name": "Wheels, Front Diameter",
+          "value": "19 in. (483 mm)"
+        },
+        {
+          "name": "Wheels, Front Width",
+          "value": "2.5 in. (64 mm)"
+        },
+        {
+          "name": "Wheels, Rear Type",
+          "value": "Aluminum cast, silver"
+        },
+        {
+          "name": "Wheels, Rear Diameter",
+          "value": "16 in. (406 mm)"
+        },
+        {
+          "name": "Wheels, Rear Width",
+          "value": "4.25 in. (108 mm)"
+        },
+        {
+          "name": "Brakes, Caliper Type",
+          "value": "Front: axially mounted, 4-piston caliper; Rear: floating, single piston caliper"
+        },
+        {
+          "name": "Brakes, Rotor Type",
+          "value": "Front: single rotor, floating, hub - mounted; Rear: solid uniform expansion rotor"
+        },
+        {
+          "name": "Brakes, Front Diameter",
+          "value": "12.6 in. (320 mm)"
+        },
+        {
+          "name": "Brakes, Front Thickness",
+          "value": "0.23 in. (5.8 mm)"
+        },
+        {
+          "name": "Brakes, Front is dual",
+          "value": "No"
+        },
+        {
+          "name": "Brakes, Rear Diameter",
+          "value": "10.2 in. (260 mm)"
+        },
+        {
+          "name": "Brakes, Rear Thickness",
+          "value": "0.2 in. (5 mm)"
+        },
+        {
+          "name": "Brakes, Anti-Lock Braking System (ABS)",
+          "value": "Standard"
+        },
+        {
+          "name": "Suspension Travel, Front",
+          "value": "4.5 in. (114 mm)"
+        },
+        {
+          "name": "Suspension Travel, Rear",
+          "value": "3 in. (76.2 mm)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Performance",
+          "value": "RH975S Nightster® Special"
+        },
+        {
+          "name": "Engine Torque Testing Method",
+          "value": "J1349"
+        },
+        {
+          "name": "Engine Torque",
+          "value": "72 ft-lb (97 Nm)"
+        },
+        {
+          "name": "Engine Torque (rpm)",
+          "value": "5,750"
+        },
+        {
+          "name": "Power",
+          "value": "91 HP / 68 kW @ 7500 rpm"
+        },
+        {
+          "name": "Lean Angle Testing Method",
+          "value": "J1168"
+        },
+        {
+          "name": "Lean Angle, Right (deg.)",
+          "value": "32"
+        },
+        {
+          "name": "Lean Angle, Left (deg.)",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Electric",
+          "value": "RH975S Nightster® Special"
+        },
+        {
+          "name": "Battery",
+          "value": "Sealed, maintenance-free, absorbed glass mat (AGM) battery, 12V, 12Ah, 225 CCA at 0°F"
+        },
+        {
+          "name": "Charging",
+          "value": "Three-phase, 45 Amp system (300 Watts @13 Volts, 1200 rpm, 585 Watts max power @ 13 Volts, 2250 rpm)"
+        },
+        {
+          "name": "Starting",
+          "value": "0.9 kW electric with direct drive starter motor engagement"
+        },
+        {
+          "name": "Lights (as per country regulation), Headlamp",
+          "value": "All LED headlamp, low and high beam with signature position lighting"
+        },
+        {
+          "name": "Lights (as per country regulation), Tail/Stop",
+          "value": "All LED rear lighting"
+        },
+        {
+          "name": "Lights (as per country regulation), Front Signal Lights",
+          "value": "LED Bullet Turn Signals"
+        },
+        {
+          "name": "Lights, Rear Turn Signals",
+          "value": "LED Bullet Turn Signals"
+        },
+        {
+          "name": "Gauges",
+          "value": "4 inch viewable area TFT display with speedometer, gear, odometer, fuel level, clock, trip, ambient temp, low temp alert, side stand down alert, TIP over alert, cruise, range and tachometer indication BT capable - phone pairing to access phone calls, music, navigation (H-D App ONLY)"
+        },
+        {
+          "name": "Auxiliary Lamps",
+          "value": "N/A"
+        },
+        {
+          "name": "Electric Power Outlet",
+          "value": "USB C-Type , Output 5V at 2.4 Amp"
+        },
+        {
+          "name": "GPS System",
+          "value": "N/A"
+        },
+        {
+          "name": "Reverse Gear",
+          "value": "N/A"
+        },
+        {
+          "name": "Fuel Economy & CO&#8322; Emissions",
+          "value": "RH975S Nightster® Special"
+        },
+        {
+          "name": "Fuel Economy Testing Method",
+          "value": "Estimated City/Hwy"
+        },
+        {
+          "name": "Fuel Economy",
+          "value": "52 mpg (4.5 l/100 km)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Infotainment",
+          "value": "RH975S Nightster® Special"
+        },
+        {
+          "name": "Infotainment system",
+          "value": "N/A"
+        },
+        {
+          "name": "Screen Size",
+          "value": "4 in (102 mm)"
+        },
+        {
+          "name": "Type",
+          "value": "Color TFT"
+        },
+        {
+          "name": "Watts Per Channel",
+          "value": "N/A"
+        },
+        {
+          "name": "Speakers",
+          "value": "N/A"
+        },
+        {
+          "name": "Speaker Size",
+          "value": "N/A"
+        },
+        {
+          "name": "Headset Specifications (if equipped)",
+          "value": "Bluetooth"
+        },
+        {
+          "name": "AM",
+          "value": "N/A"
+        },
+        {
+          "name": "FM",
+          "value": "N/A"
+        },
+        {
+          "name": "MW",
+          "value": "N/A"
+        },
+        {
+          "name": "LW",
+          "value": "N/A"
+        },
+        {
+          "name": "Weather Band (WB)",
+          "value": "N/A"
+        },
+        {
+          "name": "SD Card, Flash Drive and MP3 - via USB Connection",
+          "value": "N/A"
+        },
+        {
+          "name": "Hands-free Mobile Phone - via Bluetooth",
+          "value": "Standard"
+        },
+        {
+          "name": "Voice Recognition Languages: Phone functions only",
+          "value": "Phone dependent"
+        },
+        {
+          "name": "Rider/Passenger Intercom",
+          "value": "Headset function only"
+        },
+        {
+          "name": "Vehicle Information Screen (Air temperature, oil pressure and EITMS)",
+          "value": "TPMS, Engine temp, Battery Voltage, Ambient Air Temp"
+        },
+        {
+          "name": "Text-to-Speech (TTS) Languages",
+          "value": "Phone dependent"
+        },
+        {
+          "name": "USB",
+          "value": "Charging and Instrument update, USB-C, 5V, 3A"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "Phone/Media Supported"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Rider Safety Enhancements",
+          "value": "RH975S Nightster® Special"
+        },
+        {
+          "name": "Anti-lock Brake System (ABS)",
+          "value": "Included"
+        },
+        {
+          "name": "Electronic Linked Braking (ELB)",
+          "value": "N/A"
+        },
+        {
+          "name": "Traction Control System (TCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Drag-torque Slip Control System (DSCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Vehicle Hold Control (VHC)",
+          "value": "N/A"
+        },
+        {
+          "name": "Tire Pressure Monitoring System (TPMS)",
+          "value": "Included"
+        },
+        {
+          "name": "Wheel Lift Mitigation",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Cornering Rider Safety Enhancements",
+          "value": "RH975S Nightster® Special"
+        },
+        {
+          "name": "Cornering Enhanced Anti-lock Brake System (C-ABS)",
+          "value": "N/A"
+        },
+        {
+          "name": "Cornering Enhanced Electronic Linked Braking (C-ELB)",
+          "value": "N/A"
+        },
+        {
+          "name": "Cornering Enhanced Traction Control System (C-TCS)",
+          "value": "N/A"
+        },
+        {
+          "name": "Cornering Drag-Torque Slip Control System (C-DSCS)",
+          "value": "N/A"
+        },
+        {
+          "name": "Enhanced Lift Mitigation",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Warranty And Service",
+          "value": "RH975S Nightster® Special"
+        },
+        {
+          "name": "Warranty",
+          "value": "24 months (unlimited mileage)"
+        },
+        {
+          "name": "Service Interval",
+          "value": "First 1,000 miles (1,600 km), every 5,000 miles (8,000 km) thereafter"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Footnotes",
+          "value": "RH975S Nightster® Special"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/25_rh975s_m12b_r.jpg",
+      "epaItemId": "61470",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "25_rh975s_m12b_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/25_rh975s_m13b_r.jpg",
+      "epaItemId": "61472",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "25_rh975s_m13b_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/25_rh975s_m02b_r.jpg",
+      "epaItemId": "61468",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "25_rh975s_m02b_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/25_rh975s_016b_r.jpg",
+      "epaItemId": "61466",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "25_rh975s_016b_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/my25-rh975s-lifestyle-0600-abjc.jpg",
+      "epaItemId": "62159",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "my25-rh975s-lifestyle-0600-abjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/my25-rh975s-riding-0309-abjc.jpg",
+      "epaItemId": "62160",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "my25-rh975s-riding-0309-abjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/my25-rh975s-riding-0387-abjc.jpg",
+      "epaItemId": "62161",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "my25-rh975s-riding-0387-abjc.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0012_rh975s_hd_studio_2024_screen.jpg",
+      "epaItemId": "61809",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0012_rh975s_hd_studio_2024_screen.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0002_rh975s_hd_studio_2024_screen-ride-modes.jpg",
+      "epaItemId": "61800",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0002_rh975s_hd_studio_2024_screen-ride-modes.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0000_rh975s_hd_studio_2024_master_v005-kopia.jpg",
+      "epaItemId": "61798",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0000_rh975s_hd_studio_2024_master_v005-kopia.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0005_rh975s_hd_studio_2024_headlights.jpg",
+      "epaItemId": "61803",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0005_rh975s_hd_studio_2024_headlights.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0004_rh975s_hd_studio_2024_tank.jpg",
+      "epaItemId": "61802",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0004_rh975s_hd_studio_2024_tank.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0006_rh975s_hd_studio_2024_wheels.jpg",
+      "epaItemId": "61804",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0006_rh975s_hd_studio_2024_wheels.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0007_rh975s_hd_studio_2024_engine.jpg",
+      "epaItemId": "61805",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0007_rh975s_hd_studio_2024_engine.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0009_rh975s_hd_studio_2024_intake-1.jpg",
+      "epaItemId": "61807",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0009_rh975s_hd_studio_2024_intake-1.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0001_rh975s_hd_studio_2024_lock-seat.jpg",
+      "epaItemId": "61799",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0001_rh975s_hd_studio_2024_lock-seat.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0003_rh975s_hd_studio_2024_passenger-seat.jpg",
+      "epaItemId": "61801",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0003_rh975s_hd_studio_2024_passenger-seat.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0008_rh975s_hd_studio_2024_dual-shocks-1.jpg",
+      "epaItemId": "61806",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0008_rh975s_hd_studio_2024_dual-shocks-1.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/420ce18868eb9258/images/preview/_0010_rh975s_hd_studio_2024_exhaust.jpg",
+      "epaItemId": "61808",
+      "caption": "Harley-Davidson Nightster Special",
+      "localFile": "_0010_rh975s_hd_studio_2024_exhaust.jpg",
+      "status": "downloaded",
+      "highRes": false
+    }
+  ],
+  "videos": [
+    {
+      "thumbUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/013c360b9a1246f4/video/preview/24_75051_MY25_NS_BD_BROLL_vFC2.jpg",
+      "mp4Url": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/013c360b9a1246f4/video/24_75051_MY25_NS_BD_BROLL_vFC2.mp4",
+      "filename": "24_75051_MY25_NS_BD_BROLL_vFC2.mp4",
+      "caption": "",
+      "localFile": "24_75051_MY25_NS_BD_BROLL_vFC2.mp4",
+      "status": "downloaded",
+      "sizeMB": 149
+    },
+    {
+      "thumbUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/013c360b9a1246f4/video/preview/my25-rh975s_flyarounds-001.jpg",
+      "mp4Url": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/013c360b9a1246f4/video/my25-rh975s_flyarounds-001.mp4",
+      "filename": "my25-rh975s_flyarounds-001.mp4",
+      "caption": "",
+      "localFile": "my25-rh975s_flyarounds-001.mp4",
+      "status": "downloaded",
+      "sizeMB": 118
+    }
+  ],
+  "specsPdf": "https://h-dmediakit.com/epapi-get/pdf/bikepages/specs/2025/rh975s/specifications_rh975s_eu.pdf",
+  "pdfLocal": "docs/specs_rh975s_2025_eu.pdf"
+}

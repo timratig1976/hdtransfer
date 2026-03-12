@@ -1,6 +1,15 @@
 node_modules/
-hd-output/
 hd_state.json
 *.tmp
 *.upload_tmp.jpg
 .DS_Store
+
+# Large binary files — keep JSON/PDF, exclude images and videos
+hd-output/**/*.jpg
+hd-output/**/*.jpeg
+hd-output/**/*.png
+hd-output/**/*.tif
+hd-output/**/*.tiff
+hd-output/**/*.mp4
+hd-output/**/*.mov
+hd-output/**/*.avi

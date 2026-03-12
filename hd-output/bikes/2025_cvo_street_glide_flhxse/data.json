@@ -1,0 +1,910 @@
+{
+  "year": "2025",
+  "category": "Collections",
+  "name": "CVO Street Glide",
+  "code": "flhxse",
+  "url": "https://h-dmediakit.com/eu/bdp/?flhxse|2025",
+  "description": "Masterpiece in motion. Equipped with the best of everything straight from the factory, the CVO Street Glide is a Batwing bagger loaded with the latest tech and premium custom detailing—like the VVT 121 engine, high-performance audio, exclusive paint, and contrast-cut wheels—setting the stage for unmatched performance and style.",
+  "specs": {
+    "Dimensions": "FLHXSE CVO™ Street Glide®",
+    "Length": "94.9 in. (2,410 mm)",
+    "Overall Width": "38.4 in. (975 mm)",
+    "Overall Height": "53.2 in. (1,350 mm)",
+    "Seat Height, Laden": "26.7 in. (678 mm)",
+    "Seat Height, Unladen": "28.2 in. (715 mm)",
+    "Static Ground Clearance": "5.5 in. (140 mm)",
+    "Rake (steering head)": "26",
+    "Fork Angle": "30",
+    "Trail": "6.7 in. (170 mm)",
+    "Wheelbase": "64 in. (1,625 mm)",
+    "Tires, Type": "Dunlop® Harley-Davidson Series, bias blackwall front and rear",
+    "Tires, Front Model": "D408F",
+    "Tires, Front Specification": "130/60B19 M/C 61H",
+    "Tires, Rear Model": "D407T",
+    "Tires, Rear Specification": "180/55B18 M/C 80H",
+    "Fuel Capacity": "6 gal. (22.7 l)",
+    "Reserve Fuel Capacity, Fuel Injection (warning light)": "1 gal. (3.8 l)",
+    "Oil Capacity (w/filter)": "5 qt. (4.7 l)",
+    "Transmission Capacity": "1 qt. (.95 l)",
+    "Primary Chain Case Capacity": "1.1 qts. (1 l)",
+    "Coolant Capacity": "0.82 qt. (0.78 l)",
+    "Weight, As Shipped": "800 lb. (363 kg)",
+    "Weight, In Running Order": "838 lb. (380 kg)",
+    "Gross Vehicle Weight Rating": "1,360 lb. (617 kg)",
+    "Gross Axle Weight Rating, Front": "500 lb. (227 kg)",
+    "Gross Axle Weight Rating, Rear": "927 lb. (420 kg)",
+    "Luggage Capacity -Volume": "2.2 cu ft (0.062 m3)",
+    "Engine": "Milwaukee-Eight® VVT 121",
+    "Valves": "Pushrod-operated, overhead valves with hydraulic, self-adjusting lifters; four valves per cylinder",
+    "Bore": "4.075 in. (103.5 mm)",
+    "Stroke": "4.625 in. (117.5 mm)",
+    "Displacement": "121 cu in (1,977 cc)",
+    "Compression Ratio": "11.4:1",
+    "Fuel System": "Electronic Sequential Port Fuel Injection (ESPFI)",
+    "Air Cleaner": "Synthetic Felt, Washable",
+    "Exhaust": "2-1-2 dual exhaust",
+    "Lubrication System": "Pressurized, dry-sump",
+    "Drivetrain": "FLHXSE CVO™ Street Glide®",
+    "Primary Drive": "Chain, 34/46 ratio",
+    "Final Drive": "Belt, 32/68 ratio",
+    "Clutch": "Mechanically actuated 10 plate, wet Assist & Slip",
+    "Transmission": "6-Speed Cruise Drive®",
+    "Gear Ratios (overall) 1st": "9.593",
+    "Gear Ratios (overall) 2nd": "6.65",
+    "Gear Ratios (overall) 3rd": "4.938",
+    "Gear Ratios (overall) 4th": "4",
+    "Gear Ratios (overall) 5th": "3.407",
+    "Gear Ratios (overall) 6th": "2.875",
+    "Chassis": "FLHXSE CVO™ Street Glide®",
+    "Frame": "Mild steel; tubular frame, two-piece stamped and welded backbone; cast and forged junctions; twin down tubes; bolt-on rear frame with forged fender supports; MIG welded",
+    "Swingarm": "Mild steel, two piece drawn and welded section; forged junctions; MIG welded",
+    "Front Fork": "47 mm Inverted 1x1 Front Forks",
+    "Rear Shocks": "Dual adjustable emulsions suspension with remote preload adjustment on the left shock, and threaded preload on the right shock",
+    "Wheels, Optional Style Type": "N/A",
+    "Wheels, Front Type": "Gloss black, 9-spoke cast aluminum",
+    "Wheels, Front Diameter": "19 in. (483 mm)",
+    "Wheels, Front Width": "3.5 in. (89 mm)",
+    "Wheels, Rear Type": "Gloss black, 9-spoke cast aluminum",
+    "Wheels, Rear Diameter": "18 in. (457 mm)",
+    "Wheels, Rear Width": "5 in. (127 mm)",
+    "Brakes, Caliper Type": "32 mm, 4-piston fixed dual radially mounted front, and single axially mounted rear",
+    "Brakes, Rotor Type": "Dual floating rotors (front), fixed rotor (rear)",
+    "Brakes, Front Diameter": "12.6 in. (320 mm)",
+    "Brakes, Front Thickness": "0.18 in. (4.5 mm)",
+    "Brakes, Front is dual": "Yes",
+    "Brakes, Rear Diameter": "11.8 in. (300 mm)",
+    "Brakes, Rear Thickness": "0.28 in. (7.1 mm)",
+    "Brakes, Anti-Lock Braking System (ABS)": "Standard",
+    "Suspension Travel, Front": "4.6 in. (117 mm)",
+    "Suspension Travel, Rear": "3 in. (76 mm)",
+    "Performance": "FLHXSE CVO™ Street Glide®",
+    "Engine Torque Testing Method": "J1349",
+    "Engine Torque": "139 ft-lb (189 Nm)",
+    "Engine Torque (rpm)": "3,000",
+    "Power": "115 HP / 86 kW @ 4500 rpm",
+    "Lean Angle Testing Method": "J1168",
+    "Lean Angle, Right (deg.)": "32",
+    "Lean Angle, Left (deg.)": "32",
+    "Electric": "FLHXSE CVO™ Street Glide®",
+    "Battery": "Sealed, maintenance-free, 12V, 28-amp/hour, 405 cca (per Battery Council International Rating)",
+    "Charging": "Three-phase, 58-amp system (754W max power @ 13V)",
+    "Starting": "1.6 kW electric with solenoid shift starter motor engagement",
+    "Lights (as per country regulation), Headlamp": "LED",
+    "Lights (as per country regulation), Tail/Stop": "LED",
+    "Lights (as per country regulation), Front Signal Lights": "LED",
+    "Lights, Rear Turn Signals": "LED",
+    "Gauges": "Digital gauges integrated within the display",
+    "Auxiliary Lamps": "N/A",
+    "Electric Power Outlet": "15 Watt USB-C electric power accessory port in media storage box.",
+    "GPS System": "Yes, imbedded navigation system with real-time traffic and weather via Wi-Fi Hotspot",
+    "Reverse Gear": "N/A",
+    "Fuel Economy & CO&#8322; Emissions": "FLHXSE CVO™ Street Glide®",
+    "Fuel Economy Testing Method": "Estimated City/Hwy",
+    "Fuel Economy": "45 mpg (5.1 l/100 km)",
+    "Infotainment": "FLHXSE CVO™ Street Glide®",
+    "Infotainment system": "Skyline™ OS",
+    "Screen Size": "12.3 in (312 mm)",
+    "Type": "Full Color TFT",
+    "Watts Per Channel": "125",
+    "Speakers": "4",
+    "Speaker Size": "Two 6.5in fairing speakers, and two 5x7in saddlebag speakers",
+    "Headset Specifications (if equipped)": "Harley-Davidson Packtalk Edge wireless Bluetooth® headset",
+    "AM": "Standard",
+    "FM": "Standard",
+    "MW": "N/A",
+    "LW": "N/A",
+    "Weather Band (WB)": "N/A",
+    "SD Card, Flash Drive and MP3 - via USB Connection": "Supported",
+    "Hands-free Mobile Phone - via Bluetooth": "Standard",
+    "Voice Recognition Languages: Phone functions only": "Phone dependent",
+    "Rider/Passenger Intercom": "Standard (Passenger Headset Sold Separately)",
+    "Vehicle Information Screen (Air temperature, oil pressure and EITMS)": "Standard",
+    "Text-to-Speech (TTS) Languages": "Phone dependent",
+    "USB": "USB-C/MTP/iPod/iPhone, any device with proper adapters to the electric power outlet located in the inner fairing storage.",
+    "Phone Connectivity": "Apple CarPlay (wireless or wired)",
+    "Bluetooth": "Phone/Media Player, Headset",
+    "Rider Safety Enhancements": "FLHXSE CVO™ Street Glide®",
+    "Anti-lock Brake System (ABS)": "Included",
+    "Electronic Linked Braking (ELB)": "Included",
+    "Traction Control System (TCS)": "Included",
+    "Drag-torque Slip Control System (DSCS)": "Included",
+    "Vehicle Hold Control (VHC)": "Included",
+    "Tire Pressure Monitoring System (TPMS)": "Included",
+    "Wheel Lift Mitigation": "N/A",
+    "Cornering Rider Safety Enhancements": "FLHXSE CVO™ Street Glide®",
+    "Cornering Enhanced Anti-lock Brake System (C-ABS)": "Included",
+    "Cornering Enhanced Electronic Linked Braking (C-ELB)": "Included",
+    "Cornering Enhanced Traction Control System (C-TCS)": "Included",
+    "Cornering Drag-Torque Slip Control System (C-DSCS)": "Included",
+    "Enhanced Lift Mitigation": "N/A",
+    "Warranty And Service": "FLHXSE CVO™ Street Glide®",
+    "Warranty": "24 months (unlimited mileage)",
+    "Service Interval": "First 1,000 miles (1,600 km), every 5,000 miles (8,000 km) thereafter",
+    "Footnotes": "FLHXSE CVO™ Street Glide®"
+  },
+  "specsSections": [
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Dimensions",
+          "value": "FLHXSE CVO™ Street Glide®"
+        },
+        {
+          "name": "Length",
+          "value": "94.9 in. (2,410 mm)"
+        },
+        {
+          "name": "Overall Width",
+          "value": "38.4 in. (975 mm)"
+        },
+        {
+          "name": "Overall Height",
+          "value": "53.2 in. (1,350 mm)"
+        },
+        {
+          "name": "Seat Height, Laden",
+          "value": "26.7 in. (678 mm)"
+        },
+        {
+          "name": "Seat Height, Unladen",
+          "value": "28.2 in. (715 mm)"
+        },
+        {
+          "name": "Static Ground Clearance",
+          "value": "5.5 in. (140 mm)"
+        },
+        {
+          "name": "Rake (steering head)",
+          "value": "26"
+        },
+        {
+          "name": "Fork Angle",
+          "value": "30"
+        },
+        {
+          "name": "Trail",
+          "value": "6.7 in. (170 mm)"
+        },
+        {
+          "name": "Wheelbase",
+          "value": "64 in. (1,625 mm)"
+        },
+        {
+          "name": "Tires, Type",
+          "value": "Dunlop® Harley-Davidson Series, bias blackwall front and rear"
+        },
+        {
+          "name": "Tires, Front Model",
+          "value": "D408F"
+        },
+        {
+          "name": "Tires, Front Specification",
+          "value": "130/60B19 M/C 61H"
+        },
+        {
+          "name": "Tires, Rear Model",
+          "value": "D407T"
+        },
+        {
+          "name": "Tires, Rear Specification",
+          "value": "180/55B18 M/C 80H"
+        },
+        {
+          "name": "Fuel Capacity",
+          "value": "6 gal. (22.7 l)"
+        },
+        {
+          "name": "Reserve Fuel Capacity, Fuel Injection (warning light)",
+          "value": "1 gal. (3.8 l)"
+        },
+        {
+          "name": "Oil Capacity (w/filter)",
+          "value": "5 qt. (4.7 l)"
+        },
+        {
+          "name": "Transmission Capacity",
+          "value": "1 qt. (.95 l)"
+        },
+        {
+          "name": "Primary Chain Case Capacity",
+          "value": "1.1 qts. (1 l)"
+        },
+        {
+          "name": "Coolant Capacity",
+          "value": "0.82 qt. (0.78 l)"
+        },
+        {
+          "name": "Weight, As Shipped",
+          "value": "800 lb. (363 kg)"
+        },
+        {
+          "name": "Weight, In Running Order",
+          "value": "838 lb. (380 kg)"
+        },
+        {
+          "name": "Gross Vehicle Weight Rating",
+          "value": "1,360 lb. (617 kg)"
+        },
+        {
+          "name": "Gross Axle Weight Rating, Front",
+          "value": "500 lb. (227 kg)"
+        },
+        {
+          "name": "Gross Axle Weight Rating, Rear",
+          "value": "927 lb. (420 kg)"
+        },
+        {
+          "name": "Luggage Capacity -Volume",
+          "value": "2.2 cu ft (0.062 m3)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Engine",
+          "value": "FLHXSE CVO™ Street Glide®"
+        },
+        {
+          "name": "Engine",
+          "value": "Milwaukee-Eight® VVT 121"
+        },
+        {
+          "name": "Valves",
+          "value": "Pushrod-operated, overhead valves with hydraulic, self-adjusting lifters; four valves per cylinder"
+        },
+        {
+          "name": "Bore",
+          "value": "4.075 in. (103.5 mm)"
+        },
+        {
+          "name": "Stroke",
+          "value": "4.625 in. (117.5 mm)"
+        },
+        {
+          "name": "Displacement",
+          "value": "121 cu in (1,977 cc)"
+        },
+        {
+          "name": "Compression Ratio",
+          "value": "11.4:1"
+        },
+        {
+          "name": "Fuel System",
+          "value": "Electronic Sequential Port Fuel Injection (ESPFI)"
+        },
+        {
+          "name": "Air Cleaner",
+          "value": "Synthetic Felt, Washable"
+        },
+        {
+          "name": "Exhaust",
+          "value": "2-1-2 dual exhaust"
+        },
+        {
+          "name": "Lubrication System",
+          "value": "Pressurized, dry-sump"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Drivetrain",
+          "value": "FLHXSE CVO™ Street Glide®"
+        },
+        {
+          "name": "Primary Drive",
+          "value": "Chain, 34/46 ratio"
+        },
+        {
+          "name": "Final Drive",
+          "value": "Belt, 32/68 ratio"
+        },
+        {
+          "name": "Clutch",
+          "value": "Mechanically actuated 10 plate, wet Assist & Slip"
+        },
+        {
+          "name": "Transmission",
+          "value": "6-Speed Cruise Drive®"
+        },
+        {
+          "name": "Gear Ratios (overall) 1st",
+          "value": "9.593"
+        },
+        {
+          "name": "Gear Ratios (overall) 2nd",
+          "value": "6.65"
+        },
+        {
+          "name": "Gear Ratios (overall) 3rd",
+          "value": "4.938"
+        },
+        {
+          "name": "Gear Ratios (overall) 4th",
+          "value": "4"
+        },
+        {
+          "name": "Gear Ratios (overall) 5th",
+          "value": "3.407"
+        },
+        {
+          "name": "Gear Ratios (overall) 6th",
+          "value": "2.875"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Chassis",
+          "value": "FLHXSE CVO™ Street Glide®"
+        },
+        {
+          "name": "Frame",
+          "value": "Mild steel; tubular frame, two-piece stamped and welded backbone; cast and forged junctions; twin down tubes; bolt-on rear frame with forged fender supports; MIG welded"
+        },
+        {
+          "name": "Swingarm",
+          "value": "Mild steel, two piece drawn and welded section; forged junctions; MIG welded"
+        },
+        {
+          "name": "Front Fork",
+          "value": "47 mm Inverted 1x1 Front Forks"
+        },
+        {
+          "name": "Rear Shocks",
+          "value": "Dual adjustable emulsions suspension with remote preload adjustment on the left shock, and threaded preload on the right shock"
+        },
+        {
+          "name": "Wheels, Optional Style Type",
+          "value": "N/A"
+        },
+        {
+          "name": "Wheels, Front Type",
+          "value": "Gloss black, 9-spoke cast aluminum"
+        },
+        {
+          "name": "Wheels, Front Diameter",
+          "value": "19 in. (483 mm)"
+        },
+        {
+          "name": "Wheels, Front Width",
+          "value": "3.5 in. (89 mm)"
+        },
+        {
+          "name": "Wheels, Rear Type",
+          "value": "Gloss black, 9-spoke cast aluminum"
+        },
+        {
+          "name": "Wheels, Rear Diameter",
+          "value": "18 in. (457 mm)"
+        },
+        {
+          "name": "Wheels, Rear Width",
+          "value": "5 in. (127 mm)"
+        },
+        {
+          "name": "Brakes, Caliper Type",
+          "value": "32 mm, 4-piston fixed dual radially mounted front, and single axially mounted rear"
+        },
+        {
+          "name": "Brakes, Rotor Type",
+          "value": "Dual floating rotors (front), fixed rotor (rear)"
+        },
+        {
+          "name": "Brakes, Front Diameter",
+          "value": "12.6 in. (320 mm)"
+        },
+        {
+          "name": "Brakes, Front Thickness",
+          "value": "0.18 in. (4.5 mm)"
+        },
+        {
+          "name": "Brakes, Front is dual",
+          "value": "Yes"
+        },
+        {
+          "name": "Brakes, Rear Diameter",
+          "value": "11.8 in. (300 mm)"
+        },
+        {
+          "name": "Brakes, Rear Thickness",
+          "value": "0.28 in. (7.1 mm)"
+        },
+        {
+          "name": "Brakes, Anti-Lock Braking System (ABS)",
+          "value": "Standard"
+        },
+        {
+          "name": "Suspension Travel, Front",
+          "value": "4.6 in. (117 mm)"
+        },
+        {
+          "name": "Suspension Travel, Rear",
+          "value": "3 in. (76 mm)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Performance",
+          "value": "FLHXSE CVO™ Street Glide®"
+        },
+        {
+          "name": "Engine Torque Testing Method",
+          "value": "J1349"
+        },
+        {
+          "name": "Engine Torque",
+          "value": "139 ft-lb (189 Nm)"
+        },
+        {
+          "name": "Engine Torque (rpm)",
+          "value": "3,000"
+        },
+        {
+          "name": "Power",
+          "value": "115 HP / 86 kW @ 4500 rpm"
+        },
+        {
+          "name": "Lean Angle Testing Method",
+          "value": "J1168"
+        },
+        {
+          "name": "Lean Angle, Right (deg.)",
+          "value": "32"
+        },
+        {
+          "name": "Lean Angle, Left (deg.)",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Electric",
+          "value": "FLHXSE CVO™ Street Glide®"
+        },
+        {
+          "name": "Battery",
+          "value": "Sealed, maintenance-free, 12V, 28-amp/hour, 405 cca (per Battery Council International Rating)"
+        },
+        {
+          "name": "Charging",
+          "value": "Three-phase, 58-amp system (754W max power @ 13V)"
+        },
+        {
+          "name": "Starting",
+          "value": "1.6 kW electric with solenoid shift starter motor engagement"
+        },
+        {
+          "name": "Lights (as per country regulation), Headlamp",
+          "value": "LED"
+        },
+        {
+          "name": "Lights (as per country regulation), Tail/Stop",
+          "value": "LED"
+        },
+        {
+          "name": "Lights (as per country regulation), Front Signal Lights",
+          "value": "LED"
+        },
+        {
+          "name": "Lights, Rear Turn Signals",
+          "value": "LED"
+        },
+        {
+          "name": "Gauges",
+          "value": "Digital gauges integrated within the display"
+        },
+        {
+          "name": "Auxiliary Lamps",
+          "value": "N/A"
+        },
+        {
+          "name": "Electric Power Outlet",
+          "value": "15 Watt USB-C electric power accessory port in media storage box."
+        },
+        {
+          "name": "GPS System",
+          "value": "Yes, imbedded navigation system with real-time traffic and weather via Wi-Fi Hotspot"
+        },
+        {
+          "name": "Reverse Gear",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Fuel Economy & CO&#8322; Emissions",
+          "value": "FLHXSE CVO™ Street Glide®"
+        },
+        {
+          "name": "Fuel Economy Testing Method",
+          "value": "Estimated City/Hwy"
+        },
+        {
+          "name": "Fuel Economy",
+          "value": "45 mpg (5.1 l/100 km)"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Infotainment",
+          "value": "FLHXSE CVO™ Street Glide®"
+        },
+        {
+          "name": "Infotainment system",
+          "value": "Skyline™ OS"
+        },
+        {
+          "name": "Screen Size",
+          "value": "12.3 in (312 mm)"
+        },
+        {
+          "name": "Type",
+          "value": "Full Color TFT"
+        },
+        {
+          "name": "Watts Per Channel",
+          "value": "125"
+        },
+        {
+          "name": "Speakers",
+          "value": "4"
+        },
+        {
+          "name": "Speaker Size",
+          "value": "Two 6.5in fairing speakers, and two 5x7in saddlebag speakers"
+        },
+        {
+          "name": "Headset Specifications (if equipped)",
+          "value": "Harley-Davidson Packtalk Edge wireless Bluetooth® headset"
+        },
+        {
+          "name": "AM",
+          "value": "Standard"
+        },
+        {
+          "name": "FM",
+          "value": "Standard"
+        },
+        {
+          "name": "MW",
+          "value": "N/A"
+        },
+        {
+          "name": "LW",
+          "value": "N/A"
+        },
+        {
+          "name": "Weather Band (WB)",
+          "value": "N/A"
+        },
+        {
+          "name": "SD Card, Flash Drive and MP3 - via USB Connection",
+          "value": "Supported"
+        },
+        {
+          "name": "Hands-free Mobile Phone - via Bluetooth",
+          "value": "Standard"
+        },
+        {
+          "name": "Voice Recognition Languages: Phone functions only",
+          "value": "Phone dependent"
+        },
+        {
+          "name": "Rider/Passenger Intercom",
+          "value": "Standard (Passenger Headset Sold Separately)"
+        },
+        {
+          "name": "Vehicle Information Screen (Air temperature, oil pressure and EITMS)",
+          "value": "Standard"
+        },
+        {
+          "name": "Text-to-Speech (TTS) Languages",
+          "value": "Phone dependent"
+        },
+        {
+          "name": "USB",
+          "value": "USB-C/MTP/iPod/iPhone, any device with proper adapters to the electric power outlet located in the inner fairing storage."
+        },
+        {
+          "name": "Phone Connectivity",
+          "value": "Apple CarPlay (wireless or wired)"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "Phone/Media Player, Headset"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Rider Safety Enhancements",
+          "value": "FLHXSE CVO™ Street Glide®"
+        },
+        {
+          "name": "Anti-lock Brake System (ABS)",
+          "value": "Included"
+        },
+        {
+          "name": "Electronic Linked Braking (ELB)",
+          "value": "Included"
+        },
+        {
+          "name": "Traction Control System (TCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Drag-torque Slip Control System (DSCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Vehicle Hold Control (VHC)",
+          "value": "Included"
+        },
+        {
+          "name": "Tire Pressure Monitoring System (TPMS)",
+          "value": "Included"
+        },
+        {
+          "name": "Wheel Lift Mitigation",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Cornering Rider Safety Enhancements",
+          "value": "FLHXSE CVO™ Street Glide®"
+        },
+        {
+          "name": "Cornering Enhanced Anti-lock Brake System (C-ABS)",
+          "value": "Included"
+        },
+        {
+          "name": "Cornering Enhanced Electronic Linked Braking (C-ELB)",
+          "value": "Included"
+        },
+        {
+          "name": "Cornering Enhanced Traction Control System (C-TCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Cornering Drag-Torque Slip Control System (C-DSCS)",
+          "value": "Included"
+        },
+        {
+          "name": "Enhanced Lift Mitigation",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Warranty And Service",
+          "value": "FLHXSE CVO™ Street Glide®"
+        },
+        {
+          "name": "Warranty",
+          "value": "24 months (unlimited mileage)"
+        },
+        {
+          "name": "Service Interval",
+          "value": "First 1,000 miles (1,600 km), every 5,000 miles (8,000 km) thereafter"
+        }
+      ]
+    },
+    {
+      "section": "",
+      "rows": [
+        {
+          "name": "Footnotes",
+          "value": "FLHXSE CVO™ Street Glide®"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/25_flhxse_m30_r.jpg",
+      "epaItemId": "62067",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "25_flhxse_m30_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/25_flhxse_m31_r.jpg",
+      "epaItemId": "62068",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "25_flhxse_m31_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/25_flhxse_m32_r.jpg",
+      "epaItemId": "62069",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "25_flhxse_m32_r.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/my25-flhxse-beauty-0007-abjc2.jpg",
+      "epaItemId": "61876",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "my25-flhxse-beauty-0007-abjc2.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/my25-flhxse-riding-0252-ab.jpg",
+      "epaItemId": "61877",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "my25-flhxse-riding-0252-ab.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/my25-flhxse-riding-0311-jk-1.jpg",
+      "epaItemId": "61878",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "my25-flhxse-riding-0311-jk-1.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/my25-flhxse-riding-0322-ab.jpg",
+      "epaItemId": "61879",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "my25-flhxse-riding-0322-ab.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/_0001_flhxse_hd_studio_2024_tft.jpg",
+      "epaItemId": "61906",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "_0001_flhxse_hd_studio_2024_tft.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/_0002_flhxse_hd_studio_2024_riderpov.jpg",
+      "epaItemId": "61907",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "_0002_flhxse_hd_studio_2024_riderpov.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/_0013_flhxse_hd_studio_2024_paint.jpg",
+      "epaItemId": "61884",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "_0013_flhxse_hd_studio_2024_paint.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/_0008_flhxse_hd_studio_2024_headlamps.jpg",
+      "epaItemId": "61911",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "_0008_flhxse_hd_studio_2024_headlamps.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/_0004_flhxse_hd_studio_2024_fork.jpg",
+      "epaItemId": "61908",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "_0004_flhxse_hd_studio_2024_fork.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/_0010_flhxse_hd_studio_2024_wheel.jpg",
+      "epaItemId": "61913",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "_0010_flhxse_hd_studio_2024_wheel.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/_0006_flhxse_hd_studio_2024_engine.jpg",
+      "epaItemId": "61910",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "_0006_flhxse_hd_studio_2024_engine.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/_0009_flhxse_hd_studio_2024_derbycover.jpg",
+      "epaItemId": "61912",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "_0009_flhxse_hd_studio_2024_derbycover.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/_0000_flhxse_hd_studio_2024_speaker.jpg",
+      "epaItemId": "61905",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "_0000_flhxse_hd_studio_2024_speaker.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/_0005_flhxse_hd_studio_2024_suspenssion.jpg",
+      "epaItemId": "61909",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "_0005_flhxse_hd_studio_2024_suspenssion.jpg",
+      "status": "downloaded",
+      "highRes": false
+    },
+    {
+      "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/61c267e029c6afc6/images/preview/_0011_flhxse_hd_studio_2024_exhaust.jpg",
+      "epaItemId": "61914",
+      "caption": "Harley-Davidson CVO Street Glide",
+      "localFile": "_0011_flhxse_hd_studio_2024_exhaust.jpg",
+      "status": "downloaded",
+      "highRes": false
+    }
+  ],
+  "videos": [
+    {
+      "thumbUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ac7f4a8f9f95bb1a/video/preview/24_75051_MY25_CVO_SG_BROLL_vFC1.jpg",
+      "mp4Url": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/ac7f4a8f9f95bb1a/video/24_75051_MY25_CVO_SG_BROLL_vFC1.mp4",
+      "filename": "24_75051_MY25_CVO_SG_BROLL_vFC1.mp4",
+      "caption": "",
+      "localFile": "24_75051_MY25_CVO_SG_BROLL_vFC1.mp4",
+      "status": "downloaded",
+      "sizeMB": 175
+    }
+  ],
+  "specsPdf": "https://h-dmediakit.com/epapi-get/pdf/bikepages/specs/2025/flhxse/specifications_flhxse_eu.pdf",
+  "pdfLocal": "docs/specs_flhxse_2025_eu.pdf"
+}
