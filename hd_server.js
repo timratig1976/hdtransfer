@@ -61,6 +61,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 // ── SSE ───────────────────────────────────────────────────────
 const sseClients = [];
+let currentBikeLogPath = null;
 
 function sendSSE(data) {
   const msg = `data: ${JSON.stringify(data)}\n\n`;
@@ -71,6 +72,9 @@ function log(msg, level = 'info', source = 'system') {
   const ts = new Date().toISOString().substring(11, 19);
   console.log(`[${ts}][${source}] ${msg}`);
   sendSSE({ type: 'log', level, msg, ts, source });
+  if (currentBikeLogPath) {
+    try { fs.appendFileSync(currentBikeLogPath, JSON.stringify({ ts, level, source, msg }) + '\n'); } catch(e) {}
+  }
 }
 function logOk(msg, src)   { log('✅ ' + msg, 'ok',    src); }
 function logErr(msg, src)  { log('❌ ' + msg, 'error', src); }
@@ -405,7 +409,8 @@ ${text}`;
         try {
           const json = JSON.parse(data);
           if (json.error) { reject(new Error(json.error.message)); return; }
-          resolve(json.choices[0].message.content.trim());
+          const raw = json.choices[0].message.content.trim();
+          resolve(raw.replace(/^```[a-z]*\n?/i, '').replace(/\n?```$/,'').trim());
         } catch(e) { reject(new Error('translate parse error: ' + e.message)); }
       });
     });
@@ -732,12 +737,12 @@ async function scrapeBike(config, bike) {
   const logsDir  = path.join(outputDir, 'logs');
 
   sendSSE({ type: 'scraper_bike_start', bike: { name, year, code } });
-  log(`━━ SCRAPING: ${name} ${year}`, 'section', 'scraper');
-
   fs.mkdirSync(imgDir,  { recursive: true });
   fs.mkdirSync(vidDir,  { recursive: true });
   fs.mkdirSync(docsDir, { recursive: true });
   fs.mkdirSync(logsDir, { recursive: true });
+  currentBikeLogPath = path.join(bikeDir, 'log.jsonl');
+  log(`━━ SCRAPING: ${name} ${year}`, 'section', 'scraper');
 
   if (forceRedownload) {
     const del = (dir, exts) => { if (!fs.existsSync(dir)) return 0; const files = fs.readdirSync(dir).filter(f => exts.test(f)); files.forEach(f => fs.unlinkSync(path.join(dir, f))); return files.length; };
@@ -910,6 +915,7 @@ async function scrapeBike(config, bike) {
   result.specsCount = Object.keys(specs).length;
 
   sendSSE({ type: 'scraper_bike_done', bike: { name, year, code }, status: 'success', folder: slug });
+  currentBikeLogPath = null;
   return result;
 }
 
@@ -1100,7 +1106,7 @@ async function createOrUpdateHubSpotPage(token, pageData) {
       id:   pageData.moduleId,
       name: pageData.moduleId,
       type: 'module',
-      body: { [fieldName]: { id: String(pageData.objectId) } },
+      body: { [fieldName]: { id: parseInt(pageData.objectId, 10) } },
     };
   }
 
@@ -1114,6 +1120,11 @@ async function createOrUpdateHubSpotPage(token, pageData) {
     state:           'DRAFT',
     ...(Object.keys(widgetContainers).length ? { widgetContainers } : {}),
   };
+
+  const method = existing ? 'PATCH' : 'POST';
+  const endpoint = existing ? `/cms/v3/pages/site-pages/${existing.id}` : `/cms/v3/pages/site-pages`;
+  log(`HubSpot API ${method} ${endpoint}`, 'info', 'importer');
+  log(`Request Body: ${JSON.stringify(body, null, 2)}`, 'info', 'importer');
 
   if (existing) {
     await apiRequest(token, 'PATCH', `/cms/v3/pages/site-pages/${existing.id}`, body);
@@ -1133,6 +1144,7 @@ async function importBike(config, folderName) {
   const dataPath = path.join(bikeDir, 'data.json');
 
   sendSSE({ type: 'importer_bike_start', folder: folderName });
+  currentBikeLogPath = path.join(bikeDir, 'log.jsonl');
   log(`━━ IMPORT: ${folderName}`, 'section', 'importer');
 
   let bike;
@@ -1371,50 +1383,65 @@ async function importBike(config, folderName) {
       existingId = await findHubSpotObjectByName(apiToken, objectTypeId, properties.hs_name);
       if (existingId) {
         log(`✓ Bestehendes Objekt gefunden (ID ${existingId}) – wird aktualisiert, kein Duplikat`, 'warn', 'importer');
-        progress.hubspotId = existingId;
+        progress.hubspotId = parseInt(existingId, 10);
         saveProgress();
       }
     }
     if (existingId) {
       log(`HubSpot Custom Object aktualisieren (ID ${existingId})…`, 'info', 'importer');
       res = await apiRequest(apiToken, 'PATCH', `/crm/v3/objects/${objectTypeId}/${existingId}`, { properties });
-      res.id = existingId;
+      res.id = parseInt(existingId, 10);
       logOk(`Custom Object aktualisiert → ID ${existingId}`, 'importer');
     } else {
       log('HubSpot Custom Object anlegen…', 'info', 'importer');
       res = await apiRequest(apiToken, 'POST', `/crm/v3/objects/${objectTypeId}`, { properties });
       logOk(`Custom Object angelegt → ID ${res.id}`, 'importer');
     }
-    result.hubspotId    = res.id;
+    result.hubspotId    = parseInt(res.id, 10);
     result.status       = 'success';
-    progress.hubspotId  = res.id;
+    progress.hubspotId  = parseInt(res.id, 10);
     saveProgress();
 
     // ── Create / update HubSpot site page ─────────────────────
-    const { templatePath, pageSlugPrefix, moduleId, fieldName, createPages } = config;
+    const { templatePath, pageSlugTemplate, moduleId, fieldName, createPages } = config;
     if (!createPages || !templatePath) {
       logWarn(`Seiten-Erstellung übersprungen – ${!createPages ? '"Seiten erstellen" nicht aktiviert' : 'kein Template Path angegeben'}`, 'importer');
     }
     if (createPages && templatePath && result.hubspotId) {
-      const pageSlug = [(pageSlugPrefix || 'bikes').replace(/\/+$/, ''), bike.year, slug].join('/');
+      const slugVars = {
+        year:     bike.year,
+        name:     sanitize(bike.name),
+        code:     bike.code,
+        category: sanitize(bike.category || ''),
+      };
+      const pageSlug = (pageSlugTemplate || 'bikes/{{year}}/{{name}}')
+        .replace(/\{\{year\}\}/g, slugVars.year)
+        .replace(/\{\{name\}\}/g, slugVars.name)
+        .replace(/\{\{code\}\}/g, slugVars.code)
+        .replace(/\{\{category\}\}/g, slugVars.category)
+        .replace(/\/+/g, '/')
+        .replace(/^\/|\/$/g, '');
       log(`Seite erstellen/aktualisieren → /${pageSlug}`, 'info', 'importer');
+      const pageData = {
+        name:            `${bike.name} ${bike.year}`,
+        slug:            pageSlug,
+        templatePath,
+        htmlTitle:       `${bike.name} ${bike.year} | Harley-Davidson`,
+        metaDescription: (bike.description || '').slice(0, 160),
+        language:        'de',
+        objectId:        result.hubspotId,
+        moduleId:        moduleId || 'bike_auswahl',
+        fieldName:       fieldName || 'bike',
+      };
+      log(`Page Request: ${JSON.stringify(pageData, null, 2)}`, 'info', 'importer');
       try {
-        const page = await createOrUpdateHubSpotPage(apiToken, {
-          name:            `${bike.name} ${bike.year}`,
-          slug:            pageSlug,
-          templatePath,
-          htmlTitle:       `${bike.name} ${bike.year} | Harley-Davidson`,
-          metaDescription: (bike.description || '').slice(0, 160),
-          language:        'de',
-          objectId:        result.hubspotId,
-          moduleId:        moduleId || 'bike_auswahl',
-          fieldName:       fieldName || 'bike',
-        });
+        const page = await createOrUpdateHubSpotPage(apiToken, pageData);
         logOk(`Seite ${page.action}: /${pageSlug} (ID ${page.id})`, 'importer');
         result.pageId  = page.id;
         result.pageUrl = page.url;
         sendSSE({ type: 'importer_page_created', folder: folderName, pageId: page.id, pageUrl: page.url, slug: pageSlug, action: page.action });
         const fresh = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+        fresh.hubspotId      = result.hubspotId;
         fresh.hubspotPageId  = page.id;
         fresh.hubspotPageUrl = page.url;
         fs.writeFileSync(dataPath, JSON.stringify(fresh, null, 2));
@@ -1429,6 +1456,7 @@ async function importBike(config, folderName) {
   }
   sendSSE({ type: 'importer_progress', step: 'hubspot', total: 1, done: 1 });
   sendSSE({ type: 'importer_bike_done', folder: folderName, status: result.status, hubspotId: result.hubspotId, pageUrl: result.pageUrl, error: result.error });
+  currentBikeLogPath = null;
   return result;
 }
 
@@ -1637,6 +1665,81 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  if (pathname === '/api/thumb' && req.method === 'GET') {
+    const { outputDir = './hd-output', folder, file, w = '150' } = parsed.query;
+    if (!folder || !file) { res.writeHead(400); res.end('missing params'); return; }
+    const imgPath  = path.join(outputDir, 'bikes', folder, 'images', path.basename(file));
+    const thumbDir = path.join(outputDir, 'bikes', folder, '.thumbs');
+    const thumbFile = path.join(thumbDir, `${parseInt(w)}_${path.basename(file)}`);
+    if (!fs.existsSync(imgPath)) { res.writeHead(404); res.end('not found'); return; }
+    try {
+      if (!fs.existsSync(thumbFile)) {
+        fs.mkdirSync(thumbDir, { recursive: true });
+        await sharp(imgPath).resize(parseInt(w)).jpeg({ quality: 70 }).toFile(thumbFile);
+      }
+      res.writeHead(200, { 'Content-Type': 'image/jpeg', 'Cache-Control': 'public, max-age=86400' });
+      fs.createReadStream(thumbFile).pipe(res);
+    } catch(e) {
+      res.writeHead(500); res.end(e.message);
+    }
+    return;
+  }
+
+  if (pathname === '/api/hubspot-page' && req.method === 'GET') {
+    const { token, pageId } = parsed.query;
+    if (!token || !pageId) { res.writeHead(400); res.end('token and pageId required'); return; }
+    try {
+      const pageData = await apiRequest(token, 'GET', `/cms/v3/pages/site-pages/${pageId}`);
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(pageData, null, 2));
+    } catch(e) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: e.message }));
+    }
+    return;
+  }
+
+  if (pathname === '/api/bike-log' && req.method === 'GET') {
+    const { outputDir = './hd-output', folder } = parsed.query;
+    if (!folder) { res.writeHead(400, { 'Content-Type': 'application/json' }); res.end(JSON.stringify({ error: 'folder required' })); return; }
+    const logPath = path.join(outputDir, 'bikes', folder, 'log.jsonl');
+    if (!fs.existsSync(logPath)) {
+      res.writeHead(404, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ entries: [] }));
+      return;
+    }
+    try {
+      const lines = fs.readFileSync(logPath, 'utf8').trim().split('\n').filter(Boolean);
+      const entries = lines.map(l => { try { return JSON.parse(l); } catch(e) { return null; } }).filter(Boolean);
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ entries }));
+    } catch(e) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: e.message }));
+    }
+    return;
+  }
+
+  if (pathname === '/api/bike-progress' && req.method === 'GET') {
+    const { outputDir = './hd-output', folder } = parsed.query;
+    if (!folder) { res.writeHead(400, { 'Content-Type': 'application/json' }); res.end(JSON.stringify({ error: 'folder required' })); return; }
+    const progressPath = path.join(outputDir, 'bikes', folder, 'import_progress.json');
+    if (!fs.existsSync(progressPath)) {
+      res.writeHead(404, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'not found' }));
+      return;
+    }
+    try {
+      const p = JSON.parse(fs.readFileSync(progressPath, 'utf8'));
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(p));
+    } catch(e) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: e.message }));
+    }
+    return;
+  }
+
   if (pathname === '/api/bike-data' && req.method === 'GET') {
     const { outputDir = './hd-output', folder } = parsed.query;
     if (!folder) { res.writeHead(400, { 'Content-Type': 'application/json' }); res.end(JSON.stringify({ error: 'folder required' })); return; }
@@ -1667,7 +1770,8 @@ const server = http.createServer(async (req, res) => {
         vidTypeBreakdown[t] = (vidTypeBreakdown[t]||0)+1;
       });
       const specsTextEN = formatSpecsTextEN(d.specsSections, d.specs);
-      const specsTextDE = formatSpecsTextDE(d.specsSectionsDE, d.specsDE) || d.abmessungenDE || '';
+      const rawSpecsDE  = formatSpecsTextDE(d.specsSectionsDE, d.specsDE) || d.abmessungenDE || '';
+      const specsTextDE = rawSpecsDE.replace(/^```[a-z]*\n?/i, '').replace(/\n?```$/, '').trim();
       res.end(JSON.stringify({
         name:           d.name,
         year:           d.year,

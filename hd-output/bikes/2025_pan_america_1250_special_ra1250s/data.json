@@ -5,7 +5,7 @@
   "code": "ra1250s",
   "url": "https://h-dmediakit.com/eu/bdp/?ra1250s|2025",
   "description": "Get lost. Go anywhere and everywhere on the Pan America 1250 Special, with high-revving liquid-cooled V-twin power, semi-active suspension, and top-shelf components engineered to endure and explore.",
-  "beschreibung": "Verliere dich. Fahre überall hin und erkunde alles mit der Pan America 1250 Special, ausgestattet mit einem hochdrehenden, flüssigkeitsgekühlten V-Twin-Motor, semi-aktiver Federung und erstklassigen Komponenten, die für Ausdauer und Entdeckungstouren entwickelt wurden.",
+  "beschreibung": "Verliere dich. Fahre überall hin und erkunde alles mit der Pan America 1250 Special, ausgestattet mit einem hochdrehenden flüssigkeitsgekühlten V-Twin-Motor, semi-aktiver Federung und erstklassigen Komponenten, die für Ausdauer und Entdeckung entwickelt wurden.",
   "specs": {
     "Dimensions": "RA1250S Pan America® 1250 Special",
     "Length": "89.4 in. (2,270 mm)",
@@ -152,7 +152,6 @@
     "Service Interval": "First 1,000 miles (1,600 km), every 5,000 miles (8,000 km) thereafter",
     "Footnotes": "RA1250S Pan America® 1250 Special"
   },
-  "specsDE": {},
   "specsSections": [
     {
       "section": "",
@@ -795,655 +794,14 @@
       ]
     }
   ],
-  "specsSectionsDE": [
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Abmessungen",
-          "value": "RA1250S Pan America® 1250 Special"
-        },
-        {
-          "name": "Länge",
-          "value": "89.4 in. (2,270 mm)"
-        },
-        {
-          "name": "Gesamtbreite",
-          "value": "38.4 in. (975 mm)"
-        },
-        {
-          "name": "Gesamthöhe",
-          "value": "59.4 in. (1,510 mm)"
-        },
-        {
-          "name": "Sitzhöhe, beladen (niedrige Sitzposition)",
-          "value": "31.1 in. (789 mm)"
-        },
-        {
-          "name": "Sitzhöhe, beladen (hohe Sitzposition)",
-          "value": "32 in. (814 mm)"
-        },
-        {
-          "name": "Sitzhöhe, beladen (niedrige Sitzposition mit optionalem ARH-Fahrwerk)",
-          "value": "30.4 in. (772 mm)"
-        },
-        {
-          "name": "Sitzhöhe, beladen (hohe Sitzposition mit optionalem ARH-Fahrwerk)",
-          "value": "31.4 in. (797 mm)"
-        },
-        {
-          "name": "Sitzhöhe, unbeladen (niedrige Sitzposition)",
-          "value": "33.4 in. (850 mm)"
-        },
-        {
-          "name": "Sitzhöhe, unbeladen (hohe Sitzposition)",
-          "value": "34.4 in. (875 mm)"
-        },
-        {
-          "name": "Sitzhöhe, unbeladen (niedrige Sitzposition mit optionalem ARH-Fahrwerk)",
-          "value": "32.7 in. (830 mm)"
-        },
-        {
-          "name": "Sitzhöhe, unbeladen (hohe Sitzposition mit optionalem ARH-Fahrwerk)",
-          "value": "33.7 in. (855 mm)"
-        },
-        {
-          "name": "Bodenfreiheit, statisch",
-          "value": "6.9 in. (175 mm)"
-        },
-        {
-          "name": "Bodenfreiheit, dynamisch (mit optionalem Fahrwerk)",
-          "value": "6.9 in. (175 mm)"
-        },
-        {
-          "name": "Lenkkopfwinkel",
-          "value": "25"
-        },
-        {
-          "name": "Gabelwinkel",
-          "value": "25"
-        },
-        {
-          "name": "Nachlauf",
-          "value": "4.3 in. (108 mm)"
-        },
-        {
-          "name": "Radstand",
-          "value": "62.4 in. (1,585 mm)"
-        },
-        {
-          "name": "Reifen, Typ",
-          "value": "Michelin® Scorcher “Adventure”, Radial"
-        },
-        {
-          "name": "Reifen, Vorderes Modell",
-          "value": "Scorcher Adventure"
-        },
-        {
-          "name": "Reifen, Vordere Spezifikation",
-          "value": "120/70R19 60V"
-        },
-        {
-          "name": "Reifen, Hinteres Modell",
-          "value": "Scorcher Adventure"
-        },
-        {
-          "name": "Reifen, Hintere Spezifikation",
-          "value": "170/60R17 72V"
-        },
-        {
-          "name": "Kraftstoffkapazität",
-          "value": "5.6 gal. (21.2 l)"
-        },
-        {
-          "name": "Reservekraftstoffkapazität, Kraftstoffeinspritzung (Warnleuchte)",
-          "value": "1 gal. (3.8 l)"
-        },
-        {
-          "name": "Ölkapazität (mit Filter)",
-          "value": "4.75 qt. (4.5 l)"
-        },
-        {
-          "name": "Getriebekapazität",
-          "value": "N/A"
-        },
-        {
-          "name": "Primärkettenschutzkapazität",
-          "value": "N/A"
-        },
-        {
-          "name": "Kühlmittelkapazität",
-          "value": "2.32 qt. (2.2 l)"
-        },
-        {
-          "name": "Gewicht, versandbereit",
-          "value": "534 lb. (242 kg)"
-        },
-        {
-          "name": "Gewicht, fahrbereit",
-          "value": "569 lb. (258 kg)"
-        },
-        {
-          "name": "Zulässiges Gesamtgewicht",
-          "value": "1,003 lb. (455 kg)"
-        },
-        {
-          "name": "Zulässige Achslast, vorne",
-          "value": "399 lb. (181 kg)"
-        },
-        {
-          "name": "Zulässige Achslast, hinten",
-          "value": "665 lb. (302 kg)"
-        },
-        {
-          "name": "Gepäckkapazität - Volumen",
-          "value": "N/A"
-        }
-      ]
-    },
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Motor",
-          "value": "RA1250S Pan America® 1250 Special"
-        },
-        {
-          "name": "Motor",
-          "value": "Revolution® Max 1250"
-        },
-        {
-          "name": "Ventile",
-          "value": "Kettengesteuert, DOHC, hydraulische selbstjustierende Stößel, Einlass & Auslass VVT; vier Ventile pro Zylinder"
-        },
-        {
-          "name": "Bohrung",
-          "value": "4.134 in. (105 mm)"
-        },
-        {
-          "name": "Hub",
-          "value": "2.846 in. (72.3 mm)"
-        },
-        {
-          "name": "Hubraum",
-          "value": "76.4 cu in (1,252 cc)"
-        },
-        {
-          "name": "Verdichtungsverhältnis",
-          "value": "13.0:1"
-        },
-        {
-          "name": "Kraftstoffsystem",
-          "value": "Elektronische sequentielle Saugrohreinspritzung (ESPFI)"
-        },
-        {
-          "name": "Luftfilter",
-          "value": "Downdraft-Einlass, abgestimmte Ansaugtrichter, waschbares Filtermedium"
-        },
-        {
-          "name": "Auspuff",
-          "value": "2-zu-1-zu-1; Katalysator im Krümmer"
-        },
-        {
-          "name": "Schmiersystem",
-          "value": "Halbtrockensumpf"
-        }
-      ]
-    },
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Antriebsstrang",
-          "value": "RA1250S Pan America® 1250 Special"
-        },
-        {
-          "name": "Primärantrieb",
-          "value": "Zahnrad, 49/89 Übersetzungsverhältnis"
-        },
-        {
-          "name": "Endantrieb",
-          "value": "Kette, 19/48 Übersetzungsverhältnis"
-        },
-        {
-          "name": "Kupplung",
-          "value": "Mechanisch, 8-Platten nass, Assist & Slip, 1090N"
-        },
-        {
-          "name": "Getriebe",
-          "value": "6-Gang"
-        },
-        {
-          "name": "Übersetzungsverhältnisse (gesamt) 1. Gang",
-          "value": "13.11"
-        },
-        {
-          "name": "Übersetzungsverhältnisse (gesamt) 2. Gang",
-          "value": "9.687"
-        },
-        {
-          "name": "Übersetzungsverhältnisse (gesamt) 3. Gang",
-          "value": "7.509"
-        },
-        {
-          "name": "Übersetzungsverhältnisse (gesamt) 4. Gang",
-          "value": "6.057"
-        },
-        {
-          "name": "Übersetzungsverhältnisse (gesamt) 5. Gang",
-          "value": "5.08"
-        },
-        {
-          "name": "Übersetzungsverhältnisse (gesamt) 6. Gang",
-          "value": "4.436"
-        }
-      ]
-    },
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Fahrwerk",
-          "value": "RA1250S Pan America® 1250 Special"
-        },
-        {
-          "name": "Rahmen",
-          "value": "Tragendes Element, hochfester niedriglegierter Stahlgitterrahmen; gestanzt, gegossen und geschmiedete Verbindungen; MIG-geschweißt; geschmiedete Aluminium-Mittelstruktur"
-        },
-        {
-          "name": "Schwinge",
-          "value": "Einzelstück aus gegossenem Aluminium"
-        },
-        {
-          "name": "Vordere Gabel",
-          "value": "47mm umgedrehte Gabel mit elektronisch einstellbarer semi-aktiver Dämpfungsregelung. Aluminium-Gabelbrücken"
-        },
-        {
-          "name": "Vordere Gabel, Optional",
-          "value": "47mm umgedrehte Gabel mit elektronisch einstellbarer semi-aktiver Dämpfungsregelung und Adaptive Ride Height (ARH). Aluminium-Gabelbrücken"
-        },
-        {
-          "name": "Hintere Stoßdämpfer",
-          "value": "Anlenkungsmonoshock mit automatischer elektronischer Vorspannungsregelung und semi-aktiver Druck- und Zugstufendämpfung"
-        },
-        {
-          "name": "Hintere Stoßdämpfer, Optional",
-          "value": "Anlenkungsmonoshock mit automatischer elektronischer Vorspannungsregelung und semi-aktiver Druck- und Zugstufendämpfung und Adaptive Ride Height (ARH)"
-        },
-        {
-          "name": "Räder, Optionale Stilart",
-          "value": "Eloxiertes Aluminium, schlauchlos gespeicht"
-        },
-        {
-          "name": "Räder, Vorderer Typ",
-          "value": "Aluminiumguss, satinschwarz"
-        },
-        {
-          "name": "Räder, Vorderer Durchmesser",
-          "value": "19 in. (483 mm)"
-        },
-        {
-          "name": "Räder, Vordere Breite",
-          "value": "3 in. (76 mm)"
-        },
-        {
-          "name": "Räder, Hinterer Typ",
-          "value": "Aluminiumguss, satinschwarz"
-        },
-        {
-          "name": "Räder, Hinterer Durchmesser",
-          "value": "17 in. (432 mm)"
-        },
-        {
-          "name": "Räder, Hintere Breite",
-          "value": "4.5 in. (114 mm)"
-        },
-        {
-          "name": "Bremsen, Bremssatteltyp",
-          "value": "Vorne: radial montiert, Monoblock, 4-Kolben-Bremssattel; Hinten: schwimmend, Einkolben-Bremssattel"
-        },
-        {
-          "name": "Bremsen, Scheibentyp",
-          "value": "Vorne: Doppelscheibe, schwimmend, turmmontiert; Hinten: solide gleichmäßige Expansionsscheibe"
-        },
-        {
-          "name": "Bremsen, Vorderer Durchmesser",
-          "value": "12.6 in. (320 mm)"
-        },
-        {
-          "name": "Bremsen, Vordere Dicke",
-          "value": "0.17 in. (4.5 mm)"
-        },
-        {
-          "name": "Bremsen, Vorne ist doppelt",
-          "value": "Ja"
-        },
-        {
-          "name": "Bremsen, Hinterer Durchmesser",
-          "value": "11 in. (280 mm)"
-        },
-        {
-          "name": "Bremsen, Hintere Dicke",
-          "value": "0.2 in. (5 mm)"
-        },
-        {
-          "name": "Bremsen, Antiblockiersystem (ABS)",
-          "value": "Standard"
-        },
-        {
-          "name": "Federweg, Vorne",
-          "value": "7.5 in. (191 mm)"
-        },
-        {
-          "name": "Federweg, Hinten",
-          "value": "7.5 in. (191 mm)"
-        }
-      ]
-    },
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Leistung",
-          "value": "RA1250S Pan America® 1250 Special"
-        },
-        {
-          "name": "Motordrehmoment-Testmethode",
-          "value": "J1349"
-        },
-        {
-          "name": "Motordrehmoment",
-          "value": "95 ft-lb (129 Nm)"
-        },
-        {
-          "name": "Motordrehmoment (U/min)",
-          "value": "6,750"
-        },
-        {
-          "name": "Leistung",
-          "value": "150 HP / 112 kW @ 8750 rpm"
-        },
-        {
-          "name": "Schräglagentestmethode",
-          "value": "J1168"
-        },
-        {
-          "name": "Schräglage, Rechts (Grad)",
-          "value": "42"
-        },
-        {
-          "name": "Schräglage, Links (Grad)",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Elektrik",
-          "value": "RA1250S Pan America® 1250 Special"
-        },
-        {
-          "name": "Batterie",
-          "value": "Versiegelt, wartungsfrei, absorbierte Glasmatte (AGM) Batterie, 12V, 17.5Ah, 310 CCA bei 0°F"
-        },
-        {
-          "name": "Laden",
-          "value": "Dreiphasen, 45 Ampere System (390 Watt @13 Volt, 1300 U/min, 585 Watt max. Leistung @ 13 Volt, 2500 U/min)"
-        },
-        {
-          "name": "Starten",
-          "value": "0.9 kW elektrisch mit Direktanlasser-Motorengagement"
-        },
-        {
-          "name": "Lichter (gemäß Landesvorschrift), Scheinwerfer",
-          "value": "Daymaker™ Adaptive LED-Scheinwerfer mit 6-Segment-LED-Banklicht"
-        },
-        {
-          "name": "Lichter (gemäß Landesvorschrift), Rück-/Bremslicht",
-          "value": "Alle LED-Rück-/Bremslichter mit charakteristischer Rückbeleuchtung"
-        },
-        {
-          "name": "Lichter (gemäß Landesvorschrift), Vordere Blinker",
-          "value": "LED Bullet Blinker"
-        },
-        {
-          "name": "Lichter, Hintere Blinker",
-          "value": "LED Bullet Blinker"
-        },
-        {
-          "name": "Instrumente",
-          "value": "6.8 Zoll sichtbare Fläche TFT-Display mit Tachometer, Gang, Kilometerzähler, Kraftstoffstand, Uhr, Reise, Umgebungstemperatur, Niedrigtemperaturalarm, Seitenständer unten Alarm, Umkippen Alarm, Tempomat, Reichweite und Drehzahlmesseranzeige BT-fähig - Telefonkopplung für Anrufe, Musik, Navigation (nur H-D App)"
-        },
-        {
-          "name": "Zusatzlampen",
-          "value": "N/A"
-        },
-        {
-          "name": "Elektrische Steckdose",
-          "value": "USB C-Typ, Ausgang 5V bei 2.4 Ampere"
-        },
-        {
-          "name": "GPS-System",
-          "value": "N/A"
-        },
-        {
-          "name": "Rückwärtsgang",
-          "value": "N/A"
-        }
-      ]
-    },
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Kraftstoffverbrauch & CO₂-Emissionen",
-          "value": "RA1250S Pan America® 1250 Special"
-        },
-        {
-          "name": "Kraftstoffverbrauch-Testmethode",
-          "value": "Geschätzt Stadt/Autobahn"
-        },
-        {
-          "name": "Kraftstoffverbrauch",
-          "value": "46 mpg (5.1 l/100 km)"
-        }
-      ]
-    },
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Infotainment",
-          "value": "RA1250S Pan America® 1250 Special"
-        },
-        {
-          "name": "Infotainment-System",
-          "value": "N/A"
-        },
-        {
-          "name": "Bildschirmgröße",
-          "value": "6.8 in (173 mm)"
-        },
-        {
-          "name": "Typ",
-          "value": "Farb-TFT mit Touch"
-        },
-        {
-          "name": "Watt pro Kanal",
-          "value": "N/A"
-        },
-        {
-          "name": "Lautsprecher",
-          "value": "N/A"
-        },
-        {
-          "name": "Lautsprechergröße",
-          "value": "N/A"
-        },
-        {
-          "name": "Headset-Spezifikationen (falls vorhanden)",
-          "value": "Bluetooth"
-        },
-        {
-          "name": "AM",
-          "value": "N/A"
-        },
-        {
-          "name": "FM",
-          "value": "N/A"
-        },
-        {
-          "name": "MW",
-          "value": "N/A"
-        },
-        {
-          "name": "LW",
-          "value": "N/A"
-        },
-        {
-          "name": "Wetterband (WB)",
-          "value": "N/A"
-        },
-        {
-          "name": "SD-Karte, Flash-Laufwerk und MP3 - über USB-Verbindung",
-          "value": "N/A"
-        },
-        {
-          "name": "Freisprecheinrichtung - über Bluetooth",
-          "value": "Standard"
-        },
-        {
-          "name": "Spracherkennungssprachen: Nur Telefonfunktionen",
-          "value": "Telefonabhängig"
-        },
-        {
-          "name": "Fahrer-/Beifahrer-Intercom",
-          "value": "Nur Headset-Funktion"
-        },
-        {
-          "name": "Fahrzeuginformationsbildschirm (Lufttemperatur, Öldruck und EITMS)",
-          "value": "TPMS, Motortemperatur, Batteriespannung, Umgebungslufttemperatur"
-        },
-        {
-          "name": "Text-to-Speech (TTS) Sprachen",
-          "value": "Telefonabhängig"
-        },
-        {
-          "name": "USB",
-          "value": "Laden und Instrumentenaktualisierung, USB-C, 5V, 3A"
-        },
-        {
-          "name": "Bluetooth",
-          "value": "Telefon/Medien unterstützt"
-        },
-        {
-          "name": "Navigation - über Bluetooth",
-          "value": "H-D Mobile App"
-        }
-      ]
-    },
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Fahrer-Sicherheitsverbesserungen",
-          "value": "RA1250S Pan America® 1250 Special"
-        },
-        {
-          "name": "Antiblockiersystem (ABS)",
-          "value": "Inklusive"
-        },
-        {
-          "name": "Elektronische Verbundbremsen (ELB)",
-          "value": "Inklusive"
-        },
-        {
-          "name": "Traktionskontrollsystem (TCS)",
-          "value": "Inklusive"
-        },
-        {
-          "name": "Schleppmomentregelungssystem (DSCS)",
-          "value": "Inklusive"
-        },
-        {
-          "name": "Fahrzeughalteassistent (VHC)",
-          "value": "Inklusive"
-        },
-        {
-          "name": "Reifendrucküberwachungssystem (TPMS)",
-          "value": "Inklusive"
-        },
-        {
-          "name": "Radauftriebsbegrenzung",
-          "value": "Inklusive"
-        }
-      ]
-    },
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Kurvenfahrer-Sicherheitsverbesserungen",
-          "value": "RA1250S Pan America® 1250 Special"
-        },
-        {
-          "name": "Kurvenoptimiertes Antiblockiersystem (C-ABS)",
-          "value": "Inklusive"
-        },
-        {
-          "name": "Kurvenoptimierte elektronische Verbundbremsen (C-ELB)",
-          "value": "Inklusive"
-        },
-        {
-          "name": "Kurvenoptimiertes Traktionskontrollsystem (C-TCS)",
-          "value": "Inklusive"
-        },
-        {
-          "name": "Kurvenoptimiertes Schleppmomentregelungssystem (C-DSCS)",
-          "value": "Inklusive"
-        },
-        {
-          "name": "Optimierte Auftriebsbegrenzung",
-          "value": "Inklusive"
-        }
-      ]
-    },
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Garantie und Service",
-          "value": "RA1250S Pan America® 1250 Special"
-        },
-        {
-          "name": "Garantie",
-          "value": "24 Monate (unbegrenzte Kilometerzahl)"
-        },
-        {
-          "name": "Serviceintervall",
-          "value": "Erste 1,000 Meilen (1,600 km), danach alle 5,000 Meilen (8,000 km)"
-        }
-      ]
-    },
-    {
-      "section": "",
-      "rows": [
-        {
-          "name": "Fußnoten",
-          "value": "RA1250S Pan America® 1250 Special"
-        }
-      ]
-    }
-  ],
+  "abmessungenDE": "```html\n<h3>Abmessungen: RA1250S Pan America® 1250 Special</h3>\nLänge: 89.4 in. (2,270 mm)<br>\nGesamtbreite: 38.4 in. (975 mm)<br>\nGesamthöhe: 59.4 in. (1,510 mm)<br>\nSitzhöhe, Beladen (Niedrige Sitzposition): 31.1 in. (789 mm)<br>\nSitzhöhe, Beladen (Hohe Sitzposition): 32 in. (814 mm)<br>\nSitzhöhe, Beladen (Niedrige Sitzposition mit optionalem ARH-Fahrwerk): 30.4 in. (772 mm)<br>\nSitzhöhe, Beladen (Hohe Sitzposition mit optionalem ARH-Fahrwerk): 31.4 in. (797 mm)<br>\nSitzhöhe, unbeladen (Niedrige Sitzposition): 33.4 in. (850 mm)<br>\nSitzhöhe, unbeladen (Hohe Sitzposition): 34.4 in. (875 mm)<br>\nSitzhöhe, unbeladen (Niedrige Sitzposition mit optionalem ARH-Fahrwerk): 32.7 in. (830 mm)<br>\nSitzhöhe, unbeladen (Hohe Sitzposition mit optionalem ARH-Fahrwerk): 33.7 in. (855 mm)<br>\nStatische Bodenfreiheit: 6.9 in. (175 mm)<br>\nDynamische Bodenfreiheit (mit optionalem Fahrwerk): 6.9 in. (175 mm)<br>\nLenkkopfwinkel: 25<br>\nGabelwinkel: 25<br>\nNachlauf: 4.3 in. (108 mm)<br>\nRadstand: 62.4 in. (1,585 mm)<br>\nReifen, Typ: Michelin® Scorcher “Adventure”, Radial<br>\nReifen, Vorderes Modell: Scorcher Adventure<br>\nReifen, Vordere Spezifikation: 120/70R19 60V<br>\nReifen, Hinteres Modell: Scorcher Adventure<br>\nReifen, Hintere Spezifikation: 170/60R17 72V<br>\nKraftstoffkapazität: 5.6 gal. (21.2 l)<br>\nReservekraftstoffkapazität, Kraftstoffeinspritzung (Warnanzeige): 1 gal. (3.8 l)<br>\nÖlkapazität (inkl. Filter): 4.75 qt. (4.5 l)<br>\nGetriebeölkapazität: N/V<br>\nPrimärkettenkastenkapazität: N/V<br>\nKühlmittelkapazität: 2.32 qt. (2.2 l)<br>\nGewicht, versandbereit: 534 lb. (242 kg)<br>\nGewicht, fahrbereit: 569 lb. (258 kg)<br>\nZulässiges Gesamtgewicht (GVWR): 1,003 lb. (455 kg)<br>\nZulässige Achslast, Vorderachse: 399 lb. (181 kg)<br>\nZulässige Achslast, Hinterachse: 665 lb. (302 kg)<br>\nGepäckvolumen: N/V\n\n<h3>Motor: RA1250S Pan America® 1250 Special</h3>\nMotor: Revolution® Max 1250<br>\nVentile: Kettengesteuert, DOHC, hydraulische selbstregulierende Stößel, Einlass & Auslass VVT; vier Ventile pro Zylinder<br>\nBohrung: 4.134 in. (105 mm)<br>\nHub: 2.846 in. (72.3 mm)<br>\nHubraum: 76.4 cu in (1,252 cc)<br>\nKompressionsverhältnis: 13.0:1<br>\nKraftstoffsystem: Elektronische sequentielle Benzineinspritzung (ESPFI)<br>\nLuftfilter: Downdraft-Ansaugung, abgestimmte Strömungskanäle, waschbares Filtermedium<br>\nAuspuff: 2-in-1-in-1; Katalysator im Krümmer<br>\nSchmiersystem: Halbtrockensumpf\n\n<h3>Antriebsstrang: RA1250S Pan America® 1250 Special</h3>\nPrimärantrieb: Zahnräder, Übersetzungsverhältnis 49/89<br>\nSekundärantrieb: Kette, Übersetzungsverhältnis 19/48<br>\nKupplung: Mechanisch, 8 Platten nass, Assistenz & Rutschen, 1090N<br>\nGetriebe: 6-Gang<br>\nGesamtübersetzungsverhältnisse 1. Gang: 13.11<br>\nGesamtübersetzungsverhältnisse 2. Gang: 9.687<br>\nGesamtübersetzungsverhältnisse 3. Gang: 7.509<br>\nGesamtübersetzungsverhältnisse 4. Gang: 6.057<br>\nGesamtübersetzungsverhältnisse 5. Gang: 5.08<br>\nGesamtübersetzungsverhältnisse 6. Gang: 4.436\n\n<h3>Fahrwerk: RA1250S Pan America® 1250 Special</h3>\nRahmen: Tragendes Teil, hochfester niedriglegierter Stahl-Gitterrohrrahmen; gestanzte, gegossene und geschmiedete Verbindungen; MIG-geschweißt; Aluminium geschmiedeter Mittelrahmen<br>\nSchwinge: Einteiliges gegossenes Aluminium<br>\nVordergabel: 47mm umgekehrte Gabel mit elektronisch einstellbarer halbaktiver Dämpferregelung. Aluminium-Gabelfaustreihen<br>\nVordergabel, Optional: 47mm umgekehrte Gabel mit elektronisch einstellbarer halbaktiver Dämpferregelung und adaptiver Sitzhöhe (ARH). Aluminium-Gabelfaustreihen<br>\nHinterdämpfer: Anlenkung-aufgehängter Monodämpfer mit automatischer elektronischer Vorspannungskontrolle und halbaktiver Kompressions- & Rückpralldämpfung<br>\nHinterdämpfer, Optional: Anlenkung-aufgehängter Monodämpfer mit automatischer elektronischer Vorspannungskontrolle und halbaktiver Kompressions- & Rückpralldämpfung und adaptiver Sitzhöhe (ARH)<br>\nRäder, Optionale Stilart: Eloxiertes Aluminium tubeless gekreuzt<br>\nRäder, Vorderradtyp: Aluminium gegossen, schwarz satiniert<br>\nRäder, Vorderraddurchmesser: 19 in. (483 mm)<br>\nRäder, Vorderradbreite: 3 in. (76 mm)<br>\nRäder, Hinterradtyp: Aluminium gegossen, schwarz satiniert<br>\nRäder, Hinterraddurchmesser: 17 in. (432 mm)<br>\nRäder, Hinterradbreite: 4.5 in. (114 mm)<br>\nBremsen, Bremssatteldiktion: Vorderseite: radial montiert, Monoblock, 4-Kolben-Bremssattel; Rückseite: schwimmend, Einzelkolben-Bremssattel<br>\nBremsen, Scheibentyp: Vorderseite: Doppelscheibe, schwimmend, turm-montiert; Rückseite: solide uniforme Expansionsscheibe<br>\nBremsen, Vorderer Durchmesser: 12.6 in. (320 mm)<br>\nBremsen, Vorderdicke: 0.17 in. (4.5 mm)<br>\nBremsen, Vorderseite ist dual: Ja<br>\nBremsen, Hinterer Durchmesser: 11 in. (280 mm)<br>\nBremsen, Hinterdicke: 0.2 in. (5 mm)<br>\nBremsen, Anti-Blockier-System (ABS): Standard<br>\nFederweg, Vorne: 7.5 in. (191 mm)<br>\nFederweg, Hinten: 7.5 in. (191 mm)\n\n<h3>Leistung: RA1250S Pan America® 1250 Special</h3>\nMotordrehmoment-Testverfahren: J1349<br>\nMotordrehmoment: 95 ft-lb (129 Nm)<br>\nMotordrehmoment (U/min): 6,750<br>\nLeistung: 150 HP / 112 kW @ 8750 rpm<br>\nSchräglagentestverfahren: J1168<br>\nSchräglagenwinkel, Rechts (Grad): 42<br>\nSchräglagenwinkel, Links (Grad): 42\n\n<h3>Elektrik: RA1250S Pan America® 1250 Special</h3>\nBatterie: Versiegelt, wartungsfrei, absorbierte Glasfasermatte (AGM) Batterie, 12V, 17.5Ah, 310 CCA bei 0°F<br>\nLaden: Dreiphasensystem mit 45 Ampere (390 Watt @13 Volt, 1300 U/min, 585 Watt max. Leistung @ 13 Volt, 2500 U/min)<br>\nStarten: 0.9 kW elektrisch mit Direkteingriff-Starter<br>\nBeleuchtung (entsprechend den Vorschriften des Landes), Scheinwerfer: Daymaker™ Adaptive LED-Scheinwerfer mit 6-Segment-LED-Bankleuchte<br>\nBeleuchtung (entsprechend den Vorschriften des Landes), Heck-/Stoppleuchte: Alle LED-Heck-/Stoppleuchte mit charakteristischer Heckbeleuchtung<br>\nBeleuchtung (entsprechend den Vorschriften des Landes), Vordere Blinker: LED-Bullet-Blinker<br>\nBeleuchtung, Hintere Blinker: LED-Bullet-Blinker<br>\nInstrumente: 6.8 Zoll sichtbare TFT-Anzeige mit Tachometer, Gang, Kilometerzähler, Kraftstoffstand, Uhr, Trip, Umgebungstemperatur, Kälteschutzmeldung, Seitenständer-warnt herunter, Überkippschutzmeldung, Tempomat, Reichweite und Drehzahlanzeige BT-fähig - Telefonkoppelung zur Zugriff auf Telefonanrufe, Musik, Navigation (nur H-D App)<br>\nZusatzscheinwerfer: N/V<br>\nElektrische Steckdose: USB C-Typ, Ausgang 5V bei 2.4 Amp<br>\nGPS-System: N/V<br>\nRückwärtsgang: N/V\n\n<h3>Kraftstoffverbrauch & CO2-Emissionen: RA1250S Pan America® 1250 Special</h3>\nKraftstoffverbrauch-Testverfahren: Geschätzt Stadt/Autobahn<br>\nKraftstoffverbrauch: 46 mpg (5.1 l/100 km)\n\n<h3>Infotainment: RA1250S Pan America® 1250 Special</h3>\nInfotainment-System: N/V<br>\nBildschirmgröße: 6.8 in (173 mm)<br>\nTyp: Farbe TFT mit Touch<br>\nWatt pro Kanal: N/V<br>\nLautsprecher: N/V<br>\nLautsprechergröße: N/V<br>\nHeadset-Spezifikationen (wenn ausgestattet): Bluetooth<br>\nAM: N/V<br>\nFM: N/V<br>\nMW: N/V<br>\nLW: N/V<br>\nWetterkanal (WB): N/V<br>\nSD-Karte, Flash-Laufwerk und MP3 - über USB-Anschluss: N/V<br>\nFreisprecheinrichtung - über Bluetooth: Standard<br>\nSpracherkennungssprachen: Nur Telefonfunktionen: Telefonabhängig<br>\nFahrer-/Beifahrer-Interkom: Nur Headset-Funktion<br>\nFahrzeuginformationsbildschirm (Lufttemperatur, Öldruck und EITMS): TPMS, Motortemperatur, Batteriespannung, Umgebungslufttemperatur<br>\nText-to-Speech (TTS) Sprachen: Telefonabhängig<br>\nUSB: Aufladen und Instrumenten-Aktualisierung, USB-C, 5V, 3A<br>\nBluetooth: Telefon/Medien Unterstützt<br>\nNavigation - über Bluetooth: H-D Mobile App\n\n<h3>Fahrsicherheitserweiterungen: RA1250S Pan America® 1250 Special</h3>\nAnti-Blockier-Bremssystem (ABS): Inklusive<br>\nElektronische gekoppelte Bremsen (ELB): Inklusive<br>\nTraktionskontrollsystem (TCS): Inklusive<br>\nZugmoment-Schlupfregelungssystem (DSCS): Inklusive<br>\nFahrzeug-Halte-Kontrolle (VHC): Inklusive<br>\nReifendrucküberwachungssystem (TPMS): Inklusive<br>\nRadhebungsschutz: Inklusive\n\n<h3>Kurvensicherheitserweiterungen: RA1250S Pan America® 1250 Special</h3>\nKurvenerweitertes Anti-Blockier-Bremssystem (C-ABS): Inklusive<br>\nKurvenerweitertes elektronisches gekoppelte Bremsen (C-ELB): Inklusive<br>\nKurvenerweitertes Traktionskontrollsystem (C-TCS): Inklusive<br>\nKurvenerweitertes Zugmoment-Schlupfregelungssystem (C-DSCS): Inklusive<br>\nErweiterter Hubschutz: Inklusive\n\n<h3>Garantie und Service: RA1250S Pan America® 1250 Special</h3>\nGarantie: 24 Monate (unbegrenzte Kilometerzahl)<br>\nServiceintervall: Erste 1,000 Meilen (1,600 km), danach alle 5,000 Meilen (8,000 km)\n\n<h3>Fußnoten: RA1250S Pan America® 1250 Special</h3>\n```",
   "images": [
     {
       "previewUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/bf73851044ddcc67/images/preview/25_ra1250s_m13b_r-2.jpg",
       "epaItemId": "61413",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "25_ra1250s_m13b_r-2.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "studio_detail",
@@ -1451,9 +809,9 @@
         "outdoorSetting": false,
         "bikeVisibility": "full",
         "heroCandidate": false,
-        "description": "Side view of the motorcycle in a studio setting.",
+        "description": "Side profile of the bike in a studio setting.",
         "priorityCandidate": false,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1461,7 +819,7 @@
       "epaItemId": "61415",
       "caption": "Harley-Davidson Pan America 1250 Special, anodized aluminum tubeless laced wheel option",
       "localFile": "25_ra1250s_m13b_r.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true
     },
     {
@@ -1469,7 +827,7 @@
       "epaItemId": "61773",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "_0010_ra1250s_hd_studio_2024_3x4.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "studio_detail",
@@ -1477,9 +835,9 @@
         "outdoorSetting": false,
         "bikeVisibility": "full",
         "heroCandidate": false,
-        "description": "Frontal view of the motorcycle under studio lights.",
+        "description": "3/4 front view of the bike in a studio environment.",
         "priorityCandidate": false,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1487,7 +845,7 @@
       "epaItemId": "61840",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "my25-ra1250s-beauty-0043-jkjc2.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true
     },
     {
@@ -1495,7 +853,7 @@
       "epaItemId": "61841",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "my25-ra1250s-beauty-0085-abjc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true
     },
     {
@@ -1503,17 +861,17 @@
       "epaItemId": "61842",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "my25-ra1250s-lifestyle-0006-abjc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "lifestyle",
-        "riderPresent": false,
+        "riderPresent": true,
         "outdoorSetting": true,
         "bikeVisibility": "full",
         "heroCandidate": false,
-        "description": "Bike positioned on a scenic dirt path with rocks.",
+        "description": "Bike with a rider walking in a scenic outdoor setting.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1521,7 +879,7 @@
       "epaItemId": "61843",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "my25-ra1250s-lifestyle-0374-ab2jc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "outdoor_static",
@@ -1529,9 +887,9 @@
         "outdoorSetting": true,
         "bikeVisibility": "full",
         "heroCandidate": true,
-        "description": "Motorcycle by a serene lake with mountains in the background.",
+        "description": "Bike parked by a lake with mountains in the background.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1539,17 +897,17 @@
       "epaItemId": "61844",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "my25-ra1250s-lifestyle-0424-abjc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "lifestyle",
-        "riderPresent": false,
+        "riderPresent": true,
         "outdoorSetting": true,
         "bikeVisibility": "full",
         "heroCandidate": false,
-        "description": "Bike near water with a person sitting on the ground.",
+        "description": "Bike by a lake with a seated person in the outdoor setting.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1557,7 +915,7 @@
       "epaItemId": "61860",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "outdoor_rider",
@@ -1565,9 +923,9 @@
         "outdoorSetting": true,
         "bikeVisibility": "partial",
         "heroCandidate": false,
-        "description": "Motorcycles being ridden on a rugged trail.",
+        "description": "Multiple riders on bikes on a dirt road in the mountains.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1575,7 +933,7 @@
       "epaItemId": "61845",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "my25-ra1250s-riding-0204-jkjc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "outdoor_rider",
@@ -1583,9 +941,9 @@
         "outdoorSetting": true,
         "bikeVisibility": "full",
         "heroCandidate": false,
-        "description": "Single rider on a dirt path with rock formations.",
+        "description": "Rider on a bike going through a rocky outdoor path.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1593,7 +951,7 @@
       "epaItemId": "61846",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "my25-ra1250s-riding-0361-jkjc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "outdoor_rider",
@@ -1601,9 +959,9 @@
         "outdoorSetting": true,
         "bikeVisibility": "full",
         "heroCandidate": false,
-        "description": "Motorcyclist riding alongside a river.",
+        "description": "Solo rider on a bike on an open road with mountains.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1611,17 +969,17 @@
       "epaItemId": "61847",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "my25-ra1250s-riding-0460-abjc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "outdoor_rider",
         "riderPresent": true,
         "outdoorSetting": true,
-        "bikeVisibility": "full",
+        "bikeVisibility": "partial",
         "heroCandidate": false,
-        "description": "Rider on a road with a dynamic perspective.",
+        "description": "Front-on view of a bike with a rider on a highway.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1629,7 +987,7 @@
       "epaItemId": "61848",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "my25-ra1250s-riding-0557-ab2jc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "outdoor_rider",
@@ -1637,9 +995,9 @@
         "outdoorSetting": true,
         "bikeVisibility": "full",
         "heroCandidate": false,
-        "description": "Motorcyclist on a scenic open road.",
+        "description": "Rider on a bike enjoying a picturesque mountain road.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1647,17 +1005,17 @@
       "epaItemId": "61861",
       "caption": "Harley-Davidson 1250 Pan America Special and CVO Pan America",
       "localFile": "my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "outdoor_rider",
         "riderPresent": true,
         "outdoorSetting": true,
-        "bikeVisibility": "full",
+        "bikeVisibility": "partial",
         "heroCandidate": false,
-        "description": "Two riders on a road surrounded by nature.",
+        "description": "Two riders on bikes on a highway under a cloudy sky.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1665,17 +1023,17 @@
       "epaItemId": "61862",
       "caption": "Harley-Davidson 1250 Pan America Special and CVO Pan America",
       "localFile": "my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "outdoor_rider",
         "riderPresent": true,
         "outdoorSetting": true,
-        "bikeVisibility": "full",
+        "bikeVisibility": "partial",
         "heroCandidate": false,
-        "description": "Riders cruising on a highway with scenic backdrops.",
+        "description": "Rear view of two bikes with riders on a road trip.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1683,7 +1041,7 @@
       "epaItemId": "61863",
       "caption": "Harley-Davidson 1250 Pan America Special and CVO Pan America",
       "localFile": "my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "outdoor_rider",
@@ -1691,9 +1049,9 @@
         "outdoorSetting": true,
         "bikeVisibility": "full",
         "heroCandidate": false,
-        "description": "Two motorcyclists on a long open road.",
+        "description": "Side view of two riders on bikes cruising on highway.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1701,7 +1059,7 @@
       "epaItemId": "61864",
       "caption": "Harley-Davidson 1250 Pan America Special and CVO Pan America",
       "localFile": "my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "outdoor_rider",
@@ -1709,9 +1067,9 @@
         "outdoorSetting": true,
         "bikeVisibility": "partial",
         "heroCandidate": false,
-        "description": "Riders traveling through a mountainous area.",
+        "description": "Close-up of two bikes riding side by side with riders.",
         "priorityCandidate": true,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1719,7 +1077,7 @@
       "epaItemId": "61765",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "_0002_ra1250s_hd_studio_2024_screen.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true
     },
     {
@@ -1727,7 +1085,7 @@
       "epaItemId": "61766",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "_0003_ra1250s_hd_studio_2024_ride-modes.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true
     },
     {
@@ -1735,7 +1093,7 @@
       "epaItemId": "61768",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "_0005_ra1250s_hd_studio_2024_headlights.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true
     },
     {
@@ -1743,7 +1101,7 @@
       "epaItemId": "61772",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "_0009_ra1250s_hd_studio_2024_brakes.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true
     },
     {
@@ -1751,7 +1109,7 @@
       "epaItemId": "61763",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "_0000_ra1250s_hd_studio_2024_wheels.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true
     },
     {
@@ -1759,7 +1117,7 @@
       "epaItemId": "61764",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "_0001_ra1250s_hd_studio_2024_seat-position.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "feature_closeup",
@@ -1767,9 +1125,9 @@
         "outdoorSetting": false,
         "bikeVisibility": "partial",
         "heroCandidate": false,
-        "description": "Closeup of the seat position feature.",
+        "description": "Close-up of the bike's seat positioning in a studio.",
         "priorityCandidate": false,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1777,7 +1135,7 @@
       "epaItemId": "61769",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "_0006_ra1250s_hd_studio_2024_engine.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true
     },
     {
@@ -1785,7 +1143,7 @@
       "epaItemId": "61771",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "_0008_ra1250s_hd_studio_2024_charging-system.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true
     },
     {
@@ -1793,17 +1151,17 @@
       "epaItemId": "61767",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "_0004_ra1250s_hd_studio_2024_rear-shock.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "feature_closeup",
         "riderPresent": false,
         "outdoorSetting": false,
-        "bikeVisibility": "partial",
+        "bikeVisibility": "minimal",
         "heroCandidate": false,
-        "description": "Detail view of the rear shock component.",
+        "description": "Detailed view of rear shock mechanism in a studio.",
         "priorityCandidate": false,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     },
     {
@@ -1811,7 +1169,7 @@
       "epaItemId": "61770",
       "caption": "Harley-Davidson Pan America 1250 Special",
       "localFile": "_0007_ra1250s_hd_studio_2024_drive-height.jpg",
-      "status": "downloaded",
+      "status": "exists",
       "highRes": true,
       "analysis": {
         "type": "feature_closeup",
@@ -1819,9 +1177,9 @@
         "outdoorSetting": false,
         "bikeVisibility": "partial",
         "heroCandidate": false,
-        "description": "Highlighted area showing drive height.",
+        "description": "Close examination of bike's drive-height feature.",
         "priorityCandidate": false,
-        "analyzedAt": "2026-03-12T20:19:13.035Z"
+        "analyzedAt": "2026-03-13T10:40:11.671Z"
       }
     }
   ],
@@ -1832,8 +1190,17 @@
       "filename": "my25-ra125s_flyaround-001.mp4",
       "caption": "",
       "localFile": "my25-ra125s_flyaround-001.mp4",
-      "status": "downloaded",
-      "sizeMB": 126
+      "status": "exists",
+      "sizeMB": 126,
+      "analysis": {
+        "type": "detail_view",
+        "confidence": "high",
+        "description": "The frames are close-up shots focusing on specific parts of the Harley Davidson Pan America 1250 Special, highlighting its design elements and components. The images feature details such as the tank decal, wheel, and mechanical parts.",
+        "setting": "studio with dark background",
+        "riderPresent": false,
+        "frameCount": 4,
+        "analyzedAt": "2026-03-13T10:50:22.185Z"
+      }
     },
     {
       "thumbUrl": "https://s3-eu-west-2.amazonaws.com/h-dmedia-2020-p2-gukhnguzhnation.epa.epresspacks.com/epa/98094c7fb096ef29/video/preview/24_75051_MY25_PAS_BROLL_vFC1.jpg",
@@ -1841,23 +1208,14 @@
       "filename": "24_75051_MY25_PAS_BROLL_vFC1.mp4",
       "caption": "",
       "localFile": "24_75051_MY25_PAS_BROLL_vFC1.mp4",
-      "status": "downloaded",
-      "sizeMB": 151,
-      "analysis": {
-        "type": "riding_outdoor",
-        "confidence": "high",
-        "description": "The video includes scenes of a motorcycle being ridden on a dirt road in a vast, open landscape. There's dynamic movement and an outdoor, natural setting visible in the shots.",
-        "setting": "open rural landscape with dirt roads and distant hills",
-        "riderPresent": true,
-        "frameCount": 4,
-        "analyzedAt": "2026-03-12T20:24:30.858Z"
-      }
+      "status": "exists",
+      "sizeMB": 151
     }
   ],
   "specsPdf": "https://h-dmediakit.com/epapi-get/pdf/bikepages/specs/2025/ra1250s/specifications_ra1250s_eu.pdf",
   "pdfLocal": "docs/specs_ra1250s_2025_eu.pdf",
   "recommendedHero": "my25-ra1250s-lifestyle-0374-ab2jc.jpg",
-  "abmessungenDE": "```html\nDimensions: RA1250S Pan America® 1250 Special\nLength: 89.4 in. (2.270 mm)\nOverall Width: 38.4 in. (975 mm)\nOverall Height: 59.4 in. (1.510 mm)\nSeat Height, Laden (Low seat position): 31.1 in. (789 mm)\nSeat Height, Laden (High seat position: 32 in. (814 mm)\nSeat Height, Laden (Low seat position with optional ARH suspension): 30.4 in. (772 mm)\nSeat Height, Laden (High seat position with optional ARH suspension): 31.4 in. (797 mm)\nSeat Height, Unladen (Low seat position): 33.4 in. (850 mm)\nSeat Height, Unladen (High seat position): 34.4 in. (875 mm)\nSeat Height, Unladen (Low seat position with optional ARH suspension): 32.7 in. (830 mm)\nSeat Height, Unladen (High seat position with optional ARH suspension): 33.7 in. (855 mm)\nStatic Ground Clearance: 6.9 in. (175 mm)\nDynamic Ground Clearance (with optional suspension): 6.9 in. (175 mm)\nRake (steering head): 25\nFork Angle: 25\nTrail: 4.3 in. (108 mm)\nWheelbase: 62.4 in. (1.585 mm)\nTires, Type: Michelin® Scorcher „Adventure“, Radial\nTires, Front Model: Scorcher Adventure\nTires, Front Specification: 120/70R19 60V\nTires, Rear Model: Scorcher Adventure\nTires, Rear Specification: 170/60R17 72V\nFuel Capacity: 5.6 gal. (21.2 l)\nReserve Fuel Capacity, Fuel Injection (warning light): 1 gal. (3.8 l)\nOil Capacity (w/filter): 4.75 qt. (4.5 l)\nTransmission Capacity: N/V\nPrimary Chain Case Capacity: N/V\nCoolant Capacity: 2.32 qt. (2.2 l)\nWeight, As Shipped: 534 lb (242 kg)\nWeight, In Running Order: 569 lb (258 kg)\nGross Vehicle Weight Rating: 1.003 lb (455 kg)\nGross Axle Weight Rating, Front: 399 lb (181 kg)\nGross Axle Weight Rating, Rear: 665 lb (302 kg)\nLuggage Capacity -Volume: N/V\n\nEngine: RA1250S Pan America® 1250 Special\nEngine: Revolution® Max 1250\nValves: Kettengesteuert, DOHC, hydraulische selbstjustierende Stößel, Einlass- & Auslass-VVT; vier Ventile pro Zylinder\nBore: 4.134 in. (105 mm)\nStroke: 2.846 in. (72,3 mm)\nDisplacement: 76.4 cu in (1.252 cc)\nCompression Ratio: 13.0:1\nFuel System: Elektronische sequenzielle Kraftstoffeinspritzung (ESPFI)\nAir Cleaner: Downdraft-Ansaugung, abgestimmte Geschwindigkeitsleitbleche, waschbares Filtermedium\nExhaust: 2-in-1-in-1; Katalysator im Sammler\nLubrication System: Halbtrocken-Sumpf\n\nDrivetrain: RA1250S Pan America® 1250 Special\nPrimary Drive: Zahnrad, 49/89 Übersetzungsverhältnis\nFinal Drive: Kette, 19/48 Übersetzungsverhältnis\nClutch: Mechanisch, 8 Platten nass, Assist & Slip, 1090N\nTransmission: 6-Gang\nGear Ratios (overall) 1st: 13.11\nGear Ratios (overall) 2nd: 9.687\nGear Ratios (overall) 3rd: 7.509\nGear Ratios (overall) 4th: 6.057\nGear Ratios (overall) 5th: 5.08\nGear Ratios (overall) 6th: 4.436\n\nChassis: RA1250S Pan America® 1250 Special\nFrame: Bestandteil eines hochfesten niedriglegierten Stahlgitterrahmens; gestanzte, gegossene und geschmiedete Verbindungen; MIG-geschweißt; Aluminium geschmiedete Mittelstruktur\nSwingarm: Einteiliges Druckguss-Aluminium\nFront Fork: 47-mm-Upside-down-Gabel mit elektrisch einstellbarer, halbaktiver Dämpferregelung. Aluminium-Gabeloberteile\nFront Fork, Optional: 47-mm-Upside-down-Gabel mit elektrisch einstellbarer, halbaktiver Dämpferregelung und adaptiver Ride Height (ARH). Aluminium-Gabeloberteile\nRear Shocks: Anlenkungsmonoshock mit automatischer elektronischer Vorspannungsregelung und halbaktiver Zug- & Druckstufendämpfung\nRear Shocks, Optional: Anlenkungsmonoshock mit automatischer elektronischer Vorspannungsregelung und halbaktiver Zug- & Druckstufendämpfung und adaptiver Ride Height (ARH)\nWheels, Optional Style Type: Eloxiertes Aluminium, schlauchlos eingespeicht\nWheels, Front Type: Aluminiumguss, satin schwarz\nWheels, Front Diameter: 19 in. (483 mm)\nWheels, Front Width: 3 in. (76 mm)\nWheels, Rear Type: Aluminiumguss, satin schwarz\nWheels, Rear Diameter: 17 in. (432 mm)\nWheels, Rear Width: 4.5 in. (114 mm)\nBrakes, Caliper Type: Vorne: Radial montiert, Monoblock, 4-Kolben-Bremssattel; Hinten: Schwimmend, Einkolben-Bremssattel\nBrakes, Rotor Type: Vorne: Doppelscheibe, schwimmend, turmmontiert; Hinten: Solider, gleichmäßig erweiterter Rotor\nBrakes, Front Diameter: 12.6 in. (320 mm)\nBrakes, Front Thickness: 0.17 in. (4.5 mm)\nBrakes, Front is dual: Ja\nBrakes, Rear Diameter: 11 in. (280 mm)\nBrakes, Rear Thickness: 0.2 in. (5 mm)\nBrakes, Anti-Lock Braking System (ABS): Standard\nSuspension Travel, Front: 7.5 in. (191 mm)\nSuspension Travel, Rear: 7.5 in. (191 mm)\n\nPerformance: RA1250S Pan America® 1250 Special\nEngine Torque Testing Method: J1349\nEngine Torque: 95 ft-lb (129 Nm)\nEngine Torque (rpm): 6.750\nPower: 150 PS / 112 kW @ 8.750 U/min\nLean Angle Testing Method: J1168\nLean Angle, Right (deg.): 42\nLean Angle, Left (deg.): 42\n\nElectric: RA1250S Pan America® 1250 Special\nBattery: Versiegelt, wartungsfrei, absorbierte Glasmatten-Batterie (AGM), 12V, 17.5Ah, 310 CCA bei 0°F\nCharging: Dreiphasensystem, 45 Amp (390 Watt @ 13 Volt, 1.300 U/min, max. Leistung 585 Watt @ 13 Volt, 2.500 U/min)\nStarting: 0.9 kW elektrisch mit Direktantrieb-Anlasser\nLights (as per country regulation), Headlamp: Daymaker™ Adaptiver LED-Scheinwerfer mit 6-Segment-LED-Schwenkleuchte\nLights (as per country regulation), Tail/Stop: Alle LED-Rück-/Bremsleuchte mit Signatur-Heckleuchte\nLights (as per country regulation), Front Signal Lights: LED-Bullet-Blinker\nLights, Rear Turn Signals: LED-Bullet-Blinker\nGauges: Sichtbarer Bereich von 6,8 Zoll TFT-Display mit Tacho, Gang, Kilometerzähler, Kraftstoffstand, Uhr, Trip, Umgebungstemperatur, Niedrigtemperatur-Warnung, Seitenständer runter-Warnung, Umkippschutz, Cruise, Reichweite und Drehzahlmesseranzeige, BT-fähig - Telefonanbindung für Anrufe, Musik, Navigation (nur H-D-App)\nAuxiliary Lamps: N/V\nElectric Power Outlet: USB-C, Ausgang 5V bei 2,4 Amp\nGPS System: N/V\nReverse Gear: N/V\n\nFuel Economy & CO₂ Emissions: RA1250S Pan America® 1250 Special\nFuel Economy Testing Method: Geschätzt Stadt/Autobahn\nFuel Economy: 46 mpg (5,1 l/100 km)\n\nInfotainment: RA1250S Pan America® 1250 Special\nInfotainment System: N/V\nScreen Size: 6.8 in. (173 mm)\nType: Farb-TFT mit Touch\nWatts Per Channel: N/V\nSpeakers: N/V\nSpeaker Size: N/V\nHeadset Specifications (if equipped): Bluetooth\nAM: N/V\nFM: N/V\nMW: N/V\nLW: N/V",
-  "hubspotPageId": "378070220003",
-  "hubspotPageUrl": "https://staalfabrik-gmbh-144766102.hubspotpagebuilder.eu/bikes/2025/pan-america-1250-special"
+  "hubspotPageId": "378351843534",
+  "hubspotPageUrl": "https://staalfabrik-gmbh-144766102.hubspotpagebuilder.eu/bikes/adventure_touring/2025/pan_america_1250_special",
+  "hubspotId": "1150371440832"
 }

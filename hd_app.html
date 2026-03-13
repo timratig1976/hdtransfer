@@ -6,27 +6,21 @@
 <title>HD Import Suite</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg:        #f4f5f7;
-    --surface:   #ffffff;
-    --border:    #dde1e7;
-    --border2:   #c8cdd6;
-    --orange:    #E8621A;
-    --orange2:   #d0541000;
-    --orangebg:  #fff4ee;
-    --green:     #16a34a;
-    --greenbg:   #f0fdf4;
-    --red:       #dc2626;
-    --redbg:     #fef2f2;
-    --yellow:    #d97706;
-    --text:      #111827;
-    --text2:     #374151;
-    --muted:     #9ca3af;
-    --mono:      'Space Mono', monospace;
-    --sans:      'Open Sans', 'Syne', sans-serif;
+    --bg:        #1a1a1e;
+    --surface:   #222228;
+    --surface2:  #2a2a32;
+    --accent:    #e8621a;
+    --accent-d:  rgba(232,98,26,0.12);
+    --green:     #22c55e;
+    --red:       #ef4444;
+    --text:      #f0f0f5;
+    --text2:     #b8b8c8;
+    --text3:     #888898;
+    --mono:      'JetBrains Mono', monospace;
+    --sans:      'Inter', system-ui, sans-serif;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -36,96 +30,98 @@
     font-family: var(--sans);
     height: 100vh;
     display: grid;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: 40px 36px 1fr;
     overflow: hidden;
     font-size: 13px;
+    -webkit-font-smoothing: antialiased;
   }
 
   /* ── Header ── */
   header {
-    border-bottom: 1px solid var(--border);
-    padding: 0 20px;
+    padding: 0 16px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     background: var(--surface);
-    height: 44px;
+    height: 40px;
     flex-shrink: 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   }
   .logo {
-    font-size: 10px;
+    font-size: 9px;
     font-family: var(--mono);
-    color: var(--orange);
-    letter-spacing: 0.12em;
+    color: var(--accent);
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    border: 1.5px solid var(--orange);
-    padding: 3px 7px;
+    padding: 2px 6px;
     flex-shrink: 0;
-    font-weight: 700;
-    border-radius: 2px;
+    font-weight: 500;
+    opacity: 0.9;
   }
   header h1 {
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--text);
-    letter-spacing: -0.01em;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text2);
+    letter-spacing: 0.01em;
   }
   .header-status {
     margin-left: auto;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
   }
   .status-dot {
-    width: 7px; height: 7px;
+    width: 6px; height: 6px;
     border-radius: 50%;
     background: var(--muted);
     transition: background 0.3s;
   }
-  .status-dot.running { background: var(--orange); animation: pulse 1s infinite; }
+  .status-dot.running { background: var(--accent); animation: pulse 1.2s infinite; }
   .status-dot.done    { background: var(--green); }
   .status-label {
     font-family: var(--mono);
     font-size: 10px;
-    color: var(--muted);
+    color: var(--text2);
+    letter-spacing: 0.04em;
   }
 
   /* ── Tabs ── */
   .tabs {
-    display: flex;
-    border-bottom: 1px solid var(--border);
     background: var(--surface);
-    padding: 0 20px;
+    display: flex;
+    padding: 0 16px;
+    gap: 4px;
+    height: 36px;
+    flex-shrink: 0;
   }
   .tab-btn {
     background: none;
     border: none;
-    color: var(--muted);
+    color: var(--text2);
     font-family: var(--mono);
     font-size: 10px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding: 10px 16px;
+    padding: 0 12px;
+    height: 35px;
     cursor: pointer;
-    border-bottom: 2px solid transparent;
-    margin-bottom: -1px;
-    transition: all 0.15s;
+    transition: color 0.12s;
     display: flex;
     align-items: center;
     gap: 6px;
-    font-weight: 700;
+    font-weight: 400;
+    white-space: nowrap;
   }
-  .tab-btn:hover { color: var(--text2); }
-  .tab-btn.active { color: var(--orange); border-bottom-color: var(--orange); }
+  .tab-btn:hover { color: var(--text); }
+  .tab-btn.active { color: var(--accent); }
   .tab-badge {
-    background: var(--green);
+    background: var(--accent);
     color: #fff;
     font-size: 8px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 1px 4px;
-    border-radius: 8px;
+    border-radius: 3px;
     display: none;
+    letter-spacing: 0;
   }
   .tab-badge.visible { display: inline; }
 
@@ -135,26 +131,25 @@
     height: 100%;
     overflow: hidden;
   }
-  .tab-panel.active { display: grid; grid-template-columns: var(--sidebar-w, 280px) 5px 1fr; }
+  .tab-panel.active { display: grid; grid-template-columns: var(--sidebar-w, 260px) 1px 1fr; }
 
   /* ── Sidebar ── */
   aside {
-    border-right: none;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     background: var(--surface);
   }
   .resize-handle {
-    width: 5px;
+    width: 1px;
     flex-shrink: 0;
-    background: var(--border);
+    background: transparent;
     cursor: col-resize;
     position: relative;
-    transition: background 0.15s;
-    z-index: 10;
+    transition: background 0.12s;
+    z-index: 1;
   }
-  .resize-handle:hover, .resize-handle.dragging { background: var(--orange); }
+  .resize-handle:hover, .resize-handle.dragging { background: var(--text3); width: 2px; }
   .aside-config {
     flex: 1;
     overflow-y: auto;
@@ -162,74 +157,108 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    pointer-events: auto;
+  }
+  input[type="checkbox"] {
+    pointer-events: auto !important;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--border2);
+    border-radius: 3px;
+    background: var(--surface);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.15s;
+  }
+  input[type="checkbox"]:hover {
+    border-color: var(--accent);
+  }
+  input[type="checkbox"]:checked {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    top: -1px;
+    left: 2px;
   }
   .aside-log {
-    border-top: 2px solid var(--border);
-    height: 200px;
+    height: 180px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transition: height 0.2s;
+    transition: height 0.18s;
   }
-  .aside-log.collapsed { height: 30px; }
-  .aside-log .log-panel-header {
-    border-bottom: 1px solid var(--border);
-  }
+  .aside-log.collapsed { height: 28px; }
   .aside-log .log-area {
-    flex: 1; overflow-y: auto; padding: 6px 10px;
+    flex: 1; overflow-y: auto; padding: 5px 10px;
     font-size: 10px; line-height: 1.6;
   }
+
   .section-label {
     font-family: var(--mono);
-    font-size: 9px;
-    color: var(--muted);
-    letter-spacing: 0.12em;
+    font-size: 10.5px;
+    color: var(--text2);
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    margin-bottom: 4px;
-    font-weight: 700;
+    margin-bottom: 5px;
+    font-weight: 400;
   }
   .field { display: flex; flex-direction: column; gap: 3px; }
   .field label {
     font-size: 10px;
-    font-family: var(--mono);
-    color: var(--muted);
+    color: var(--text2);
+    font-weight: 400;
+    letter-spacing: 0.01em;
   }
-  .field input {
-    background: var(--bg);
-    border: 1px solid var(--border);
+  .field input, .field select {
+    background: var(--surface2);
+    border: none;
     color: var(--text);
     font-family: var(--mono);
     font-size: 11px;
-    padding: 6px 8px;
+    padding: 5px 8px;
     outline: none;
-    transition: border-color 0.15s, box-shadow 0.15s;
+    transition: border-color 0.12s, box-shadow 0.12s;
     width: 100%;
-    border-radius: 3px;
+    border-radius: 2px;
+    appearance: none;
   }
-  .field input:focus { border-color: var(--orange); box-shadow: 0 0 0 2px rgba(232,98,26,0.12); }
+  .field input:focus, .field select:focus {
+    outline: none;
+  }
   .field input::placeholder { color: var(--muted); }
 
-  .divider { height: 1px; background: var(--border); }
-
+  .divider { height: 1px; background: var(--border); margin: 18px 0; }
   .filter-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 
   .btn-secondary {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    color: var(--text2);
+    background: #2a2d3a;
+    border: 1px solid #4a5068;
+    color: var(--text);
     font-family: var(--mono);
-    font-size: 10px;
-    padding: 6px 10px;
+    font-size: 11px;
+    padding: 8px 12px;
     cursor: pointer;
     letter-spacing: 0.04em;
-    transition: all 0.15s;
-    width: 100%;
+    transition: all 0.12s;
+    width: auto;
     text-align: left;
     border-radius: 3px;
-    font-weight: 700;
+    font-weight: 600;
   }
-  .btn-secondary:hover { border-color: var(--orange); color: var(--orange); background: var(--orangebg); }
+  .btn-secondary:hover {
+    background: #343848;
+    border-color: #6a78a0;
+    color: #fff;
+  }
 
   .list-header {
     display: flex;
@@ -239,145 +268,144 @@
   .select-all {
     font-family: var(--mono);
     font-size: 9px;
-    color: var(--orange);
+    color: var(--text2);
     cursor: pointer;
     text-decoration: none;
     background: none;
     border: none;
     padding: 0;
-    font-weight: 700;
+    font-weight: 600;
+    opacity: 0.8;
   }
-  .select-all:hover { text-decoration: underline; }
+  .select-all:hover { opacity: 1; }
 
-  .bike-list { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+  .bike-list { display: flex; flex-direction: column; gap: 1px; flex: 1; }
   .bike-item {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 6px 8px;
-    border: 1px solid var(--border);
+    padding: 5px 8px;
     cursor: pointer;
-    transition: all 0.12s;
-    background: var(--bg);
-    border-radius: 3px;
+    transition: background 0.1s;
+    background: transparent;
+    border-radius: 2px;
   }
-  .bike-item:hover    { border-color: var(--orange); background: var(--orangebg); }
-  .bike-item.selected { border-color: var(--orange); background: var(--orangebg); }
-  .bike-item.success  { border-color: var(--green);  background: var(--greenbg); }
-  .bike-item.error    { border-color: var(--red);    background: var(--redbg); }
-  .bike-item.running  { border-color: var(--orange); animation: borderPulse 1s infinite; }
+  .bike-item:hover    { background: var(--surface2); }
+  .bike-item.selected { background: var(--accent-d); }
+  .bike-item.success  { background: transparent; }
+  .bike-item.error    { background: transparent; }
+  .bike-item.running  { background: var(--accent-d); animation: bgPulse 1.5s infinite; }
 
   .bike-check {
-    width: 13px; height: 13px;
-    border: 1.5px solid var(--border2);
+    width: 12px; height: 12px;
+    border: 1px solid var(--text3);
     display: flex; align-items: center; justify-content: center;
-    font-size: 8px;
+    font-size: 7px;
     flex-shrink: 0;
     border-radius: 2px;
     color: transparent;
+    transition: all 0.1s;
   }
-  .bike-item.selected .bike-check { border-color: var(--orange); background: var(--orange); color: #fff; }
-  .bike-item.success  .bike-check { border-color: var(--green);  background: var(--green);  color: #fff; }
-  .bike-item.error    .bike-check { border-color: var(--red);    background: var(--red);    color: #fff; }
+  .bike-item.selected .bike-check { border-color: var(--accent); background: var(--accent); color: #fff; }
+  .bike-item.success  .bike-check { border-color: var(--green);  background: var(--green);  color: #000; }
+  .bike-item.error    .bike-check { border-color: var(--red);  background: var(--red);  color: #fff; }
 
   .bike-info { flex: 1; min-width: 0; }
-  .bike-name { font-size: 11px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text); }
-  .bike-meta { font-size: 9px; font-family: var(--mono); color: var(--muted); margin-top: 1px; }
+  .bike-name { font-size: 11px; font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text); }
+  .bike-meta { font-size: 9px; font-family: var(--mono); color: var(--text2); margin-top: 1px; opacity: 0.7; }
   .bike-st   { font-size: 10px; }
   .bike-st.ok  { color: var(--green); }
   .bike-st.err { color: var(--red); }
 
   /* ── Content Pane ── */
   .content {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     background: var(--bg);
   }
 
   .progress-area {
-    padding: 10px 16px;
-    border-bottom: 1px solid var(--border);
+    padding: 8px 14px;
     display: none;
     background: var(--surface);
+    flex-shrink: 0;
   }
   .progress-area.visible { display: block; }
   .progress-title {
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--orange);
-    margin-bottom: 8px;
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--text2);
+    margin-bottom: 7px;
     font-family: var(--mono);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-  .progress-steps { display: flex; gap: 12px; }
-  .step { flex: 1; }
+  .progress-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+  .step { display: flex; flex-direction: column; gap: 3px; }
   .step-bar {
-    background: var(--border);
-    height: 3px;
-    border-radius: 99px;
+    height: 2px;
+    background: var(--border2);
     overflow: hidden;
   }
   .step-fill {
-    height: 100%;
-    background: var(--orange);
-    width: 0%;
-    transition: width 0.3s;
-    border-radius: 99px;
+    height: 100%; width: 0%;
+    background: var(--accent);
+    transition: width 0.3s ease;
   }
-  .step.done .step-fill { background: var(--green); width: 100% !important; }
+  .step.done .step-fill { background: var(--green); }
   .step-lbl {
-    font-family: var(--mono);
-    font-size: 9px;
-    color: var(--muted);
-    margin-top: 4px;
-    letter-spacing: 0.06em;
+    font-size: 9px; font-family: var(--mono); color: var(--muted);
+    display: flex; justify-content: space-between; align-items: center;
   }
+  .step-lbl .step-count { color: var(--text2); font-weight: 600; }
 
   .log-area {
+    flex: 1;
     overflow-y: auto;
-    padding: 10px 16px;
+    padding: 8px 14px;
     font-family: var(--mono);
     font-size: 11px;
-    line-height: 1.7;
-    background: var(--surface);
+    line-height: 1.65;
+    background: var(--bg);
   }
-  .log-line { display: flex; gap: 10px; border-bottom: 1px solid var(--border); padding: 2px 0; }
-  .log-line:last-child { border-bottom: none; }
-  .log-ts   { color: var(--muted); flex-shrink: 0; font-size: 10px; padding-top: 1px; }
+  .log-line { display: flex; gap: 10px; padding: 1px 0; }
+  .log-ts   { color: var(--muted); flex-shrink: 0; font-size: 9.5px; padding-top: 1px; }
   .log-msg  { color: var(--text2); word-break: break-word; }
   .log-line.ok      .log-msg { color: var(--green); }
   .log-line.error   .log-msg { color: var(--red); }
-  .log-line.warn    .log-msg { color: var(--yellow); }
-  .log-line.section .log-msg { color: var(--orange); font-weight: 700; }
-  .log-line.skip    .log-msg { color: #6366f1; opacity: .8; }
+  .log-line.warn    .log-msg { color: var(--text2); opacity: 0.8; }
+  .log-line.section .log-msg { color: var(--text); font-weight: 500; }
+  .log-line.skip    .log-msg { color: var(--text3); opacity: .75; }
 
   .bottom-bar {
-    border-top: 1px solid var(--border);
-    padding: 10px 16px;
+    padding: 8px 14px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     background: var(--surface);
+    flex-shrink: 0;
   }
   .btn-primary {
-    background: var(--orange);
+    background: var(--accent);
     border: none;
     color: #fff;
     font-family: var(--mono);
-    font-size: 11px;
-    font-weight: 700;
-    padding: 8px 18px;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 7px 16px;
     cursor: pointer;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.07em;
     text-transform: uppercase;
-    transition: background 0.15s;
+    transition: opacity 0.12s;
     white-space: nowrap;
-    border-radius: 3px;
+    border-radius: 2px;
   }
-  .btn-primary:hover:not(:disabled) { background: #cf5617; }
-  .btn-primary:disabled { opacity: 0.35; cursor: not-allowed; }
+  .btn-primary:hover:not(:disabled) { opacity: 0.88; }
+  .btn-primary:disabled { opacity: 0.3; cursor: not-allowed; }
 
-  .summary { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+  .summary { font-family: var(--mono); font-size: 10.5px; color: var(--text2); }
   .summary .ok  { color: var(--green); }
   .summary .err { color: var(--red); }
 
@@ -392,259 +420,241 @@
     font-family: var(--mono);
     font-size: 11px;
     text-align: center;
-    padding: 32px;
-    line-height: 1.6;
+    padding: 40px;
+    line-height: 1.7;
   }
-  .empty-icon { font-size: 32px; opacity: 0.3; margin-bottom: 2px; }
+  .empty-icon { font-size: 28px; opacity: 0.2; margin-bottom: 4px; }
 
   /* ── Bike Cards (Scraper main view) ── */
-  .content { display: flex; flex-direction: column; overflow: hidden; background: var(--bg); }
-
   .bike-cards {
     flex: 1;
     overflow-y: auto;
-    padding: 10px 12px;
+    padding: 6px 8px;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2px;
   }
   .bike-card {
     background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 4px;
     overflow: hidden;
-    transition: border-color 0.15s;
     flex-shrink: 0;
   }
-  .bike-card.running { border-color: var(--orange); }
-  .bike-card.success { border-color: var(--green); }
-  .bike-card.error   { border-color: var(--red); }
 
   .bike-card-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: 15px 24px 2fr 1.5fr 30px 80px 30px 60px 40px 90px 90px;
     align-items: center;
-    gap: 12px;
-    padding: 12px 14px;
+    gap: 10px;
+    padding: 9px 12px;
+  }
+  .bike-card-row > * {
+    min-width: 0;
   }
   .card-check {
-    width: 18px; height: 18px;
-    border: 1.5px solid var(--border2);
-    border-radius: 3px;
+    width: 15px; height: 15px;
+    border: 1px solid var(--text3);
+    border-radius: 2px;
     display: flex; align-items: center; justify-content: center;
-    font-size: 11px; color: transparent;
+    font-size: 9px; color: transparent;
     flex-shrink: 0; cursor: pointer;
-    transition: all 0.12s;
+    transition: all 0.1s;
   }
-  .bike-card.selected .card-check { border-color: var(--orange); background: var(--orange); color: #fff; }
-  .bike-card.success  .card-check { border-color: var(--green);  background: var(--green);  color: #fff; }
-  .bike-card.error    .card-check { border-color: var(--red);    background: var(--red);    color: #fff; }
+  .bike-card.selected .card-check { border-color: var(--accent); background: var(--accent); color: #fff; }
+  .bike-card.success  .card-check { border-color: var(--green);  background: var(--green);  color: #000; }
+  .bike-card.error    .card-check { border-color: var(--red);  background: var(--red);  color: #fff; }
 
-  .bike-card-icon { font-size: 22px; flex-shrink: 0; width: 30px; text-align: center; }
+  .bike-card-icon { font-size: 18px; flex-shrink: 0; width: 24px; text-align: center; opacity: 0.85; }
   .bike-card-name {
-    flex: 2; min-width: 0;
-    font-size: 15px; font-weight: 600;
+    font-size: 13px; font-weight: 400;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     color: var(--text);
+    letter-spacing: -0.01em;
   }
   .bike-card-meta {
-    flex: 1.5; min-width: 0;
-    font-size: 12px; font-family: var(--mono); color: var(--muted);
+    font-size: 11px; font-family: var(--mono); color: var(--text2);
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    opacity: 0.8;
   }
 
   .status-pill {
-    font-size: 11px; font-family: var(--mono); font-weight: 700;
-    padding: 4px 10px; border-radius: 99px; flex-shrink: 0;
-    letter-spacing: 0.04em; border: 1px solid transparent;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
   }
-  .status-pill.pending { background: var(--bg); color: var(--muted); border-color: var(--border); }
-  .status-pill.running { background: var(--orangebg); color: var(--orange); border-color: var(--orange); animation: pulse 1s infinite; }
-  .status-pill.ok      { background: var(--greenbg); color: var(--green); border-color: var(--green); }
-  .status-pill.err     { background: var(--redbg); color: var(--red); border-color: var(--red); }
+  .status-pill.pending { color: var(--text3); }
+  .status-pill.running { color: var(--accent); animation: pulse 1.2s infinite; }
+  .status-pill.ok      { color: var(--green); }
+  .status-pill.err     { color: var(--red); }
 
-  .bike-card-actions { display: flex; gap: 6px; flex-shrink: 0; }
+  .bike-card-actions { display: flex; gap: 5px; justify-content: flex-end; }
   .btn-crawl {
-    background: var(--orange); border: none; color: #fff;
-    font-family: var(--mono); font-size: 11px; font-weight: 700;
-    padding: 6px 12px; cursor: pointer; border-radius: 3px;
-    letter-spacing: 0.04em; transition: background 0.15s; white-space: nowrap;
+    background: var(--accent); border: none; color: #fff;
+    font-family: var(--mono); font-size: 10px; font-weight: 500;
+    padding: 5px 10px; cursor: pointer; border-radius: 2px;
+    letter-spacing: 0.04em; transition: opacity 0.12s; white-space: nowrap;
+    width: 100%;
   }
-  .btn-crawl:hover:not(:disabled) { background: #cf5617; }
-  .btn-crawl:disabled { opacity: 0.35; cursor: not-allowed; }
-  .btn-crawl.retry { background: var(--red); }
-  .btn-crawl.retry:hover:not(:disabled) { background: #b91c1c; }
+  .btn-crawl:hover:not(:disabled) { opacity: 0.85; }
+  .btn-crawl:disabled { opacity: 0.3; cursor: not-allowed; }
+  .btn-crawl.retry { background: var(--text3); }
+  .btn-crawl.success { color: var(--green); }
 
   .btn-files {
-    background: var(--bg); border: 1px solid var(--border); color: var(--text2);
-    font-family: var(--mono); font-size: 11px; font-weight: 700;
-    padding: 6px 10px; cursor: pointer; border-radius: 3px;
-    transition: all 0.12s; white-space: nowrap;
+    background: transparent; border: none; color: var(--text2);
+    font-family: var(--mono); font-size: 10px; font-weight: 400;
+    padding: 5px 8px; cursor: pointer; border-radius: 2px;
+    transition: all 0.1s; white-space: nowrap;
+    width: 100%;
   }
-  .btn-files:hover { border-color: var(--orange); color: var(--orange); background: var(--orangebg); }
-  .btn-files.open  { border-color: var(--orange); color: var(--orange); background: var(--orangebg); }
+  .btn-files:hover { color: var(--text); background: var(--surface2); }
+  .btn-files.open  { color: var(--text); background: var(--surface2); }
 
   .btn-link {
-    background: var(--bg); border: 1px solid var(--border); color: var(--muted);
-    font-size: 13px; padding: 5px 8px; cursor: pointer; border-radius: 3px;
-    transition: all 0.12s; white-space: nowrap; text-decoration: none;
-    display: flex; align-items: center;
+    background: transparent; border: none; color: var(--text2);
+    font-size: 14px; padding: 0; cursor: pointer;
+    transition: all 0.1s; text-decoration: none;
+    display: flex; align-items: center; justify-content: center;
+    width: 100%;
   }
-  .btn-link:hover { border-color: var(--orange); color: var(--orange); background: var(--orangebg); }
+  .btn-link:hover { color: var(--accent); }
 
-  /* ── Card section divider ── */
-  .card-sep {
-    width: 1px; height: 28px; background: var(--border2);
-    flex-shrink: 0; margin: 0 4px;
-  }
-  /* ── Import status pill ── */
+  .card-sep { width: 1px; height: 22px; background: transparent; flex-shrink: 0; margin: 0 2px; }
+
   .import-pill {
-    font-size: 10px; font-family: var(--mono); font-weight: 700;
-    padding: 3px 8px; border-radius: 99px; flex-shrink: 0;
-    letter-spacing: 0.04em; border: 1px solid transparent;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
   }
-  .import-pill.pending { background: var(--bg); color: var(--muted);  border-color: var(--border); }
-  .import-pill.running { background: var(--orangebg); color: var(--orange); border-color: var(--orange); animation: pulse 1s infinite; }
-  .import-pill.ok      { background: var(--greenbg); color: var(--green); border-color: var(--green); }
-  .import-pill.err     { background: var(--redbg); color: var(--red);   border-color: var(--red); }
+  .import-pill.pending { color: var(--text3); }
+  .import-pill.running { color: var(--accent); animation: pulse 1.2s infinite; }
+  .import-pill.ok      { color: var(--green); }
+  .import-pill.err     { color: var(--red); }
 
   .btn-import {
-    background: var(--bg); border: 1px solid var(--border); color: var(--text2);
-    font-family: var(--mono); font-size: 11px; font-weight: 700;
-    padding: 5px 10px; cursor: pointer; border-radius: 3px;
-    transition: all 0.12s; white-space: nowrap;
+    background: var(--accent); border: none; color: #fff;
+    font-family: var(--mono); font-size: 10px; font-weight: 500;
+    padding: 5px 8px; cursor: pointer; border-radius: 2px;
+    transition: opacity 0.12s; white-space: nowrap;
+    width: 100%;
   }
-  .btn-import:hover:not(:disabled) { border-color: var(--green); color: var(--green); background: var(--greenbg); }
-  .btn-import:disabled { opacity: 0.35; cursor: not-allowed; }
+  .btn-import:hover:not(:disabled) { opacity: 0.85; }
+  .btn-import:disabled { opacity: 0.3; cursor: not-allowed; }
+  .btn-import.success { color: var(--green); }
 
   /* ── Preview panel ── */
   .bike-preview {
     border-top: 1px solid var(--border);
-    background: var(--bg);
-    padding: 12px 14px;
+    background: var(--surface);
+    padding: 10px 12px;
     display: none;
     flex-direction: column;
     gap: 10px;
+    overflow-y: auto;
+    max-height: 420px;
   }
   .bike-preview.open { display: flex; }
-  .preview-stats { display: flex; gap: 8px; }
-  .preview-stat { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 6px 14px; text-align: center; flex-shrink: 0; }
-  .preview-stat-label { font-size: 9px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; }
-  .preview-stat-value { font-size: 20px; font-weight: 700; color: var(--text); margin-top: 2px; }
-  .preview-section-title { font-family: var(--mono); font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin-bottom: 4px; }
-  .preview-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+  .preview-stats { display: flex; gap: 6px; }
+  .preview-stat {
+    background: var(--surface2); border: 1px solid var(--border2);
+    border-radius: 2px; padding: 5px 12px; text-align: center; flex-shrink: 0;
+  }
+  .preview-stat-label { font-size: 8.5px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; }
+  .preview-stat-value { font-size: 18px; font-weight: 700; color: var(--text); margin-top: 1px; }
+  .preview-section-title {
+    font-family: var(--mono); font-size: 8.5px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700; margin-bottom: 5px;
+  }
+  .preview-chips { display: flex; flex-wrap: wrap; gap: 3px; }
   .preview-chip {
     font-family: var(--mono); font-size: 10px; color: var(--text2);
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: 3px; padding: 2px 7px; white-space: nowrap;
+    background: var(--surface2); border: 1px solid var(--border2);
+    border-radius: 2px; padding: 2px 7px; white-space: nowrap;
     text-decoration: none; display: inline-block;
-    transition: all 0.12s; cursor: pointer;
+    transition: border-color 0.1s, color 0.1s;
   }
-  .preview-chip:hover { transform: translateY(-1px); box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-  .preview-chip.img { border-color: #3b82f6; color: #3b82f6; background: #eff6ff; }
-  .preview-chip.img:hover { border-color: #2563eb; background: #dbeafe; }
-  .preview-chip.vid { border-color: #8b5cf6; color: #8b5cf6; background: #f5f3ff; }
-  .preview-chip.vid:hover { border-color: #7c3aed; background: #ede9fe; }
-  .preview-chip.pdf { border-color: var(--red); color: var(--red); background: var(--redbg); }
-  .preview-chip.pdf:hover { border-color: #b91c1c; background: #fecaca; }
-  .preview-specs-wrap { display: flex; flex-direction: column; gap: 10px; }
+  .preview-chip:hover { border-color: var(--text2); color: var(--text); }
+  .preview-chip.img { border-color: #3b82f644; color: #60a5fa; }
+  .preview-chip.img:hover { border-color: #3b82f6; }
+  .preview-chip.vid { border-color: #8b5cf644; color: #a78bfa; }
+  .preview-chip.vid:hover { border-color: #8b5cf6; }
+  .preview-chip.pdf { border-color: var(--red-b); color: #f87171; }
+  .preview-chip.pdf:hover { border-color: var(--red); }
+  .preview-specs-wrap { display: flex; flex-direction: column; gap: 8px; }
   .preview-spec-section { margin-bottom: 2px; }
-  .preview-spec-section-title { font-family: var(--mono); font-size: 10px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 0; border-bottom: 1px solid var(--border); margin-bottom: 4px; }
+  .preview-spec-section-title {
+    font-family: var(--mono); font-size: 9px; font-weight: 700; color: var(--orange);
+    text-transform: uppercase; letter-spacing: 0.08em;
+    padding: 2px 0; border-bottom: 1px solid var(--border); margin-bottom: 4px;
+  }
   .preview-spec-table { width: 100%; border-collapse: collapse; font-size: 11px; }
-  .preview-spec-table tr:hover td { background: var(--surface); }
+  .preview-spec-table tr:hover td { background: var(--surface2); }
   .preview-spec-table td { padding: 2px 6px 2px 0; vertical-align: top; line-height: 1.5; }
-  .preview-spec-key { font-family: var(--mono); color: var(--muted); font-size: 10px; width: 55%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 220px; }
-  .preview-spec-val { color: var(--text2); }
-  .preview-desc { font-size: 11px; color: var(--text2); line-height: 1.6; }
-  .preview-folder { font-family: var(--mono); font-size: 10px; color: var(--muted); background: var(--surface); border: 1px solid var(--border); padding: 4px 8px; border-radius: 3px; }
+  .preview-spec-key {
+    font-family: var(--mono); color: var(--text2); font-size: 10px;
+    width: 50%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
+  }
+  .preview-spec-val { color: var(--text); }
+  .preview-desc { font-size: 11px; color: var(--text2); line-height: 1.65; }
+  .preview-folder {
+    font-family: var(--mono); font-size: 9.5px; color: var(--muted);
+    background: var(--surface2); border: 1px solid var(--border); padding: 3px 8px;
+  }
   .preview-loading { padding: 12px; font-family: var(--mono); font-size: 11px; color: var(--muted); }
 
   /* ── Per-card log ── */
   .card-log-area {
-    border-top: 1px dashed var(--border);
-    background: #fafafa;
-    max-height: 140px; overflow-y: auto;
-    padding: 6px 14px;
-    font-family: var(--mono); font-size: 10px; line-height: 1.7;
+    border-top: 1px solid var(--border);
+    background: var(--bg);
+    max-height: 50vh; overflow-y: auto;
+    padding: 5px 12px;
+    font-family: var(--mono); font-size: 10px; line-height: 1.65;
     display: none;
   }
   .card-log-area.open { display: block; }
   .card-log-line { padding: 0; }
-  .card-log-line.ok    { color: var(--green); }
-  .card-log-line.error { color: var(--red); }
-  .card-log-line.warn  { color: #d97706; }
-  .card-log-line.section { color: var(--orange); font-weight: 700; }
-  .card-log-line.info  { color: var(--muted); }
-  .card-log-line.skip  { color: #6366f1; opacity: .8; }
+  .card-log-line.ok      { color: var(--green); }
+  .card-log-line.error   { color: var(--red); }
+  .card-log-line.warn    { color: var(--yellow); }
+  .card-log-line.section { color: var(--orange); font-weight: 600; }
+  .card-log-line.info    { color: var(--text2); }
+  .card-log-line.skip    { color: var(--indigo); opacity: .75; }
   .btn-cardlog {
-    background: var(--bg); border: 1px solid var(--border); color: var(--muted);
-    font-family: var(--mono); font-size: 10px; font-weight: 700;
-    padding: 4px 8px; cursor: pointer; border-radius: 3px;
-    transition: all 0.12s; white-space: nowrap; flex-shrink: 0;
+    background: transparent; border: none; color: var(--text2);
+    font-size: 14px; padding: 0; cursor: pointer;
+    transition: all 0.1s;
+    display: flex; align-items: center; justify-content: center;
   }
-  .btn-cardlog:hover { border-color: var(--text2); color: var(--text2); }
-  .btn-cardlog.active { border-color: var(--orange); color: var(--orange); background: var(--orangebg); }
+  .btn-cardlog:hover  { color: var(--text); }
+  .btn-cardlog.active { color: var(--accent); }
 
-  /* ── Log panel styles (shared) ── */
+  /* ── Log panel header (shared) ── */
   .log-panel-header {
     display: flex; align-items: center; justify-content: space-between;
-    padding: 0 12px; height: 30px; flex-shrink: 0;
+    padding: 0 10px; height: 28px; flex-shrink: 0;
     cursor: pointer; user-select: none;
   }
-  .log-panel-header:hover { background: var(--bg); }
+  .log-panel-header:hover { background: var(--surface2); }
   .log-panel-title {
-    font-family: var(--mono); font-size: 9px; font-weight: 700;
+    font-family: var(--mono); font-size: 9px; font-weight: 600;
     color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase;
     display: flex; align-items: center; gap: 6px;
   }
 
-  /* ── Import progress bar ── */
-  .progress-area {
-    display: none; padding: 10px 14px 8px;
-    border-bottom: 1px solid var(--border); background: var(--bg);
-  }
-  .progress-area.visible { display: block; }
-  .progress-title {
-    font-size: 11px; font-weight: 700; color: var(--text2);
-    font-family: var(--mono); margin-bottom: 8px;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  }
-  .progress-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; }
-  .step { display: flex; flex-direction: column; gap: 3px; }
-  .step-bar {
-    height: 6px; background: var(--border); border-radius: 99px; overflow: hidden;
-  }
-  .step-fill {
-    height: 100%; width: 0%; background: var(--orange);
-    border-radius: 99px; transition: width 0.3s ease;
-  }
-  .step.done .step-fill { background: var(--green); }
-  .step-lbl {
-    font-size: 9px; font-family: var(--mono); color: var(--muted);
-    display: flex; justify-content: space-between;
-  }
-  .step-lbl .step-count { color: var(--text2); font-weight: 700; }
+  /* ── Scraper / Importer panel layouts ── */
+  #panel-scraper .content { grid-template-rows: 1fr auto; }
+  #panel-scraper .bike-cards { overflow-y: auto; }
+  #panel-importer .content { grid-template-rows: auto 1fr auto; }
+  #panel-importer .log-area { background: var(--bg); }
 
-  /* Scraper content: full height cards + bottom bar only */
-  #panel-scraper .content {
-    display: grid;
-    grid-template-rows: 1fr auto;
-  }
-  #panel-scraper .bike-cards {
-    overflow-y: auto;
-  }
-  /* Importer content */
-  #panel-importer .content {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-  }
-  #panel-importer .log-area { background: var(--surface); }
+  /* ── Animations ── */
+  @keyframes pulse       { 0%,100%{opacity:1}     50%{opacity:0.25} }
+  @keyframes bgPulse     { 0%,100%{background:var(--accent-d)} 50%{background:rgba(232,98,26,0.15)} }
 
-  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-  @keyframes borderPulse { 0%,100%{border-color:var(--orange)} 50%{border-color:transparent} }
-
-  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  /* ── Scrollbars ── */
+  ::-webkit-scrollbar       { width: 3px; height: 3px; }
   ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 99px; }
+  ::-webkit-scrollbar-thumb { background: var(--border2); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text2); }
 </style>
 </head>
 <body>
@@ -665,7 +675,7 @@
     🕷 Scraper
     <span class="tab-badge" id="badge-scraper"></span>
   </button>
-  <button class="tab-btn" onclick="switchTab('importer')" id="tab-importer">
+  <button class="tab-btn" onclick="switchTab('importer')" id="tab-importer" style="display:none">
     🚀 HubSpot Import
     <span class="tab-badge" id="badge-importer"></span>
   </button>
@@ -675,6 +685,11 @@
 <div class="tab-panel active" id="panel-scraper">
   <aside>
     <div class="aside-config">
+      <div class="log-panel-header" onclick="toggleSettings()" style="margin-bottom:8px">
+        <div class="log-panel-title">⚙️ Settings</div>
+        <span id="settings-toggle-icon" style="font-size:10px;color:var(--text3)">▼</span>
+      </div>
+      <div id="settings-content">
       <div>
         <div class="section-label">HD Website URL</div>
         <div class="field">
@@ -738,8 +753,8 @@
         </div>
         <div style="font-size:10px;color:var(--muted);margin-top:4px">Leer lassen → Preview-Bilder (klein)</div>
         <div class="field" style="margin-top:10px">
-          <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
-            <input type="checkbox" id="s-forceRedownload" style="width:16px;height:16px;cursor:pointer" />
+          <label for="s-forceRedownload" style="display:flex;align-items:center;gap:8px;cursor:pointer">
+            <input type="checkbox" id="s-forceRedownload" onclick="console.log('Force Re-download clicked!', this.checked)" style="width:16px;height:16px;cursor:pointer;flex-shrink:0" />
             Force Re-download (bestehende Bilder löschen &amp; neu laden)
           </label>
         </div>
@@ -763,7 +778,7 @@
           <input type="text" id="hs-objectTypeId" placeholder="0-420" value="0-420" />
         </div>
         <div style="height:6px"></div>
-        <button class="btn-secondary" onclick="testHubSpotConnection()" style="width:100%">⚡ Verbindung testen</button>
+        <button class="btn-secondary" onclick="testHubSpotConnection()">⚡ Verbindung testen</button>
         <div id="hs-testResult" style="font-size:11px;margin-top:6px;padding:6px;border-radius:3px;display:none"></div>
       </div>
 
@@ -772,8 +787,8 @@
       <div>
         <div class="section-label">HubSpot Seiten</div>
         <div class="field">
-          <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
-            <input type="checkbox" id="hs-createPages" style="width:16px;height:16px;cursor:pointer" />
+          <label for="hs-createPages" style="display:flex;align-items:center;gap:8px;cursor:pointer">
+            <input type="checkbox" id="hs-createPages" onclick="console.log('Checkbox clicked!', this.checked)" style="width:16px;height:16px;cursor:pointer;flex-shrink:0" />
             Seiten automatisch erstellen
           </label>
         </div>
@@ -784,8 +799,11 @@
         </div>
         <div style="height:4px"></div>
         <div class="field">
-          <label>Slug Prefix</label>
-          <input type="text" id="hs-pageSlugPrefix" placeholder="bikes" value="bikes" />
+          <label>Slug Template</label>
+          <input type="text" id="hs-pageSlugTemplate" placeholder="bikes/{{year}}/{{name}}" value="bikes/{{year}}/{{name}}" />
+        </div>
+        <div style="font-size:9px;color:var(--muted);margin-top:3px;line-height:1.4">
+          Variablen: {{year}}, {{name}}, {{code}}, {{category}}
         </div>
         <div style="height:4px"></div>
         <div class="filter-row">
@@ -798,6 +816,7 @@
             <input type="text" id="hs-fieldName" placeholder="bike" value="bike" />
           </div>
         </div>
+      </div>
       </div>
     </div>
 
@@ -892,7 +911,7 @@
 
     <div class="bottom-bar">
       <button class="btn-primary" id="i-btn" onclick="startImport()" disabled>Import starten</button>
-      <button class="btn-secondary" style="width:auto;padding:8px 12px;background:var(--redbg);border-color:var(--red);color:var(--red)" onclick="resetImport()" title="Import-Sperre manuell aufheben">🔓 Reset</button>
+      <button class="btn-secondary" style="width:auto;padding:8px 12px;color:var(--text3)" onclick="resetImport()" title="Import-Sperre manuell aufheben">🔓 Reset</button>
       <div class="summary" id="i-summary"></div>
     </div>
   </div>
@@ -1306,29 +1325,29 @@ function cardHTML(bike, key, sel, res) {
   const icon = catIcons[bike.category] || '🏍️';
   let statusPill, crawlBtn, filesBtn = '';
   if (!res) {
-    statusPill = '<span class="status-pill pending">○ ausstehend</span>';
+    statusPill = '<span class="status-pill pending"></span>';
     crawlBtn   = `<button class="btn-crawl" onclick="scrapeOne('${key}')">▶ Crawl</button>`;
   } else if (res.status === 'success') {
-    statusPill = '<span class="status-pill ok">✓ fertig</span>';
-    crawlBtn   = `<button class="btn-crawl" onclick="scrapeOne('${key}')">↺ Nochmal</button>`;
+    statusPill = '<span class="status-pill ok">✓</span>';
+    crawlBtn   = `<button class="btn-crawl success" onclick="scrapeOne('${key}')">↺ Nochmal</button>`;
     filesBtn   = `<button class="btn-files" id="fbtn_${key}" onclick="togglePreview('${key}')">📁 Daten</button>`;
   } else {
-    statusPill = '<span class="status-pill err">✕ Fehler</span>';
+    statusPill = '<span class="status-pill err">✕</span>';
     crawlBtn   = `<button class="btn-crawl retry" onclick="scrapeOne('${key}')">↺ Retry</button>`;
   }
   const ir = importRes[key];
   let importPill, importBtn;
   if (!ir) {
-    importPill = '<span class="import-pill pending">— nicht importiert</span>';
+    importPill = '<span class="import-pill pending"></span>';
     importBtn  = `<button class="btn-import" onclick="importOne('${key}')" ${res?.status !== 'success' ? 'disabled title="Zuerst scrapen"' : ''}>🚀 Import</button>`;
   } else if (ir.status === 'running') {
-    importPill = '<span class="import-pill running">⧳ Import…</span>';
+    importPill = '<span class="import-pill running"></span>';
     importBtn  = `<button class="btn-import" disabled>🚀 Import</button>`;
   } else if (ir.status === 'success') {
-    importPill = '<span class="import-pill ok">✓ importiert</span>';
-    importBtn  = `<button class="btn-import" onclick="importOne('${key}')">↺ Nochmal</button>`;
+    importPill = '<span class="import-pill ok">✓</span>';
+    importBtn  = `<button class="btn-import success" onclick="importOne('${key}')">↺ Nochmal</button>`;
   } else {
-    importPill = `<span class="import-pill err" onclick="showImportError('${key}')" style="cursor:pointer" title="Klicken für Details">✕ Import-Fehler</span>`;
+    importPill = `<span class="import-pill err" onclick="showImportError('${key}')" style="cursor:pointer">✕</span>`;
     importBtn  = `<button class="btn-import" onclick="importOne('${key}')">↺ Retry</button>`;
   }
   return `
@@ -1337,21 +1356,13 @@ function cardHTML(bike, key, sel, res) {
       <div class="bike-card-icon">${icon}</div>
       <div class="bike-card-name">${esc(bike.name)}</div>
       <div class="bike-card-meta">${bike.year} · ${esc(bike.category || '')} · ${bike.code}</div>
-      <div id="prog_${key}" style="flex:1;max-width:100px;display:none">
-        <div style="background:var(--border);height:3px;border-radius:99px;overflow:hidden">
-          <div id="pbar_${key}" style="height:100%;background:var(--orange);width:0%;transition:width .3s;border-radius:99px"></div>
-        </div>
-        <div id="pstep_${key}" style="font-size:9px;font-family:var(--mono);color:var(--muted);margin-top:3px"></div>
-      </div>
+      ${bike.url ? `<a class="btn-link" href="${esc(bike.url)}" target="_blank" title="HD Seite">↗</a>` : '<span></span>'}
+      ${crawlBtn}
       ${statusPill}
-      <div class="bike-card-actions">
-        ${bike.url ? `<a class="btn-link" href="${esc(bike.url)}" target="_blank" title="Seite öffnen">↗</a>` : ''}
-        ${crawlBtn}${filesBtn}
-        <button class="btn-cardlog" id="clog_${key}" onclick="toggleCardLog('${key}')">📋</button>
-      </div>
-      <div class="card-sep"></div>
+      ${filesBtn || '<span></span>'}
+      <button class="btn-cardlog" id="clog_${key}" onclick="toggleCardLog('${key}')">📋</button>
+      ${importBtn}
       ${importPill}
-      <div class="bike-card-actions">${importBtn}</div>
     </div>
     <div class="card-log-area" id="clogarea_${key}"></div>
     <div class="bike-preview" id="preview_${key}"></div>`;
@@ -1486,27 +1497,32 @@ async function analyzeVideo(folder, videoIndex, outputDir) {
   }
 }
 
+function closeDataModal() {
+  document.getElementById('dataModal').style.display = 'none';
+  document.body.style.overflow = '';
+  const fbtn = currentPreviewKey ? document.getElementById('fbtn_' + currentPreviewKey) : null;
+  if (fbtn) fbtn.classList.remove('open');
+  currentPreviewKey = null;
+}
+
 async function togglePreview(key) {
-  const panel = document.getElementById('preview_' + key);
-  const fbtn  = document.getElementById('fbtn_'   + key);
-  if (!panel) return;
-  if (panel.classList.contains('open') && currentPreviewKey === key) {
-    panel.classList.remove('open');
-    if (fbtn) fbtn.classList.remove('open');
-    currentPreviewKey = null;
-    return;
-  }
+  const fbtn = document.getElementById('fbtn_' + key);
+  if (currentPreviewKey === key) { closeDataModal(); return; }
   currentPreviewKey = key;
-  panel.classList.add('open');
   if (fbtn) fbtn.classList.add('open');
-  panel.innerHTML = '<div class="preview-loading">⧳ Lade Daten…</div>';
-  const bike      = scraperBikes.find(b => bikeKey(b) === key);
+  const modal = document.getElementById('dataModal');
+  const body  = document.getElementById('dataModalBody');
+  const bike  = scraperBikes.find(b => bikeKey(b) === key);
+  document.getElementById('dataModalTitle').textContent = bike ? `${bike.year} ${bike.name} · ${bike.code}` : key;
+  body.innerHTML = '<div style="padding:40px;text-align:center;font-family:var(--mono);color:var(--text3)">⧳ Lade Daten…</div>';
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
   const outputDir = document.getElementById('s-outputDir').value.trim() || './hd-output';
   const folder    = bikeSlug(bike);
   try {
     const res  = await fetch('/api/bike-data?' + new URLSearchParams({ outputDir, folder }));
     const d    = await res.json();
-    if (d.error) { panel.innerHTML = `<div class="preview-loading" style="color:var(--red)">${esc(d.error)}</div>`; return; }
+    if (d.error) { body.innerHTML = `<div style="padding:40px;text-align:center;font-family:var(--mono);color:var(--red)">${esc(d.error)}</div>`; return; }
     const fmt  = b => b >= 1048576 ? (b/1048576).toFixed(1)+'MB' : (b >= 1024 ? (b/1024).toFixed(0)+'KB' : b+'B');
     const fileUrl = (path) => `/api/file?${new URLSearchParams({ outputDir, folder, file: path })}`;
     const imgTypeBadgeStatic = (a) => {
@@ -1517,15 +1533,17 @@ async function togglePreview(key) {
     };
     const hasImgAnalysis = (d.images||[]).some(i => i.analysis);
     const imgChips = (d.images||[]).map((i, idx) => {
-      const isHero = d.recommendedHero && d.recommendedHero === i.file;
-      const badge  = imgTypeBadgeStatic(i.analysis);
-      const heroStyle = isHero ? 'outline:2px solid #f39c12;outline-offset:1px;' : '';
-      return `<div style="display:inline-flex;align-items:center;gap:4px;margin:0 4px 4px 0;flex-wrap:wrap">
-        <a class="preview-chip img" href="${fileUrl('images/'+i.file)}" target="_blank" title="${esc(i.analysis?.description||'')}" style="${heroStyle}">
-          🖼️ ${esc(i.file)} <span style="opacity:.6">${fmt(i.size)}</span>
-        </a>
-        <span id="img-badge-${esc(folder)}-${idx}">${badge}</span>
-        <span id="img-hero-${esc(folder)}-${idx}" style="font-size:11px;${isHero?'':'display:none'}" title="Recommended hero image">⭐</span>
+      const isHero  = d.recommendedHero && d.recommendedHero === i.file;
+      const badge   = imgTypeBadgeStatic(i.analysis);
+      const heroRing = isHero ? 'outline:2px solid #f39c12;outline-offset:2px;' : '';
+      const url      = fileUrl('images/'+i.file);
+      const thumbUrl = `/api/thumb?${new URLSearchParams({ outputDir, folder, file: i.file, w: '144' })}`;
+      const caption  = esc(i.file) + (i.analysis?.type ? ' · ' + i.analysis.type : '');
+      return `<div style="position:relative;display:inline-block;cursor:pointer;vertical-align:top" title="${esc(i.analysis?.description||i.file)}" onclick="openMediaModal('${url}','image','${caption}')">
+        <img src="${thumbUrl}" loading="lazy" style="width:72px;height:46px;object-fit:cover;border-radius:2px;display:block;${heroRing}" />
+        ${isHero ? '<span style="position:absolute;top:3px;left:3px;font-size:10px;background:rgba(0,0,0,.6);padding:1px 4px;border-radius:2px">⭐</span>' : ''}
+        <div id="img-badge-${esc(folder)}-${idx}" style="position:absolute;bottom:3px;left:3px;right:3px">${badge}</div>
+        <a href="${url}" target="_blank" onclick="event.stopPropagation()" style="position:absolute;top:3px;right:3px;font-size:10px;background:rgba(0,0,0,.6);padding:1px 4px;border-radius:2px;color:#fff;text-decoration:none">↗</a>
       </div>`;
     }).join('');
     const vidTypeBadge = (type, confidence) => {
@@ -1547,21 +1565,39 @@ async function togglePreview(key) {
       return meta + typeStr + desc + setting + rider;
     };
     const vidBlocks = (d.videos||[]).map(v => {
-      const aiType      = v.analysis && v.analysis.type ? v.analysis.type : null;
-      const aiConf      = v.analysis && v.analysis.confidence ? v.analysis.confidence : null;
+      const aiType      = v.analysis?.type || null;
+      const aiConf      = v.analysis?.confidence || null;
       const shownType   = aiType || v.heuristicType;
       const shownConf   = aiType ? aiConf : (v.heuristicType ? 'heuristic' : null);
       const typeBadge   = vidTypeBadge(shownType, shownConf);
       const hasAnalysis = !!v.analysis;
       const analysisHtml = renderAnalysis(v.analysis);
-      return `<div style="margin-bottom:10px">
-        <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
-          <a class="preview-chip vid" href="${fileUrl('videos/'+v.file)}" target="_blank">🎥 ${esc(v.file)} <span style="opacity:.6">${v.sizeMB ? v.sizeMB+'MB' : fmt(v.size)}</span></a>
-          ${typeBadge}
-          <button id="vid-analyze-${esc(folder)}-${v.videoIndex}" onclick="analyzeVideo('${esc(folder)}',${v.videoIndex},'${esc(outputDir)}')" style="font-size:10px;padding:2px 8px;background:var(--orange);color:#fff;border:none;border-radius:3px;cursor:pointer;white-space:nowrap">${hasAnalysis ? '✓ Re-analyze' : '🔍 Analyze'}</button>
-          ${v.thumbUrl ? `<a href="${esc(v.thumbUrl)}" target="_blank" style="font-size:10px;color:var(--muted);text-decoration:none">🖼 thumb</a>` : ''}
+      const vidUrl      = fileUrl('videos/'+v.file);
+      const typeColor   = shownType === 'detail_view' ? '#5b8dee' : shownType === 'riding_outdoor' ? '#3dba6f' : '#888';
+      const typeLabel   = shownType === 'detail_view' ? '🔬 Detail' : shownType === 'riding_outdoor' ? '🏍 Outdoor' : '?';
+      const sourceLabel = aiType ? `AI (${aiConf||'?'})` : shownType ? 'heuristic' : '—';
+      return `<div style="background:var(--surface);border-radius:3px;padding:10px;margin-bottom:8px">
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <div style="position:relative;flex-shrink:0;cursor:pointer" onclick="openMediaModal('${vidUrl}','video','${esc(v.file)}')">
+            <div style="width:140px;height:80px;background:var(--surface2);border-radius:2px;display:flex;align-items:center;justify-content:center;overflow:hidden">
+              ${v.thumbUrl ? `<img src="${esc(v.thumbUrl)}" style="width:100%;height:100%;object-fit:cover" />` : '<span style="font-size:28px;opacity:.4">🎥</span>'}
+            </div>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+              <span style="font-size:24px;text-shadow:0 0 8px rgba(0,0,0,.8)">▶</span>
+            </div>
+            <div style="position:absolute;bottom:4px;left:4px;font-size:9px;background:rgba(0,0,0,.75);padding:1px 5px;border-radius:2px;color:white">${v.sizeMB ? v.sizeMB+'MB' : fmt(v.size)}</div>
+          </div>
+          <div style="flex:1;min-width:0">
+            <div style="font-family:var(--mono);font-size:10px;color:var(--text2);margin-bottom:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(v.file)}</div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px">
+              <span style="font-size:10px;padding:2px 7px;background:${typeColor}22;color:${typeColor};border:1px solid ${typeColor}44;border-radius:2px;white-space:nowrap">${typeLabel}</span>
+              <span style="font-size:9px;color:var(--text3)">${sourceLabel}</span>
+              <button id="vid-analyze-${esc(folder)}-${v.videoIndex}" onclick="analyzeVideo('${esc(folder)}',${v.videoIndex},'${esc(outputDir)}')" style="font-size:9px;padding:2px 7px;background:var(--accent);color:#fff;border:none;border-radius:2px;cursor:pointer;white-space:nowrap">${hasAnalysis ? '↺ Re-analyze' : '🔍 AI Analyze'}</button>
+              <a href="${vidUrl}" target="_blank" style="font-size:9px;color:var(--text3);text-decoration:none;padding:2px 6px;border:1px solid var(--border2);border-radius:2px">↗ Tab</a>
+            </div>
+            <div id="vid-analysis-${esc(folder)}-${v.videoIndex}" style="font-size:10px;line-height:1.6;color:var(--text2);${hasAnalysis ? '' : 'display:none'}">${analysisHtml}</div>
+          </div>
         </div>
-        <div id="vid-analysis-${esc(folder)}-${v.videoIndex}" style="margin-top:6px;padding:8px;background:var(--surface);border-radius:4px;font-size:11px;line-height:1.6;${hasAnalysis ? '' : 'display:none'}">${analysisHtml}</div>
       </div>`;
     }).join('');
     const pdfChip  = d.hasPdf ? `<a class="preview-chip pdf" href="${fileUrl(d.pdfLocal)}" target="_blank">📄 ${esc(d.pdfLocal.split('/').pop() || 'document.pdf')}</a>` : '';
@@ -1593,98 +1629,105 @@ async function togglePreview(key) {
     }).join('');
     const imgColorMap = { outdoor_rider:'#e67e22', outdoor_static:'#3dba6f', studio_detail:'#5b8dee', feature_closeup:'#9b59b6', color_variant:'#95a5a6', lifestyle:'#1abc9c' };
     const vidColorMap = { detail_view:'#5b8dee', riding_outdoor:'#3dba6f', unknown:'#888' };
-    panel.innerHTML = `
-      <div class="preview-stats">
-        <div class="preview-stat"><div class="preview-stat-label">Bilder</div><div class="preview-stat-value">${(d.images||[]).length}</div></div>
-        <div class="preview-stat"><div class="preview-stat-label">Videos</div><div class="preview-stat-value">${(d.videos||[]).length}</div></div>
-        <div class="preview-stat"><div class="preview-stat-label">Specs</div><div class="preview-stat-value">${d.specsCount}</div></div>
-        <div class="preview-stat"><div class="preview-stat-label">PDF</div><div class="preview-stat-value">${d.hasPdf ? '✓' : '—'}</div></div>
-      </div>
-      <div style="margin-bottom:10px">
-        <div class="preview-section-title">Pipeline Status</div>
-        <div style="background:var(--surface);border-radius:5px;padding:6px 10px">
-          <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.07em;padding-bottom:3px;margin-bottom:2px">EXTRACTION</div>
-          ${pipeRow('📅', 'Modelljahr', p.modelljahr || d.year || '—', '', 'var(--text)')}
-          ${pipeRow(checkDot(p.hasDescription), 'Description', p.hasDescription ? `${(d.description||'').length} chars` : 'missing', '', p.hasDescription?'var(--green)':'var(--red)')}
-          ${pipeRow(checkDot(p.specsRowCount>0), 'Specs (EN)', p.specsRowCount > 0 ? `${p.specsRowCount} fields` : 'missing', p.specsSectionsCount ? `· ${p.specsSectionsCount} sections` : '', p.specsRowCount>0?'var(--green)':'var(--red)')}
-          ${pipeRow(checkDot(p.hasPdf), 'PDF Brochure', p.hasPdf ? 'downloaded' : 'not found', '', p.hasPdf?'var(--green)':'var(--muted)')}
-          ${pipeRow(checkDot(p.imagesTotal>0), 'Images', p.imagesTotal > 0 ? `${p.imagesTotal} files` : 'none', '', p.imagesTotal>0?'var(--green)':'var(--red)')}
-          ${pipeRow(checkDot(p.videosTotal>0), 'Videos', p.videosTotal > 0 ? `${p.videosTotal} files` : 'none', '', p.videosTotal>0?'var(--green)':'var(--muted)')}
-          <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.07em;padding:6px 0 3px;margin-top:2px">PROCESSING</div>
-          ${pipeRow(checkDot(p.hasTranslation), 'DE Translation', p.hasTranslation ? 'done' : 'not run', '(description)', p.hasTranslation?'var(--green)':'var(--muted)')}
-          ${pipeRow(checkDot(p.hasSpecsDE), 'DE Specs', p.hasSpecsDE ? 'done' : 'not run', '', p.hasSpecsDE?'var(--green)':'var(--muted)')}
-          <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.07em;padding:6px 0 3px;margin-top:2px">IDENTIFICATION</div>
-          ${pipeRow(checkDot(p.imagesAnalyzed>0), 'Image AI Analysis',
-            p.imagesAnalyzed > 0 ? `${p.imagesAnalyzed}/${p.imagesTotal} classified` : 'not run',
-            '', p.imagesAnalyzed>0?'var(--green)':'var(--muted)')}
-          ${p.imagesAnalyzed > 0 ? `<div style="padding:3px 0 3px 22px;font-size:10px">${typeBreakdownHtml(p.imageTypeBreakdown, imgColorMap)}</div>` : ''}
-          ${pipeRow(checkDot(p.recommendedHero), 'Hero Image',
-            p.recommendedHero ? esc(p.recommendedHero) : 'not identified',
-            '', p.recommendedHero?'#f39c12':'var(--muted)')}
-          ${pipeRow(checkDot(p.videosAnalyzed>0||p.videosTotal>0), 'Video Classification',
-            p.videosTotal > 0 ? `${p.videosTotal} videos` : 'none',
-            p.videosAnalyzed > 0 ? `(${p.videosAnalyzed} AI-confirmed)` : '(heuristic)',
-            p.videosTotal>0?'var(--green)':'var(--muted)')}
-          ${p.videosTotal > 0 ? `<div style="padding:3px 0 3px 22px;font-size:10px">${typeBreakdownHtml(p.videoTypeBreakdown, vidColorMap)}</div>` : ''}
+
+    const sectionTitle = (t) => `<div style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:10px">${t}</div>`;
+    const colLabel = (flag, txt) => `<div style="font-size:10px;font-weight:700;letter-spacing:.07em;color:${flag};margin-bottom:8px">${txt}</div>`;
+
+    body.innerHTML = [
+      /* ── Stats bar ── */
+      `<div style="display:flex;gap:10px;flex-wrap:wrap">
+        ${['Bilder','Videos','Specs','PDF'].map((l,i) => {
+          const v = [d.images?.length||0, d.videos?.length||0, d.specsCount||0, d.hasPdf?'✓':'—'][i];
+          return `<div style="background:var(--surface2);border:1px solid var(--border2);border-radius:3px;padding:8px 18px;text-align:center">
+            <div style="font-family:var(--mono);font-size:8px;color:var(--text3);text-transform:uppercase;letter-spacing:.1em">${l}</div>
+            <div style="font-size:22px;font-weight:700;color:var(--text);margin-top:2px">${v}</div>
+          </div>`;
+        }).join('')}
+        <div style="flex:1;background:var(--surface2);border:1px solid var(--border2);border-radius:3px;padding:8px 14px;font-family:var(--mono);font-size:9px;color:var(--text3)">
+          📁 ${esc(outputDir)}/bikes/${esc(folder)}
         </div>
-      </div>
-      ${imgChips ? `<div>
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-          <div class="preview-section-title" style="margin:0">Bilder</div>
-          <button id="img-analyze-btn-${esc(folder)}" onclick="analyzeImages('${esc(folder)}','${esc(outputDir)}')" style="font-size:10px;padding:2px 8px;background:var(--orange);color:#fff;border:none;border-radius:3px;cursor:pointer">${hasImgAnalysis ? '✓ Re-analyze Images' : '🔍 Analyze Images'}</button>
-          <span style="font-size:9px;color:var(--muted)">🟠 outdoor_rider · 🟢 outdoor_static · 🔵 studio · 🟣 closeup</span>
-        </div>
-        <div id="img-hero-card-${esc(folder)}" style="${d.recommendedHero ? '' : 'display:none'}">
-          <div style="font-size:10px;font-weight:700;color:#f39c12;margin-bottom:4px;letter-spacing:.05em">⭐ RECOMMENDED HERO IMAGE</div>
-          <div style="display:flex;align-items:flex-start;gap:10px;padding:8px;background:#f39c1211;border:1.5px solid #f39c1266;border-radius:5px;margin-bottom:8px">
-            <a href="${d.recommendedHero ? fileUrl('images/'+d.recommendedHero) : '#'}" target="_blank" id="img-hero-thumb-link-${esc(folder)}">
-              <img id="img-hero-thumb-${esc(folder)}" src="${d.recommendedHero ? fileUrl('images/'+d.recommendedHero) : ''}" style="width:120px;height:72px;object-fit:cover;border-radius:3px;border:1px solid #f39c1244" />
-            </a>
-            <div>
-              <div id="img-hero-name-${esc(folder)}" style="font-size:11px;font-weight:700;color:var(--text)">${esc(d.recommendedHero||'')}</div>
-              <div id="img-hero-desc-${esc(folder)}" style="font-size:10px;color:var(--muted);margin-top:3px;line-height:1.5">${esc((d.images||[]).find(i=>i.file===d.recommendedHero)?.analysis?.description||'')}</div>
-              <div style="margin-top:4px"><span style="font-size:9px;padding:1px 6px;background:#e67e2222;color:#e67e22;border:1px solid #e67e2244;border-radius:2px">outdoor_rider</span></div>
-            </div>
+      </div>`,
+
+      /* ── Description 2-col ── */
+      (d.description || d.beschreibung) ? `<div>
+        ${sectionTitle('Beschreibung')}
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div style="background:var(--surface);border-radius:3px;padding:14px">
+            ${colLabel('#5b8dee','🇬🇧 English')}
+            <div style="font-size:12px;line-height:1.7;color:var(--text2)">${d.description ? esc(d.description) : '<span style="color:var(--text3);font-style:italic">— not available —</span>'}</div>
+          </div>
+          <div style="background:var(--surface);border-radius:3px;padding:14px">
+            ${colLabel('#3dba6f','🇩🇪 Deutsch')}
+            <div style="font-size:12px;line-height:1.7;color:var(--text2)">${d.beschreibung ? esc(d.beschreibung) : '<span style="color:var(--text3);font-style:italic">— nicht übersetzt —</span>'}</div>
           </div>
         </div>
-        <div class="preview-chips" style="flex-wrap:wrap">${imgChips}</div>
-      </div>` : ''}
-      ${vidBlocks ? `<div><div class="preview-section-title">Videos</div><div style="padding:4px 0">${vidBlocks}</div></div>` : ''}
-      ${pdfChip ? `<div><div class="preview-section-title">Dokumente</div><div class="preview-chips">${pdfChip}</div></div>` : ''}
-      ${(d.description || d.beschreibung) ? `<div>
-        <div class="preview-section-title">Beschreibung</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-          <div>
-            <div style="font-size:9px;font-weight:700;letter-spacing:.07em;color:#3dba6f;margin-bottom:4px">🇩🇪 DEUTSCH</div>
-            <div class="preview-desc" style="min-height:40px">${d.beschreibung ? esc(d.beschreibung.substring(0,400))+(d.beschreibung.length>400?'…':'') : '<span style="color:var(--muted);font-style:italic">— nicht übersetzt —</span>'}</div>
+      </div>` : '',
+
+      /* ── Images ── */
+      imgChips ? `<div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          ${sectionTitle(`Bilder (${(d.images||[]).length})`)}
+          <button id="img-analyze-btn-${esc(folder)}" onclick="analyzeImages('${esc(folder)}','${esc(outputDir)}')" style="font-size:10px;padding:3px 10px;background:var(--accent);color:#fff;border:none;border-radius:2px;cursor:pointer;margin-top:-8px">${hasImgAnalysis ? '↺ Re-analyze' : '🔍 AI Analyze'}</button>
+        </div>
+        ${d.recommendedHero ? `<div style="display:flex;align-items:center;gap:12px;padding:10px 14px;background:#f39c1210;border:1px solid #f39c1233;border-radius:3px;margin-bottom:12px;cursor:pointer" onclick="openMediaModal('${fileUrl('images/'+d.recommendedHero)}','image','${esc(d.recommendedHero)} · Hero')"><img src="${fileUrl('images/'+d.recommendedHero)}" style="width:100px;height:62px;object-fit:cover;border-radius:2px" /><div><div style="font-size:10px;font-weight:700;color:#f39c12">⭐ Hero Image</div><div style="font-size:11px;color:var(--text2);margin-top:2px">${esc(d.recommendedHero)}</div><div style="font-size:10px;color:var(--text3);margin-top:2px">${esc((d.images||[]).find(i=>i.file===d.recommendedHero)?.analysis?.description||'')}</div></div></div>` : ''}
+        <div id="img-hero-card-${esc(folder)}"></div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">${imgChips}</div>
+      </div>` : '',
+
+      /* ── Videos ── */
+      vidBlocks ? `<div>${sectionTitle(`Videos (${(d.videos||[]).length})`)}${vidBlocks}</div>` : '',
+
+      /* ── PDF ── */
+      pdfChip ? `<div>${sectionTitle('Dokumente')}<div>${pdfChip}</div></div>` : '',
+
+      /* ── Specs 2-col ── */
+      (d.specsTextDE || d.specsTextEN || specsHtml) ? `<div>
+        ${sectionTitle(`Technische Daten · ${d.specsCount} Felder · ${(d.specsSections||[]).length} Sektionen`)}
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div style="background:var(--surface);border-radius:3px;padding:14px">
+            ${colLabel('#5b8dee','�� English')}
+            ${d.specsTextEN ? `<div style="font-size:11px;line-height:1.7;color:var(--text2)">${renderSpecsHtml(d.specsTextEN)}</div>` : '<div style="color:var(--text3);font-style:italic;font-size:11px">— not available —</div>'}
           </div>
-          <div>
-            <div style="font-size:9px;font-weight:700;letter-spacing:.07em;color:#5b8dee;margin-bottom:4px">🇬🇧 ENGLISH</div>
-            <div class="preview-desc" style="min-height:40px">${d.description ? esc(d.description.substring(0,400))+(d.description.length>400?'…':'') : '<span style="color:var(--muted);font-style:italic">— not available —</span>'}</div>
+          <div style="background:var(--surface);border-radius:3px;padding:14px">
+            ${colLabel('#3dba6f','🇩🇪 Deutsch')}
+            ${d.specsTextDE ? `<div style="font-size:11px;line-height:1.7;color:var(--text2)">${renderSpecsHtml(d.specsTextDE)}</div>` : '<div style="color:var(--text3);font-style:italic;font-size:11px">— nicht übersetzt —</div>'}
           </div>
         </div>
-      </div>` : ''}
-      ${(d.specsTextDE || d.specsTextEN || specsHtml) ? `<div>
-        <div class="preview-section-title">Technische Daten (${d.specsCount} Felder · ${(d.specsSections||[]).length} Sektionen)</div>
-        ${(d.specsTextDE || d.specsTextEN) ? `<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
-          <div>
-            <div style="font-size:9px;font-weight:700;letter-spacing:.07em;color:#3dba6f;margin-bottom:4px">🇩🇪 DEUTSCH</div>
-            ${d.specsTextDE
-              ? `<div style="font-size:9px;line-height:1.6;color:var(--text);background:var(--surface);padding:6px 8px;border-radius:4px;overflow-y:auto;max-height:260px">${renderSpecsHtml(d.specsTextDE)}</div>`
-              : `<div style="color:var(--muted);font-style:italic;font-size:10px;padding:6px">— nicht übersetzt —</div>`}
+      </div>` : '',
+
+      /* ── Pipeline status ── */
+      `<div>
+        ${sectionTitle('Pipeline Status')}
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-family:var(--mono);font-size:11px">
+          ${[
+            [checkDot(p.hasDescription), 'Description', p.hasDescription?'✓ done':'missing', p.hasDescription?'var(--green)':'var(--red)'],
+            [checkDot(p.specsRowCount>0), `Specs (${p.specsRowCount||0})`, p.specsRowCount>0?`${p.specsRowCount} fields`:'missing', p.specsRowCount>0?'var(--green)':'var(--red)'],
+            [checkDot(p.imagesTotal>0), `Images (${p.imagesTotal||0})`, p.imagesTotal>0?`${p.imagesTotal} files`:'none', p.imagesTotal>0?'var(--green)':'var(--red)'],
+            [checkDot(p.videosTotal>0), `Videos (${p.videosTotal||0})`, p.videosTotal>0?`${p.videosTotal} files`:'none', p.videosTotal>0?'var(--green)':'var(--muted)'],
+            [checkDot(p.hasPdf), 'PDF', p.hasPdf?'downloaded':'not found', p.hasPdf?'var(--green)':'var(--muted)'],
+            [checkDot(p.hasTranslation), 'DE Translation', p.hasTranslation?'done':'not run', p.hasTranslation?'var(--green)':'var(--muted)'],
+            [checkDot(p.hasSpecsDE), 'DE Specs', p.hasSpecsDE?'done':'not run', p.hasSpecsDE?'var(--green)':'var(--muted)'],
+            [checkDot(p.imagesAnalyzed>0), `AI Images (${p.imagesAnalyzed||0}/${p.imagesTotal||0})`, p.imagesAnalyzed>0?`${p.imagesAnalyzed} classified`:'not run', p.imagesAnalyzed>0?'var(--green)':'var(--muted)'],
+            [checkDot(p.recommendedHero), 'Hero Image', p.recommendedHero?esc(p.recommendedHero):'not identified', p.recommendedHero?'#f39c12':'var(--muted)'],
+          ].map(([icon,label,val,color]) =>
+            `<div style="background:var(--surface);border-radius:3px;padding:8px 12px">
+              <div style="font-size:9px;color:var(--text3);margin-bottom:3px">${icon} ${label}</div>
+              <div style="color:${color};font-weight:600">${val}</div>
+            </div>`
+          ).join('')}
+        </div>
+        ${d.hubspotId || d.hubspotPageId || d.hubspotPageUrl ? `
+          <div style="margin-top:12px;padding:12px;background:var(--surface);border-radius:3px;border-left:3px solid var(--accent)">
+            <div style="font-size:9px;color:var(--text3);margin-bottom:6px;font-weight:700;letter-spacing:.12em;text-transform:uppercase">🔗 HubSpot</div>
+            ${d.hubspotId ? `<div style="font-size:10px;color:var(--text2);margin-bottom:3px">Object ID: <code style="background:var(--bg);padding:2px 6px;border-radius:2px;font-family:var(--mono)">${d.hubspotId}</code></div>` : ''}
+            ${d.hubspotPageId ? `<div style="font-size:10px;color:var(--text2);margin-bottom:3px">Page ID: <code style="background:var(--bg);padding:2px 6px;border-radius:2px;font-family:var(--mono)">${d.hubspotPageId}</code></div>` : ''}
+            ${d.hubspotPageUrl ? `<div style="font-size:10px;color:var(--text2)"><a href="${esc(d.hubspotPageUrl)}" target="_blank" style="color:var(--accent);text-decoration:none">↗ ${esc(d.hubspotPageUrl)}</a></div>` : ''}
           </div>
-          <div>
-            <div style="font-size:9px;font-weight:700;letter-spacing:.07em;color:#5b8dee;margin-bottom:4px">🇬🇧 ENGLISH</div>
-            ${d.specsTextEN
-              ? `<div style="font-size:9px;line-height:1.6;color:var(--text);background:var(--surface);padding:6px 8px;border-radius:4px;overflow-y:auto;max-height:260px">${renderSpecsHtml(d.specsTextEN)}</div>`
-              : `<div style="color:var(--muted);font-style:italic;font-size:10px;padding:6px">— not available —</div>`}
-          </div>
-        </div>` : ''}
-        ${specsHtml ? `<div class="preview-specs-wrap">${specsHtml}</div>` : ''}
-      </div>` : ''}
-      <div class="preview-folder">📁 ${esc(outputDir)}/bikes/${esc(folder)}</div>`;
+        ` : ''}
+      </div>`
+    ].filter(Boolean).join('');
   } catch(e) {
-    panel.innerHTML = `<div class="preview-loading" style="color:var(--red)">Fehler: ${esc(e.message)}</div>`;
+    body.innerHTML = `<div style="padding:40px;text-align:center;font-family:var(--mono);color:var(--red)">Fehler: ${esc(e.message)}</div>`;
   }
 }
 
@@ -1694,12 +1737,35 @@ function toggleCardLog(key) {
   if (!area) return;
   const open = area.classList.toggle('open');
   if (btn) btn.classList.toggle('active', open);
-  if (open && area.innerHTML === '' && cardLogs[key]?.length) {
+  if (!open) return;
+
+  if (cardLogs[key]?.length) {
     area.innerHTML = cardLogs[key].map(e =>
       `<div class="card-log-line ${e.level||'info'}"><span style="opacity:.4;margin-right:6px">${e.ts||''}</span>${esc(e.msg)}</div>`
     ).join('');
     area.scrollTop = area.scrollHeight;
+    return;
   }
+
+  // Fallback: fetch log.jsonl from server
+  const bike = scraperBikes.find(b => bikeKey(b) === key);
+  if (!bike) { area.innerHTML = '<div class="card-log-line info" style="opacity:.4">Keine Logs verfügbar</div>'; return; }
+  const folder = bikeSlug(bike);
+  const outputDir = document.getElementById('s-outputDir')?.value || './hd-output';
+  area.innerHTML = '<div class="card-log-line info" style="opacity:.4">Lade…</div>';
+  fetch(`/api/bike-log?folder=${encodeURIComponent(folder)}&outputDir=${encodeURIComponent(outputDir)}`)
+    .then(r => r.json())
+    .then(data => {
+      if (!data.entries?.length) {
+        area.innerHTML = '<div class="card-log-line info" style="opacity:.4">Keine Logs verfügbar – Scrape oder Import ausführen</div>';
+        return;
+      }
+      area.innerHTML = data.entries.map(e =>
+        `<div class="card-log-line ${e.level||'info'}"><span style="opacity:.4;margin-right:6px">${e.ts||''}</span>${esc(e.msg)}</div>`
+      ).join('');
+      area.scrollTop = area.scrollHeight;
+    })
+    .catch(() => { area.innerHTML = '<div class="card-log-line info" style="opacity:.4">Keine Logs verfügbar</div>'; });
 }
 
 function appendCardLog(key, msg, level, ts) {
@@ -1719,6 +1785,13 @@ function toggleScrapeLog() {
   icon.textContent = collapsed ? '▲' : '▼';
 }
 
+function toggleSettings() {
+  const content = document.getElementById('settings-content');
+  const icon = document.getElementById('settings-toggle-icon');
+  const isHidden = content.style.display === 'none';
+  content.style.display = isHidden ? 'block' : 'none';
+  icon.textContent = isHidden ? '▼' : '▶';
+}
 
 function scrToggle(key) {
   if (scraperRun) return;
@@ -1900,11 +1973,11 @@ async function createListingPage() {
 function getPageConfig() {
   const g = id => document.getElementById(id)?.value?.trim() || '';
   return {
-    createPages:    document.getElementById('hs-createPages')?.checked || false,
-    templatePath:   g('hs-templatePath'),
-    pageSlugPrefix: g('hs-pageSlugPrefix') || 'bikes',
-    moduleId:       g('hs-moduleId')       || 'bike_auswahl',
-    fieldName:      g('hs-fieldName')      || 'bike',
+    createPages:      document.getElementById('hs-createPages')?.checked || false,
+    templatePath:     g('hs-templatePath'),
+    pageSlugTemplate: g('hs-pageSlugTemplate') || 'bikes/{{year}}/{{name}}',
+    moduleId:         g('hs-moduleId')       || 'bike_auswahl',
+    fieldName:        g('hs-fieldName')      || 'bike',
   };
 }
 
@@ -1958,17 +2031,17 @@ async function testHubSpotConnection() {
   
   if (!apiToken) {
     resultDiv.style.display = 'block';
-    resultDiv.style.background = 'var(--redbg)';
-    resultDiv.style.color = 'var(--red)';
-    resultDiv.style.border = '1px solid var(--red)';
+    resultDiv.style.background = 'var(--surface2)';
+    resultDiv.style.color = 'var(--text3)';
+    resultDiv.style.border = 'none';
     resultDiv.textContent = '❌ Bitte Access Token eingeben';
     return;
   }
   
   resultDiv.style.display = 'block';
-  resultDiv.style.background = 'var(--orangebg)';
-  resultDiv.style.color = 'var(--orange)';
-  resultDiv.style.border = '1px solid var(--orange)';
+  resultDiv.style.background = 'var(--surface2)';
+  resultDiv.style.color = 'var(--text2)';
+  resultDiv.style.border = 'none';
   resultDiv.textContent = '⧳ Teste Verbindung...';
   
   try {
@@ -1980,22 +2053,22 @@ async function testHubSpotConnection() {
     const data = await res.json();
     
     if (data.ok) {
-      resultDiv.style.background = 'var(--greenbg)';
-      resultDiv.style.color = 'var(--green)';
-      resultDiv.style.border = '1px solid var(--green)';
+      resultDiv.style.background = 'var(--surface2)';
+      resultDiv.style.color = 'var(--text)';
+      resultDiv.style.border = 'none';
       resultDiv.innerHTML = `✓ Verbindung erfolgreich<br><span style="opacity:.7;font-size:10px">Token gültig • API erreichbar</span>`;
       addLog('scraper', '✓ HubSpot Verbindung erfolgreich getestet', 'ok');
     } else {
-      resultDiv.style.background = 'var(--redbg)';
-      resultDiv.style.color = 'var(--red)';
-      resultDiv.style.border = '1px solid var(--red)';
+      resultDiv.style.background = 'var(--surface2)';
+      resultDiv.style.color = 'var(--text3)';
+      resultDiv.style.border = 'none';
       resultDiv.innerHTML = `❌ Verbindung fehlgeschlagen<br><span style="opacity:.8;font-size:10px">${esc(data.error || 'Unbekannter Fehler')}</span>`;
       addLog('scraper', `❌ HubSpot Test fehlgeschlagen: ${data.error}`, 'error');
     }
   } catch(e) {
-    resultDiv.style.background = 'var(--redbg)';
-    resultDiv.style.color = 'var(--red)';
-    resultDiv.style.border = '1px solid var(--red)';
+    resultDiv.style.background = 'var(--surface2)';
+    resultDiv.style.color = 'var(--text3)';
+    resultDiv.style.border = 'none';
     resultDiv.innerHTML = `❌ Netzwerkfehler<br><span style="opacity:.8;font-size:10px">${esc(e.message)}</span>`;
   }
 }
@@ -2106,8 +2179,104 @@ document.getElementById('hs-apiToken')?.addEventListener('input', e => {
   localStorage.setItem('hd_apiToken', e.target.value);
 });
 
+// Save/restore all HubSpot settings
+const hsSettings = [
+  { id: 'hs-objectTypeId', key: 'hs_objectTypeId' },
+  { id: 'hs-createPages', key: 'hs_createPages', type: 'checkbox' },
+  { id: 'hs-templatePath', key: 'hs_templatePath' },
+  { id: 'hs-pageSlugTemplate', key: 'hs_pageSlugTemplate' },
+  { id: 'hs-moduleId', key: 'hs_moduleId' },
+  { id: 'hs-fieldName', key: 'hs_fieldName' },
+  { id: 's-forceRedownload', key: 's_forceRedownload', type: 'checkbox' },
+  { id: 's-openaiKey', key: 's_openaiKey' },
+  { id: 's-outputDir', key: 's_outputDir' },
+];
+
+hsSettings.forEach(({ id, key, type }) => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  
+  // Restore saved value
+  const saved = localStorage.getItem(key);
+  if (saved !== null) {
+    if (type === 'checkbox') {
+      el.checked = saved === 'true';
+    } else {
+      el.value = saved;
+    }
+  }
+  
+  // Save on change
+  const eventType = type === 'checkbox' ? 'change' : 'input';
+  el.addEventListener(eventType, e => {
+    const value = type === 'checkbox' ? e.target.checked : e.target.value;
+    localStorage.setItem(key, value);
+  });
+});
+
 // Open to importer tab if hash set
 if (location.hash === '#import') switchTab('importer');
+
+function openMediaModal(url, type, caption) {
+  const modal = document.getElementById('mediaModal');
+  const img   = document.getElementById('mediaModalImg');
+  const vid   = document.getElementById('mediaModalVideo');
+  const cap   = document.getElementById('mediaModalCaption');
+  const link  = document.getElementById('mediaModalOpenLink');
+  img.style.display = 'none';
+  vid.style.display = 'none';
+  vid.pause && vid.pause();
+  if (type === 'video') {
+    vid.src = url;
+    vid.style.display = 'block';
+  } else {
+    img.src = url;
+    img.style.display = 'block';
+  }
+  cap.textContent = caption || '';
+  link.href = url;
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMediaModal(e) {
+  if (e && e.target !== e.currentTarget && e.target.closest('video,img,a,button')) return;
+  const modal = document.getElementById('mediaModal');
+  const vid   = document.getElementById('mediaModalVideo');
+  vid.pause && vid.pause();
+  vid.src = '';
+  modal.style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    if (document.getElementById('mediaModal').style.display !== 'none') closeMediaModal();
+    else if (document.getElementById('dataModal').style.display !== 'none') closeDataModal();
+  }
+});
 </script>
+<!-- Data Modal -->
+<div id="dataModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9000;overflow:hidden;flex-direction:column">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid var(--border);flex-shrink:0;background:var(--surface)">
+    <div id="dataModalTitle" style="font-family:var(--mono);font-size:13px;font-weight:700;color:var(--text)"></div>
+    <div style="display:flex;gap:8px">
+      <button onclick="closeDataModal()" style="font-family:var(--mono);font-size:10px;color:var(--text2);background:var(--surface2);border:1px solid var(--border2);border-radius:2px;padding:5px 12px;cursor:pointer">✕ Schließen</button>
+    </div>
+  </div>
+  <div id="dataModalBody" style="overflow-y:auto;flex:1;padding:20px;display:flex;flex-direction:column;gap:20px"></div>
+</div>
+
+<!-- Media Modal -->
+<div id="mediaModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:9999;align-items:center;justify-content:center;flex-direction:column;gap:12px" onclick="closeMediaModal(event)">
+  <div style="position:relative;max-width:92vw;max-height:88vh">
+    <img id="mediaModalImg" src="" style="display:none;max-width:100%;max-height:85vh;object-fit:contain;border-radius:3px" />
+    <video id="mediaModalVideo" src="" controls style="display:none;max-width:92vw;max-height:85vh;border-radius:3px;background:#000" preload="metadata"></video>
+  </div>
+  <div id="mediaModalCaption" style="font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.5);max-width:80vw;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></div>
+  <div style="display:flex;gap:10px">
+    <a id="mediaModalOpenLink" href="#" target="_blank" style="font-family:var(--mono);font-size:10px;color:rgba(255,255,255,0.4);text-decoration:none;padding:4px 10px;border:1px solid rgba(255,255,255,0.15);border-radius:2px">↗ In neuem Tab öffnen</a>
+    <button onclick="closeMediaModal()" style="font-family:var(--mono);font-size:10px;color:rgba(255,255,255,0.4);background:none;border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:4px 10px;cursor:pointer">✕ Schließen</button>
+  </div>
+</div>
 </body>
 </html>

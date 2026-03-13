@@ -1,0 +1,383 @@
+{"ts":"10:39:10","level":"section","source":"scraper","msg":"━━ SCRAPING: Pan America 1250 Special 2025"}
+{"ts":"10:39:10","level":"info","source":"scraper","msg":"Fetching https://h-dmediakit.com/eu/bdp/?ra1250s|2025..."}
+{"ts":"10:39:11","level":"ok","source":"scraper","msg":"✅ Page loaded (141 KB)"}
+{"ts":"10:39:11","level":"info","source":"scraper","msg":"Found: 27 images, 2 videos, 144 specs in 12 sections"}
+{"ts":"10:39:11","level":"info","source":"scraper","msg":"dynamicassets: Lade High-Res URLs für 27 Bilder…"}
+{"ts":"10:39:11","level":"ok","source":"scraper","msg":"✅ dynamicassets: 27 High-Res URLs gefunden"}
+{"ts":"10:39:11","level":"ok","source":"scraper","msg":"[1/27] 25_ra1250s_m13b_r-2.jpg (5068 KB) [High-Res]"}
+{"ts":"10:39:11","level":"ok","source":"scraper","msg":"[2/27] 25_ra1250s_m13b_r.jpg (5146 KB) [High-Res]"}
+{"ts":"10:39:11","level":"ok","source":"scraper","msg":"[3/27] _0010_ra1250s_hd_studio_2024_3x4.jpg (30520 KB) [High-Res]"}
+{"ts":"10:39:12","level":"ok","source":"scraper","msg":"[4/27] my25-ra1250s-beauty-0043-jkjc2.jpg (19842 KB) [High-Res]"}
+{"ts":"10:39:12","level":"ok","source":"scraper","msg":"[5/27] my25-ra1250s-beauty-0085-abjc.jpg (16783 KB) [High-Res]"}
+{"ts":"10:39:12","level":"ok","source":"scraper","msg":"[6/27] my25-ra1250s-lifestyle-0006-abjc.jpg (14756 KB) [High-Res]"}
+{"ts":"10:39:12","level":"ok","source":"scraper","msg":"[7/27] my25-ra1250s-lifestyle-0374-ab2jc.jpg (18021 KB) [High-Res]"}
+{"ts":"10:39:12","level":"ok","source":"scraper","msg":"[8/27] my25-ra1250s-lifestyle-0424-abjc.jpg (17597 KB) [High-Res]"}
+{"ts":"10:39:12","level":"ok","source":"scraper","msg":"[9/27] my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg (65694 KB) [High-Res]"}
+{"ts":"10:39:13","level":"ok","source":"scraper","msg":"[10/27] my25-ra1250s-riding-0204-jkjc.jpg (15438 KB) [High-Res]"}
+{"ts":"10:39:13","level":"ok","source":"scraper","msg":"[11/27] my25-ra1250s-riding-0361-jkjc.jpg (15479 KB) [High-Res]"}
+{"ts":"10:39:13","level":"ok","source":"scraper","msg":"[12/27] my25-ra1250s-riding-0460-abjc.jpg (16045 KB) [High-Res]"}
+{"ts":"10:39:13","level":"ok","source":"scraper","msg":"[13/27] my25-ra1250s-riding-0557-ab2jc.jpg (15229 KB) [High-Res]"}
+{"ts":"10:39:13","level":"ok","source":"scraper","msg":"[14/27] my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg (54366 KB) [High-Res]"}
+{"ts":"10:39:13","level":"ok","source":"scraper","msg":"[15/27] my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg (57324 KB) [High-Res]"}
+{"ts":"10:39:13","level":"ok","source":"scraper","msg":"[16/27] my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg (56621 KB) [High-Res]"}
+{"ts":"10:39:14","level":"ok","source":"scraper","msg":"[17/27] my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg (54430 KB) [High-Res]"}
+{"ts":"10:39:14","level":"ok","source":"scraper","msg":"[18/27] _0002_ra1250s_hd_studio_2024_screen.jpg (35184 KB) [High-Res]"}
+{"ts":"10:39:14","level":"ok","source":"scraper","msg":"[19/27] _0003_ra1250s_hd_studio_2024_ride-modes.jpg (34261 KB) [High-Res]"}
+{"ts":"10:39:14","level":"ok","source":"scraper","msg":"[20/27] _0005_ra1250s_hd_studio_2024_headlights.jpg (31174 KB) [High-Res]"}
+{"ts":"10:39:14","level":"ok","source":"scraper","msg":"[21/27] _0009_ra1250s_hd_studio_2024_brakes.jpg (27108 KB) [High-Res]"}
+{"ts":"10:39:14","level":"ok","source":"scraper","msg":"[22/27] _0000_ra1250s_hd_studio_2024_wheels.jpg (24529 KB) [High-Res]"}
+{"ts":"10:39:15","level":"ok","source":"scraper","msg":"[23/27] _0001_ra1250s_hd_studio_2024_seat-position.jpg (24614 KB) [High-Res]"}
+{"ts":"10:39:15","level":"ok","source":"scraper","msg":"[24/27] _0006_ra1250s_hd_studio_2024_engine.jpg (31550 KB) [High-Res]"}
+{"ts":"10:39:15","level":"ok","source":"scraper","msg":"[25/27] _0008_ra1250s_hd_studio_2024_charging-system.jpg (28143 KB) [High-Res]"}
+{"ts":"10:39:15","level":"ok","source":"scraper","msg":"[26/27] _0004_ra1250s_hd_studio_2024_rear-shock.jpg (27945 KB) [High-Res]"}
+{"ts":"10:39:15","level":"ok","source":"scraper","msg":"[27/27] _0007_ra1250s_hd_studio_2024_drive-height.jpg (25677 KB) [High-Res]"}
+{"ts":"10:39:15","level":"info","source":"scraper","msg":"Downloading my25-ra125s_flyaround-001.mp4..."}
+{"ts":"10:39:15","level":"ok","source":"scraper","msg":"✅ my25-ra125s_flyaround-001.mp4 (126 MB)"}
+{"ts":"10:39:15","level":"info","source":"scraper","msg":"Downloading 24_75051_MY25_PAS_BROLL_vFC1.mp4..."}
+{"ts":"10:39:15","level":"ok","source":"scraper","msg":"✅ 24_75051_MY25_PAS_BROLL_vFC1.mp4 (151 MB)"}
+{"ts":"10:39:16","level":"ok","source":"scraper","msg":"✅ PDF: specs_ra1250s_2025_eu.pdf (60 KB)"}
+{"ts":"10:39:16","level":"info","source":"scraper","msg":"Übersetze Beschreibung (DE)…"}
+{"ts":"10:39:18","level":"ok","source":"scraper","msg":"✅ Beschreibung übersetzt"}
+{"ts":"10:39:18","level":"info","source":"scraper","msg":"Übersetze Spezifikationen (DE)…"}
+{"ts":"10:39:55","level":"ok","source":"scraper","msg":"✅ Spezifikationen übersetzt"}
+{"ts":"10:39:55","level":"info","source":"scraper","msg":"🖼️  Auto-identifying hero image…"}
+{"ts":"10:39:55","level":"info","source":"analyzer","msg":"Hero pre-filter: 12 keyword match(es) → my25-ra1250s-lifestyle-0006-abjc.jpg, my25-ra1250s-lifestyle-0374-ab2jc.jpg, my25-ra1250s-lifestyle-0424-abjc.jpg, my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg, my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg, my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg, my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg, my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg, my25-ra1250s-riding-0204-jkjc.jpg, my25-ra1250s-riding-0361-jkjc.jpg, my25-ra1250s-riding-0460-abjc.jpg, my25-ra1250s-riding-0557-ab2jc.jpg"}
+{"ts":"10:39:55","level":"info","source":"analyzer","msg":"Capping: 27 images → 17 sent (12 priority + 5 sampled)"}
+{"ts":"10:39:55","level":"info","source":"analyzer","msg":"Reading 17 images for analysis (resizing to 512px)…"}
+{"ts":"10:40:11","level":"ok","source":"analyzer","msg":"Hero selected: [1] my25-ra1250s-lifestyle-0374-ab2jc.jpg (keyword-priority)"}
+{"ts":"10:40:11","level":"ok","source":"scraper","msg":"✅ ⭐ Hero: my25-ra1250s-lifestyle-0374-ab2jc.jpg"}
+{"ts":"10:40:11","level":"ok","source":"scraper","msg":"✅ Done: 2025_pan_america_1250_special_ra1250s"}
+{"ts":"12:29:52","level":"section","source":"importer","msg":"━━ IMPORT: 2025_pan_america_1250_special_ra1250s"}
+{"ts":"12:29:52","level":"info","source":"importer","msg":"data.json: Pan America 1250 Special 2025"}
+{"ts":"12:29:52","level":"warn","source":"importer","msg":"♻️  Fortschritt gefunden – 30 Datei(en) bereits hochgeladen, werden übersprungen"}
+{"ts":"12:29:52","level":"info","source":"importer","msg":"Bilder: 27"}
+{"ts":"12:29:52","level":"skip","source":"importer","msg":"[1/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r-2.jpg übersprungen (bereits hochgeladen → 377990235354)"}
+{"ts":"12:29:53","level":"skip","source":"importer","msg":"[2/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r.jpg übersprungen (bereits hochgeladen → 377990235375)"}
+{"ts":"12:29:53","level":"skip","source":"importer","msg":"[3/27] ⏭️  2025_pan-america-1250-special__0000_ra1250s_hd_studio_2024_wheels.jpg übersprungen (bereits hochgeladen → 377990235378)"}
+{"ts":"12:29:53","level":"skip","source":"importer","msg":"[4/27] ⏭️  2025_pan-america-1250-special__0001_ra1250s_hd_studio_2024_seat-position.jpg übersprungen (bereits hochgeladen → 377990019265)"}
+{"ts":"12:29:54","level":"skip","source":"importer","msg":"[5/27] ⏭️  2025_pan-america-1250-special__0002_ra1250s_hd_studio_2024_screen.jpg übersprungen (bereits hochgeladen → 377990019269)"}
+{"ts":"12:29:54","level":"skip","source":"importer","msg":"[6/27] ⏭️  2025_pan-america-1250-special__0003_ra1250s_hd_studio_2024_ride-modes.jpg übersprungen (bereits hochgeladen → 377990019273)"}
+{"ts":"12:29:55","level":"skip","source":"importer","msg":"[7/27] ⏭️  2025_pan-america-1250-special__0004_ra1250s_hd_studio_2024_rear-shock.jpg übersprungen (bereits hochgeladen → 377990019277)"}
+{"ts":"12:29:55","level":"skip","source":"importer","msg":"[8/27] ⏭️  2025_pan-america-1250-special__0005_ra1250s_hd_studio_2024_headlights.jpg übersprungen (bereits hochgeladen → 377990019280)"}
+{"ts":"12:29:55","level":"skip","source":"importer","msg":"[9/27] ⏭️  2025_pan-america-1250-special__0006_ra1250s_hd_studio_2024_engine.jpg übersprungen (bereits hochgeladen → 377990019286)"}
+{"ts":"12:29:56","level":"skip","source":"importer","msg":"[10/27] ⏭️  2025_pan-america-1250-special__0007_ra1250s_hd_studio_2024_drive-height.jpg übersprungen (bereits hochgeladen → 377990236350)"}
+{"ts":"12:29:56","level":"skip","source":"importer","msg":"[11/27] ⏭️  2025_pan-america-1250-special__0008_ra1250s_hd_studio_2024_charging-system.jpg übersprungen (bereits hochgeladen → 377990236369)"}
+{"ts":"12:29:56","level":"skip","source":"importer","msg":"[12/27] ⏭️  2025_pan-america-1250-special__0009_ra1250s_hd_studio_2024_brakes.jpg übersprungen (bereits hochgeladen → 377990019319)"}
+{"ts":"12:29:57","level":"skip","source":"importer","msg":"[13/27] ⏭️  2025_pan-america-1250-special__0010_ra1250s_hd_studio_2024_3x4.jpg übersprungen (bereits hochgeladen → 377990019320)"}
+{"ts":"12:29:57","level":"skip","source":"importer","msg":"[14/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0043-jkjc2.jpg übersprungen (bereits hochgeladen → 377990019321)"}
+{"ts":"12:29:57","level":"skip","source":"importer","msg":"[15/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0085-abjc.jpg übersprungen (bereits hochgeladen → 377990020285)"}
+{"ts":"12:29:58","level":"skip","source":"importer","msg":"[16/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0006-abjc.jpg übersprungen (bereits hochgeladen → 377990236375)"}
+{"ts":"12:29:58","level":"skip","source":"importer","msg":"[17/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0374-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020289)"}
+{"ts":"12:29:58","level":"skip","source":"importer","msg":"[18/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0424-abjc.jpg übersprungen (bereits hochgeladen → 377990020293)"}
+{"ts":"12:29:59","level":"skip","source":"importer","msg":"[19/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg übersprungen (bereits hochgeladen → 377990020295)"}
+{"ts":"12:29:59","level":"skip","source":"importer","msg":"[20/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg übersprungen (bereits hochgeladen → 377990236398)"}
+{"ts":"12:29:59","level":"skip","source":"importer","msg":"[21/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg übersprungen (bereits hochgeladen → 377990236400)"}
+{"ts":"12:30:00","level":"skip","source":"importer","msg":"[22/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg übersprungen (bereits hochgeladen → 377990236401)"}
+{"ts":"12:30:00","level":"skip","source":"importer","msg":"[23/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg übersprungen (bereits hochgeladen → 377990236402)"}
+{"ts":"12:30:01","level":"skip","source":"importer","msg":"[24/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0204-jkjc.jpg übersprungen (bereits hochgeladen → 377990236404)"}
+{"ts":"12:30:01","level":"skip","source":"importer","msg":"[25/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0361-jkjc.jpg übersprungen (bereits hochgeladen → 377990020333)"}
+{"ts":"12:30:01","level":"skip","source":"importer","msg":"[26/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0460-abjc.jpg übersprungen (bereits hochgeladen → 377990020335)"}
+{"ts":"12:30:02","level":"skip","source":"importer","msg":"[27/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0557-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020337)"}
+{"ts":"12:30:02","level":"info","source":"importer","msg":"Videos: 2"}
+{"ts":"12:30:02","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_b-roll.mp4 [riding_outdoor · heuristic] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:30:02","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_detail.mp4 [detail_view · stored-AI] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:30:03","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_specs.pdf übersprungen (bereits hochgeladen → 377990023368)"}
+{"ts":"12:30:03","level":"ok","source":"importer","msg":"Hero: my25-ra1250s-lifestyle-0374-ab2jc.jpg (AI-empfohlen)"}
+{"ts":"12:30:03","level":"info","source":"importer","msg":"Video mapping → video: —  |  video_footer: 2025_pan-america-1250-special_b-roll.mp4"}
+{"ts":"12:30:03","level":"info","source":"importer","msg":"HubSpot Custom Object aktualisieren (ID 1150371440832)…"}
+{"ts":"12:30:03","level":"ok","source":"importer","msg":"✅ Custom Object aktualisiert → ID 1150371440832"}
+{"ts":"12:30:03","level":"info","source":"importer","msg":"Seite erstellen/aktualisieren → /bikes/adventure_touring/2025/pan_america_1250_special"}
+{"ts":"12:30:04","level":"ok","source":"importer","msg":"✅ Seite created: /bikes/adventure_touring/2025/pan_america_1250_special (ID 378351842526)"}
+{"ts":"12:35:49","level":"section","source":"importer","msg":"━━ IMPORT: 2025_pan_america_1250_special_ra1250s"}
+{"ts":"12:35:49","level":"info","source":"importer","msg":"data.json: Pan America 1250 Special 2025"}
+{"ts":"12:35:49","level":"warn","source":"importer","msg":"♻️  Fortschritt gefunden – 30 Datei(en) bereits hochgeladen, werden übersprungen"}
+{"ts":"12:35:49","level":"info","source":"importer","msg":"Bilder: 27"}
+{"ts":"12:35:49","level":"skip","source":"importer","msg":"[1/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r-2.jpg übersprungen (bereits hochgeladen → 377990235354)"}
+{"ts":"12:35:50","level":"skip","source":"importer","msg":"[2/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r.jpg übersprungen (bereits hochgeladen → 377990235375)"}
+{"ts":"12:35:50","level":"skip","source":"importer","msg":"[3/27] ⏭️  2025_pan-america-1250-special__0000_ra1250s_hd_studio_2024_wheels.jpg übersprungen (bereits hochgeladen → 377990235378)"}
+{"ts":"12:35:50","level":"skip","source":"importer","msg":"[4/27] ⏭️  2025_pan-america-1250-special__0001_ra1250s_hd_studio_2024_seat-position.jpg übersprungen (bereits hochgeladen → 377990019265)"}
+{"ts":"12:35:51","level":"skip","source":"importer","msg":"[5/27] ⏭️  2025_pan-america-1250-special__0002_ra1250s_hd_studio_2024_screen.jpg übersprungen (bereits hochgeladen → 377990019269)"}
+{"ts":"12:35:51","level":"skip","source":"importer","msg":"[6/27] ⏭️  2025_pan-america-1250-special__0003_ra1250s_hd_studio_2024_ride-modes.jpg übersprungen (bereits hochgeladen → 377990019273)"}
+{"ts":"12:35:52","level":"skip","source":"importer","msg":"[7/27] ⏭️  2025_pan-america-1250-special__0004_ra1250s_hd_studio_2024_rear-shock.jpg übersprungen (bereits hochgeladen → 377990019277)"}
+{"ts":"12:35:52","level":"skip","source":"importer","msg":"[8/27] ⏭️  2025_pan-america-1250-special__0005_ra1250s_hd_studio_2024_headlights.jpg übersprungen (bereits hochgeladen → 377990019280)"}
+{"ts":"12:35:52","level":"skip","source":"importer","msg":"[9/27] ⏭️  2025_pan-america-1250-special__0006_ra1250s_hd_studio_2024_engine.jpg übersprungen (bereits hochgeladen → 377990019286)"}
+{"ts":"12:35:53","level":"skip","source":"importer","msg":"[10/27] ⏭️  2025_pan-america-1250-special__0007_ra1250s_hd_studio_2024_drive-height.jpg übersprungen (bereits hochgeladen → 377990236350)"}
+{"ts":"12:35:53","level":"skip","source":"importer","msg":"[11/27] ⏭️  2025_pan-america-1250-special__0008_ra1250s_hd_studio_2024_charging-system.jpg übersprungen (bereits hochgeladen → 377990236369)"}
+{"ts":"12:35:53","level":"skip","source":"importer","msg":"[12/27] ⏭️  2025_pan-america-1250-special__0009_ra1250s_hd_studio_2024_brakes.jpg übersprungen (bereits hochgeladen → 377990019319)"}
+{"ts":"12:35:54","level":"skip","source":"importer","msg":"[13/27] ⏭️  2025_pan-america-1250-special__0010_ra1250s_hd_studio_2024_3x4.jpg übersprungen (bereits hochgeladen → 377990019320)"}
+{"ts":"12:35:54","level":"skip","source":"importer","msg":"[14/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0043-jkjc2.jpg übersprungen (bereits hochgeladen → 377990019321)"}
+{"ts":"12:35:54","level":"skip","source":"importer","msg":"[15/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0085-abjc.jpg übersprungen (bereits hochgeladen → 377990020285)"}
+{"ts":"12:35:55","level":"skip","source":"importer","msg":"[16/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0006-abjc.jpg übersprungen (bereits hochgeladen → 377990236375)"}
+{"ts":"12:35:55","level":"skip","source":"importer","msg":"[17/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0374-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020289)"}
+{"ts":"12:35:55","level":"skip","source":"importer","msg":"[18/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0424-abjc.jpg übersprungen (bereits hochgeladen → 377990020293)"}
+{"ts":"12:35:56","level":"skip","source":"importer","msg":"[19/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg übersprungen (bereits hochgeladen → 377990020295)"}
+{"ts":"12:35:56","level":"skip","source":"importer","msg":"[20/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg übersprungen (bereits hochgeladen → 377990236398)"}
+{"ts":"12:35:56","level":"skip","source":"importer","msg":"[21/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg übersprungen (bereits hochgeladen → 377990236400)"}
+{"ts":"12:35:57","level":"skip","source":"importer","msg":"[22/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg übersprungen (bereits hochgeladen → 377990236401)"}
+{"ts":"12:35:57","level":"skip","source":"importer","msg":"[23/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg übersprungen (bereits hochgeladen → 377990236402)"}
+{"ts":"12:35:57","level":"skip","source":"importer","msg":"[24/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0204-jkjc.jpg übersprungen (bereits hochgeladen → 377990236404)"}
+{"ts":"12:35:58","level":"skip","source":"importer","msg":"[25/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0361-jkjc.jpg übersprungen (bereits hochgeladen → 377990020333)"}
+{"ts":"12:35:58","level":"skip","source":"importer","msg":"[26/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0460-abjc.jpg übersprungen (bereits hochgeladen → 377990020335)"}
+{"ts":"12:35:59","level":"skip","source":"importer","msg":"[27/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0557-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020337)"}
+{"ts":"12:35:59","level":"info","source":"importer","msg":"Videos: 2"}
+{"ts":"12:35:59","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_b-roll.mp4 [riding_outdoor · heuristic] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:35:59","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_detail.mp4 [detail_view · stored-AI] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:36:00","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_specs.pdf übersprungen (bereits hochgeladen → 377990023368)"}
+{"ts":"12:36:00","level":"ok","source":"importer","msg":"Hero: my25-ra1250s-lifestyle-0374-ab2jc.jpg (AI-empfohlen)"}
+{"ts":"12:36:00","level":"info","source":"importer","msg":"Video mapping → video: —  |  video_footer: 2025_pan-america-1250-special_b-roll.mp4"}
+{"ts":"12:36:00","level":"info","source":"importer","msg":"HubSpot Custom Object aktualisieren (ID 1150371440832)…"}
+{"ts":"12:36:00","level":"ok","source":"importer","msg":"✅ Custom Object aktualisiert → ID 1150371440832"}
+{"ts":"12:36:00","level":"info","source":"importer","msg":"Seite erstellen/aktualisieren → /bikes/adventure_touring/2025/pan_america_1250_special"}
+{"ts":"12:36:01","level":"ok","source":"importer","msg":"✅ Seite updated: /bikes/adventure_touring/2025/pan_america_1250_special (ID 378351842526)"}
+{"ts":"12:40:00","level":"section","source":"importer","msg":"━━ IMPORT: 2025_pan_america_1250_special_ra1250s"}
+{"ts":"12:40:00","level":"info","source":"importer","msg":"data.json: Pan America 1250 Special 2025"}
+{"ts":"12:40:00","level":"warn","source":"importer","msg":"♻️  Fortschritt gefunden – 30 Datei(en) bereits hochgeladen, werden übersprungen"}
+{"ts":"12:40:00","level":"info","source":"importer","msg":"Bilder: 27"}
+{"ts":"12:40:00","level":"skip","source":"importer","msg":"[1/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r-2.jpg übersprungen (bereits hochgeladen → 377990235354)"}
+{"ts":"12:40:00","level":"skip","source":"importer","msg":"[2/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r.jpg übersprungen (bereits hochgeladen → 377990235375)"}
+{"ts":"12:40:00","level":"skip","source":"importer","msg":"[3/27] ⏭️  2025_pan-america-1250-special__0000_ra1250s_hd_studio_2024_wheels.jpg übersprungen (bereits hochgeladen → 377990235378)"}
+{"ts":"12:40:01","level":"skip","source":"importer","msg":"[4/27] ⏭️  2025_pan-america-1250-special__0001_ra1250s_hd_studio_2024_seat-position.jpg übersprungen (bereits hochgeladen → 377990019265)"}
+{"ts":"12:40:01","level":"skip","source":"importer","msg":"[5/27] ⏭️  2025_pan-america-1250-special__0002_ra1250s_hd_studio_2024_screen.jpg übersprungen (bereits hochgeladen → 377990019269)"}
+{"ts":"12:40:01","level":"skip","source":"importer","msg":"[6/27] ⏭️  2025_pan-america-1250-special__0003_ra1250s_hd_studio_2024_ride-modes.jpg übersprungen (bereits hochgeladen → 377990019273)"}
+{"ts":"12:40:02","level":"skip","source":"importer","msg":"[7/27] ⏭️  2025_pan-america-1250-special__0004_ra1250s_hd_studio_2024_rear-shock.jpg übersprungen (bereits hochgeladen → 377990019277)"}
+{"ts":"12:40:02","level":"skip","source":"importer","msg":"[8/27] ⏭️  2025_pan-america-1250-special__0005_ra1250s_hd_studio_2024_headlights.jpg übersprungen (bereits hochgeladen → 377990019280)"}
+{"ts":"12:40:03","level":"skip","source":"importer","msg":"[9/27] ⏭️  2025_pan-america-1250-special__0006_ra1250s_hd_studio_2024_engine.jpg übersprungen (bereits hochgeladen → 377990019286)"}
+{"ts":"12:40:03","level":"skip","source":"importer","msg":"[10/27] ⏭️  2025_pan-america-1250-special__0007_ra1250s_hd_studio_2024_drive-height.jpg übersprungen (bereits hochgeladen → 377990236350)"}
+{"ts":"12:40:03","level":"skip","source":"importer","msg":"[11/27] ⏭️  2025_pan-america-1250-special__0008_ra1250s_hd_studio_2024_charging-system.jpg übersprungen (bereits hochgeladen → 377990236369)"}
+{"ts":"12:40:04","level":"skip","source":"importer","msg":"[12/27] ⏭️  2025_pan-america-1250-special__0009_ra1250s_hd_studio_2024_brakes.jpg übersprungen (bereits hochgeladen → 377990019319)"}
+{"ts":"12:40:04","level":"skip","source":"importer","msg":"[13/27] ⏭️  2025_pan-america-1250-special__0010_ra1250s_hd_studio_2024_3x4.jpg übersprungen (bereits hochgeladen → 377990019320)"}
+{"ts":"12:40:04","level":"skip","source":"importer","msg":"[14/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0043-jkjc2.jpg übersprungen (bereits hochgeladen → 377990019321)"}
+{"ts":"12:40:05","level":"skip","source":"importer","msg":"[15/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0085-abjc.jpg übersprungen (bereits hochgeladen → 377990020285)"}
+{"ts":"12:40:05","level":"skip","source":"importer","msg":"[16/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0006-abjc.jpg übersprungen (bereits hochgeladen → 377990236375)"}
+{"ts":"12:40:05","level":"skip","source":"importer","msg":"[17/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0374-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020289)"}
+{"ts":"12:40:06","level":"skip","source":"importer","msg":"[18/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0424-abjc.jpg übersprungen (bereits hochgeladen → 377990020293)"}
+{"ts":"12:40:06","level":"skip","source":"importer","msg":"[19/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg übersprungen (bereits hochgeladen → 377990020295)"}
+{"ts":"12:40:06","level":"skip","source":"importer","msg":"[20/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg übersprungen (bereits hochgeladen → 377990236398)"}
+{"ts":"12:40:07","level":"skip","source":"importer","msg":"[21/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg übersprungen (bereits hochgeladen → 377990236400)"}
+{"ts":"12:40:07","level":"skip","source":"importer","msg":"[22/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg übersprungen (bereits hochgeladen → 377990236401)"}
+{"ts":"12:40:07","level":"skip","source":"importer","msg":"[23/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg übersprungen (bereits hochgeladen → 377990236402)"}
+{"ts":"12:40:08","level":"skip","source":"importer","msg":"[24/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0204-jkjc.jpg übersprungen (bereits hochgeladen → 377990236404)"}
+{"ts":"12:40:08","level":"skip","source":"importer","msg":"[25/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0361-jkjc.jpg übersprungen (bereits hochgeladen → 377990020333)"}
+{"ts":"12:40:09","level":"skip","source":"importer","msg":"[26/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0460-abjc.jpg übersprungen (bereits hochgeladen → 377990020335)"}
+{"ts":"12:40:09","level":"skip","source":"importer","msg":"[27/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0557-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020337)"}
+{"ts":"12:40:09","level":"info","source":"importer","msg":"Videos: 2"}
+{"ts":"12:40:09","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_b-roll.mp4 [riding_outdoor · heuristic] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:40:10","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_detail.mp4 [detail_view · stored-AI] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:40:10","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_specs.pdf übersprungen (bereits hochgeladen → 377990023368)"}
+{"ts":"12:40:10","level":"ok","source":"importer","msg":"Hero: my25-ra1250s-lifestyle-0374-ab2jc.jpg (AI-empfohlen)"}
+{"ts":"12:40:10","level":"info","source":"importer","msg":"Video mapping → video: —  |  video_footer: 2025_pan-america-1250-special_b-roll.mp4"}
+{"ts":"12:40:10","level":"info","source":"importer","msg":"HubSpot Custom Object aktualisieren (ID 1150371440832)…"}
+{"ts":"12:40:10","level":"ok","source":"importer","msg":"✅ Custom Object aktualisiert → ID 1150371440832"}
+{"ts":"12:40:10","level":"info","source":"importer","msg":"Seite erstellen/aktualisieren → /bikes/adventure_touring/2025/pan_america_1250_special"}
+{"ts":"12:40:11","level":"ok","source":"importer","msg":"✅ Seite updated: /bikes/adventure_touring/2025/pan_america_1250_special (ID 378351842526)"}
+{"ts":"12:41:29","level":"section","source":"importer","msg":"━━ IMPORT: 2025_pan_america_1250_special_ra1250s"}
+{"ts":"12:41:29","level":"info","source":"importer","msg":"data.json: Pan America 1250 Special 2025"}
+{"ts":"12:41:29","level":"warn","source":"importer","msg":"♻️  Fortschritt gefunden – 30 Datei(en) bereits hochgeladen, werden übersprungen"}
+{"ts":"12:41:29","level":"info","source":"importer","msg":"Bilder: 27"}
+{"ts":"12:41:29","level":"skip","source":"importer","msg":"[1/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r-2.jpg übersprungen (bereits hochgeladen → 377990235354)"}
+{"ts":"12:41:29","level":"skip","source":"importer","msg":"[2/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r.jpg übersprungen (bereits hochgeladen → 377990235375)"}
+{"ts":"12:41:29","level":"skip","source":"importer","msg":"[3/27] ⏭️  2025_pan-america-1250-special__0000_ra1250s_hd_studio_2024_wheels.jpg übersprungen (bereits hochgeladen → 377990235378)"}
+{"ts":"12:41:30","level":"skip","source":"importer","msg":"[4/27] ⏭️  2025_pan-america-1250-special__0001_ra1250s_hd_studio_2024_seat-position.jpg übersprungen (bereits hochgeladen → 377990019265)"}
+{"ts":"12:41:30","level":"skip","source":"importer","msg":"[5/27] ⏭️  2025_pan-america-1250-special__0002_ra1250s_hd_studio_2024_screen.jpg übersprungen (bereits hochgeladen → 377990019269)"}
+{"ts":"12:41:30","level":"skip","source":"importer","msg":"[6/27] ⏭️  2025_pan-america-1250-special__0003_ra1250s_hd_studio_2024_ride-modes.jpg übersprungen (bereits hochgeladen → 377990019273)"}
+{"ts":"12:41:31","level":"skip","source":"importer","msg":"[7/27] ⏭️  2025_pan-america-1250-special__0004_ra1250s_hd_studio_2024_rear-shock.jpg übersprungen (bereits hochgeladen → 377990019277)"}
+{"ts":"12:41:31","level":"skip","source":"importer","msg":"[8/27] ⏭️  2025_pan-america-1250-special__0005_ra1250s_hd_studio_2024_headlights.jpg übersprungen (bereits hochgeladen → 377990019280)"}
+{"ts":"12:41:32","level":"skip","source":"importer","msg":"[9/27] ⏭️  2025_pan-america-1250-special__0006_ra1250s_hd_studio_2024_engine.jpg übersprungen (bereits hochgeladen → 377990019286)"}
+{"ts":"12:41:32","level":"skip","source":"importer","msg":"[10/27] ⏭️  2025_pan-america-1250-special__0007_ra1250s_hd_studio_2024_drive-height.jpg übersprungen (bereits hochgeladen → 377990236350)"}
+{"ts":"12:41:32","level":"skip","source":"importer","msg":"[11/27] ⏭️  2025_pan-america-1250-special__0008_ra1250s_hd_studio_2024_charging-system.jpg übersprungen (bereits hochgeladen → 377990236369)"}
+{"ts":"12:41:33","level":"skip","source":"importer","msg":"[12/27] ⏭️  2025_pan-america-1250-special__0009_ra1250s_hd_studio_2024_brakes.jpg übersprungen (bereits hochgeladen → 377990019319)"}
+{"ts":"12:41:33","level":"skip","source":"importer","msg":"[13/27] ⏭️  2025_pan-america-1250-special__0010_ra1250s_hd_studio_2024_3x4.jpg übersprungen (bereits hochgeladen → 377990019320)"}
+{"ts":"12:41:33","level":"skip","source":"importer","msg":"[14/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0043-jkjc2.jpg übersprungen (bereits hochgeladen → 377990019321)"}
+{"ts":"12:41:34","level":"skip","source":"importer","msg":"[15/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0085-abjc.jpg übersprungen (bereits hochgeladen → 377990020285)"}
+{"ts":"12:41:34","level":"skip","source":"importer","msg":"[16/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0006-abjc.jpg übersprungen (bereits hochgeladen → 377990236375)"}
+{"ts":"12:41:34","level":"skip","source":"importer","msg":"[17/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0374-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020289)"}
+{"ts":"12:41:35","level":"skip","source":"importer","msg":"[18/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0424-abjc.jpg übersprungen (bereits hochgeladen → 377990020293)"}
+{"ts":"12:41:35","level":"skip","source":"importer","msg":"[19/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg übersprungen (bereits hochgeladen → 377990020295)"}
+{"ts":"12:41:35","level":"skip","source":"importer","msg":"[20/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg übersprungen (bereits hochgeladen → 377990236398)"}
+{"ts":"12:41:36","level":"skip","source":"importer","msg":"[21/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg übersprungen (bereits hochgeladen → 377990236400)"}
+{"ts":"12:41:36","level":"skip","source":"importer","msg":"[22/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg übersprungen (bereits hochgeladen → 377990236401)"}
+{"ts":"12:41:36","level":"skip","source":"importer","msg":"[23/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg übersprungen (bereits hochgeladen → 377990236402)"}
+{"ts":"12:41:37","level":"skip","source":"importer","msg":"[24/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0204-jkjc.jpg übersprungen (bereits hochgeladen → 377990236404)"}
+{"ts":"12:41:37","level":"skip","source":"importer","msg":"[25/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0361-jkjc.jpg übersprungen (bereits hochgeladen → 377990020333)"}
+{"ts":"12:41:38","level":"skip","source":"importer","msg":"[26/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0460-abjc.jpg übersprungen (bereits hochgeladen → 377990020335)"}
+{"ts":"12:41:38","level":"skip","source":"importer","msg":"[27/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0557-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020337)"}
+{"ts":"12:41:38","level":"info","source":"importer","msg":"Videos: 2"}
+{"ts":"12:41:38","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_b-roll.mp4 [riding_outdoor · heuristic] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:41:39","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_detail.mp4 [detail_view · stored-AI] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:41:39","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_specs.pdf übersprungen (bereits hochgeladen → 377990023368)"}
+{"ts":"12:41:39","level":"ok","source":"importer","msg":"Hero: my25-ra1250s-lifestyle-0374-ab2jc.jpg (AI-empfohlen)"}
+{"ts":"12:41:39","level":"info","source":"importer","msg":"Video mapping → video: —  |  video_footer: 2025_pan-america-1250-special_b-roll.mp4"}
+{"ts":"12:41:39","level":"info","source":"importer","msg":"HubSpot Custom Object aktualisieren (ID 1150371440832)…"}
+{"ts":"12:41:39","level":"ok","source":"importer","msg":"✅ Custom Object aktualisiert → ID 1150371440832"}
+{"ts":"12:41:39","level":"info","source":"importer","msg":"Seite erstellen/aktualisieren → /bikes/adventure_touring/2025/pan_america_1250_special"}
+{"ts":"12:41:41","level":"ok","source":"importer","msg":"✅ Seite created: /bikes/adventure_touring/2025/pan_america_1250_special (ID 378351842534)"}
+{"ts":"12:50:49","level":"section","source":"importer","msg":"━━ IMPORT: 2025_pan_america_1250_special_ra1250s"}
+{"ts":"12:50:49","level":"info","source":"importer","msg":"data.json: Pan America 1250 Special 2025"}
+{"ts":"12:50:49","level":"warn","source":"importer","msg":"♻️  Fortschritt gefunden – 30 Datei(en) bereits hochgeladen, werden übersprungen"}
+{"ts":"12:50:49","level":"info","source":"importer","msg":"Bilder: 27"}
+{"ts":"12:50:49","level":"skip","source":"importer","msg":"[1/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r-2.jpg übersprungen (bereits hochgeladen → 377990235354)"}
+{"ts":"12:50:49","level":"skip","source":"importer","msg":"[2/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r.jpg übersprungen (bereits hochgeladen → 377990235375)"}
+{"ts":"12:50:49","level":"skip","source":"importer","msg":"[3/27] ⏭️  2025_pan-america-1250-special__0000_ra1250s_hd_studio_2024_wheels.jpg übersprungen (bereits hochgeladen → 377990235378)"}
+{"ts":"12:50:50","level":"skip","source":"importer","msg":"[4/27] ⏭️  2025_pan-america-1250-special__0001_ra1250s_hd_studio_2024_seat-position.jpg übersprungen (bereits hochgeladen → 377990019265)"}
+{"ts":"12:50:50","level":"skip","source":"importer","msg":"[5/27] ⏭️  2025_pan-america-1250-special__0002_ra1250s_hd_studio_2024_screen.jpg übersprungen (bereits hochgeladen → 377990019269)"}
+{"ts":"12:50:50","level":"skip","source":"importer","msg":"[6/27] ⏭️  2025_pan-america-1250-special__0003_ra1250s_hd_studio_2024_ride-modes.jpg übersprungen (bereits hochgeladen → 377990019273)"}
+{"ts":"12:50:51","level":"skip","source":"importer","msg":"[7/27] ⏭️  2025_pan-america-1250-special__0004_ra1250s_hd_studio_2024_rear-shock.jpg übersprungen (bereits hochgeladen → 377990019277)"}
+{"ts":"12:50:51","level":"skip","source":"importer","msg":"[8/27] ⏭️  2025_pan-america-1250-special__0005_ra1250s_hd_studio_2024_headlights.jpg übersprungen (bereits hochgeladen → 377990019280)"}
+{"ts":"12:50:51","level":"skip","source":"importer","msg":"[9/27] ⏭️  2025_pan-america-1250-special__0006_ra1250s_hd_studio_2024_engine.jpg übersprungen (bereits hochgeladen → 377990019286)"}
+{"ts":"12:50:52","level":"skip","source":"importer","msg":"[10/27] ⏭️  2025_pan-america-1250-special__0007_ra1250s_hd_studio_2024_drive-height.jpg übersprungen (bereits hochgeladen → 377990236350)"}
+{"ts":"12:50:52","level":"skip","source":"importer","msg":"[11/27] ⏭️  2025_pan-america-1250-special__0008_ra1250s_hd_studio_2024_charging-system.jpg übersprungen (bereits hochgeladen → 377990236369)"}
+{"ts":"12:50:52","level":"skip","source":"importer","msg":"[12/27] ⏭️  2025_pan-america-1250-special__0009_ra1250s_hd_studio_2024_brakes.jpg übersprungen (bereits hochgeladen → 377990019319)"}
+{"ts":"12:50:53","level":"skip","source":"importer","msg":"[13/27] ⏭️  2025_pan-america-1250-special__0010_ra1250s_hd_studio_2024_3x4.jpg übersprungen (bereits hochgeladen → 377990019320)"}
+{"ts":"12:50:53","level":"skip","source":"importer","msg":"[14/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0043-jkjc2.jpg übersprungen (bereits hochgeladen → 377990019321)"}
+{"ts":"12:50:53","level":"skip","source":"importer","msg":"[15/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0085-abjc.jpg übersprungen (bereits hochgeladen → 377990020285)"}
+{"ts":"12:50:54","level":"skip","source":"importer","msg":"[16/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0006-abjc.jpg übersprungen (bereits hochgeladen → 377990236375)"}
+{"ts":"12:50:54","level":"skip","source":"importer","msg":"[17/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0374-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020289)"}
+{"ts":"12:50:55","level":"skip","source":"importer","msg":"[18/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0424-abjc.jpg übersprungen (bereits hochgeladen → 377990020293)"}
+{"ts":"12:50:55","level":"skip","source":"importer","msg":"[19/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg übersprungen (bereits hochgeladen → 377990020295)"}
+{"ts":"12:50:55","level":"skip","source":"importer","msg":"[20/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg übersprungen (bereits hochgeladen → 377990236398)"}
+{"ts":"12:50:56","level":"skip","source":"importer","msg":"[21/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg übersprungen (bereits hochgeladen → 377990236400)"}
+{"ts":"12:50:56","level":"skip","source":"importer","msg":"[22/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg übersprungen (bereits hochgeladen → 377990236401)"}
+{"ts":"12:50:56","level":"skip","source":"importer","msg":"[23/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg übersprungen (bereits hochgeladen → 377990236402)"}
+{"ts":"12:50:57","level":"skip","source":"importer","msg":"[24/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0204-jkjc.jpg übersprungen (bereits hochgeladen → 377990236404)"}
+{"ts":"12:50:57","level":"skip","source":"importer","msg":"[25/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0361-jkjc.jpg übersprungen (bereits hochgeladen → 377990020333)"}
+{"ts":"12:50:57","level":"skip","source":"importer","msg":"[26/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0460-abjc.jpg übersprungen (bereits hochgeladen → 377990020335)"}
+{"ts":"12:50:58","level":"skip","source":"importer","msg":"[27/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0557-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020337)"}
+{"ts":"12:50:58","level":"info","source":"importer","msg":"Videos: 2"}
+{"ts":"12:50:58","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_b-roll.mp4 [riding_outdoor · heuristic] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:50:58","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_detail.mp4 [detail_view · stored-AI] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:50:59","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_specs.pdf übersprungen (bereits hochgeladen → 377990023368)"}
+{"ts":"12:50:59","level":"ok","source":"importer","msg":"Hero: my25-ra1250s-lifestyle-0374-ab2jc.jpg (AI-empfohlen)"}
+{"ts":"12:50:59","level":"info","source":"importer","msg":"Video mapping → video: —  |  video_footer: 2025_pan-america-1250-special_b-roll.mp4"}
+{"ts":"12:50:59","level":"info","source":"importer","msg":"HubSpot Custom Object aktualisieren (ID 1150371440832)…"}
+{"ts":"12:50:59","level":"ok","source":"importer","msg":"✅ Custom Object aktualisiert → ID 1150371440832"}
+{"ts":"12:50:59","level":"info","source":"importer","msg":"Seite erstellen/aktualisieren → /bikes/adventure_touring/2025/pan_america_1250_special"}
+{"ts":"12:51:00","level":"ok","source":"importer","msg":"✅ Seite updated: /bikes/adventure_touring/2025/pan_america_1250_special (ID 378351842534)"}
+{"ts":"12:51:31","level":"section","source":"importer","msg":"━━ IMPORT: 2025_pan_america_1250_special_ra1250s"}
+{"ts":"12:51:31","level":"info","source":"importer","msg":"data.json: Pan America 1250 Special 2025"}
+{"ts":"12:51:31","level":"warn","source":"importer","msg":"♻️  Fortschritt gefunden – 30 Datei(en) bereits hochgeladen, werden übersprungen"}
+{"ts":"12:51:31","level":"info","source":"importer","msg":"Bilder: 27"}
+{"ts":"12:51:31","level":"skip","source":"importer","msg":"[1/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r-2.jpg übersprungen (bereits hochgeladen → 377990235354)"}
+{"ts":"12:51:32","level":"skip","source":"importer","msg":"[2/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r.jpg übersprungen (bereits hochgeladen → 377990235375)"}
+{"ts":"12:51:32","level":"skip","source":"importer","msg":"[3/27] ⏭️  2025_pan-america-1250-special__0000_ra1250s_hd_studio_2024_wheels.jpg übersprungen (bereits hochgeladen → 377990235378)"}
+{"ts":"12:51:32","level":"skip","source":"importer","msg":"[4/27] ⏭️  2025_pan-america-1250-special__0001_ra1250s_hd_studio_2024_seat-position.jpg übersprungen (bereits hochgeladen → 377990019265)"}
+{"ts":"12:51:33","level":"skip","source":"importer","msg":"[5/27] ⏭️  2025_pan-america-1250-special__0002_ra1250s_hd_studio_2024_screen.jpg übersprungen (bereits hochgeladen → 377990019269)"}
+{"ts":"12:51:33","level":"skip","source":"importer","msg":"[6/27] ⏭️  2025_pan-america-1250-special__0003_ra1250s_hd_studio_2024_ride-modes.jpg übersprungen (bereits hochgeladen → 377990019273)"}
+{"ts":"12:51:33","level":"skip","source":"importer","msg":"[7/27] ⏭️  2025_pan-america-1250-special__0004_ra1250s_hd_studio_2024_rear-shock.jpg übersprungen (bereits hochgeladen → 377990019277)"}
+{"ts":"12:51:34","level":"skip","source":"importer","msg":"[8/27] ⏭️  2025_pan-america-1250-special__0005_ra1250s_hd_studio_2024_headlights.jpg übersprungen (bereits hochgeladen → 377990019280)"}
+{"ts":"12:51:34","level":"skip","source":"importer","msg":"[9/27] ⏭️  2025_pan-america-1250-special__0006_ra1250s_hd_studio_2024_engine.jpg übersprungen (bereits hochgeladen → 377990019286)"}
+{"ts":"12:51:35","level":"skip","source":"importer","msg":"[10/27] ⏭️  2025_pan-america-1250-special__0007_ra1250s_hd_studio_2024_drive-height.jpg übersprungen (bereits hochgeladen → 377990236350)"}
+{"ts":"12:51:35","level":"skip","source":"importer","msg":"[11/27] ⏭️  2025_pan-america-1250-special__0008_ra1250s_hd_studio_2024_charging-system.jpg übersprungen (bereits hochgeladen → 377990236369)"}
+{"ts":"12:51:35","level":"skip","source":"importer","msg":"[12/27] ⏭️  2025_pan-america-1250-special__0009_ra1250s_hd_studio_2024_brakes.jpg übersprungen (bereits hochgeladen → 377990019319)"}
+{"ts":"12:51:36","level":"skip","source":"importer","msg":"[13/27] ⏭️  2025_pan-america-1250-special__0010_ra1250s_hd_studio_2024_3x4.jpg übersprungen (bereits hochgeladen → 377990019320)"}
+{"ts":"12:51:36","level":"skip","source":"importer","msg":"[14/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0043-jkjc2.jpg übersprungen (bereits hochgeladen → 377990019321)"}
+{"ts":"12:51:36","level":"skip","source":"importer","msg":"[15/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0085-abjc.jpg übersprungen (bereits hochgeladen → 377990020285)"}
+{"ts":"12:51:37","level":"skip","source":"importer","msg":"[16/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0006-abjc.jpg übersprungen (bereits hochgeladen → 377990236375)"}
+{"ts":"12:51:37","level":"skip","source":"importer","msg":"[17/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0374-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020289)"}
+{"ts":"12:51:37","level":"skip","source":"importer","msg":"[18/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0424-abjc.jpg übersprungen (bereits hochgeladen → 377990020293)"}
+{"ts":"12:51:38","level":"skip","source":"importer","msg":"[19/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg übersprungen (bereits hochgeladen → 377990020295)"}
+{"ts":"12:51:38","level":"skip","source":"importer","msg":"[20/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg übersprungen (bereits hochgeladen → 377990236398)"}
+{"ts":"12:51:38","level":"skip","source":"importer","msg":"[21/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg übersprungen (bereits hochgeladen → 377990236400)"}
+{"ts":"12:51:39","level":"skip","source":"importer","msg":"[22/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg übersprungen (bereits hochgeladen → 377990236401)"}
+{"ts":"12:51:39","level":"skip","source":"importer","msg":"[23/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg übersprungen (bereits hochgeladen → 377990236402)"}
+{"ts":"12:51:39","level":"skip","source":"importer","msg":"[24/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0204-jkjc.jpg übersprungen (bereits hochgeladen → 377990236404)"}
+{"ts":"12:51:40","level":"skip","source":"importer","msg":"[25/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0361-jkjc.jpg übersprungen (bereits hochgeladen → 377990020333)"}
+{"ts":"12:51:40","level":"skip","source":"importer","msg":"[26/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0460-abjc.jpg übersprungen (bereits hochgeladen → 377990020335)"}
+{"ts":"12:51:41","level":"skip","source":"importer","msg":"[27/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0557-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020337)"}
+{"ts":"12:51:41","level":"info","source":"importer","msg":"Videos: 2"}
+{"ts":"12:51:41","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_b-roll.mp4 [riding_outdoor · heuristic] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:51:41","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_detail.mp4 [detail_view · stored-AI] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"12:51:42","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_specs.pdf übersprungen (bereits hochgeladen → 377990023368)"}
+{"ts":"12:51:42","level":"ok","source":"importer","msg":"Hero: my25-ra1250s-lifestyle-0374-ab2jc.jpg (AI-empfohlen)"}
+{"ts":"12:51:42","level":"info","source":"importer","msg":"Video mapping → video: —  |  video_footer: 2025_pan-america-1250-special_b-roll.mp4"}
+{"ts":"12:51:42","level":"info","source":"importer","msg":"HubSpot Custom Object aktualisieren (ID 1150371440832)…"}
+{"ts":"12:51:42","level":"ok","source":"importer","msg":"✅ Custom Object aktualisiert → ID 1150371440832"}
+{"ts":"12:51:42","level":"info","source":"importer","msg":"Seite erstellen/aktualisieren → /bikes/adventure_touring/2025/pan_america_1250_special"}
+{"ts":"12:51:43","level":"ok","source":"importer","msg":"✅ Seite updated: /bikes/adventure_touring/2025/pan_america_1250_special (ID 378351842534)"}
+{"ts":"13:00:43","level":"section","source":"importer","msg":"━━ IMPORT: 2025_pan_america_1250_special_ra1250s"}
+{"ts":"13:00:43","level":"info","source":"importer","msg":"data.json: Pan America 1250 Special 2025"}
+{"ts":"13:00:43","level":"warn","source":"importer","msg":"♻️  Fortschritt gefunden – 30 Datei(en) bereits hochgeladen, werden übersprungen"}
+{"ts":"13:00:43","level":"info","source":"importer","msg":"Bilder: 27"}
+{"ts":"13:00:43","level":"skip","source":"importer","msg":"[1/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r-2.jpg übersprungen (bereits hochgeladen → 377990235354)"}
+{"ts":"13:00:43","level":"skip","source":"importer","msg":"[2/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r.jpg übersprungen (bereits hochgeladen → 377990235375)"}
+{"ts":"13:00:43","level":"skip","source":"importer","msg":"[3/27] ⏭️  2025_pan-america-1250-special__0000_ra1250s_hd_studio_2024_wheels.jpg übersprungen (bereits hochgeladen → 377990235378)"}
+{"ts":"13:00:44","level":"skip","source":"importer","msg":"[4/27] ⏭️  2025_pan-america-1250-special__0001_ra1250s_hd_studio_2024_seat-position.jpg übersprungen (bereits hochgeladen → 377990019265)"}
+{"ts":"13:00:44","level":"skip","source":"importer","msg":"[5/27] ⏭️  2025_pan-america-1250-special__0002_ra1250s_hd_studio_2024_screen.jpg übersprungen (bereits hochgeladen → 377990019269)"}
+{"ts":"13:00:44","level":"skip","source":"importer","msg":"[6/27] ⏭️  2025_pan-america-1250-special__0003_ra1250s_hd_studio_2024_ride-modes.jpg übersprungen (bereits hochgeladen → 377990019273)"}
+{"ts":"13:00:45","level":"skip","source":"importer","msg":"[7/27] ⏭️  2025_pan-america-1250-special__0004_ra1250s_hd_studio_2024_rear-shock.jpg übersprungen (bereits hochgeladen → 377990019277)"}
+{"ts":"13:00:45","level":"skip","source":"importer","msg":"[8/27] ⏭️  2025_pan-america-1250-special__0005_ra1250s_hd_studio_2024_headlights.jpg übersprungen (bereits hochgeladen → 377990019280)"}
+{"ts":"13:00:46","level":"skip","source":"importer","msg":"[9/27] ⏭️  2025_pan-america-1250-special__0006_ra1250s_hd_studio_2024_engine.jpg übersprungen (bereits hochgeladen → 377990019286)"}
+{"ts":"13:00:46","level":"skip","source":"importer","msg":"[10/27] ⏭️  2025_pan-america-1250-special__0007_ra1250s_hd_studio_2024_drive-height.jpg übersprungen (bereits hochgeladen → 377990236350)"}
+{"ts":"13:00:46","level":"skip","source":"importer","msg":"[11/27] ⏭️  2025_pan-america-1250-special__0008_ra1250s_hd_studio_2024_charging-system.jpg übersprungen (bereits hochgeladen → 377990236369)"}
+{"ts":"13:00:47","level":"skip","source":"importer","msg":"[12/27] ⏭️  2025_pan-america-1250-special__0009_ra1250s_hd_studio_2024_brakes.jpg übersprungen (bereits hochgeladen → 377990019319)"}
+{"ts":"13:00:47","level":"skip","source":"importer","msg":"[13/27] ⏭️  2025_pan-america-1250-special__0010_ra1250s_hd_studio_2024_3x4.jpg übersprungen (bereits hochgeladen → 377990019320)"}
+{"ts":"13:00:47","level":"skip","source":"importer","msg":"[14/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0043-jkjc2.jpg übersprungen (bereits hochgeladen → 377990019321)"}
+{"ts":"13:00:48","level":"skip","source":"importer","msg":"[15/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0085-abjc.jpg übersprungen (bereits hochgeladen → 377990020285)"}
+{"ts":"13:00:48","level":"skip","source":"importer","msg":"[16/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0006-abjc.jpg übersprungen (bereits hochgeladen → 377990236375)"}
+{"ts":"13:00:48","level":"skip","source":"importer","msg":"[17/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0374-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020289)"}
+{"ts":"13:00:49","level":"skip","source":"importer","msg":"[18/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0424-abjc.jpg übersprungen (bereits hochgeladen → 377990020293)"}
+{"ts":"13:00:49","level":"skip","source":"importer","msg":"[19/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg übersprungen (bereits hochgeladen → 377990020295)"}
+{"ts":"13:00:49","level":"skip","source":"importer","msg":"[20/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg übersprungen (bereits hochgeladen → 377990236398)"}
+{"ts":"13:00:50","level":"skip","source":"importer","msg":"[21/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg übersprungen (bereits hochgeladen → 377990236400)"}
+{"ts":"13:00:50","level":"skip","source":"importer","msg":"[22/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg übersprungen (bereits hochgeladen → 377990236401)"}
+{"ts":"13:00:50","level":"skip","source":"importer","msg":"[23/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg übersprungen (bereits hochgeladen → 377990236402)"}
+{"ts":"13:00:51","level":"skip","source":"importer","msg":"[24/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0204-jkjc.jpg übersprungen (bereits hochgeladen → 377990236404)"}
+{"ts":"13:00:51","level":"skip","source":"importer","msg":"[25/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0361-jkjc.jpg übersprungen (bereits hochgeladen → 377990020333)"}
+{"ts":"13:00:51","level":"skip","source":"importer","msg":"[26/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0460-abjc.jpg übersprungen (bereits hochgeladen → 377990020335)"}
+{"ts":"13:00:52","level":"skip","source":"importer","msg":"[27/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0557-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020337)"}
+{"ts":"13:00:52","level":"info","source":"importer","msg":"Videos: 2"}
+{"ts":"13:00:52","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_b-roll.mp4 [riding_outdoor · heuristic] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"13:00:53","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_detail.mp4 [detail_view · stored-AI] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"13:00:53","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_specs.pdf übersprungen (bereits hochgeladen → 377990023368)"}
+{"ts":"13:00:53","level":"ok","source":"importer","msg":"Hero: my25-ra1250s-lifestyle-0374-ab2jc.jpg (AI-empfohlen)"}
+{"ts":"13:00:53","level":"info","source":"importer","msg":"Video mapping → video: —  |  video_footer: 2025_pan-america-1250-special_b-roll.mp4"}
+{"ts":"13:00:53","level":"info","source":"importer","msg":"HubSpot Custom Object aktualisieren (ID 1150371440832)…"}
+{"ts":"13:00:53","level":"ok","source":"importer","msg":"✅ Custom Object aktualisiert → ID 1150371440832"}
+{"ts":"13:00:53","level":"info","source":"importer","msg":"Seite erstellen/aktualisieren → /bikes/adventure_touring/2025/pan_america_1250_special"}
+{"ts":"13:00:53","level":"info","source":"importer","msg":"Page Request: {\n  \"name\": \"Pan America 1250 Special 2025\",\n  \"slug\": \"bikes/adventure_touring/2025/pan_america_1250_special\",\n  \"templatePath\": \"harley-staalfabrik-theme/templates/listing/listing-detail.html\",\n  \"htmlTitle\": \"Pan America 1250 Special 2025 | Harley-Davidson\",\n  \"metaDescription\": \"Get lost. Go anywhere and everywhere on the Pan America 1250 Special, with high-revving liquid-cooled V-twin power, semi-active suspension, and top-shelf compon\",\n  \"language\": \"de\",\n  \"objectId\": \"1150371440832\",\n  \"moduleId\": \"bike_selector\",\n  \"fieldName\": \"bike_selection\"\n}"}
+{"ts":"13:00:53","level":"info","source":"importer","msg":"HubSpot API POST /cms/v3/pages/site-pages"}
+{"ts":"13:00:53","level":"info","source":"importer","msg":"Request Body: {\n  \"name\": \"Pan America 1250 Special 2025\",\n  \"slug\": \"bikes/adventure_touring/2025/pan_america_1250_special\",\n  \"templatePath\": \"harley-staalfabrik-theme/templates/listing/listing-detail.html\",\n  \"htmlTitle\": \"Pan America 1250 Special 2025 | Harley-Davidson\",\n  \"metaDescription\": \"Get lost. Go anywhere and everywhere on the Pan America 1250 Special, with high-revving liquid-cooled V-twin power, semi-active suspension, and top-shelf compon\",\n  \"language\": \"de\",\n  \"state\": \"DRAFT\",\n  \"widgetContainers\": {\n    \"bike_selector\": {\n      \"id\": \"bike_selector\",\n      \"name\": \"bike_selector\",\n      \"type\": \"module\",\n      \"body\": {\n        \"bike_selection\": {\n          \"id\": \"1150371440832\"\n        }\n      }\n    }\n  }\n}"}
+{"ts":"13:00:54","level":"ok","source":"importer","msg":"✅ Seite created: /bikes/adventure_touring/2025/pan_america_1250_special (ID 378351842541)"}
+{"ts":"13:04:52","level":"section","source":"importer","msg":"━━ IMPORT: 2025_pan_america_1250_special_ra1250s"}
+{"ts":"13:04:52","level":"info","source":"importer","msg":"data.json: Pan America 1250 Special 2025"}
+{"ts":"13:04:52","level":"warn","source":"importer","msg":"♻️  Fortschritt gefunden – 30 Datei(en) bereits hochgeladen, werden übersprungen"}
+{"ts":"13:04:52","level":"info","source":"importer","msg":"Bilder: 27"}
+{"ts":"13:04:52","level":"skip","source":"importer","msg":"[1/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r-2.jpg übersprungen (bereits hochgeladen → 377990235354)"}
+{"ts":"13:04:52","level":"skip","source":"importer","msg":"[2/27] ⏭️  2025_pan-america-1250-special_25_ra1250s_m13b_r.jpg übersprungen (bereits hochgeladen → 377990235375)"}
+{"ts":"13:04:53","level":"skip","source":"importer","msg":"[3/27] ⏭️  2025_pan-america-1250-special__0000_ra1250s_hd_studio_2024_wheels.jpg übersprungen (bereits hochgeladen → 377990235378)"}
+{"ts":"13:04:53","level":"skip","source":"importer","msg":"[4/27] ⏭️  2025_pan-america-1250-special__0001_ra1250s_hd_studio_2024_seat-position.jpg übersprungen (bereits hochgeladen → 377990019265)"}
+{"ts":"13:04:54","level":"skip","source":"importer","msg":"[5/27] ⏭️  2025_pan-america-1250-special__0002_ra1250s_hd_studio_2024_screen.jpg übersprungen (bereits hochgeladen → 377990019269)"}
+{"ts":"13:04:54","level":"skip","source":"importer","msg":"[6/27] ⏭️  2025_pan-america-1250-special__0003_ra1250s_hd_studio_2024_ride-modes.jpg übersprungen (bereits hochgeladen → 377990019273)"}
+{"ts":"13:04:54","level":"skip","source":"importer","msg":"[7/27] ⏭️  2025_pan-america-1250-special__0004_ra1250s_hd_studio_2024_rear-shock.jpg übersprungen (bereits hochgeladen → 377990019277)"}
+{"ts":"13:04:55","level":"skip","source":"importer","msg":"[8/27] ⏭️  2025_pan-america-1250-special__0005_ra1250s_hd_studio_2024_headlights.jpg übersprungen (bereits hochgeladen → 377990019280)"}
+{"ts":"13:04:55","level":"skip","source":"importer","msg":"[9/27] ⏭️  2025_pan-america-1250-special__0006_ra1250s_hd_studio_2024_engine.jpg übersprungen (bereits hochgeladen → 377990019286)"}
+{"ts":"13:04:55","level":"skip","source":"importer","msg":"[10/27] ⏭️  2025_pan-america-1250-special__0007_ra1250s_hd_studio_2024_drive-height.jpg übersprungen (bereits hochgeladen → 377990236350)"}
+{"ts":"13:04:56","level":"skip","source":"importer","msg":"[11/27] ⏭️  2025_pan-america-1250-special__0008_ra1250s_hd_studio_2024_charging-system.jpg übersprungen (bereits hochgeladen → 377990236369)"}
+{"ts":"13:04:56","level":"skip","source":"importer","msg":"[12/27] ⏭️  2025_pan-america-1250-special__0009_ra1250s_hd_studio_2024_brakes.jpg übersprungen (bereits hochgeladen → 377990019319)"}
+{"ts":"13:04:56","level":"skip","source":"importer","msg":"[13/27] ⏭️  2025_pan-america-1250-special__0010_ra1250s_hd_studio_2024_3x4.jpg übersprungen (bereits hochgeladen → 377990019320)"}
+{"ts":"13:04:57","level":"skip","source":"importer","msg":"[14/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0043-jkjc2.jpg übersprungen (bereits hochgeladen → 377990019321)"}
+{"ts":"13:04:57","level":"skip","source":"importer","msg":"[15/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-beauty-0085-abjc.jpg übersprungen (bereits hochgeladen → 377990020285)"}
+{"ts":"13:04:57","level":"skip","source":"importer","msg":"[16/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0006-abjc.jpg übersprungen (bereits hochgeladen → 377990236375)"}
+{"ts":"13:04:58","level":"skip","source":"importer","msg":"[17/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0374-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020289)"}
+{"ts":"13:04:58","level":"skip","source":"importer","msg":"[18/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-lifestyle-0424-abjc.jpg übersprungen (bereits hochgeladen → 377990020293)"}
+{"ts":"13:04:58","level":"skip","source":"importer","msg":"[19/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0032-jkjc.jpg übersprungen (bereits hochgeladen → 377990020295)"}
+{"ts":"13:04:59","level":"skip","source":"importer","msg":"[20/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0613-abjc.jpg übersprungen (bereits hochgeladen → 377990236398)"}
+{"ts":"13:04:59","level":"skip","source":"importer","msg":"[21/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0779-abjc.jpg übersprungen (bereits hochgeladen → 377990236400)"}
+{"ts":"13:04:59","level":"skip","source":"importer","msg":"[22/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0846-abjc.jpg übersprungen (bereits hochgeladen → 377990236401)"}
+{"ts":"13:05:00","level":"skip","source":"importer","msg":"[23/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-ra1250se-group-riding-0992-ab2jc.jpg übersprungen (bereits hochgeladen → 377990236402)"}
+{"ts":"13:05:00","level":"skip","source":"importer","msg":"[24/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0204-jkjc.jpg übersprungen (bereits hochgeladen → 377990236404)"}
+{"ts":"13:05:01","level":"skip","source":"importer","msg":"[25/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0361-jkjc.jpg übersprungen (bereits hochgeladen → 377990020333)"}
+{"ts":"13:05:01","level":"skip","source":"importer","msg":"[26/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0460-abjc.jpg übersprungen (bereits hochgeladen → 377990020335)"}
+{"ts":"13:05:01","level":"skip","source":"importer","msg":"[27/27] ⏭️  2025_pan-america-1250-special_my25-ra1250s-riding-0557-ab2jc.jpg übersprungen (bereits hochgeladen → 377990020337)"}
+{"ts":"13:05:02","level":"info","source":"importer","msg":"Videos: 2"}
+{"ts":"13:05:02","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_b-roll.mp4 [riding_outdoor · heuristic] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"13:05:02","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_detail.mp4 [detail_view · stored-AI] übersprungen (bereits hochgeladen → 377990237406)"}
+{"ts":"13:05:02","level":"skip","source":"importer","msg":"⏭️  2025_pan-america-1250-special_specs.pdf übersprungen (bereits hochgeladen → 377990023368)"}
+{"ts":"13:05:02","level":"ok","source":"importer","msg":"Hero: my25-ra1250s-lifestyle-0374-ab2jc.jpg (AI-empfohlen)"}
+{"ts":"13:05:02","level":"info","source":"importer","msg":"Video mapping → video: —  |  video_footer: 2025_pan-america-1250-special_b-roll.mp4"}
+{"ts":"13:05:02","level":"info","source":"importer","msg":"HubSpot Custom Object aktualisieren (ID 1150371440832)…"}
+{"ts":"13:05:03","level":"ok","source":"importer","msg":"✅ Custom Object aktualisiert → ID 1150371440832"}
+{"ts":"13:05:03","level":"info","source":"importer","msg":"Seite erstellen/aktualisieren → /bikes/adventure_touring/2025/pan_america_1250_special"}
+{"ts":"13:05:03","level":"info","source":"importer","msg":"Page Request: {\n  \"name\": \"Pan America 1250 Special 2025\",\n  \"slug\": \"bikes/adventure_touring/2025/pan_america_1250_special\",\n  \"templatePath\": \"harley-staalfabrik-theme/templates/listing/listing-detail.html\",\n  \"htmlTitle\": \"Pan America 1250 Special 2025 | Harley-Davidson\",\n  \"metaDescription\": \"Get lost. Go anywhere and everywhere on the Pan America 1250 Special, with high-revving liquid-cooled V-twin power, semi-active suspension, and top-shelf compon\",\n  \"language\": \"de\",\n  \"objectId\": \"1150371440832\",\n  \"moduleId\": \"bike_selector\",\n  \"fieldName\": \"bike_selection\"\n}"}
+{"ts":"13:05:03","level":"info","source":"importer","msg":"HubSpot API POST /cms/v3/pages/site-pages"}
+{"ts":"13:05:03","level":"info","source":"importer","msg":"Request Body: {\n  \"name\": \"Pan America 1250 Special 2025\",\n  \"slug\": \"bikes/adventure_touring/2025/pan_america_1250_special\",\n  \"templatePath\": \"harley-staalfabrik-theme/templates/listing/listing-detail.html\",\n  \"htmlTitle\": \"Pan America 1250 Special 2025 | Harley-Davidson\",\n  \"metaDescription\": \"Get lost. Go anywhere and everywhere on the Pan America 1250 Special, with high-revving liquid-cooled V-twin power, semi-active suspension, and top-shelf compon\",\n  \"language\": \"de\",\n  \"state\": \"DRAFT\",\n  \"widgetContainers\": {\n    \"bike_selector\": {\n      \"id\": \"bike_selector\",\n      \"name\": \"bike_selector\",\n      \"type\": \"module\",\n      \"body\": {\n        \"bike_selection\": {\n          \"id\": \"1150371440832\"\n        }\n      }\n    }\n  }\n}"}
+{"ts":"13:05:04","level":"ok","source":"importer","msg":"✅ Seite created: /bikes/adventure_touring/2025/pan_america_1250_special (ID 378351843534)"}
